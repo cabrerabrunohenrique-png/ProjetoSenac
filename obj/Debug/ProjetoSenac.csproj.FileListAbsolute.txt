@@ -10,3 +10,4 @@ C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.csproj.GenerateR
 C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.csproj.CoreCompileInputs.cache
 C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.exe
 C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.pdb
+C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.FormEstoque.resources

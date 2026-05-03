@@ -64,6 +64,7 @@
             this.btEntrar.TabIndex = 5;
             this.btEntrar.Text = "Entrar";
             this.btEntrar.UseVisualStyleBackColor = false;
+            this.btEntrar.Click += new System.EventHandler(this.btEntrar_Click);
             // 
             // tbNomeUsuario
             // 
@@ -88,6 +89,7 @@
             this.btCadastrarNovoUsuario.TabIndex = 8;
             this.btCadastrarNovoUsuario.Text = "Cadastrar Novo Usuário";
             this.btCadastrarNovoUsuario.UseVisualStyleBackColor = false;
+            this.btCadastrarNovoUsuario.Click += new System.EventHandler(this.btCadastrarNovoUsuario_Click);
             // 
             // btAcessarRelatorios
             // 

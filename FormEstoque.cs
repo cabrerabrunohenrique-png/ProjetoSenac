@@ -10,18 +10,20 @@ using System.Windows.Forms;
 
 namespace ProjetoSenac
 {
-    public partial class CadastroNovoUsuario : Form
+    public partial class FormEstoque : Form
     {
-        public CadastroNovoUsuario()
+        public FormEstoque()
         {
             InitializeComponent();
         }
 
-        private void btVoltarCNU_Click(object sender, EventArgs e)
+        private void btPaginaIncialE_Click(object sender, EventArgs e)
         {
-            Form1 formLogin = new Form1();
-            formLogin.ShowDialog();
+            Nav formNav = new Nav();
+            this.Hide();
+            formNav.Show();
             DialogResult = DialogResult.OK;
+            this.Show();
         }
     }
 }

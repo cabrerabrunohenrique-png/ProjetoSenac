@@ -160,6 +160,7 @@
             this.btVoltarCNU.TabIndex = 13;
             this.btVoltarCNU.Text = "Tela Inicial";
             this.btVoltarCNU.UseVisualStyleBackColor = false;
+            this.btVoltarCNU.Click += new System.EventHandler(this.btVoltarCNU_Click);
             // 
             // CadastroNovoUsuario
             // 

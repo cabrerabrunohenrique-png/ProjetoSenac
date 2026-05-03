@@ -31,6 +31,8 @@
             this.btOrdemServico = new System.Windows.Forms.Button();
             this.btEstoque = new System.Windows.Forms.Button();
             this.btProdutoXPeca = new System.Windows.Forms.Button();
+            this.btAcessarRelatorio = new System.Windows.Forms.Button();
+            this.btPaginaLogin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btOrdemServico
@@ -63,11 +65,32 @@
             this.btProdutoXPeca.Text = "Relação Produtos á Produzir X Peças";
             this.btProdutoXPeca.UseVisualStyleBackColor = false;
             // 
+            // btAcessarRelatorio
+            // 
+            this.btAcessarRelatorio.Location = new System.Drawing.Point(544, 407);
+            this.btAcessarRelatorio.Name = "btAcessarRelatorio";
+            this.btAcessarRelatorio.Size = new System.Drawing.Size(151, 64);
+            this.btAcessarRelatorio.TabIndex = 3;
+            this.btAcessarRelatorio.Text = "Acessar os Relatórios";
+            this.btAcessarRelatorio.UseVisualStyleBackColor = true;
+            // 
+            // btPaginaLogin
+            // 
+            this.btPaginaLogin.Location = new System.Drawing.Point(544, 13);
+            this.btPaginaLogin.Name = "btPaginaLogin";
+            this.btPaginaLogin.Size = new System.Drawing.Size(163, 65);
+            this.btPaginaLogin.TabIndex = 4;
+            this.btPaginaLogin.Text = "Acessar Pagina Login";
+            this.btPaginaLogin.UseVisualStyleBackColor = true;
+            this.btPaginaLogin.Click += new System.EventHandler(this.btPaginaLogin_Click);
+            // 
             // Nav
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(719, 497);
+            this.Controls.Add(this.btPaginaLogin);
+            this.Controls.Add(this.btAcessarRelatorio);
             this.Controls.Add(this.btProdutoXPeca);
             this.Controls.Add(this.btEstoque);
             this.Controls.Add(this.btOrdemServico);
@@ -82,5 +105,7 @@
         private System.Windows.Forms.Button btOrdemServico;
         private System.Windows.Forms.Button btEstoque;
         private System.Windows.Forms.Button btProdutoXPeca;
+        private System.Windows.Forms.Button btAcessarRelatorio;
+        private System.Windows.Forms.Button btPaginaLogin;
     }
 }

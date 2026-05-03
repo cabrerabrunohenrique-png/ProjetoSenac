@@ -16,5 +16,20 @@ namespace ProjetoSenac
         {
             InitializeComponent();
         }
+
+        private void btEntrar_Click(object sender, EventArgs e)
+        {
+            Nav formNav = new Nav();
+            formNav.ShowDialog();
+            this.DialogResult = DialogResult.OK;
+            
+        }
+
+        private void btCadastrarNovoUsuario_Click(object sender, EventArgs e)
+        {
+            CadastroNovoUsuario formCadastro = new CadastroNovoUsuario();
+            formCadastro.ShowDialog();
+            DialogResult = DialogResult.OK;
+        }
     }
 }
