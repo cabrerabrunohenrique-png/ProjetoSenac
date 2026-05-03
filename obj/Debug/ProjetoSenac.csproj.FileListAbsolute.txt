@@ -1,0 +1,12 @@
+C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\ProjetoSenac.exe.config
+C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\ProjetoSenac.exe
+C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\ProjetoSenac.pdb
+C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.csproj.AssemblyReference.cache
+C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.CadastroNovoUsuario.resources
+C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.Form1.resources
+C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.Nav.resources
+C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.Properties.Resources.resources
+C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.csproj.GenerateResource.cache
+C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.csproj.CoreCompileInputs.cache
+C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.exe
+C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.pdb
