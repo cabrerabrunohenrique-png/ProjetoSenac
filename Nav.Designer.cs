@@ -31,7 +31,7 @@
             this.btOrdemServico = new System.Windows.Forms.Button();
             this.btEstoque = new System.Windows.Forms.Button();
             this.btProdutoXPeca = new System.Windows.Forms.Button();
-            this.btAcessarRelatorio = new System.Windows.Forms.Button();
+            this.btAcessarRelatorioN = new System.Windows.Forms.Button();
             this.btPaginaLogin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -44,6 +44,7 @@
             this.btOrdemServico.TabIndex = 0;
             this.btOrdemServico.Text = "Ordens de Serviços(OS)";
             this.btOrdemServico.UseVisualStyleBackColor = false;
+            this.btOrdemServico.Click += new System.EventHandler(this.btOrdemServico_Click);
             // 
             // btEstoque
             // 
@@ -65,14 +66,15 @@
             this.btProdutoXPeca.Text = "Relação Produtos á Produzir X Peças";
             this.btProdutoXPeca.UseVisualStyleBackColor = false;
             // 
-            // btAcessarRelatorio
+            // btAcessarRelatorioN
             // 
-            this.btAcessarRelatorio.Location = new System.Drawing.Point(544, 407);
-            this.btAcessarRelatorio.Name = "btAcessarRelatorio";
-            this.btAcessarRelatorio.Size = new System.Drawing.Size(151, 64);
-            this.btAcessarRelatorio.TabIndex = 3;
-            this.btAcessarRelatorio.Text = "Acessar os Relatórios";
-            this.btAcessarRelatorio.UseVisualStyleBackColor = true;
+            this.btAcessarRelatorioN.BackColor = System.Drawing.Color.Yellow;
+            this.btAcessarRelatorioN.Location = new System.Drawing.Point(544, 407);
+            this.btAcessarRelatorioN.Name = "btAcessarRelatorioN";
+            this.btAcessarRelatorioN.Size = new System.Drawing.Size(151, 64);
+            this.btAcessarRelatorioN.TabIndex = 3;
+            this.btAcessarRelatorioN.Text = "Acessar os Relatórios";
+            this.btAcessarRelatorioN.UseVisualStyleBackColor = false;
             // 
             // btPaginaLogin
             // 
@@ -90,7 +92,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(719, 497);
             this.Controls.Add(this.btPaginaLogin);
-            this.Controls.Add(this.btAcessarRelatorio);
+            this.Controls.Add(this.btAcessarRelatorioN);
             this.Controls.Add(this.btProdutoXPeca);
             this.Controls.Add(this.btEstoque);
             this.Controls.Add(this.btOrdemServico);
@@ -105,7 +107,7 @@
         private System.Windows.Forms.Button btOrdemServico;
         private System.Windows.Forms.Button btEstoque;
         private System.Windows.Forms.Button btProdutoXPeca;
-        private System.Windows.Forms.Button btAcessarRelatorio;
+        private System.Windows.Forms.Button btAcessarRelatorioN;
         private System.Windows.Forms.Button btPaginaLogin;
     }
 }

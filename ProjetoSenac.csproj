@@ -64,6 +64,12 @@
     <Compile Include="FormEstoque.Designer.cs">
       <DependentUpon>FormEstoque.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormOrdemServico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOrdemServico.Designer.cs">
+      <DependentUpon>FormOrdemServico.cs</DependentUpon>
+    </Compile>
     <Compile Include="Nav.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormEstoque.resx">
       <DependentUpon>FormEstoque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOrdemServico.resx">
+      <DependentUpon>FormOrdemServico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Nav.resx">
       <DependentUpon>Nav.cs</DependentUpon>

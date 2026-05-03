@@ -30,5 +30,13 @@ namespace ProjetoSenac
             this.DialogResult = DialogResult.OK;
 
         }
+
+        private void btOrdemServico_Click(object sender, EventArgs e)
+        {
+            FormOrdemServico formOs = new FormOrdemServico();
+            DialogResult = DialogResult.OK;
+            formOs.ShowDialog();
+            
+        }
     }
 }

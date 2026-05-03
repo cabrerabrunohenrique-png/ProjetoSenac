@@ -20,9 +20,8 @@ namespace ProjetoSenac
         private void btEntrar_Click(object sender, EventArgs e)
         {
             Nav formNav = new Nav();
-            formNav.ShowDialog();
             this.DialogResult = DialogResult.OK;
-            
+            formNav.ShowDialog();
         }
 
         private void btCadastrarNovoUsuario_Click(object sender, EventArgs e)

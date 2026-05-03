@@ -154,9 +154,9 @@
             // 
             this.btVoltarCNU.BackColor = System.Drawing.Color.Blue;
             this.btVoltarCNU.ForeColor = System.Drawing.Color.White;
-            this.btVoltarCNU.Location = new System.Drawing.Point(652, 24);
+            this.btVoltarCNU.Location = new System.Drawing.Point(634, 24);
             this.btVoltarCNU.Name = "btVoltarCNU";
-            this.btVoltarCNU.Size = new System.Drawing.Size(119, 67);
+            this.btVoltarCNU.Size = new System.Drawing.Size(137, 67);
             this.btVoltarCNU.TabIndex = 13;
             this.btVoltarCNU.Text = "Tela Inicial";
             this.btVoltarCNU.UseVisualStyleBackColor = false;
