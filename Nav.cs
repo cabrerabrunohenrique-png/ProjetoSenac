@@ -38,5 +38,12 @@ namespace ProjetoSenac
             formOs.ShowDialog();
             
         }
+
+        private void btEstoque_Click(object sender, EventArgs e)
+        {
+            FormEstoque formEstoque = new FormEstoque();
+            formEstoque.ShowDialog();
+            DialogResult= DialogResult.OK;
+        }
     }
 }

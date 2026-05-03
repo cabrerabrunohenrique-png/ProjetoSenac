@@ -140,7 +140,7 @@
             // btAcessarRelatorioOS
             // 
             this.btAcessarRelatorioOS.BackColor = System.Drawing.Color.Yellow;
-            this.btAcessarRelatorioOS.Location = new System.Drawing.Point(625, 185);
+            this.btAcessarRelatorioOS.Location = new System.Drawing.Point(625, 97);
             this.btAcessarRelatorioOS.Name = "btAcessarRelatorioOS";
             this.btAcessarRelatorioOS.Size = new System.Drawing.Size(163, 64);
             this.btAcessarRelatorioOS.TabIndex = 15;
@@ -150,7 +150,7 @@
             // btPaginaLoginOS
             // 
             this.btPaginaLoginOS.BackColor = System.Drawing.Color.Lime;
-            this.btPaginaLoginOS.Location = new System.Drawing.Point(625, 94);
+            this.btPaginaLoginOS.Location = new System.Drawing.Point(625, 184);
             this.btPaginaLoginOS.Name = "btPaginaLoginOS";
             this.btPaginaLoginOS.Size = new System.Drawing.Size(163, 65);
             this.btPaginaLoginOS.TabIndex = 16;

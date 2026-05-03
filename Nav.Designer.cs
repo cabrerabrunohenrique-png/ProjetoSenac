@@ -55,6 +55,7 @@
             this.btEstoque.TabIndex = 1;
             this.btEstoque.Text = "Estoque( Entrada de Produtos)";
             this.btEstoque.UseVisualStyleBackColor = false;
+            this.btEstoque.Click += new System.EventHandler(this.btEstoque_Click);
             // 
             // btProdutoXPeca
             // 
