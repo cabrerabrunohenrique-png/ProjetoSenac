@@ -20,7 +20,6 @@ namespace ProjetoSenac
         private void btVoltarCNU_Click(object sender, EventArgs e)
         {
             Form1 formLogin = new Form1();
-            formLogin.ShowDialog();
             DialogResult = DialogResult.OK;
         }
     }
