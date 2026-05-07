@@ -46,117 +46,132 @@
             // 
             // txNomeCompleto
             // 
-            this.txNomeCompleto.Location = new System.Drawing.Point(271, 95);
+            this.txNomeCompleto.Location = new System.Drawing.Point(203, 77);
+            this.txNomeCompleto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txNomeCompleto.Name = "txNomeCompleto";
-            this.txNomeCompleto.Size = new System.Drawing.Size(208, 22);
+            this.txNomeCompleto.Size = new System.Drawing.Size(157, 20);
             this.txNomeCompleto.TabIndex = 0;
             // 
             // txNumeroRegistro
             // 
-            this.txNumeroRegistro.Location = new System.Drawing.Point(271, 143);
+            this.txNumeroRegistro.Location = new System.Drawing.Point(203, 116);
+            this.txNumeroRegistro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txNumeroRegistro.Name = "txNumeroRegistro";
-            this.txNumeroRegistro.Size = new System.Drawing.Size(208, 22);
+            this.txNumeroRegistro.Size = new System.Drawing.Size(157, 20);
             this.txNumeroRegistro.TabIndex = 1;
             // 
             // txPermissao
             // 
-            this.txPermissao.Location = new System.Drawing.Point(271, 194);
+            this.txPermissao.Location = new System.Drawing.Point(203, 158);
+            this.txPermissao.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txPermissao.Name = "txPermissao";
-            this.txPermissao.Size = new System.Drawing.Size(208, 22);
+            this.txPermissao.Size = new System.Drawing.Size(157, 20);
             this.txPermissao.TabIndex = 2;
             // 
             // txNomeUsuario
             // 
-            this.txNomeUsuario.Location = new System.Drawing.Point(271, 241);
+            this.txNomeUsuario.Location = new System.Drawing.Point(203, 196);
+            this.txNomeUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txNomeUsuario.Name = "txNomeUsuario";
-            this.txNomeUsuario.Size = new System.Drawing.Size(208, 22);
+            this.txNomeUsuario.Size = new System.Drawing.Size(157, 20);
             this.txNomeUsuario.TabIndex = 3;
             // 
             // txSenhaAcesso
             // 
-            this.txSenhaAcesso.Location = new System.Drawing.Point(271, 289);
+            this.txSenhaAcesso.Location = new System.Drawing.Point(203, 235);
+            this.txSenhaAcesso.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txSenhaAcesso.Name = "txSenhaAcesso";
-            this.txSenhaAcesso.Size = new System.Drawing.Size(208, 22);
+            this.txSenhaAcesso.Size = new System.Drawing.Size(157, 20);
             this.txSenhaAcesso.TabIndex = 4;
             // 
             // lNomeCompleto
             // 
             this.lNomeCompleto.AutoSize = true;
-            this.lNomeCompleto.Location = new System.Drawing.Point(72, 98);
+            this.lNomeCompleto.Location = new System.Drawing.Point(54, 80);
+            this.lNomeCompleto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lNomeCompleto.Name = "lNomeCompleto";
-            this.lNomeCompleto.Size = new System.Drawing.Size(105, 16);
+            this.lNomeCompleto.Size = new System.Drawing.Size(82, 13);
             this.lNomeCompleto.TabIndex = 5;
             this.lNomeCompleto.Text = "Nome Completo";
             // 
             // lNumeroRegistro
             // 
             this.lNumeroRegistro.AutoSize = true;
-            this.lNumeroRegistro.Location = new System.Drawing.Point(72, 149);
+            this.lNumeroRegistro.Location = new System.Drawing.Point(54, 121);
+            this.lNumeroRegistro.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lNumeroRegistro.Name = "lNumeroRegistro";
-            this.lNumeroRegistro.Size = new System.Drawing.Size(128, 16);
+            this.lNumeroRegistro.Size = new System.Drawing.Size(101, 13);
             this.lNumeroRegistro.TabIndex = 6;
             this.lNumeroRegistro.Text = "Numero de Registro";
             // 
             // lNivelPermissao
             // 
             this.lNivelPermissao.AutoSize = true;
-            this.lNivelPermissao.Location = new System.Drawing.Point(72, 197);
+            this.lNivelPermissao.Location = new System.Drawing.Point(54, 160);
+            this.lNivelPermissao.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lNivelPermissao.Name = "lNivelPermissao";
-            this.lNivelPermissao.Size = new System.Drawing.Size(125, 16);
+            this.lNivelPermissao.Size = new System.Drawing.Size(97, 13);
             this.lNivelPermissao.TabIndex = 7;
             this.lNivelPermissao.Text = "Nivel de Permissão";
             // 
             // lNomeUsuario
             // 
             this.lNomeUsuario.AutoSize = true;
-            this.lNomeUsuario.Location = new System.Drawing.Point(72, 247);
+            this.lNomeUsuario.Location = new System.Drawing.Point(54, 201);
+            this.lNomeUsuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lNomeUsuario.Name = "lNomeUsuario";
-            this.lNomeUsuario.Size = new System.Drawing.Size(110, 16);
+            this.lNomeUsuario.Size = new System.Drawing.Size(87, 13);
             this.lNomeUsuario.TabIndex = 8;
             this.lNomeUsuario.Text = "Nome de usuário";
             // 
             // lSenhaAcesso
             // 
             this.lSenhaAcesso.AutoSize = true;
-            this.lSenhaAcesso.Location = new System.Drawing.Point(72, 295);
+            this.lSenhaAcesso.Location = new System.Drawing.Point(54, 240);
+            this.lSenhaAcesso.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lSenhaAcesso.Name = "lSenhaAcesso";
-            this.lSenhaAcesso.Size = new System.Drawing.Size(114, 16);
+            this.lSenhaAcesso.Size = new System.Drawing.Size(91, 13);
             this.lSenhaAcesso.TabIndex = 9;
             this.lSenhaAcesso.Text = "Senha de Acesso";
             // 
             // lConfirmacaoSenha
             // 
             this.lConfirmacaoSenha.AutoSize = true;
-            this.lConfirmacaoSenha.Location = new System.Drawing.Point(72, 343);
+            this.lConfirmacaoSenha.Location = new System.Drawing.Point(54, 279);
+            this.lConfirmacaoSenha.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lConfirmacaoSenha.Name = "lConfirmacaoSenha";
-            this.lConfirmacaoSenha.Size = new System.Drawing.Size(193, 16);
+            this.lConfirmacaoSenha.Size = new System.Drawing.Size(153, 13);
             this.lConfirmacaoSenha.TabIndex = 11;
             this.lConfirmacaoSenha.Text = "Confirmacao Senha de Acesso";
             // 
             // txConfirmacaoSenha
             // 
-            this.txConfirmacaoSenha.Location = new System.Drawing.Point(271, 337);
+            this.txConfirmacaoSenha.Location = new System.Drawing.Point(203, 274);
+            this.txConfirmacaoSenha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txConfirmacaoSenha.Name = "txConfirmacaoSenha";
-            this.txConfirmacaoSenha.Size = new System.Drawing.Size(208, 22);
+            this.txConfirmacaoSenha.Size = new System.Drawing.Size(157, 20);
             this.txConfirmacaoSenha.TabIndex = 10;
             // 
             // btCadastrar
             // 
             this.btCadastrar.BackColor = System.Drawing.Color.Lime;
-            this.btCadastrar.Location = new System.Drawing.Point(280, 384);
+            this.btCadastrar.Location = new System.Drawing.Point(210, 312);
+            this.btCadastrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btCadastrar.Name = "btCadastrar";
-            this.btCadastrar.Size = new System.Drawing.Size(199, 40);
+            this.btCadastrar.Size = new System.Drawing.Size(149, 32);
             this.btCadastrar.TabIndex = 12;
             this.btCadastrar.Text = "Cadastrar";
             this.btCadastrar.UseVisualStyleBackColor = false;
+            this.btCadastrar.Click += new System.EventHandler(this.btCadastrar_Click);
             // 
             // btVoltarCNU
             // 
             this.btVoltarCNU.BackColor = System.Drawing.Color.Blue;
             this.btVoltarCNU.ForeColor = System.Drawing.Color.White;
-            this.btVoltarCNU.Location = new System.Drawing.Point(634, 24);
+            this.btVoltarCNU.Location = new System.Drawing.Point(476, 20);
+            this.btVoltarCNU.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btVoltarCNU.Name = "btVoltarCNU";
-            this.btVoltarCNU.Size = new System.Drawing.Size(137, 67);
+            this.btVoltarCNU.Size = new System.Drawing.Size(103, 54);
             this.btVoltarCNU.TabIndex = 13;
             this.btVoltarCNU.Text = "Tela Inicial";
             this.btVoltarCNU.UseVisualStyleBackColor = false;
@@ -164,9 +179,9 @@
             // 
             // CadastroNovoUsuario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.btVoltarCNU);
             this.Controls.Add(this.btCadastrar);
             this.Controls.Add(this.lConfirmacaoSenha);
@@ -181,6 +196,7 @@
             this.Controls.Add(this.txPermissao);
             this.Controls.Add(this.txNumeroRegistro);
             this.Controls.Add(this.txNomeCompleto);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "CadastroNovoUsuario";
             this.Text = "CadastroNovoUsuario";
             this.ResumeLayout(false);

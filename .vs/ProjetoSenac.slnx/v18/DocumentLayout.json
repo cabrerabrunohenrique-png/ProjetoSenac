@@ -1,77 +1,77 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\",
+  "WorkspaceRootPath": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|c:\\users\\bruno.hcabrera\\source\\repos\\projetosenac\\cabrerabrunohenrique-png\\projetosenac\\nav.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:nav.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\ProjetoSenac.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ProjetoSenac.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\formordemservico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:formordemservico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\cadastronovousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:cadastronovousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\formestoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:formestoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\FormOrdemServico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:FormOrdemServico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\App.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:App.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\FormOrdemServico.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:FormOrdemServico.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\Nav.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:Nav.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\Nav.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:Nav.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\Form1.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:Form1.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\CadastroNovoUsuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\CadastroNovoUsuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:CadastroNovoUsuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\ProjetoSenac.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cadastronovousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:cadastronovousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|c:\\users\\bruno.hcabrera\\source\\repos\\projetosenac\\formordemservico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:formordemservico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\ProjetoSenac.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ProjetoSenac.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\formestoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:formestoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\nav.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:nav.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\FormOrdemServico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:FormOrdemServico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\App.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:App.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\FormOrdemServico.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:FormOrdemServico.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\Nav.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:Nav.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\Nav.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:Nav.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\Form1.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:Form1.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\ProjetoSenac.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:ProjetoSenac.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\FormEstoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\FormEstoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:FormEstoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\CadastroNovoUsuario.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\CadastroNovoUsuario.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:CadastroNovoUsuario.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -82,17 +82,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\Form1.cs",
+              "ToolTip": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-03T21:24:28.942Z",
               "IsPinned": true,
@@ -108,33 +108,48 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FormOrdemServico.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\FormOrdemServico.cs",
-              "RelativeDocumentMoniker": "FormOrdemServico.cs",
-              "ToolTip": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\FormOrdemServico.cs [Design]",
-              "RelativeToolTip": "FormOrdemServico.cs [Design]",
+              "DocumentIndex": 1,
+              "Title": "CadastroNovoUsuario.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\CadastroNovoUsuario.cs",
+              "RelativeDocumentMoniker": "CadastroNovoUsuario.cs",
+              "ToolTip": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\CadastroNovoUsuario.cs [Design]",
+              "RelativeToolTip": "CadastroNovoUsuario.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-03T21:56:43.511Z"
+              "WhenOpened": "2026-05-03T21:56:10.986Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CadastroNovoUsuario.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\CadastroNovoUsuario.cs",
+              "DocumentIndex": 0,
+              "Title": "CadastroNovoUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\CadastroNovoUsuario.cs",
               "RelativeDocumentMoniker": "CadastroNovoUsuario.cs",
-              "ToolTip": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\CadastroNovoUsuario.cs [Design]",
-              "RelativeToolTip": "CadastroNovoUsuario.cs [Design]",
+              "ToolTip": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\CadastroNovoUsuario.cs",
+              "RelativeToolTip": "CadastroNovoUsuario.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAqwCAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-03T21:56:10.986Z"
+              "WhenOpened": "2026-05-03T20:34:14.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormOrdemServico.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\FormOrdemServico.cs",
+              "RelativeDocumentMoniker": "FormOrdemServico.cs",
+              "ToolTip": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\FormOrdemServico.cs [Design]",
+              "RelativeToolTip": "FormOrdemServico.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T21:56:43.511Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\Form1.cs [Design]",
+              "ToolTip": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\Form1.cs [Design]",
               "RelativeToolTip": "Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-03T21:56:26.735Z",
@@ -144,32 +159,31 @@
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "FormEstoque.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\FormEstoque.cs",
+              "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\FormEstoque.cs",
               "RelativeDocumentMoniker": "FormEstoque.cs",
               "ToolTip": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\FormEstoque.cs [Design]",
-              "RelativeToolTip": "FormEstoque.cs [Design]",
+              "RelativeToolTip": "cabrerabrunohenrique-png\\ProjetoSenac\\FormEstoque.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-03T18:49:54.823Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "Nav.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\Nav.cs",
+              "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\Nav.cs",
               "RelativeDocumentMoniker": "Nav.cs",
               "ToolTip": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\Nav.cs [Design]",
-              "RelativeToolTip": "Nav.cs [Design]",
+              "RelativeToolTip": "cabrerabrunohenrique-png\\ProjetoSenac\\Nav.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-03T21:56:04.837Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-05-03T21:56:04.837Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "ProjetoSenac.csproj.user",
-              "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\ProjetoSenac.csproj.user",
+              "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\ProjetoSenac.csproj.user",
               "RelativeDocumentMoniker": "ProjetoSenac.csproj.user",
-              "ToolTip": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\ProjetoSenac.csproj.user",
+              "ToolTip": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\ProjetoSenac.csproj.user",
               "RelativeToolTip": "ProjetoSenac.csproj.user",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003464|",
@@ -177,11 +191,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "FormOrdemServico.cs",
-              "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\FormOrdemServico.cs",
+              "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\FormOrdemServico.cs",
               "RelativeDocumentMoniker": "FormOrdemServico.cs",
-              "ToolTip": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\FormOrdemServico.cs",
+              "ToolTip": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\FormOrdemServico.cs",
               "RelativeToolTip": "FormOrdemServico.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -189,11 +203,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\App.config",
+              "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\App.config",
               "RelativeDocumentMoniker": "App.config",
-              "ToolTip": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\App.config",
+              "ToolTip": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\App.config",
               "RelativeToolTip": "App.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
@@ -201,11 +215,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "FormOrdemServico.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\FormOrdemServico.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\FormOrdemServico.Designer.cs",
               "RelativeDocumentMoniker": "FormOrdemServico.Designer.cs",
-              "ToolTip": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\FormOrdemServico.Designer.cs",
+              "ToolTip": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\FormOrdemServico.Designer.cs",
               "RelativeToolTip": "FormOrdemServico.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -213,11 +227,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Nav.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\Nav.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\Nav.Designer.cs",
               "RelativeDocumentMoniker": "Nav.Designer.cs",
-              "ToolTip": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\Nav.Designer.cs",
+              "ToolTip": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\Nav.Designer.cs",
               "RelativeToolTip": "Nav.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -225,11 +239,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Nav.cs",
-              "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\Nav.cs",
+              "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\Nav.cs",
               "RelativeDocumentMoniker": "Nav.cs",
-              "ToolTip": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\Nav.cs",
+              "ToolTip": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\Nav.cs",
               "RelativeToolTip": "Nav.cs",
               "ViewState": "AgIAAB8AAAAAAAAAAAAuwC0AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -237,11 +251,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "Form1.Designer.cs",
-              "ToolTip": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\Form1.Designer.cs",
               "RelativeToolTip": "Form1.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -250,23 +264,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "CadastroNovoUsuario.cs",
-              "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\CadastroNovoUsuario.cs",
-              "RelativeDocumentMoniker": "CadastroNovoUsuario.cs",
-              "ToolTip": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\CadastroNovoUsuario.cs",
-              "RelativeToolTip": "CadastroNovoUsuario.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABYAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-03T20:34:14.008Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 14,
               "Title": "ProjetoSenac.csproj",
-              "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\ProjetoSenac.csproj",
+              "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\ProjetoSenac.csproj",
               "RelativeDocumentMoniker": "ProjetoSenac.csproj",
-              "ToolTip": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\ProjetoSenac.csproj",
+              "ToolTip": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\ProjetoSenac.csproj",
               "RelativeToolTip": "ProjetoSenac.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -276,9 +278,9 @@
               "$type": "Document",
               "DocumentIndex": 15,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\Program.cs",
+              "ToolTip": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -288,9 +290,9 @@
               "$type": "Document",
               "DocumentIndex": 16,
               "Title": "FormEstoque.cs",
-              "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\FormEstoque.cs",
+              "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\FormEstoque.cs",
               "RelativeDocumentMoniker": "FormEstoque.cs",
-              "ToolTip": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\FormEstoque.cs",
+              "ToolTip": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\FormEstoque.cs",
               "RelativeToolTip": "FormEstoque.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -300,13 +302,14 @@
               "$type": "Document",
               "DocumentIndex": 17,
               "Title": "CadastroNovoUsuario.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\CadastroNovoUsuario.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\CadastroNovoUsuario.Designer.cs",
               "RelativeDocumentMoniker": "CadastroNovoUsuario.Designer.cs",
-              "ToolTip": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\cabrerabrunohenrique-png\\ProjetoSenac\\CadastroNovoUsuario.Designer.cs",
+              "ToolTip": "C:\\Users\\bruno.hcabrera\\source\\repos\\ProjetoSenac\\CadastroNovoUsuario.Designer.cs",
               "RelativeToolTip": "CadastroNovoUsuario.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAMEAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-03T17:28:43.694Z"
+              "WhenOpened": "2026-05-03T17:28:43.694Z",
+              "EditorCaption": ""
             }
           ]
         }

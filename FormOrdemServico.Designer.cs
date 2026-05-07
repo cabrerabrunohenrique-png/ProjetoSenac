@@ -47,60 +47,67 @@
             // 
             // txOS
             // 
-            this.txOS.Location = new System.Drawing.Point(198, 37);
+            this.txOS.Location = new System.Drawing.Point(148, 30);
+            this.txOS.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txOS.Name = "txOS";
-            this.txOS.Size = new System.Drawing.Size(191, 22);
+            this.txOS.Size = new System.Drawing.Size(144, 20);
             this.txOS.TabIndex = 0;
             // 
             // lCodigoOS
             // 
             this.lCodigoOS.AutoSize = true;
-            this.lCodigoOS.Location = new System.Drawing.Point(2, 43);
+            this.lCodigoOS.Location = new System.Drawing.Point(2, 35);
+            this.lCodigoOS.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lCodigoOS.Name = "lCodigoOS";
-            this.lCodigoOS.Size = new System.Drawing.Size(190, 16);
+            this.lCodigoOS.Size = new System.Drawing.Size(149, 13);
             this.lCodigoOS.TabIndex = 1;
             this.lCodigoOS.Text = "Codigo Ordem de Serviço(OS)";
             // 
             // lCodigoProduto
             // 
             this.lCodigoProduto.AutoSize = true;
-            this.lCodigoProduto.Location = new System.Drawing.Point(2, 80);
+            this.lCodigoProduto.Location = new System.Drawing.Point(2, 65);
+            this.lCodigoProduto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lCodigoProduto.Name = "lCodigoProduto";
-            this.lCodigoProduto.Size = new System.Drawing.Size(120, 16);
+            this.lCodigoProduto.Size = new System.Drawing.Size(95, 13);
             this.lCodigoProduto.TabIndex = 3;
             this.lCodigoProduto.Text = "Codigo do Produto";
             this.lCodigoProduto.Click += new System.EventHandler(this.label2_Click);
             // 
             // txProduto
             // 
-            this.txProduto.Location = new System.Drawing.Point(198, 74);
+            this.txProduto.Location = new System.Drawing.Point(148, 60);
+            this.txProduto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txProduto.Name = "txProduto";
-            this.txProduto.Size = new System.Drawing.Size(191, 22);
+            this.txProduto.Size = new System.Drawing.Size(144, 20);
             this.txProduto.TabIndex = 2;
             // 
             // lNomeProduto
             // 
             this.lNomeProduto.AutoSize = true;
-            this.lNomeProduto.Location = new System.Drawing.Point(2, 121);
+            this.lNomeProduto.Location = new System.Drawing.Point(2, 98);
+            this.lNomeProduto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lNomeProduto.Name = "lNomeProduto";
-            this.lNomeProduto.Size = new System.Drawing.Size(113, 16);
+            this.lNomeProduto.Size = new System.Drawing.Size(90, 13);
             this.lNomeProduto.TabIndex = 5;
             this.lNomeProduto.Text = "Nome do Produto";
             this.lNomeProduto.Click += new System.EventHandler(this.lNomeProduto_Click);
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(198, 115);
+            this.textBox3.Location = new System.Drawing.Point(148, 93);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(191, 22);
+            this.textBox3.Size = new System.Drawing.Size(144, 20);
             this.textBox3.TabIndex = 4;
             // 
             // btValidarOS
             // 
             this.btValidarOS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btValidarOS.Location = new System.Drawing.Point(224, 156);
+            this.btValidarOS.Location = new System.Drawing.Point(168, 127);
+            this.btValidarOS.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btValidarOS.Name = "btValidarOS";
-            this.btValidarOS.Size = new System.Drawing.Size(150, 37);
+            this.btValidarOS.Size = new System.Drawing.Size(112, 30);
             this.btValidarOS.TabIndex = 6;
             this.btValidarOS.Text = "Validar OS";
             this.btValidarOS.UseVisualStyleBackColor = false;
@@ -108,20 +115,22 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(31, 252);
+            this.dataGridView1.Location = new System.Drawing.Point(23, 205);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(358, 152);
+            this.dataGridView1.Size = new System.Drawing.Size(268, 124);
             this.dataGridView1.TabIndex = 7;
             // 
             // lRelacaoPecasProduto
             // 
             this.lRelacaoPecasProduto.AutoSize = true;
             this.lRelacaoPecasProduto.BackColor = System.Drawing.Color.Red;
-            this.lRelacaoPecasProduto.Location = new System.Drawing.Point(28, 233);
+            this.lRelacaoPecasProduto.Location = new System.Drawing.Point(21, 189);
+            this.lRelacaoPecasProduto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lRelacaoPecasProduto.Name = "lRelacaoPecasProduto";
-            this.lRelacaoPecasProduto.Size = new System.Drawing.Size(264, 16);
+            this.lRelacaoPecasProduto.Size = new System.Drawing.Size(211, 13);
             this.lRelacaoPecasProduto.TabIndex = 8;
             this.lRelacaoPecasProduto.Text = "Relação_LISTA de PEÇAS por PRODUTO";
             // 
@@ -129,9 +138,10 @@
             // 
             this.btVoltarOS.BackColor = System.Drawing.Color.OrangeRed;
             this.btVoltarOS.ForeColor = System.Drawing.Color.White;
-            this.btVoltarOS.Location = new System.Drawing.Point(625, 12);
+            this.btVoltarOS.Location = new System.Drawing.Point(469, 10);
+            this.btVoltarOS.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btVoltarOS.Name = "btVoltarOS";
-            this.btVoltarOS.Size = new System.Drawing.Size(163, 67);
+            this.btVoltarOS.Size = new System.Drawing.Size(122, 54);
             this.btVoltarOS.TabIndex = 14;
             this.btVoltarOS.Text = "Tela Inicial";
             this.btVoltarOS.UseVisualStyleBackColor = false;
@@ -140,9 +150,10 @@
             // btAcessarRelatorioOS
             // 
             this.btAcessarRelatorioOS.BackColor = System.Drawing.Color.Yellow;
-            this.btAcessarRelatorioOS.Location = new System.Drawing.Point(625, 97);
+            this.btAcessarRelatorioOS.Location = new System.Drawing.Point(469, 79);
+            this.btAcessarRelatorioOS.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btAcessarRelatorioOS.Name = "btAcessarRelatorioOS";
-            this.btAcessarRelatorioOS.Size = new System.Drawing.Size(163, 64);
+            this.btAcessarRelatorioOS.Size = new System.Drawing.Size(122, 52);
             this.btAcessarRelatorioOS.TabIndex = 15;
             this.btAcessarRelatorioOS.Text = "Acessar os Relatórios";
             this.btAcessarRelatorioOS.UseVisualStyleBackColor = false;
@@ -150,9 +161,10 @@
             // btPaginaLoginOS
             // 
             this.btPaginaLoginOS.BackColor = System.Drawing.Color.Lime;
-            this.btPaginaLoginOS.Location = new System.Drawing.Point(625, 184);
+            this.btPaginaLoginOS.Location = new System.Drawing.Point(469, 150);
+            this.btPaginaLoginOS.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btPaginaLoginOS.Name = "btPaginaLoginOS";
-            this.btPaginaLoginOS.Size = new System.Drawing.Size(163, 65);
+            this.btPaginaLoginOS.Size = new System.Drawing.Size(122, 53);
             this.btPaginaLoginOS.TabIndex = 16;
             this.btPaginaLoginOS.Text = "Acessar Pagina Login";
             this.btPaginaLoginOS.UseVisualStyleBackColor = false;
@@ -160,9 +172,10 @@
             // btAcessarEstoqueOS
             // 
             this.btAcessarEstoqueOS.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.btAcessarEstoqueOS.Location = new System.Drawing.Point(640, 322);
+            this.btAcessarEstoqueOS.Location = new System.Drawing.Point(480, 262);
+            this.btAcessarEstoqueOS.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btAcessarEstoqueOS.Name = "btAcessarEstoqueOS";
-            this.btAcessarEstoqueOS.Size = new System.Drawing.Size(148, 55);
+            this.btAcessarEstoqueOS.Size = new System.Drawing.Size(111, 45);
             this.btAcessarEstoqueOS.TabIndex = 17;
             this.btAcessarEstoqueOS.Text = "Acessar Estoque";
             this.btAcessarEstoqueOS.UseVisualStyleBackColor = false;
@@ -170,18 +183,19 @@
             // btRelacaoProdutoOS
             // 
             this.btRelacaoProdutoOS.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btRelacaoProdutoOS.Location = new System.Drawing.Point(640, 383);
+            this.btRelacaoProdutoOS.Location = new System.Drawing.Point(480, 311);
+            this.btRelacaoProdutoOS.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btRelacaoProdutoOS.Name = "btRelacaoProdutoOS";
-            this.btRelacaoProdutoOS.Size = new System.Drawing.Size(148, 55);
+            this.btRelacaoProdutoOS.Size = new System.Drawing.Size(111, 45);
             this.btRelacaoProdutoOS.TabIndex = 18;
             this.btRelacaoProdutoOS.Text = "Acessar Relaçao Produto";
             this.btRelacaoProdutoOS.UseVisualStyleBackColor = false;
             // 
             // FormOrdemServico
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(664, 366);
             this.Controls.Add(this.btRelacaoProdutoOS);
             this.Controls.Add(this.btAcessarEstoqueOS);
             this.Controls.Add(this.btPaginaLoginOS);
@@ -196,6 +210,7 @@
             this.Controls.Add(this.txProduto);
             this.Controls.Add(this.lCodigoOS);
             this.Controls.Add(this.txOS);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormOrdemServico";
             this.Text = "FormOrdemServico";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
