@@ -8,6 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+// tem que instalar o MySqlConnector
+// com esse comando
+using MySqlConnector;
+
 namespace ProjetoSenac
 {
     public partial class Form1 : Form

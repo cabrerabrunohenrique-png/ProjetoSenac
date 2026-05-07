@@ -12,3 +12,17 @@ C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.exe
 C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.pdb
 C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.FormEstoque.resources
 C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.FormOrdemServico.resources
+C:\Users\bruno.hcabrera\source\repos\ProjetoSenac\cabrerabrunohenrique-png\ProjetoSenac\bin\Debug\ProjetoSenac.exe.config
+C:\Users\bruno.hcabrera\source\repos\ProjetoSenac\cabrerabrunohenrique-png\ProjetoSenac\bin\Debug\ProjetoSenac.exe
+C:\Users\bruno.hcabrera\source\repos\ProjetoSenac\cabrerabrunohenrique-png\ProjetoSenac\bin\Debug\ProjetoSenac.pdb
+C:\Users\bruno.hcabrera\source\repos\ProjetoSenac\cabrerabrunohenrique-png\ProjetoSenac\obj\Debug\ProjetoSenac.csproj.AssemblyReference.cache
+C:\Users\bruno.hcabrera\source\repos\ProjetoSenac\cabrerabrunohenrique-png\ProjetoSenac\obj\Debug\ProjetoSenac.CadastroNovoUsuario.resources
+C:\Users\bruno.hcabrera\source\repos\ProjetoSenac\cabrerabrunohenrique-png\ProjetoSenac\obj\Debug\ProjetoSenac.Form1.resources
+C:\Users\bruno.hcabrera\source\repos\ProjetoSenac\cabrerabrunohenrique-png\ProjetoSenac\obj\Debug\ProjetoSenac.FormEstoque.resources
+C:\Users\bruno.hcabrera\source\repos\ProjetoSenac\cabrerabrunohenrique-png\ProjetoSenac\obj\Debug\ProjetoSenac.FormOrdemServico.resources
+C:\Users\bruno.hcabrera\source\repos\ProjetoSenac\cabrerabrunohenrique-png\ProjetoSenac\obj\Debug\ProjetoSenac.Nav.resources
+C:\Users\bruno.hcabrera\source\repos\ProjetoSenac\cabrerabrunohenrique-png\ProjetoSenac\obj\Debug\ProjetoSenac.Properties.Resources.resources
+C:\Users\bruno.hcabrera\source\repos\ProjetoSenac\cabrerabrunohenrique-png\ProjetoSenac\obj\Debug\ProjetoSenac.csproj.GenerateResource.cache
+C:\Users\bruno.hcabrera\source\repos\ProjetoSenac\cabrerabrunohenrique-png\ProjetoSenac\obj\Debug\ProjetoSenac.csproj.CoreCompileInputs.cache
+C:\Users\bruno.hcabrera\source\repos\ProjetoSenac\cabrerabrunohenrique-png\ProjetoSenac\obj\Debug\ProjetoSenac.exe
+C:\Users\bruno.hcabrera\source\repos\ProjetoSenac\cabrerabrunohenrique-png\ProjetoSenac\obj\Debug\ProjetoSenac.pdb
