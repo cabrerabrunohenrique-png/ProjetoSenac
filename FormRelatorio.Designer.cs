@@ -119,6 +119,7 @@
             this.btConsultar.TabIndex = 30;
             this.btConsultar.Text = "Consultar Produto";
             this.btConsultar.UseVisualStyleBackColor = false;
+            this.btConsultar.Click += new System.EventHandler(this.btConsultar_Click);
             // 
             // lNomeProduto
             // 
