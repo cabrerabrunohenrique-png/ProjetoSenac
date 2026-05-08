@@ -32,5 +32,10 @@ namespace ProjetoSenac
             Nav formNav = new Nav();
             DialogResult = formNav.ShowDialog();
         }
+
+        private void btAcessarRelatorioOS_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

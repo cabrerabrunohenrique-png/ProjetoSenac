@@ -96,3 +96,4 @@ C:\Users\bruno.hcabrera\OneDrive - SENAC - SP\source\repos\ProjetoSenac\obj\Debu
 C:\Users\bruno.hcabrera\OneDrive - SENAC - SP\source\repos\ProjetoSenac\obj\Debug\ProjetoS.D2AE8F58.Up2Date
 C:\Users\bruno.hcabrera\OneDrive - SENAC - SP\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.exe
 C:\Users\bruno.hcabrera\OneDrive - SENAC - SP\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.pdb
+C:\Users\bruno.hcabrera\OneDrive - SENAC - SP\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.FormRelatorio.resources

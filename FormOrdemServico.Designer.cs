@@ -48,7 +48,7 @@
             // txOS
             // 
             this.txOS.Location = new System.Drawing.Point(148, 30);
-            this.txOS.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txOS.Margin = new System.Windows.Forms.Padding(2);
             this.txOS.Name = "txOS";
             this.txOS.Size = new System.Drawing.Size(144, 20);
             this.txOS.TabIndex = 0;
@@ -77,7 +77,7 @@
             // txProduto
             // 
             this.txProduto.Location = new System.Drawing.Point(148, 60);
-            this.txProduto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txProduto.Margin = new System.Windows.Forms.Padding(2);
             this.txProduto.Name = "txProduto";
             this.txProduto.Size = new System.Drawing.Size(144, 20);
             this.txProduto.TabIndex = 2;
@@ -96,7 +96,7 @@
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(148, 93);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(144, 20);
             this.textBox3.TabIndex = 4;
@@ -105,7 +105,7 @@
             // 
             this.btValidarOS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btValidarOS.Location = new System.Drawing.Point(168, 127);
-            this.btValidarOS.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btValidarOS.Margin = new System.Windows.Forms.Padding(2);
             this.btValidarOS.Name = "btValidarOS";
             this.btValidarOS.Size = new System.Drawing.Size(112, 30);
             this.btValidarOS.TabIndex = 6;
@@ -116,7 +116,7 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(23, 205);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -139,7 +139,7 @@
             this.btVoltarOS.BackColor = System.Drawing.Color.OrangeRed;
             this.btVoltarOS.ForeColor = System.Drawing.Color.White;
             this.btVoltarOS.Location = new System.Drawing.Point(469, 10);
-            this.btVoltarOS.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btVoltarOS.Margin = new System.Windows.Forms.Padding(2);
             this.btVoltarOS.Name = "btVoltarOS";
             this.btVoltarOS.Size = new System.Drawing.Size(122, 54);
             this.btVoltarOS.TabIndex = 14;
@@ -151,18 +151,19 @@
             // 
             this.btAcessarRelatorioOS.BackColor = System.Drawing.Color.Yellow;
             this.btAcessarRelatorioOS.Location = new System.Drawing.Point(469, 79);
-            this.btAcessarRelatorioOS.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btAcessarRelatorioOS.Margin = new System.Windows.Forms.Padding(2);
             this.btAcessarRelatorioOS.Name = "btAcessarRelatorioOS";
             this.btAcessarRelatorioOS.Size = new System.Drawing.Size(122, 52);
             this.btAcessarRelatorioOS.TabIndex = 15;
             this.btAcessarRelatorioOS.Text = "Acessar os Relatórios";
             this.btAcessarRelatorioOS.UseVisualStyleBackColor = false;
+            this.btAcessarRelatorioOS.Click += new System.EventHandler(this.btAcessarRelatorioOS_Click);
             // 
             // btPaginaLoginOS
             // 
             this.btPaginaLoginOS.BackColor = System.Drawing.Color.Lime;
             this.btPaginaLoginOS.Location = new System.Drawing.Point(469, 150);
-            this.btPaginaLoginOS.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btPaginaLoginOS.Margin = new System.Windows.Forms.Padding(2);
             this.btPaginaLoginOS.Name = "btPaginaLoginOS";
             this.btPaginaLoginOS.Size = new System.Drawing.Size(122, 53);
             this.btPaginaLoginOS.TabIndex = 16;
@@ -173,7 +174,7 @@
             // 
             this.btAcessarEstoqueOS.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.btAcessarEstoqueOS.Location = new System.Drawing.Point(480, 262);
-            this.btAcessarEstoqueOS.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btAcessarEstoqueOS.Margin = new System.Windows.Forms.Padding(2);
             this.btAcessarEstoqueOS.Name = "btAcessarEstoqueOS";
             this.btAcessarEstoqueOS.Size = new System.Drawing.Size(111, 45);
             this.btAcessarEstoqueOS.TabIndex = 17;
@@ -184,7 +185,7 @@
             // 
             this.btRelacaoProdutoOS.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.btRelacaoProdutoOS.Location = new System.Drawing.Point(480, 311);
-            this.btRelacaoProdutoOS.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btRelacaoProdutoOS.Margin = new System.Windows.Forms.Padding(2);
             this.btRelacaoProdutoOS.Name = "btRelacaoProdutoOS";
             this.btRelacaoProdutoOS.Size = new System.Drawing.Size(111, 45);
             this.btRelacaoProdutoOS.TabIndex = 18;
@@ -210,7 +211,7 @@
             this.Controls.Add(this.txProduto);
             this.Controls.Add(this.lCodigoOS);
             this.Controls.Add(this.txOS);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormOrdemServico";
             this.Text = "FormOrdemServico";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

@@ -27,6 +27,11 @@ namespace ProjetoSenac
         private void btCadastrar_Click(object sender, EventArgs e)
         {
             string nomeCompleto = txNomeCompleto.Text;
+            string numeroRegistro = txNumeroRegistro.Text;
+
+            DateTime dateTime = DateTime.Now;
+
+
             int controleLinhasAftadas = 0;
 
             string dadosCadastro =

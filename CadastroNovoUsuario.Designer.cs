@@ -47,7 +47,7 @@
             // txNomeCompleto
             // 
             this.txNomeCompleto.Location = new System.Drawing.Point(203, 77);
-            this.txNomeCompleto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txNomeCompleto.Margin = new System.Windows.Forms.Padding(2);
             this.txNomeCompleto.Name = "txNomeCompleto";
             this.txNomeCompleto.Size = new System.Drawing.Size(157, 20);
             this.txNomeCompleto.TabIndex = 0;
@@ -55,7 +55,7 @@
             // txNumeroRegistro
             // 
             this.txNumeroRegistro.Location = new System.Drawing.Point(203, 116);
-            this.txNumeroRegistro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txNumeroRegistro.Margin = new System.Windows.Forms.Padding(2);
             this.txNumeroRegistro.Name = "txNumeroRegistro";
             this.txNumeroRegistro.Size = new System.Drawing.Size(157, 20);
             this.txNumeroRegistro.TabIndex = 1;
@@ -63,7 +63,7 @@
             // txPermissao
             // 
             this.txPermissao.Location = new System.Drawing.Point(203, 158);
-            this.txPermissao.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txPermissao.Margin = new System.Windows.Forms.Padding(2);
             this.txPermissao.Name = "txPermissao";
             this.txPermissao.Size = new System.Drawing.Size(157, 20);
             this.txPermissao.TabIndex = 2;
@@ -71,7 +71,7 @@
             // txNomeUsuario
             // 
             this.txNomeUsuario.Location = new System.Drawing.Point(203, 196);
-            this.txNomeUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txNomeUsuario.Margin = new System.Windows.Forms.Padding(2);
             this.txNomeUsuario.Name = "txNomeUsuario";
             this.txNomeUsuario.Size = new System.Drawing.Size(157, 20);
             this.txNomeUsuario.TabIndex = 3;
@@ -79,7 +79,7 @@
             // txSenhaAcesso
             // 
             this.txSenhaAcesso.Location = new System.Drawing.Point(203, 235);
-            this.txSenhaAcesso.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txSenhaAcesso.Margin = new System.Windows.Forms.Padding(2);
             this.txSenhaAcesso.Name = "txSenhaAcesso";
             this.txSenhaAcesso.Size = new System.Drawing.Size(157, 20);
             this.txSenhaAcesso.TabIndex = 4;
@@ -147,7 +147,7 @@
             // txConfirmacaoSenha
             // 
             this.txConfirmacaoSenha.Location = new System.Drawing.Point(203, 274);
-            this.txConfirmacaoSenha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txConfirmacaoSenha.Margin = new System.Windows.Forms.Padding(2);
             this.txConfirmacaoSenha.Name = "txConfirmacaoSenha";
             this.txConfirmacaoSenha.Size = new System.Drawing.Size(157, 20);
             this.txConfirmacaoSenha.TabIndex = 10;
@@ -156,7 +156,7 @@
             // 
             this.btCadastrar.BackColor = System.Drawing.Color.Lime;
             this.btCadastrar.Location = new System.Drawing.Point(210, 312);
-            this.btCadastrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btCadastrar.Margin = new System.Windows.Forms.Padding(2);
             this.btCadastrar.Name = "btCadastrar";
             this.btCadastrar.Size = new System.Drawing.Size(149, 32);
             this.btCadastrar.TabIndex = 12;
@@ -169,7 +169,7 @@
             this.btVoltarCNU.BackColor = System.Drawing.Color.Blue;
             this.btVoltarCNU.ForeColor = System.Drawing.Color.White;
             this.btVoltarCNU.Location = new System.Drawing.Point(476, 20);
-            this.btVoltarCNU.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btVoltarCNU.Margin = new System.Windows.Forms.Padding(2);
             this.btVoltarCNU.Name = "btVoltarCNU";
             this.btVoltarCNU.Size = new System.Drawing.Size(103, 54);
             this.btVoltarCNU.TabIndex = 13;
@@ -196,7 +196,7 @@
             this.Controls.Add(this.txPermissao);
             this.Controls.Add(this.txNumeroRegistro);
             this.Controls.Add(this.txNomeCompleto);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "CadastroNovoUsuario";
             this.Text = "CadastroNovoUsuario";
             this.ResumeLayout(false);
