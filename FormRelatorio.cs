@@ -25,18 +25,24 @@ namespace ProjetoSenac
 
         private void btConsultar_Click(object sender, EventArgs e)
         {
-            /*using (MySqlConnection conn = new MySqlConnection(DADOS_CONEXAOO))
+            using (MySqlConnection conn = new MySqlConnection(DADOS_CONEXAOO))
             {
-                
+
                 {
                     conn.Open();
                     string scriptConsulta = "SELECT * FROM tb_cadastronovousuario";
-                    using (MySqlCommand comando = new MySqlCommand(scriptConsulta,conn))
+                    using (MySqlCommand comando = new MySqlCommand(scriptConsulta, conn))
                     {
+                        comando.Parameters.AddWithValue("@nome", tbNome.Text);
+
+
+
                         var dadosResultado = comando.ExecuteNonQuery();
                         MessageBox.Show("Consulta realizada com sucesso!");
                     }
-                }*/
+                }
+                conn.Close();
+            }
         }
     }
 }

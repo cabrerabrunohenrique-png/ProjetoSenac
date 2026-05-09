@@ -7,11 +7,15 @@
       "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:formrelatorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|c:\\users\\bruno.hcabrera\\onedrive - senac - sp\\source\\repos\\projetosenac\\formrelatorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bruno.hcabrera\\OneDrive - SENAC - SP\\source\\repos\\ProjetoSenac\\formrelatorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:formrelatorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|c:\\users\\bruno.hcabrera\\onedrive - senac - sp\\source\\repos\\projetosenac\\cadastronovousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bruno.hcabrera\\OneDrive - SENAC - SP\\source\\repos\\ProjetoSenac\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bruno.hcabrera\\OneDrive - SENAC - SP\\source\\repos\\ProjetoSenac\\cadastronovousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:cadastronovousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -21,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bruno.hcabrera\\OneDrive - SENAC - SP\\source\\repos\\ProjetoSenac\\CadastroNovoUsuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:CadastroNovoUsuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bruno.hcabrera\\OneDrive - SENAC - SP\\source\\repos\\ProjetoSenac\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bruno.hcabrera\\OneDrive - SENAC - SP\\source\\repos\\ProjetoSenac\\FormOrdemServico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -94,13 +94,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\OneDrive - SENAC - SP\\source\\repos\\ProjetoSenac\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\bruno.hcabrera\\OneDrive - SENAC - SP\\source\\repos\\ProjetoSenac\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-03T21:24:28.942Z",
               "IsPinned": true,
@@ -122,7 +122,7 @@
               "RelativeDocumentMoniker": "FormRelatorio.cs",
               "ToolTip": "C:\\Users\\bruno.hcabrera\\OneDrive - SENAC - SP\\source\\repos\\ProjetoSenac\\FormRelatorio.cs",
               "RelativeToolTip": "FormRelatorio.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAA2wCYAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAWwCsAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-08T22:36:10.379Z",
               "EditorCaption": ""
@@ -141,27 +141,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "CadastroNovoUsuario.cs [Design]",
               "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\OneDrive - SENAC - SP\\source\\repos\\ProjetoSenac\\CadastroNovoUsuario.cs",
               "RelativeDocumentMoniker": "CadastroNovoUsuario.cs",
               "ToolTip": "C:\\Users\\bruno.hcabrera\\OneDrive - SENAC - SP\\source\\repos\\ProjetoSenac\\CadastroNovoUsuario.cs [Design]",
               "RelativeToolTip": "CadastroNovoUsuario.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-03T21:56:10.986Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-05-03T21:56:10.986Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "FormOrdemServico.cs [Design]",
               "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\OneDrive - SENAC - SP\\source\\repos\\ProjetoSenac\\FormOrdemServico.cs",
               "RelativeDocumentMoniker": "FormOrdemServico.cs",
               "ToolTip": "C:\\Users\\bruno.hcabrera\\OneDrive - SENAC - SP\\source\\repos\\ProjetoSenac\\FormOrdemServico.cs [Design]",
               "RelativeToolTip": "FormOrdemServico.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-03T21:56:43.511Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-05-03T21:56:43.511Z"
             },
             {
               "$type": "Document",
@@ -176,7 +174,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "CadastroNovoUsuario.cs",
               "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\OneDrive - SENAC - SP\\source\\repos\\ProjetoSenac\\CadastroNovoUsuario.cs",
               "RelativeDocumentMoniker": "CadastroNovoUsuario.cs",
@@ -184,8 +182,7 @@
               "RelativeToolTip": "CadastroNovoUsuario.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAIAywB8AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-03T20:34:14.008Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-03T20:34:14.008Z"
             },
             {
               "$type": "Document",
@@ -220,8 +217,7 @@
               "RelativeToolTip": "FormOrdemServico.cs",
               "ViewState": "AgIAABQAAAAAAAAAAADgvyUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-03T21:05:08.1Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-03T21:05:08.1Z"
             },
             {
               "$type": "Document",
@@ -245,8 +241,7 @@
               "RelativeToolTip": "App.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2026-05-07T00:41:23.926Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-07T00:41:23.926Z"
             },
             {
               "$type": "Document",
@@ -258,8 +253,7 @@
               "RelativeToolTip": "FormOrdemServico.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-07T00:40:27.686Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-07T00:40:27.686Z"
             },
             {
               "$type": "Document",
