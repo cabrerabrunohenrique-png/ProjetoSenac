@@ -44,5 +44,22 @@ namespace ProjetoSenac
                 conn.Close();
             }
         }
+
+        private void btPaginaLoginR_Click(object sender, EventArgs e)
+        {
+            using (MySqlConnection conn = new MySqlConnection(DADOS_CONEXAO))
+            {
+                conn.Open();
+                string scripetConsulta = "SELECT * FROM tb_cadastronovousuario";
+
+                using (MySqlCommand comando = new MySqlCommand(scripetConsulta, conn))
+                {
+
+            
+                }
+                conn.Close();
+            } 
+                            
+        }
     }
 }

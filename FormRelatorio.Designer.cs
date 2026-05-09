@@ -74,6 +74,7 @@
             this.btPaginaLoginR.TabIndex = 21;
             this.btPaginaLoginR.Text = "Acessar Pagina Login";
             this.btPaginaLoginR.UseVisualStyleBackColor = false;
+            this.btPaginaLoginR.Click += new System.EventHandler(this.btPaginaLoginR_Click);
             // 
             // btVoltarR
             // 
