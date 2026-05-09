@@ -54,12 +54,20 @@ namespace ProjetoSenac
 
                 using (MySqlCommand comando = new MySqlCommand(scripetConsulta, conn))
                 {
+                    MySqlDataAdapter resultadoConsultaMysql = new MySqlDataAdapter(comando);
+                    
+                    DataTable dt = new DataTable();
 
-            
+                    resultadoConsultaMysql.Fill(dt);
+                    
+                    dgvRelatorio.DataSource = dt;
+
+
                 }
                 conn.Close();
             } 
                             
         }
     }
+
 }
