@@ -34,5 +34,10 @@ namespace ProjetoSenac
             formCadastro.ShowDialog();
             DialogResult = DialogResult.OK;
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
