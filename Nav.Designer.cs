@@ -39,7 +39,7 @@
             // btOrdemServico
             // 
             this.btOrdemServico.BackColor = System.Drawing.Color.Yellow;
-            this.btOrdemServico.Location = new System.Drawing.Point(80, 106);
+            this.btOrdemServico.Location = new System.Drawing.Point(240, 106);
             this.btOrdemServico.Name = "btOrdemServico";
             this.btOrdemServico.Size = new System.Drawing.Size(154, 171);
             this.btOrdemServico.TabIndex = 0;
@@ -61,7 +61,7 @@
             // btProdutoXPeca
             // 
             this.btProdutoXPeca.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.btProdutoXPeca.Location = new System.Drawing.Point(240, 106);
+            this.btProdutoXPeca.Location = new System.Drawing.Point(80, 106);
             this.btProdutoXPeca.Name = "btProdutoXPeca";
             this.btProdutoXPeca.Size = new System.Drawing.Size(154, 171);
             this.btProdutoXPeca.TabIndex = 2;

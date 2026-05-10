@@ -45,10 +45,6 @@
             this.lCodigoPecaS = new System.Windows.Forms.Label();
             this.txCodigoPecaS = new System.Windows.Forms.TextBox();
             this.lDataSaidaPeca = new System.Windows.Forms.Label();
-            this.btRelacaoProdutoE = new System.Windows.Forms.Button();
-            this.btAcessarEstoqueE = new System.Windows.Forms.Button();
-            this.btPaginaLoginE = new System.Windows.Forms.Button();
-            this.btAcessarRelatorioE = new System.Windows.Forms.Button();
             this.btVoltarE = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -197,46 +193,6 @@
             this.lDataSaidaPeca.TabIndex = 49;
             this.lDataSaidaPeca.Text = "Data Saida Peça";
             // 
-            // btRelacaoProdutoE
-            // 
-            this.btRelacaoProdutoE.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btRelacaoProdutoE.Location = new System.Drawing.Point(886, 398);
-            this.btRelacaoProdutoE.Name = "btRelacaoProdutoE";
-            this.btRelacaoProdutoE.Size = new System.Drawing.Size(148, 55);
-            this.btRelacaoProdutoE.TabIndex = 48;
-            this.btRelacaoProdutoE.Text = "Acessar Relaçao Produto";
-            this.btRelacaoProdutoE.UseVisualStyleBackColor = false;
-            // 
-            // btAcessarEstoqueE
-            // 
-            this.btAcessarEstoqueE.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.btAcessarEstoqueE.Location = new System.Drawing.Point(886, 337);
-            this.btAcessarEstoqueE.Name = "btAcessarEstoqueE";
-            this.btAcessarEstoqueE.Size = new System.Drawing.Size(148, 55);
-            this.btAcessarEstoqueE.TabIndex = 47;
-            this.btAcessarEstoqueE.Text = "Acessar Estoque";
-            this.btAcessarEstoqueE.UseVisualStyleBackColor = false;
-            // 
-            // btPaginaLoginE
-            // 
-            this.btPaginaLoginE.BackColor = System.Drawing.Color.Lime;
-            this.btPaginaLoginE.Location = new System.Drawing.Point(871, 199);
-            this.btPaginaLoginE.Name = "btPaginaLoginE";
-            this.btPaginaLoginE.Size = new System.Drawing.Size(163, 65);
-            this.btPaginaLoginE.TabIndex = 46;
-            this.btPaginaLoginE.Text = "Acessar Pagina Login";
-            this.btPaginaLoginE.UseVisualStyleBackColor = false;
-            // 
-            // btAcessarRelatorioE
-            // 
-            this.btAcessarRelatorioE.BackColor = System.Drawing.Color.Yellow;
-            this.btAcessarRelatorioE.Location = new System.Drawing.Point(871, 112);
-            this.btAcessarRelatorioE.Name = "btAcessarRelatorioE";
-            this.btAcessarRelatorioE.Size = new System.Drawing.Size(163, 64);
-            this.btAcessarRelatorioE.TabIndex = 45;
-            this.btAcessarRelatorioE.Text = "Acessar os Relatórios";
-            this.btAcessarRelatorioE.UseVisualStyleBackColor = false;
-            // 
             // btVoltarE
             // 
             this.btVoltarE.BackColor = System.Drawing.Color.OrangeRed;
@@ -270,10 +226,6 @@
             this.Controls.Add(this.lCodigoPecaS);
             this.Controls.Add(this.txCodigoPecaS);
             this.Controls.Add(this.lDataSaidaPeca);
-            this.Controls.Add(this.btRelacaoProdutoE);
-            this.Controls.Add(this.btAcessarEstoqueE);
-            this.Controls.Add(this.btPaginaLoginE);
-            this.Controls.Add(this.btAcessarRelatorioE);
             this.Controls.Add(this.btVoltarE);
             this.Name = "FormEstoqueSaida";
             this.Text = "FormEstoqueSaida";
@@ -300,10 +252,6 @@
         private System.Windows.Forms.Label lCodigoPecaS;
         private System.Windows.Forms.TextBox txCodigoPecaS;
         private System.Windows.Forms.Label lDataSaidaPeca;
-        private System.Windows.Forms.Button btRelacaoProdutoE;
-        private System.Windows.Forms.Button btAcessarEstoqueE;
-        private System.Windows.Forms.Button btPaginaLoginE;
-        private System.Windows.Forms.Button btAcessarRelatorioE;
         private System.Windows.Forms.Button btVoltarE;
     }
 }

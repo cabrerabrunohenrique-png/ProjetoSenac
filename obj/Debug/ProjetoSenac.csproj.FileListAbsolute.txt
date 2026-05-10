@@ -119,3 +119,5 @@ C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoS.D2AE8F58.Up2Date
+C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.FormEstoqueSaida.resources
+C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.FormRelacaoProdutoPeca.resources

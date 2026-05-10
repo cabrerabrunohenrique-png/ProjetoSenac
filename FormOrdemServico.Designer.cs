@@ -38,10 +38,6 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.lRelacaoPecasProduto = new System.Windows.Forms.Label();
             this.btVoltarOS = new System.Windows.Forms.Button();
-            this.btPaginaLoginOS = new System.Windows.Forms.Button();
-            this.btAcessarEstoqueOS = new System.Windows.Forms.Button();
-            this.btRelacaoProdutoOS = new System.Windows.Forms.Button();
-            this.btAcessarRelatorioOS = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -143,60 +139,11 @@
             this.btVoltarOS.UseVisualStyleBackColor = false;
             this.btVoltarOS.Click += new System.EventHandler(this.btVoltarOS_Click);
             // 
-            // btPaginaLoginOS
-            // 
-            this.btPaginaLoginOS.BackColor = System.Drawing.Color.Lime;
-            this.btPaginaLoginOS.Location = new System.Drawing.Point(625, 185);
-            this.btPaginaLoginOS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btPaginaLoginOS.Name = "btPaginaLoginOS";
-            this.btPaginaLoginOS.Size = new System.Drawing.Size(163, 65);
-            this.btPaginaLoginOS.TabIndex = 16;
-            this.btPaginaLoginOS.Text = "Acessar Pagina Login";
-            this.btPaginaLoginOS.UseVisualStyleBackColor = false;
-            // 
-            // btAcessarEstoqueOS
-            // 
-            this.btAcessarEstoqueOS.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.btAcessarEstoqueOS.Location = new System.Drawing.Point(640, 322);
-            this.btAcessarEstoqueOS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btAcessarEstoqueOS.Name = "btAcessarEstoqueOS";
-            this.btAcessarEstoqueOS.Size = new System.Drawing.Size(148, 55);
-            this.btAcessarEstoqueOS.TabIndex = 17;
-            this.btAcessarEstoqueOS.Text = "Acessar Estoque";
-            this.btAcessarEstoqueOS.UseVisualStyleBackColor = false;
-            // 
-            // btRelacaoProdutoOS
-            // 
-            this.btRelacaoProdutoOS.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btRelacaoProdutoOS.Location = new System.Drawing.Point(640, 383);
-            this.btRelacaoProdutoOS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btRelacaoProdutoOS.Name = "btRelacaoProdutoOS";
-            this.btRelacaoProdutoOS.Size = new System.Drawing.Size(148, 55);
-            this.btRelacaoProdutoOS.TabIndex = 18;
-            this.btRelacaoProdutoOS.Text = "Acessar Relaçao Produto";
-            this.btRelacaoProdutoOS.UseVisualStyleBackColor = false;
-            // 
-            // btAcessarRelatorioOS
-            // 
-            this.btAcessarRelatorioOS.BackColor = System.Drawing.Color.Yellow;
-            this.btAcessarRelatorioOS.Location = new System.Drawing.Point(625, 97);
-            this.btAcessarRelatorioOS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btAcessarRelatorioOS.Name = "btAcessarRelatorioOS";
-            this.btAcessarRelatorioOS.Size = new System.Drawing.Size(163, 64);
-            this.btAcessarRelatorioOS.TabIndex = 15;
-            this.btAcessarRelatorioOS.Text = "Acessar os Relatórios";
-            this.btAcessarRelatorioOS.UseVisualStyleBackColor = false;
-            this.btAcessarRelatorioOS.Click += new System.EventHandler(this.btAcessarRelatorioOS_Click);
-            // 
             // FormOrdemServico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(885, 450);
-            this.Controls.Add(this.btRelacaoProdutoOS);
-            this.Controls.Add(this.btAcessarEstoqueOS);
-            this.Controls.Add(this.btPaginaLoginOS);
-            this.Controls.Add(this.btAcessarRelatorioOS);
             this.Controls.Add(this.btVoltarOS);
             this.Controls.Add(this.lRelacaoPecasProduto);
             this.Controls.Add(this.dataGridView1);
@@ -228,9 +175,5 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label lRelacaoPecasProduto;
         private System.Windows.Forms.Button btVoltarOS;
-        private System.Windows.Forms.Button btPaginaLoginOS;
-        private System.Windows.Forms.Button btAcessarEstoqueOS;
-        private System.Windows.Forms.Button btRelacaoProdutoOS;
-        private System.Windows.Forms.Button btAcessarRelatorioOS;
     }
 }

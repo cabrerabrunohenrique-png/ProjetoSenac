@@ -28,9 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btRelacaoProdutoE = new System.Windows.Forms.Button();
-            this.btAcessarEstoqueE = new System.Windows.Forms.Button();
-            this.btPaginaLoginE = new System.Windows.Forms.Button();
             this.btVoltarE = new System.Windows.Forms.Button();
             this.btCadastrarEntrada = new System.Windows.Forms.Button();
             this.lNomePeca = new System.Windows.Forms.Label();
@@ -38,7 +35,6 @@
             this.lCodigoPeca = new System.Windows.Forms.Label();
             this.txCodigoPeca = new System.Windows.Forms.TextBox();
             this.lDataEntradaPeca = new System.Windows.Forms.Label();
-            this.btAcessarRelatorioE = new System.Windows.Forms.Button();
             this.lAlturaPeca = new System.Windows.Forms.Label();
             this.txAlturaPeca = new System.Windows.Forms.TextBox();
             this.lPesoPeca = new System.Windows.Forms.Label();
@@ -53,36 +49,6 @@
             this.lNfPeca = new System.Windows.Forms.Label();
             this.txNfPeca = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // btRelacaoProdutoE
-            // 
-            this.btRelacaoProdutoE.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btRelacaoProdutoE.Location = new System.Drawing.Point(886, 383);
-            this.btRelacaoProdutoE.Name = "btRelacaoProdutoE";
-            this.btRelacaoProdutoE.Size = new System.Drawing.Size(148, 55);
-            this.btRelacaoProdutoE.TabIndex = 23;
-            this.btRelacaoProdutoE.Text = "Acessar Relaçao Produto";
-            this.btRelacaoProdutoE.UseVisualStyleBackColor = false;
-            // 
-            // btAcessarEstoqueE
-            // 
-            this.btAcessarEstoqueE.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.btAcessarEstoqueE.Location = new System.Drawing.Point(886, 322);
-            this.btAcessarEstoqueE.Name = "btAcessarEstoqueE";
-            this.btAcessarEstoqueE.Size = new System.Drawing.Size(148, 55);
-            this.btAcessarEstoqueE.TabIndex = 22;
-            this.btAcessarEstoqueE.Text = "Acessar Estoque";
-            this.btAcessarEstoqueE.UseVisualStyleBackColor = false;
-            // 
-            // btPaginaLoginE
-            // 
-            this.btPaginaLoginE.BackColor = System.Drawing.Color.Lime;
-            this.btPaginaLoginE.Location = new System.Drawing.Point(871, 184);
-            this.btPaginaLoginE.Name = "btPaginaLoginE";
-            this.btPaginaLoginE.Size = new System.Drawing.Size(163, 65);
-            this.btPaginaLoginE.TabIndex = 21;
-            this.btPaginaLoginE.Text = "Acessar Pagina Login";
-            this.btPaginaLoginE.UseVisualStyleBackColor = false;
             // 
             // btVoltarE
             // 
@@ -148,16 +114,6 @@
             this.lDataEntradaPeca.Size = new System.Drawing.Size(121, 16);
             this.lDataEntradaPeca.TabIndex = 25;
             this.lDataEntradaPeca.Text = "Data Entrada Peca";
-            // 
-            // btAcessarRelatorioE
-            // 
-            this.btAcessarRelatorioE.BackColor = System.Drawing.Color.Yellow;
-            this.btAcessarRelatorioE.Location = new System.Drawing.Point(871, 97);
-            this.btAcessarRelatorioE.Name = "btAcessarRelatorioE";
-            this.btAcessarRelatorioE.Size = new System.Drawing.Size(163, 64);
-            this.btAcessarRelatorioE.TabIndex = 20;
-            this.btAcessarRelatorioE.Text = "Acessar os Relatórios";
-            this.btAcessarRelatorioE.UseVisualStyleBackColor = false;
             // 
             // lAlturaPeca
             // 
@@ -291,10 +247,6 @@
             this.Controls.Add(this.lCodigoPeca);
             this.Controls.Add(this.txCodigoPeca);
             this.Controls.Add(this.lDataEntradaPeca);
-            this.Controls.Add(this.btRelacaoProdutoE);
-            this.Controls.Add(this.btAcessarEstoqueE);
-            this.Controls.Add(this.btPaginaLoginE);
-            this.Controls.Add(this.btAcessarRelatorioE);
             this.Controls.Add(this.btVoltarE);
             this.Name = "FormEstoque";
             this.Text = "FormEstoque";
@@ -304,10 +256,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btRelacaoProdutoE;
-        private System.Windows.Forms.Button btAcessarEstoqueE;
-        private System.Windows.Forms.Button btPaginaLoginE;
         private System.Windows.Forms.Button btVoltarE;
         private System.Windows.Forms.Button btCadastrarEntrada;
         private System.Windows.Forms.Label lNomePeca;
@@ -315,7 +263,6 @@
         private System.Windows.Forms.Label lCodigoPeca;
         private System.Windows.Forms.TextBox txCodigoPeca;
         private System.Windows.Forms.Label lDataEntradaPeca;
-        private System.Windows.Forms.Button btAcessarRelatorioE;
         private System.Windows.Forms.Label lAlturaPeca;
         private System.Windows.Forms.TextBox txAlturaPeca;
         private System.Windows.Forms.Label lPesoPeca;
