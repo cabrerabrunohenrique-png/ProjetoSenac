@@ -38,7 +38,7 @@
             // btOrdemServico
             // 
             this.btOrdemServico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btOrdemServico.Location = new System.Drawing.Point(74, 154);
+            this.btOrdemServico.Location = new System.Drawing.Point(12, 147);
             this.btOrdemServico.Name = "btOrdemServico";
             this.btOrdemServico.Size = new System.Drawing.Size(154, 171);
             this.btOrdemServico.TabIndex = 0;
@@ -49,7 +49,7 @@
             // btEstoque
             // 
             this.btEstoque.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btEstoque.Location = new System.Drawing.Point(282, 154);
+            this.btEstoque.Location = new System.Drawing.Point(186, 147);
             this.btEstoque.Name = "btEstoque";
             this.btEstoque.Size = new System.Drawing.Size(154, 171);
             this.btEstoque.TabIndex = 1;
@@ -60,7 +60,7 @@
             // btProdutoXPeca
             // 
             this.btProdutoXPeca.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btProdutoXPeca.Location = new System.Drawing.Point(473, 154);
+            this.btProdutoXPeca.Location = new System.Drawing.Point(370, 147);
             this.btProdutoXPeca.Name = "btProdutoXPeca";
             this.btProdutoXPeca.Size = new System.Drawing.Size(154, 171);
             this.btProdutoXPeca.TabIndex = 2;
@@ -70,9 +70,9 @@
             // btAcessarRelatorioN
             // 
             this.btAcessarRelatorioN.BackColor = System.Drawing.Color.Yellow;
-            this.btAcessarRelatorioN.Location = new System.Drawing.Point(544, 407);
+            this.btAcessarRelatorioN.Location = new System.Drawing.Point(544, 147);
             this.btAcessarRelatorioN.Name = "btAcessarRelatorioN";
-            this.btAcessarRelatorioN.Size = new System.Drawing.Size(151, 64);
+            this.btAcessarRelatorioN.Size = new System.Drawing.Size(151, 171);
             this.btAcessarRelatorioN.TabIndex = 3;
             this.btAcessarRelatorioN.Text = "Acessar os Relatórios";
             this.btAcessarRelatorioN.UseVisualStyleBackColor = false;

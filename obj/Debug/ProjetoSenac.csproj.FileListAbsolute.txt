@@ -97,3 +97,25 @@ C:\Users\bruno.hcabrera\OneDrive - SENAC - SP\source\repos\ProjetoSenac\obj\Debu
 C:\Users\bruno.hcabrera\OneDrive - SENAC - SP\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.exe
 C:\Users\bruno.hcabrera\OneDrive - SENAC - SP\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.pdb
 C:\Users\bruno.hcabrera\OneDrive - SENAC - SP\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.FormRelatorio.resources
+C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.FormRelatorio.resources
+C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\MySqlConnector.dll
+C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\System.Buffers.dll
+C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\System.Memory.dll
+C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\MySqlConnector.xml
+C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\System.Buffers.xml
+C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\System.Memory.xml
+C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoS.D2AE8F58.Up2Date

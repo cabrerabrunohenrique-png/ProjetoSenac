@@ -34,7 +34,6 @@
             this.tbNomeUsuario = new System.Windows.Forms.TextBox();
             this.tbSenhaAcesso = new System.Windows.Forms.TextBox();
             this.btCadastrarNovoUsuario = new System.Windows.Forms.Button();
-            this.btAcessarRelatorios = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lNomeUsuario
@@ -91,22 +90,11 @@
             this.btCadastrarNovoUsuario.UseVisualStyleBackColor = false;
             this.btCadastrarNovoUsuario.Click += new System.EventHandler(this.btCadastrarNovoUsuario_Click);
             // 
-            // btAcessarRelatorios
-            // 
-            this.btAcessarRelatorios.BackColor = System.Drawing.Color.Yellow;
-            this.btAcessarRelatorios.Location = new System.Drawing.Point(170, 382);
-            this.btAcessarRelatorios.Name = "btAcessarRelatorios";
-            this.btAcessarRelatorios.Size = new System.Drawing.Size(157, 65);
-            this.btAcessarRelatorios.TabIndex = 9;
-            this.btAcessarRelatorios.Text = "Acessar Relatórios";
-            this.btAcessarRelatorios.UseVisualStyleBackColor = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(481, 459);
-            this.Controls.Add(this.btAcessarRelatorios);
             this.Controls.Add(this.btCadastrarNovoUsuario);
             this.Controls.Add(this.tbSenhaAcesso);
             this.Controls.Add(this.tbNomeUsuario);
@@ -128,7 +116,6 @@
         private System.Windows.Forms.TextBox tbNomeUsuario;
         private System.Windows.Forms.TextBox tbSenhaAcesso;
         private System.Windows.Forms.Button btCadastrarNovoUsuario;
-        private System.Windows.Forms.Button btAcessarRelatorios;
     }
 }
 
