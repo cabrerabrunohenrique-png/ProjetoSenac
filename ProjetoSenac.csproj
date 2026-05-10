@@ -98,6 +98,12 @@
     <Compile Include="FormEstoque.Designer.cs">
       <DependentUpon>FormEstoque.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormEstoqueSaida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEstoqueSaida.Designer.cs">
+      <DependentUpon>FormEstoqueSaida.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormOrdemServico.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +132,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormEstoque.resx">
       <DependentUpon>FormEstoque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEstoqueSaida.resx">
+      <DependentUpon>FormEstoqueSaida.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormOrdemServico.resx">
       <DependentUpon>FormOrdemServico.cs</DependentUpon>

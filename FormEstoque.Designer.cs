@@ -98,10 +98,10 @@
             // btCadastrarEntrada
             // 
             this.btCadastrarEntrada.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btCadastrarEntrada.Location = new System.Drawing.Point(368, 401);
+            this.btCadastrarEntrada.Location = new System.Drawing.Point(496, 401);
             this.btCadastrarEntrada.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btCadastrarEntrada.Name = "btCadastrarEntrada";
-            this.btCadastrarEntrada.Size = new System.Drawing.Size(201, 37);
+            this.btCadastrarEntrada.Size = new System.Drawing.Size(201, 71);
             this.btCadastrarEntrada.TabIndex = 30;
             this.btCadastrarEntrada.Text = "Finalizar Entrada Estoque";
             this.btCadastrarEntrada.UseVisualStyleBackColor = false;
