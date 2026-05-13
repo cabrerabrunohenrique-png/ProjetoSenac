@@ -29,8 +29,12 @@ namespace ProjetoSenac
 
         private void btVoltarOS_Click(object sender, EventArgs e)
         {
-            Nav formNav = new Nav();
-            DialogResult = formNav.ShowDialog();
+            this.Owner.Show();
+            this.Close();
+
+
+
+
         }
 
         private void btAcessarRelatorioOS_Click(object sender, EventArgs e)

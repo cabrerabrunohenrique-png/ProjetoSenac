@@ -16,5 +16,11 @@ namespace ProjetoSenac
         {
             InitializeComponent();
         }
+
+        private void btVoltarE_Click(object sender, EventArgs e)
+        {
+            this.Owner.Show();
+            this.Close();
+        }
     }
 }

@@ -56,6 +56,7 @@
             this.btVoltarOS.TabIndex = 28;
             this.btVoltarOS.Text = "Tela Inicial";
             this.btVoltarOS.UseVisualStyleBackColor = false;
+            this.btVoltarOS.Click += new System.EventHandler(this.btVoltarOS_Click);
             // 
             // lRelacaoPecasProduto
             // 

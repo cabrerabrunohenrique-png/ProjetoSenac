@@ -50,6 +50,7 @@
             this.btVoltarR.TabIndex = 19;
             this.btVoltarR.Text = "Tela Inicial";
             this.btVoltarR.UseVisualStyleBackColor = false;
+            this.btVoltarR.Click += new System.EventHandler(this.btVoltarR_Click);
             // 
             // lRelacaoPecasProduto
             // 
@@ -131,7 +132,7 @@
             this.Controls.Add(this.lCodigoProduto);
             this.Controls.Add(this.txProduto);
             this.Controls.Add(this.btVoltarR);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormRelatorio";
             this.Text = "FormRelatorio";
             this.Load += new System.EventHandler(this.FormRelatorio_Load);

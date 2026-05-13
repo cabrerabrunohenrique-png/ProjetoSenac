@@ -60,6 +60,7 @@
             this.btVoltarE.TabIndex = 19;
             this.btVoltarE.Text = "Tela Inicial";
             this.btVoltarE.UseVisualStyleBackColor = false;
+            this.btVoltarE.Click += new System.EventHandler(this.btVoltarE_Click);
             // 
             // btCadastrarEntrada
             // 

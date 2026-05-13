@@ -27,6 +27,8 @@ namespace ProjetoSenac
         {
             Form1 formLogin = new Form1();
             DialogResult = DialogResult.OK;
+            this.Owner.Show();
+            this.Close();
         }
 
         private void btCadastrar_Click(object sender, EventArgs e)

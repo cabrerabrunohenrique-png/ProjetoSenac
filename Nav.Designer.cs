@@ -67,6 +67,7 @@
             this.btProdutoXPeca.TabIndex = 2;
             this.btProdutoXPeca.Text = "Relação Produtos á Produzir X Peças";
             this.btProdutoXPeca.UseVisualStyleBackColor = false;
+            this.btProdutoXPeca.Click += new System.EventHandler(this.btProdutoXPeca_Click);
             // 
             // btAcessarRelatorioN
             // 
@@ -77,6 +78,7 @@
             this.btAcessarRelatorioN.TabIndex = 3;
             this.btAcessarRelatorioN.Text = "Acessar os Relatórios";
             this.btAcessarRelatorioN.UseVisualStyleBackColor = false;
+            this.btAcessarRelatorioN.Click += new System.EventHandler(this.btAcessarRelatorioN_Click);
             // 
             // btPaginaLogin
             // 
@@ -97,6 +99,7 @@
             this.btEstoqueSaida.TabIndex = 5;
             this.btEstoqueSaida.Text = "Estoque - SAIDA";
             this.btEstoqueSaida.UseVisualStyleBackColor = false;
+            this.btEstoqueSaida.Click += new System.EventHandler(this.btEstoqueSaida_Click);
             // 
             // Nav
             // 

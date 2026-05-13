@@ -24,20 +24,33 @@ namespace ProjetoSenac
         private void btEntrar_Click(object sender, EventArgs e)
         {
             Nav formNav = new Nav();
-            this.DialogResult = DialogResult.OK;
-            formNav.ShowDialog();
+            formNav.Owner = this;
+            this.Hide();
+            formNav.Show();
         }
 
         private void btCadastrarNovoUsuario_Click(object sender, EventArgs e)
         {
+            //Para usar um formulario dentro de outro é necessario criar uma variavel do tipo do formulario que deseja abrir,
             CadastroNovoUsuario formCadastro = new CadastroNovoUsuario();
+            //Esse código define que o formulário atual (Form1) é o proprietário do "formulariuo".
+            formCadastro.Owner = this;
+            //formCadastro.Show();
+            //Esse código escode a tabela do formulário atual (Form1)
+            //para que o usuário não possa interagir com ele enquanto o formCadastro estiver aberto.  
+            this.Hide();
+            //Esse código exibe outro formulario e deixa o foco para ele,
+            //ou seja, o usuário só poderá interagir com o formCadastro enquanto ele estiver aberto.
             formCadastro.ShowDialog();
-            DialogResult = DialogResult.OK;
+            // CadastroNovoUsuario formCadastro = new CadastroNovoUsuario();
+            // formCadastro.ShowDialog();
+            // DialogResult = DialogResult.OK;
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            Nav formNav = new Nav();
+            formNav.Owner = this;
         }
     }
 }
