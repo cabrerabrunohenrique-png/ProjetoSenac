@@ -16,8 +16,6 @@ namespace ProjetoSenac
 {
     public partial class CadastroNovoUsuario : Form
 
-
-
     {
         //Comando para criar uma lista
         //No caso eu estou criando uma lista do tipo CadastroUsuario, que é a CLASSE que
@@ -104,8 +102,8 @@ namespace ProjetoSenac
 
 
 
-            else
-            {
+                else
+                {
                 using (MySqlConnection conn = new MySqlConnection(DADOS_CONEXAO))
                 {
                     conn.Open();
@@ -129,7 +127,7 @@ namespace ProjetoSenac
                     }
 
                     CadastroUsuario cadastroUsuario = new CadastroUsuario();
-                    cadastroUsuario.NOMECOMPLETO = nomeUsuario;
+                    cadastroUsuario.NOMECOMPLETO = nomeCompleto;
                     cadastroUsuario.NUMEROREGISTRO = numeroRegistro;
                     cadastroUsuario.NIVELPERMISSAO = nivelPermissao;
                     cadastroUsuario.NOMEUSUARIO = nomeUsuario;

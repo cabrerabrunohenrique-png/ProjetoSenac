@@ -33,7 +33,7 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btCadastrar = new System.Windows.Forms.Button();
             this.lNomeProduto = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txNomeProduto = new System.Windows.Forms.TextBox();
             this.lCodigoProduto = new System.Windows.Forms.Label();
             this.txProduto = new System.Windows.Forms.TextBox();
             this.txCodigoPeca = new System.Windows.Forms.TextBox();
@@ -89,6 +89,7 @@
             this.btCadastrar.TabIndex = 25;
             this.btCadastrar.Text = "Cadastrar";
             this.btCadastrar.UseVisualStyleBackColor = false;
+            this.btCadastrar.Click += new System.EventHandler(this.btCadastrar_Click);
             // 
             // lNomeProduto
             // 
@@ -99,13 +100,13 @@
             this.lNomeProduto.TabIndex = 24;
             this.lNomeProduto.Text = "Nome do Produto";
             // 
-            // textBox3
+            // txNomeProduto
             // 
-            this.textBox3.Location = new System.Drawing.Point(206, 61);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(191, 22);
-            this.textBox3.TabIndex = 23;
+            this.txNomeProduto.Location = new System.Drawing.Point(206, 61);
+            this.txNomeProduto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txNomeProduto.Name = "txNomeProduto";
+            this.txNomeProduto.Size = new System.Drawing.Size(191, 22);
+            this.txNomeProduto.TabIndex = 23;
             // 
             // lCodigoProduto
             // 
@@ -191,11 +192,12 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btCadastrar);
             this.Controls.Add(this.lNomeProduto);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txNomeProduto);
             this.Controls.Add(this.lCodigoProduto);
             this.Controls.Add(this.txProduto);
             this.Name = "FormRelacaoProdutoPeca";
             this.Text = "FormRelacaoProdutoPeca";
+            this.Load += new System.EventHandler(this.FormRelacaoProdutoPeca_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -208,7 +210,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btCadastrar;
         private System.Windows.Forms.Label lNomeProduto;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txNomeProduto;
         private System.Windows.Forms.Label lCodigoProduto;
         private System.Windows.Forms.TextBox txProduto;
         private System.Windows.Forms.TextBox txCodigoPeca;
