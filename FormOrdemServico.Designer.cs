@@ -33,7 +33,7 @@
             this.lCodigoProduto = new System.Windows.Forms.Label();
             this.txProduto = new System.Windows.Forms.TextBox();
             this.lNomeProduto = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txNomeProduto = new System.Windows.Forms.TextBox();
             this.btValidarOS = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.lRelacaoPecasProduto = new System.Windows.Forms.Label();
@@ -86,13 +86,13 @@
             this.lNomeProduto.Text = "Nome do Produto";
             this.lNomeProduto.Click += new System.EventHandler(this.lNomeProduto_Click);
             // 
-            // textBox3
+            // txNomeProduto
             // 
-            this.textBox3.Location = new System.Drawing.Point(197, 114);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(191, 22);
-            this.textBox3.TabIndex = 4;
+            this.txNomeProduto.Location = new System.Drawing.Point(197, 114);
+            this.txNomeProduto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txNomeProduto.Name = "txNomeProduto";
+            this.txNomeProduto.Size = new System.Drawing.Size(191, 22);
+            this.txNomeProduto.TabIndex = 4;
             // 
             // btValidarOS
             // 
@@ -104,6 +104,7 @@
             this.btValidarOS.TabIndex = 6;
             this.btValidarOS.Text = "Validar OS";
             this.btValidarOS.UseVisualStyleBackColor = false;
+            this.btValidarOS.Click += new System.EventHandler(this.btValidarOS_Click);
             // 
             // dataGridView1
             // 
@@ -149,7 +150,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btValidarOS);
             this.Controls.Add(this.lNomeProduto);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txNomeProduto);
             this.Controls.Add(this.lCodigoProduto);
             this.Controls.Add(this.txProduto);
             this.Controls.Add(this.lCodigoOS);
@@ -170,7 +171,7 @@
         private System.Windows.Forms.Label lCodigoProduto;
         private System.Windows.Forms.TextBox txProduto;
         private System.Windows.Forms.Label lNomeProduto;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txNomeProduto;
         private System.Windows.Forms.Button btValidarOS;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label lRelacaoPecasProduto;

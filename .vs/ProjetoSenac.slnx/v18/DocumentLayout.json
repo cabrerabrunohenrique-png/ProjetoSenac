@@ -3,20 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\FormRelacaoProdutoPeca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:FormRelacaoProdutoPeca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|c:\\users\\bhcab\\source\\repos\\projetosenac\\formrelacaoprodutopeca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:formrelacaoprodutopeca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|c:\\users\\bhcab\\source\\repos\\projetosenac\\cadastronovousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:cadastronovousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|c:\\users\\bhcab\\source\\repos\\projetosenac\\formordemservico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:formordemservico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|c:\\users\\bhcab\\source\\repos\\projetosenac\\cadastronovousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:cadastronovousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|c:\\users\\bhcab\\source\\repos\\projetosenac\\ordemservico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:ordemservico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|c:\\users\\bhcab\\source\\repos\\projetosenac\\formordemservico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:formordemservico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\formrelacaoprodutopeca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:formrelacaoprodutopeca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\cadastronovousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:cadastronovousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\cadastronovousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:cadastronovousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -50,11 +62,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
@@ -66,7 +78,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "FormRelacaoProdutoPeca.cs [Design]",
               "DocumentMoniker": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\FormRelacaoProdutoPeca.cs",
               "RelativeDocumentMoniker": "FormRelacaoProdutoPeca.cs",
@@ -87,7 +99,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "OrdemServico.cs",
+              "DocumentMoniker": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\OrdemServico.cs",
+              "RelativeDocumentMoniker": "OrdemServico.cs",
+              "ToolTip": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\OrdemServico.cs",
+              "RelativeToolTip": "OrdemServico.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T17:27:51.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormRelacaoProdutoPeca.cs",
+              "DocumentMoniker": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\FormRelacaoProdutoPeca.cs",
+              "RelativeDocumentMoniker": "FormRelacaoProdutoPeca.cs",
+              "ToolTip": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\FormRelacaoProdutoPeca.cs",
+              "RelativeToolTip": "FormRelacaoProdutoPeca.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAkwHsAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-13T20:05:22.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormOrdemServico.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\FormOrdemServico.cs",
+              "RelativeDocumentMoniker": "FormOrdemServico.cs",
+              "ToolTip": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\FormOrdemServico.cs [Design]",
+              "RelativeToolTip": "FormOrdemServico.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T17:14:28.74Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "CadastroNovoUsuario.cs",
               "DocumentMoniker": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\CadastroNovoUsuario.cs",
               "RelativeDocumentMoniker": "CadastroNovoUsuario.cs",
@@ -95,24 +145,22 @@
               "RelativeToolTip": "CadastroNovoUsuario.cs",
               "ViewState": "AgIAAC8AAAAAAAAAAAAgwGgAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-17T14:30:24.024Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-17T14:30:24.024Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "CadastroNovoUsuario.cs [Design]",
               "DocumentMoniker": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\CadastroNovoUsuario.cs",
               "RelativeDocumentMoniker": "CadastroNovoUsuario.cs",
               "ToolTip": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\CadastroNovoUsuario.cs [Design]",
               "RelativeToolTip": "CadastroNovoUsuario.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-16T22:08:17.06Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-05-16T22:08:17.06Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "FormEstoque.cs",
               "DocumentMoniker": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\FormEstoque.cs",
               "RelativeDocumentMoniker": "FormEstoque.cs",
@@ -120,12 +168,11 @@
               "RelativeToolTip": "FormEstoque.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAASwB8AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-13T20:17:10.609Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-13T20:17:10.609Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "FormEstoqueSaida.cs",
               "DocumentMoniker": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\FormEstoqueSaida.cs",
               "RelativeDocumentMoniker": "FormEstoqueSaida.cs",
@@ -133,12 +180,11 @@
               "RelativeToolTip": "FormEstoqueSaida.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAADgvxYAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-13T20:18:51.614Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-13T20:18:51.614Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "FormRelatorio.cs",
               "DocumentMoniker": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\FormRelatorio.cs",
               "RelativeDocumentMoniker": "FormRelatorio.cs",
@@ -150,7 +196,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
@@ -162,7 +208,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "FormRelatorio.cs [Design]",
               "DocumentMoniker": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\FormRelatorio.cs",
               "RelativeDocumentMoniker": "FormRelatorio.cs",
@@ -179,10 +225,10 @@
       "Orientation": 0,
       "VerticalTabListWidth": 256,
       "FloatingWindowState": {
-        "Id": "2c3ceea7-b76f-49ba-9463-126b1d99f532",
+        "Id": "618b4a5f-219d-4330-91d8-3f51145feb23",
         "Display": 0,
-        "X": 540,
-        "Y": 282,
+        "X": 711,
+        "Y": 57,
         "Width": 1017,
         "Height": 598,
         "WindowState": 0
@@ -194,15 +240,15 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FormRelacaoProdutoPeca.cs",
-              "DocumentMoniker": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\FormRelacaoProdutoPeca.cs",
-              "RelativeDocumentMoniker": "FormRelacaoProdutoPeca.cs",
-              "ToolTip": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\FormRelacaoProdutoPeca.cs",
-              "RelativeToolTip": "FormRelacaoProdutoPeca.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFYAAAAaAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "FormOrdemServico.cs",
+              "DocumentMoniker": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\FormOrdemServico.cs",
+              "RelativeDocumentMoniker": "FormOrdemServico.cs",
+              "ToolTip": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\FormOrdemServico.cs",
+              "RelativeToolTip": "FormOrdemServico.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-13T20:05:22.818Z",
+              "WhenOpened": "2026-05-17T17:17:58.38Z",
               "EditorCaption": ""
             }
           ]
