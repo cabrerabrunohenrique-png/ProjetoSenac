@@ -47,6 +47,9 @@ namespace ProjetoSenac
             string DADOS_CONEXAO =
                 "server=localhost; user=root; password=; database=bdprojetosenac;";
 
+
+
+
             using (MySqlConnection conn = new MySqlConnection(DADOS_CONEXAO))
             {
                 conn.Open();
@@ -55,45 +58,60 @@ namespace ProjetoSenac
                 string scriptInsert = "INSERT INTO tbcadastronovousuario " +
                     "(nomeCompleto,numeroRegistro,nivelPermissao,nomeUsuario,senhaAcesso)" +
                     " VALUE(@nomeCompleto,@numeroRegistro,@nivelPermissao,@nomeUsuario,@senhaAcesso)";
-
-
-                using (MySqlCommand comando = new MySqlCommand(scriptInsert, conn))
+               
+                if (string.IsNullOrEmpty(txNomeCompleto.Text) 
+                    || string.IsNullOrEmpty(txNumeroRegistro.Text)
+                    || string.IsNullOrEmpty(txPermissao.Text)
+                    || string.IsNullOrEmpty(txNomeUsuario.Text)
+                    || string.IsNullOrEmpty(txSenhaAcesso.Text))
                 {
-                    comando.Parameters.AddWithValue("@nomeCompleto", nomeCompleto);
-                    comando.Parameters.AddWithValue("@numeroRegistro", numeroRegistro);
-                    comando.Parameters.AddWithValue("@nivelPermissao", nivelPermissao);
-                    comando.Parameters.AddWithValue("@nomeUsuario", nomeUsuario);
-                    comando.Parameters.AddWithValue("@senhaAcesso", senhaAcesso);
+                    CadastroUsuario cadastroUsuario = new CadastroUsuario();
+                    cadastroUsuario.NOMEUSUARIO = txNomeCompleto.Text;
+                    cadastroUsuario.NUMEROREGISTRO = txNumeroRegistro.Text;
+                    cadastroUsuario.NIVELPERMISSAO = txPermissao.Text;
+                    cadastroUsuario.NOMEUSUARIO = txNomeUsuario.Text;
+                    
 
-
-                    controleLinhasAftadas = comando.ExecuteNonQuery();
-                        
+                    MessageBox.Show("Todos tem que estar preenchidos","Atenção");
+                
+                
+                
+                
                 }
 
-                
-                conn.Close();
+                else
+                {
+                    using (MySqlCommand comando = new MySqlCommand(scriptInsert, conn))
+                    {
+                        comando.Parameters.AddWithValue("@nomeCompleto", nomeCompleto);
+                        comando.Parameters.AddWithValue("@numeroRegistro", numeroRegistro);
+                        comando.Parameters.AddWithValue("@nivelPermissao", nivelPermissao);
+                        comando.Parameters.AddWithValue("@nomeUsuario", nomeUsuario);
+                        comando.Parameters.AddWithValue("@senhaAcesso", senhaAcesso);
 
+
+                        controleLinhasAftadas = comando.ExecuteNonQuery();
+                    }
+
+                    MessageBox.Show("Usuário cadastrado com sucesso!", "Cadastro Realizado");
+                   
+                    txNomeCompleto.Clear();
+                    txNumeroRegistro.Clear();
+                    txPermissao.Clear();
+                    txNomeUsuario.Clear();
+                    txSenhaAcesso.Clear();
+                    txConfirmacaoSenha.Clear();
+                    conn.Close();
+
+                }
             }
-
-            if (controleLinhasAftadas > 0)
-            {
-                txNomeCompleto.Clear();
-                txNumeroRegistro.Clear();
-                txPermissao.Clear();
-                txNomeUsuario.Clear();
-                txSenhaAcesso.Clear();
-
-
-                MessageBox.Show("Cadastro realizado com sucesso!");
-            }
-            else
-            {
-                MessageBox.Show("Erro ao realizar cadastro.");
-
-
-            }
-
             
+            /*if (controleLinhasAftadas > 0)
+            {
+                
+
+               MessageBox.Show("Cadastro realizado com sucesso!");
+            }*/
         }
 
         private void lNomeCompleto_Click(object sender, EventArgs e)
