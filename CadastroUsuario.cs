@@ -12,7 +12,7 @@ namespace ProjetoSenac
         public string NUMEROREGISTRO { get; set; }
 
         public string NIVELPERMISSAO { get; set; }
-        
+            
         public string NOMEUSUARIO { get; set; }
 
         public string SENHAACESSO { get; set; }

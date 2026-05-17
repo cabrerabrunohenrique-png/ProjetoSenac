@@ -15,7 +15,16 @@ using MySqlConnector;
 namespace ProjetoSenac
 {
     public partial class CadastroNovoUsuario : Form
+
+
+
     {
+        //Comando para criar uma lista
+        //No caso eu estou criando uma lista do tipo CadastroUsuario, que é a CLASSE que
+        //eu criei para receber os dados do banco de dados
+        BindingList<CadastroUsuario> listaCadastroUsuario = new BindingList<CadastroUsuario>();
+
+
         public CadastroNovoUsuario()
         {
             InitializeComponent();
@@ -44,43 +53,69 @@ namespace ProjetoSenac
 
             int controleLinhasAftadas = 0;
 
-            string DADOS_CONEXAO =
-                "server=localhost; user=root; password=; database=bdprojetosenac;";
+            string DADOS_CONEXAO = "server=localhost; user=root; password=; database=bdprojetosenac;";
 
 
+           
 
 
-            using (MySqlConnection conn = new MySqlConnection(DADOS_CONEXAO))
+            if (string.IsNullOrEmpty(nomeCompleto) || string.IsNullOrEmpty(numeroRegistro) || string.IsNullOrEmpty(nivelPermissao) || string.IsNullOrEmpty(nomeUsuario)
+            || string.IsNullOrEmpty(senhaAcesso))
             {
-                conn.Open();
-                // tem que colocar esse comando para conecatar com o banco criado
-                //value @---serve para passar o valor do campo do formulario para o banco de dados
-                string scriptInsert = "INSERT INTO tbcadastronovousuario " +
-                    "(nomeCompleto,numeroRegistro,nivelPermissao,nomeUsuario,senhaAcesso)" +
-                    " VALUE(@nomeCompleto,@numeroRegistro,@nivelPermissao,@nomeUsuario,@senhaAcesso)";
-               
-                if (string.IsNullOrEmpty(txNomeCompleto.Text) 
-                    || string.IsNullOrEmpty(txNumeroRegistro.Text)
-                    || string.IsNullOrEmpty(txPermissao.Text)
-                    || string.IsNullOrEmpty(txNomeUsuario.Text)
-                    || string.IsNullOrEmpty(txSenhaAcesso.Text))
-                {
-                    CadastroUsuario cadastroUsuario = new CadastroUsuario();
-                    cadastroUsuario.NOMEUSUARIO = txNomeCompleto.Text;
-                    cadastroUsuario.NUMEROREGISTRO = txNumeroRegistro.Text;
-                    cadastroUsuario.NIVELPERMISSAO = txPermissao.Text;
-                    cadastroUsuario.NOMEUSUARIO = txNomeUsuario.Text;
+                             
+                MessageBox.Show("Todos tem que estar preenchidos", "Atenção");
+                return;
+
+            }
+
+            else if (listaCadastroUsuario.Any(c => c.NOMECOMPLETO == nomeCompleto))
+            {
+                MessageBox.Show("O NOME  existe. Por favor, escolha outro.", "Atenção");
+                
+
+                txNomeCompleto.Clear();
+                return;
+
+            }
+
+
+            else if (listaCadastroUsuario.Any(c => c.NOMEUSUARIO == nomeUsuario))
+            {
+                MessageBox.Show("O NOME DE USUARIO  já existe. Por favor, escolha outro.", "Atenção");
                     
 
-                    MessageBox.Show("Todos tem que estar preenchidos","Atenção");
-                
-                
-                
-                
-                }
+                txNomeUsuario.Clear();
+                return;
 
-                else
+            }
+
+            else if (listaCadastroUsuario.Any(c => c.NUMEROREGISTRO == numeroRegistro))
+            {
+                MessageBox.Show("o NUMERO DE REGISTRO já existe. Por favor, escolha outro.", "Atenção");
+
+
+                txNumeroRegistro.Clear();
+                return;
+
+            }
+
+
+
+
+
+
+            else
+            {
+                using (MySqlConnection conn = new MySqlConnection(DADOS_CONEXAO))
                 {
+                    conn.Open();
+                    // tem que colocar esse comando para conecatar com o banco criado
+                    //value @---serve para passar o valor do campo do formulario para o banco de dados
+                    string scriptInsert = "INSERT INTO tbcadastronovousuario " +
+                        "(nomeCompleto,numeroRegistro,nivelPermissao,nomeUsuario,senhaAcesso)" +
+                        " VALUE(@nomeCompleto,@numeroRegistro,@nivelPermissao,@nomeUsuario,@senhaAcesso)";
+
+
                     using (MySqlCommand comando = new MySqlCommand(scriptInsert, conn))
                     {
                         comando.Parameters.AddWithValue("@nomeCompleto", nomeCompleto);
@@ -93,8 +128,17 @@ namespace ProjetoSenac
                         controleLinhasAftadas = comando.ExecuteNonQuery();
                     }
 
+                    CadastroUsuario cadastroUsuario = new CadastroUsuario();
+                    cadastroUsuario.NOMECOMPLETO = nomeUsuario;
+                    cadastroUsuario.NUMEROREGISTRO = numeroRegistro;
+                    cadastroUsuario.NIVELPERMISSAO = nivelPermissao;
+                    cadastroUsuario.NOMEUSUARIO = nomeUsuario;
+                    cadastroUsuario.SENHAACESSO = senhaAcesso;
+                    listaCadastroUsuario.Add(cadastroUsuario);
+
+
                     MessageBox.Show("Usuário cadastrado com sucesso!", "Cadastro Realizado");
-                   
+
                     txNomeCompleto.Clear();
                     txNumeroRegistro.Clear();
                     txPermissao.Clear();
@@ -105,14 +149,9 @@ namespace ProjetoSenac
 
                 }
             }
-            
-            /*if (controleLinhasAftadas > 0)
-            {
-                
-
-               MessageBox.Show("Cadastro realizado com sucesso!");
-            }*/
         }
+        /*if (controleLinhasAftadas > 0){MessageBox.Show("Cadastro realizado com sucesso!");}*/
+
 
         private void lNomeCompleto_Click(object sender, EventArgs e)
         {
