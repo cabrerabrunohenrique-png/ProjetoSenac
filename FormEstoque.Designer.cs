@@ -72,6 +72,7 @@
             this.btCadastrarEntrada.TabIndex = 30;
             this.btCadastrarEntrada.Text = "Finalizar Entrada Estoque";
             this.btCadastrarEntrada.UseVisualStyleBackColor = false;
+            this.btCadastrarEntrada.Click += new System.EventHandler(this.btCadastrarEntrada_Click);
             // 
             // lNomePeca
             // 
@@ -251,6 +252,7 @@
             this.Controls.Add(this.btVoltarE);
             this.Name = "FormEstoque";
             this.Text = "FormEstoque";
+            this.Load += new System.EventHandler(this.FormEstoque_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
