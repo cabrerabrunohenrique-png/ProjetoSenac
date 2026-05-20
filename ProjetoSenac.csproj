@@ -134,6 +134,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RelacaoProdutoPeca.cs" />
+    <Compile Include="SaidaEstoqueSaida.cs" />
     <EmbeddedResource Include="CadastroNovoUsuario.resx">
       <DependentUpon>CadastroNovoUsuario.cs</DependentUpon>
     </EmbeddedResource>

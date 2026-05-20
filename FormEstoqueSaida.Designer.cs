@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.lSituacaoPeca = new System.Windows.Forms.Label();
-            this.txQuantidadePeca = new System.Windows.Forms.TextBox();
+            this.txSituacaoPeca = new System.Windows.Forms.TextBox();
             this.lNumeroOS = new System.Windows.Forms.Label();
             this.txNumeroOS = new System.Windows.Forms.TextBox();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
@@ -57,13 +57,13 @@
             this.lSituacaoPeca.TabIndex = 65;
             this.lSituacaoPeca.Text = "Situação da Peça";
             // 
-            // txQuantidadePeca
+            // txSituacaoPeca
             // 
-            this.txQuantidadePeca.Location = new System.Drawing.Point(506, 329);
-            this.txQuantidadePeca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txQuantidadePeca.Name = "txQuantidadePeca";
-            this.txQuantidadePeca.Size = new System.Drawing.Size(191, 22);
-            this.txQuantidadePeca.TabIndex = 64;
+            this.txSituacaoPeca.Location = new System.Drawing.Point(506, 329);
+            this.txSituacaoPeca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txSituacaoPeca.Name = "txSituacaoPeca";
+            this.txSituacaoPeca.Size = new System.Drawing.Size(191, 22);
+            this.txSituacaoPeca.TabIndex = 64;
             // 
             // lNumeroOS
             // 
@@ -149,6 +149,7 @@
             this.btFinalizarSaidaPeca.TabIndex = 54;
             this.btFinalizarSaidaPeca.Text = "Finalizar Lançamento Saida Peça";
             this.btFinalizarSaidaPeca.UseVisualStyleBackColor = false;
+            this.btFinalizarSaidaPeca.Click += new System.EventHandler(this.btFinalizarSaidaPeca_Click);
             // 
             // lNomePecaS
             // 
@@ -211,7 +212,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1156, 554);
             this.Controls.Add(this.lSituacaoPeca);
-            this.Controls.Add(this.txQuantidadePeca);
+            this.Controls.Add(this.txSituacaoPeca);
             this.Controls.Add(this.lNumeroOS);
             this.Controls.Add(this.txNumeroOS);
             this.Controls.Add(this.monthCalendar1);
@@ -237,7 +238,7 @@
 
         #endregion
         private System.Windows.Forms.Label lSituacaoPeca;
-        private System.Windows.Forms.TextBox txQuantidadePeca;
+        private System.Windows.Forms.TextBox txSituacaoPeca;
         private System.Windows.Forms.Label lNumeroOS;
         private System.Windows.Forms.TextBox txNumeroOS;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
