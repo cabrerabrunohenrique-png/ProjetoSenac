@@ -41,7 +41,7 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 154,
+          "DockedWidth": 214,
           "SelectedChildIndex": 3,
           "Children": [
             {
@@ -73,7 +73,7 @@
               "RelativeDocumentMoniker": "FormEstoque.cs",
               "ToolTip": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\FormEstoque.cs",
               "RelativeToolTip": "FormEstoque.cs",
-              "ViewState": "AgIAAFMAAAAAAAAAAAAcwFYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAUwDsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-20T00:24:48.533Z",
               "EditorCaption": ""
@@ -131,7 +131,7 @@
           ]
         },
         {
-          "DockedWidth": 246,
+          "DockedWidth": 186,
           "SelectedChildIndex": 0,
           "Children": [
             {
@@ -142,7 +142,7 @@
               "RelativeDocumentMoniker": "FormEstoqueSaida.cs",
               "ToolTip": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\FormEstoqueSaida.cs",
               "RelativeToolTip": "FormEstoqueSaida.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAqwC8AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAAASwDgAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-20T00:24:24.481Z",
               "EditorCaption": ""
