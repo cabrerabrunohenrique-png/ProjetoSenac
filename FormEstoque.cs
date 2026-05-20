@@ -43,30 +43,44 @@ namespace ProjetoSenac
 
         private void btCadastrarEntrada_Click(object sender, EventArgs e)
         {
-            
 
+            int codigoPeca = txCodigoPeca.Text != "" ? int.Parse(txCodigoPeca.Text) : 0;
+            double pesoPeca = txPesoPeca.Text != "" ? double.Parse(txPesoPeca.Text) : 0.0;
+            double alturaPeca = txAlturaPeca.Text != "" ? double.Parse(txAlturaPeca.Text) : 0.0;
             DateTime dataEntradaPeca = monthCalendar1.SelectionStart;
-            int codigoPeca = int.Parse(txCodigoPeca.Text);
             string nomePeca = txNomePeca.Text;
             string fabricante = txFabricantePeca.Text;
-            double pesoPeca = double.Parse(txPesoPeca.Text);
-            double alturaPeca = double.Parse(txAlturaPeca.Text);
             double comprimentoPeca = txComprimentoPeca.Text != "" ? double.Parse(txComprimentoPeca.Text) : 0.0;
+            int quantidaPeca = txQuantidadePeca.Text != "" ? int.Parse(txQuantidadePeca.Text) : 0;
+            int numeroNf = txNfPeca.Text != "" ? int.Parse(txNfPeca.Text) : 0;
 
-            int quantidaPeca = int.Parse(txQuantidadePeca.Text);
-            int numeroNf = int.Parse(txNfPeca.Text);
+
+            if (codigoPeca == 0 || pesoPeca == 0 || alturaPeca == 0 || comprimentoPeca == 0 || quantidaPeca == 0 || numeroNf == 0)
+            {
+                MessageBox.Show("Todos os campos tem que estar preenchidos", "Atenção");
+                return;
+            }
+
+            else
+            {
+                MessageBox.Show("ok");
+
+                txCodigoPeca.Clear();
+                txPesoPeca.Clear();
+                txAlturaPeca.Clear();
+                txNomePeca.Clear();
+                txFabricantePeca.Clear();
+                txComprimentoPeca.Clear();
+                txQuantidadePeca.Clear();
+                txNfPeca.Clear();
+                monthCalendar1.SelectionEnd = DateTime.Today;
+            }
 
             string DADOS_CONEXAO = "server=localhost; user=root; password=; database=bdprojetosenac;";
 
             using (MySqlConnection conn = new MySqlConnection(DADOS_CONEXAO))
             {
-                if (codigoPeca < 0 || string.IsNullOrEmpty(nomePeca)
-                || string.IsNullOrEmpty(fabricante) || pesoPeca <= 0
-                || alturaPeca <= 0 || comprimentoPeca <= 0
-                || quantidaPeca <= 0 || numeroNf <= 0)
-                {
-                    MessageBox.Show("Todos os campos tem que estar preenchidos", "Atenção");
-                }
+                
 
 
 
@@ -74,7 +88,7 @@ namespace ProjetoSenac
                 conn.Open();
                 string scriptInsert = "INSERT INTO tbentradaestoque" +
                     " (dataEntradaPeca,codigoPeca,nomePeca,fabricantePeca,pesoPeca,alturaPeca,comprimenetoPeca,quantidadePeca,nfPeca)" +
-                    " VALUES (@dataEntradaPeca,@codigoPeca,@nomePeca,@fabricantePeca,@pesoPeca,@alturaPeca,@comprimenetoPeca,@quantidadePeca,@nfPeca)";
+                    " VALUES(@dataEntradaPeca,@codigoPeca,@nomePeca,@fabricantePeca,@pesoPeca,@alturaPeca,@comprimenetoPeca,@quantidadePeca,@nfPeca)";
 
                 using (MySqlCommand comando = new MySqlCommand(scriptInsert, conn))
                 {
@@ -84,7 +98,7 @@ namespace ProjetoSenac
                     comando.Parameters.AddWithValue("@fabricantePeca", fabricante);
                     comando.Parameters.AddWithValue("@pesoPeca", pesoPeca);
                     comando.Parameters.AddWithValue("@alturaPeca", alturaPeca);
-                    comando.Parameters.AddWithValue("@comprimentoPeca", comprimentoPeca);
+                    comando.Parameters.AddWithValue("@comprimenetoPeca", comprimentoPeca);
                     comando.Parameters.AddWithValue("@quantidadePeca", quantidaPeca);
                     comando.Parameters.AddWithValue("@nfPeca", numeroNf);
 
