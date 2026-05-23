@@ -69,6 +69,7 @@ namespace ProjetoSenac
             if (nomeCompleto.Length < 5)
             {
                 MessageBox.Show("Digite o nome completo","NOME COMPLETO");
+                txNomeCompleto.Clear();
 
                 return;
             }
@@ -76,13 +77,16 @@ namespace ProjetoSenac
             if (nomeCompleto.Length > 50)
             {
                 MessageBox.Show("O nome completo deve ter no máximo 50 caracteres", "ATENÇÃO");
+                txNomeCompleto.Clear();
                 return;
+                
             }
 
             if (nomeCompleto.Split(' ').Length <2)
             {
 
                 MessageBox.Show("O nome completo deve conter pelo menos um sobrenome", "ATENÇÃO");
+                txNomeCompleto.Clear();
                 return;
             }
 
@@ -118,7 +122,7 @@ namespace ProjetoSenac
 
             if (numeroRegistro.Length >10 )
             {
-                MessageBox.Show(" Numero nao pode ter menos que 3 casas decimais e nao pode ter mais que 5 casas ", "ATENÇÃO");
+                MessageBox.Show(" Numero nao pode ter mais que 10 casas ", "ATENÇÃO");
                 txNumeroRegistro.Clear();
                 return;
             }
