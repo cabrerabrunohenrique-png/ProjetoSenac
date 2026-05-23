@@ -40,7 +40,8 @@ namespace ProjetoSenac
 
         private void btCadastrar_Click(object sender, EventArgs e)
         {
-            string nomeCompleto = txNomeCompleto.Text;
+            string nomeCompletoSem = txNomeCompleto.Text;
+            string nomeCompleto = nomeCompletoSem.Trim();
             string numeroRegistro = txNumeroRegistro.Text;
             string nivelPermissao = txPermissao.Text;
             string nomeUsuario = txNomeUsuario.Text;
@@ -55,20 +56,65 @@ namespace ProjetoSenac
 
 
            
+            if (nomeCompleto.Length < 5)
+            {
+                MessageBox.Show("Digite o nome completo","NOME COMPLETO");
+
+                return;
+            }
+
+            if (nomeCompleto.Length > 50)
+            {
+                MessageBox.Show("O nome completo deve ter no máximo 50 caracteres", "ATENÇÃO");
+                return;
+            }
+
+            if (nomeCompleto.Split(' ').Length <2)
+            {
+
+                MessageBox.Show("O nome completo deve conter pelo menos um sobrenome", "ATENÇÃO");
+                return;
+            }
+
+           
+
+            char[] nomeComletoLetra = nomeCompleto.ToCharArray();
+
+            if (nomeComletoLetra.Any(c => char.IsDigit(c)))
+
+            {
+                MessageBox.Show("Você não pode usar números no nome completo", "ATENÇÃO");
+
+                return;
+            
+            }
+
+            char[] nomeComEspecial = nomeCompleto.ToCharArray();
+
+            if (nomeComEspecial.Any(c => char.IsPunctuation(c) || !char.IsSymbol(c)))
+            {
+                MessageBox.Show("Seu nome tem caracteres inválidos", "ATENÇÃO");
+                return;
+            }
+
+
+
 
 
             if (string.IsNullOrEmpty(nomeCompleto) || string.IsNullOrEmpty(numeroRegistro) || string.IsNullOrEmpty(nivelPermissao) || string.IsNullOrEmpty(nomeUsuario)
             || string.IsNullOrEmpty(senhaAcesso))
             {
                              
-                MessageBox.Show("Todos tem que estar preenchidos", "Atenção");
+                MessageBox.Show("Todos tem que estar preenchidos", "ATENÇÃO");
                 return;
 
             }
 
+
+
             else if (listaCadastroUsuario.Any(c => c.NOMECOMPLETO == nomeCompleto))
             {
-                MessageBox.Show("O NOME  existe. Por favor, escolha outro.", "Atenção");
+                MessageBox.Show("O NOME  existe. Por favor, escolha outro.", "ATENÇÃO");
                 
 
                 txNomeCompleto.Clear();
@@ -79,7 +125,7 @@ namespace ProjetoSenac
 
             else if (listaCadastroUsuario.Any(c => c.NOMEUSUARIO == nomeUsuario))
             {
-                MessageBox.Show("O NOME DE USUARIO  já existe. Por favor, escolha outro.", "Atenção");
+                MessageBox.Show("O NOME DE USUARIO  já existe. Por favor, escolha outro.", "ATENÇÃO");
                     
 
                 txNomeUsuario.Clear();
@@ -89,17 +135,13 @@ namespace ProjetoSenac
 
             else if (listaCadastroUsuario.Any(c => c.NUMEROREGISTRO == numeroRegistro))
             {
-                MessageBox.Show("o NUMERO DE REGISTRO já existe. Por favor, escolha outro.", "Atenção");
+                MessageBox.Show("o NUMERO DE REGISTRO já existe. Por favor, escolha outro.", "ATENÇÃO");
 
 
                 txNumeroRegistro.Clear();
                 return;
 
             }
-
-
-
-
 
 
                 else
@@ -162,6 +204,11 @@ namespace ProjetoSenac
         }
 
         private void txSenhaAcesso_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txNomeCompleto_TextChanged(object sender, EventArgs e)
         {
 
         }

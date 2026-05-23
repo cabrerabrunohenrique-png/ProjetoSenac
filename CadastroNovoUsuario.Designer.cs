@@ -49,15 +49,16 @@
             this.txNomeCompleto.Location = new System.Drawing.Point(271, 95);
             this.txNomeCompleto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txNomeCompleto.Name = "txNomeCompleto";
-            this.txNomeCompleto.Size = new System.Drawing.Size(208, 22);
+            this.txNomeCompleto.Size = new System.Drawing.Size(324, 22);
             this.txNomeCompleto.TabIndex = 0;
+            this.txNomeCompleto.TextChanged += new System.EventHandler(this.txNomeCompleto_TextChanged);
             // 
             // txNumeroRegistro
             // 
             this.txNumeroRegistro.Location = new System.Drawing.Point(271, 143);
             this.txNumeroRegistro.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txNumeroRegistro.Name = "txNumeroRegistro";
-            this.txNumeroRegistro.Size = new System.Drawing.Size(208, 22);
+            this.txNumeroRegistro.Size = new System.Drawing.Size(324, 22);
             this.txNumeroRegistro.TabIndex = 1;
             // 
             // txPermissao
@@ -65,7 +66,7 @@
             this.txPermissao.Location = new System.Drawing.Point(271, 194);
             this.txPermissao.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txPermissao.Name = "txPermissao";
-            this.txPermissao.Size = new System.Drawing.Size(208, 22);
+            this.txPermissao.Size = new System.Drawing.Size(324, 22);
             this.txPermissao.TabIndex = 2;
             // 
             // txNomeUsuario
@@ -73,7 +74,7 @@
             this.txNomeUsuario.Location = new System.Drawing.Point(271, 241);
             this.txNomeUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txNomeUsuario.Name = "txNomeUsuario";
-            this.txNomeUsuario.Size = new System.Drawing.Size(208, 22);
+            this.txNomeUsuario.Size = new System.Drawing.Size(324, 22);
             this.txNomeUsuario.TabIndex = 3;
             // 
             // txSenhaAcesso
@@ -81,14 +82,14 @@
             this.txSenhaAcesso.Location = new System.Drawing.Point(271, 289);
             this.txSenhaAcesso.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txSenhaAcesso.Name = "txSenhaAcesso";
-            this.txSenhaAcesso.Size = new System.Drawing.Size(208, 22);
+            this.txSenhaAcesso.Size = new System.Drawing.Size(324, 22);
             this.txSenhaAcesso.TabIndex = 4;
             this.txSenhaAcesso.TextChanged += new System.EventHandler(this.txSenhaAcesso_TextChanged);
             // 
             // lNomeCompleto
             // 
             this.lNomeCompleto.AutoSize = true;
-            this.lNomeCompleto.Location = new System.Drawing.Point(72, 98);
+            this.lNomeCompleto.Location = new System.Drawing.Point(63, 95);
             this.lNomeCompleto.Name = "lNomeCompleto";
             this.lNomeCompleto.Size = new System.Drawing.Size(105, 16);
             this.lNomeCompleto.TabIndex = 5;
@@ -98,7 +99,7 @@
             // lNumeroRegistro
             // 
             this.lNumeroRegistro.AutoSize = true;
-            this.lNumeroRegistro.Location = new System.Drawing.Point(72, 149);
+            this.lNumeroRegistro.Location = new System.Drawing.Point(63, 143);
             this.lNumeroRegistro.Name = "lNumeroRegistro";
             this.lNumeroRegistro.Size = new System.Drawing.Size(128, 16);
             this.lNumeroRegistro.TabIndex = 6;
@@ -107,7 +108,7 @@
             // lNivelPermissao
             // 
             this.lNivelPermissao.AutoSize = true;
-            this.lNivelPermissao.Location = new System.Drawing.Point(72, 197);
+            this.lNivelPermissao.Location = new System.Drawing.Point(63, 194);
             this.lNivelPermissao.Name = "lNivelPermissao";
             this.lNivelPermissao.Size = new System.Drawing.Size(125, 16);
             this.lNivelPermissao.TabIndex = 7;
@@ -116,7 +117,7 @@
             // lNomeUsuario
             // 
             this.lNomeUsuario.AutoSize = true;
-            this.lNomeUsuario.Location = new System.Drawing.Point(72, 247);
+            this.lNomeUsuario.Location = new System.Drawing.Point(63, 247);
             this.lNomeUsuario.Name = "lNomeUsuario";
             this.lNomeUsuario.Size = new System.Drawing.Size(110, 16);
             this.lNomeUsuario.TabIndex = 8;
@@ -125,7 +126,7 @@
             // lSenhaAcesso
             // 
             this.lSenhaAcesso.AutoSize = true;
-            this.lSenhaAcesso.Location = new System.Drawing.Point(72, 295);
+            this.lSenhaAcesso.Location = new System.Drawing.Point(63, 295);
             this.lSenhaAcesso.Name = "lSenhaAcesso";
             this.lSenhaAcesso.Size = new System.Drawing.Size(114, 16);
             this.lSenhaAcesso.TabIndex = 9;
@@ -134,7 +135,7 @@
             // lConfirmacaoSenha
             // 
             this.lConfirmacaoSenha.AutoSize = true;
-            this.lConfirmacaoSenha.Location = new System.Drawing.Point(72, 343);
+            this.lConfirmacaoSenha.Location = new System.Drawing.Point(63, 343);
             this.lConfirmacaoSenha.Name = "lConfirmacaoSenha";
             this.lConfirmacaoSenha.Size = new System.Drawing.Size(193, 16);
             this.lConfirmacaoSenha.TabIndex = 11;
@@ -145,7 +146,7 @@
             this.txConfirmacaoSenha.Location = new System.Drawing.Point(271, 337);
             this.txConfirmacaoSenha.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txConfirmacaoSenha.Name = "txConfirmacaoSenha";
-            this.txConfirmacaoSenha.Size = new System.Drawing.Size(208, 22);
+            this.txConfirmacaoSenha.Size = new System.Drawing.Size(324, 22);
             this.txConfirmacaoSenha.TabIndex = 10;
             // 
             // btCadastrar
@@ -178,6 +179,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txNomeCompleto);
             this.Controls.Add(this.btVoltarCNU);
             this.Controls.Add(this.btCadastrar);
             this.Controls.Add(this.lConfirmacaoSenha);
@@ -191,7 +193,6 @@
             this.Controls.Add(this.txNomeUsuario);
             this.Controls.Add(this.txPermissao);
             this.Controls.Add(this.txNumeroRegistro);
-            this.Controls.Add(this.txNomeCompleto);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "CadastroNovoUsuario";
             this.Text = "CadastroNovoUsuario";
