@@ -26,6 +26,11 @@ namespace ProjetoSenac
         public CadastroNovoUsuario()
         {
             InitializeComponent();
+
+            cbNivelPermisao.Items.Add("Administrador");
+            cbNivelPermisao.Items.Add("Usuário Comum");
+            cbNivelPermisao.Items.Add("Usuário Restrito");
+
         }
 
         const string DADOS_CONEXAO = "server=localhost; user=root; password=; database=bdprojetosenac;";
@@ -33,9 +38,13 @@ namespace ProjetoSenac
         private void btVoltarCNU_Click(object sender, EventArgs e)
         {
             Form1 formLogin = new Form1();
-            DialogResult = DialogResult.OK;
-            this.Owner.Show();
-            this.Close();
+            //DialogResult = DialogResult.OK;
+            DialogResult resposta = MessageBox.Show("Deseja realmente voltar para a tela de login?", "ATENÇÃO", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (resposta == DialogResult.Yes)
+            {
+                this.Owner.Show();
+                this.Close();
+            }
         }
 
         private void btCadastrar_Click(object sender, EventArgs e)
@@ -43,8 +52,10 @@ namespace ProjetoSenac
             string nomeCompletoSem = txNomeCompleto.Text;
             string nomeCompleto = nomeCompletoSem.Trim();
             string numeroRegistro = txNumeroRegistro.Text;
-            string nivelPermissao = txPermissao.Text;
-            string nomeUsuario = txNomeUsuario.Text;
+            string nivelPermissao = cbNivelPermisao.Text;
+            
+            string nomeUsuarioSem = txNomeUsuario.Text;
+            string nomeUsuario = nomeUsuarioSem.Trim();
             string senhaAcesso = txSenhaAcesso.Text;
 
             //DateTime dateTime = DateTime.Now;
@@ -112,6 +123,8 @@ namespace ProjetoSenac
                 return;
             }
 
+            
+            
             if (nomeUsuario.Length >10)
             {
                 MessageBox.Show("Nome de usuário nao pode ser maior que 10 caracteres", "ATENÇÃO");
@@ -197,7 +210,7 @@ namespace ProjetoSenac
 
                     txNomeCompleto.Clear();
                     txNumeroRegistro.Clear();
-                    txPermissao.Clear();
+                    cbNivelPermisao.SelectedIndex = -1;
                     txNomeUsuario.Clear();
                     txSenhaAcesso.Clear();
                     txConfirmacaoSenha.Clear();

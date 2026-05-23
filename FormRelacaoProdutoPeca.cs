@@ -25,18 +25,27 @@ namespace ProjetoSenac
 
             private void btVoltarOS_Click(object sender, EventArgs e)
             {
-            this.Owner.Show();
-            this.Close();   
+
+             DialogResult resposta = MessageBox.Show("Deseja realmente voltar para a tela de login?", "ATENÇÃO", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+             if (resposta == DialogResult.Yes)
+             {
+                this.Owner.Show();
+                this.Close();
+             }
 
 
-            /*FormRelacaoProdutoPeca formRelacaoProdutoPeca = new FormRelacaoProdutoPeca();
-            Nav formNav = new Nav();
-            formNav.Owner = this;
-            // Quando o formRelacaoProdutoPeca fechar, executa o código para mostrar este form de novo
-            formRelacaoProdutoPeca.FormClosed += (s, args) => this.Show();
-            this.Show();*/
+                //this.Owner.Show();
+                //this.Close();   
 
-        }
+
+                /*FormRelacaoProdutoPeca formRelacaoProdutoPeca = new FormRelacaoProdutoPeca();
+                Nav formNav = new Nav();
+                formNav.Owner = this;
+                // Quando o formRelacaoProdutoPeca fechar, executa o código para mostrar este form de novo
+                formRelacaoProdutoPeca.FormClosed += (s, args) => this.Show();
+                this.Show();*/
+
+            }
 
         private void FormRelacaoProdutoPeca_Load(object sender, EventArgs e)
         {

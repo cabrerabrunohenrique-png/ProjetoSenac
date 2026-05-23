@@ -25,8 +25,15 @@ namespace ProjetoSenac
 
         private void btPaginaLogin_Click(object sender, EventArgs e)
         {
-            this.Owner.Show();
-            this.Close();
+            DialogResult resposta = MessageBox.Show("Deseja realmente voltar para a tela de login?", "ATENÇÃO", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (resposta == DialogResult.Yes)
+            {
+                this.Owner.Show();
+                this.Close();
+            }
+
+            //this.Owner.Show();
+            //this.Close();
             // Para criar o comando de abrir outra aba, foi necessario criar um formulaio
             //nesse caso o Form1, entao eu chamei ele e lgo tive que
             // colocar o nome da variave que seria da variavel " FORM1".
