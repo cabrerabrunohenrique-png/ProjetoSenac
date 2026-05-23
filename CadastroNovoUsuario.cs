@@ -54,8 +54,7 @@ namespace ProjetoSenac
 
             string DADOS_CONEXAO = "server=localhost; user=root; password=; database=bdprojetosenac;";
 
-
-           
+                       
             if (nomeCompleto.Length < 5)
             {
                 MessageBox.Show("Digite o nome completo","NOME COMPLETO");
@@ -91,14 +90,34 @@ namespace ProjetoSenac
 
             char[] nomeComEspecial = nomeCompleto.ToCharArray();
 
-            if (nomeComEspecial.Any(c => char.IsPunctuation(c) || !char.IsSymbol(c)))
+            if (nomeComEspecial.Any(c => char.IsPunctuation(c) || char.IsSymbol(c)))
             {
                 MessageBox.Show("Seu nome tem caracteres inválidos", "ATENÇÃO");
                 return;
             }
 
+            char[] numeroValidado = numeroRegistro.ToCharArray();
 
+            if (numeroValidado.Any(c => char.IsPunctuation(c) || char.IsSymbol(c) || char.IsLetter(c)))
+            {
+                MessageBox.Show("Só PODE NUMERO", "ATENÇÃO");
+                txNumeroRegistro.Clear();
+                return;
+            }
 
+            if (numeroRegistro.Length >10 )
+            {
+                MessageBox.Show(" Numero nao pode ter menos que 3 casas decimais e nao pode ter mais que 5 casas ", "ATENÇÃO");
+                txNumeroRegistro.Clear();
+                return;
+            }
+
+            if (nomeUsuario.Length >10)
+            {
+                MessageBox.Show("Nome de usuário nao pode ser maior que 10 caracteres", "ATENÇÃO");
+                txNomeUsuario.Clear();
+                return;
+            }
 
 
             if (string.IsNullOrEmpty(nomeCompleto) || string.IsNullOrEmpty(numeroRegistro) || string.IsNullOrEmpty(nivelPermissao) || string.IsNullOrEmpty(nomeUsuario)
@@ -110,38 +129,35 @@ namespace ProjetoSenac
 
             }
 
-
-
-            else if (listaCadastroUsuario.Any(c => c.NOMECOMPLETO == nomeCompleto))
+            if (listaCadastroUsuario.Any(c => c.NOMECOMPLETO == nomeCompleto))
             {
-                MessageBox.Show("O NOME  existe. Por favor, escolha outro.", "ATENÇÃO");
+                MessageBox.Show("O NOME COMPLETO" + nomeCompleto + " já existe. Por favor, escolha outro.", "ATENÇÃO");
                 
 
                 txNomeCompleto.Clear();
                 return;
-
             }
 
-
-            else if (listaCadastroUsuario.Any(c => c.NOMEUSUARIO == nomeUsuario))
+            if (listaCadastroUsuario.Any(c => c.NUMEROREGISTRO == numeroRegistro))
             {
-                MessageBox.Show("O NOME DE USUARIO  já existe. Por favor, escolha outro.", "ATENÇÃO");
-                    
-
-                txNomeUsuario.Clear();
-                return;
-
-            }
-
-            else if (listaCadastroUsuario.Any(c => c.NUMEROREGISTRO == numeroRegistro))
-            {
-                MessageBox.Show("o NUMERO DE REGISTRO já existe. Por favor, escolha outro.", "ATENÇÃO");
+                MessageBox.Show("o NUMERO DE REGISTRO"+ numeroRegistro + " já existe. Por favor, escolha outro.", "ATENÇÃO");
 
 
                 txNumeroRegistro.Clear();
                 return;
 
             }
+
+            if (listaCadastroUsuario.Any(c => c.NOMEUSUARIO == nomeUsuario))
+            {
+                MessageBox.Show("O NOME DE USUARIO" + nomeUsuario + " já existe. Por favor, escolha outro.", "ATENÇÃO");
+                    
+
+                txNomeUsuario.Clear();
+                return;
+
+            }
+            
 
 
                 else
