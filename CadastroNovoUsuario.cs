@@ -66,21 +66,15 @@ namespace ProjetoSenac
             string DADOS_CONEXAO = "server=localhost; user=root; password=; database=bdprojetosenac;";
 
                        
-            if (nomeCompleto.Length < 5)
+            if (nomeCompleto.Length < 5 || nomeCompleto.Length > 50)
             {
-                MessageBox.Show("Digite o nome completo","NOME COMPLETO");
+                MessageBox.Show("Digite o nome completo. Minimo de 5 caracteres e máximo de 50", "NOME COMPLETO");
                 txNomeCompleto.Clear();
 
                 return;
             }
 
-            if (nomeCompleto.Length > 50)
-            {
-                MessageBox.Show("O nome completo deve ter no máximo 50 caracteres", "ATENÇÃO");
-                txNomeCompleto.Clear();
-                return;
-                
-            }
+            
 
             if (nomeCompleto.Split(' ').Length <2)
             {
@@ -185,15 +179,15 @@ namespace ProjetoSenac
                     // tem que colocar esse comando para conecatar com o banco criado
                     //value @---serve para passar o valor do campo do formulario para o banco de dados
                     string scriptInsert = "INSERT INTO tbcadastronovousuario " +
-                        "(nomeCompleto,numeroRegistro,nivelPermissao,nomeUsuario,senhaAcesso)" +
-                        " VALUE(@nomeCompleto,@numeroRegistro,@nivelPermissao,@nomeUsuario,@senhaAcesso)";
+                        "(nomeCompleto,numeroRegistro,nivelPermisao,nomeUsuario,senhaAcesso)" +
+                        " VALUE(@nomeCompleto,@numeroRegistro,@nivelPermisao,@nomeUsuario,@senhaAcesso)";
 
 
                     using (MySqlCommand comando = new MySqlCommand(scriptInsert, conn))
                     {
                         comando.Parameters.AddWithValue("@nomeCompleto", nomeCompleto);
                         comando.Parameters.AddWithValue("@numeroRegistro", numeroRegistro);
-                        comando.Parameters.AddWithValue("@nivelPermissao", nivelPermissao);
+                        comando.Parameters.AddWithValue("@nivelPermisao", nivelPermissao);
                         comando.Parameters.AddWithValue("@nomeUsuario", nomeUsuario);
                         comando.Parameters.AddWithValue("@senhaAcesso", senhaAcesso);
 

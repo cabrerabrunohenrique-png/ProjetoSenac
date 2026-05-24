@@ -65,7 +65,7 @@ namespace ProjetoSenac
             }
 
             if (!double.TryParse(txAlturaPeca.Text, out double alturaPeca))
-            {   
+            {
                 MessageBox.Show("A altura da peça deve ser um número válido", "ATENÇÃO");
                 txAlturaPeca.Clear();
                 return;
@@ -92,16 +92,16 @@ namespace ProjetoSenac
                 return;
             }
 
-            if(codigoPeca ==0 || codigoPeca < 0)
+            if (codigoPeca == 0 || codigoPeca < 0)
             {
-                MessageBox.Show("O código da peça tem que ser um número inteiro"+ codigoPeca, "ATENÇÃO");
-                txCodigoPeca.Clear(); 
+                MessageBox.Show("O código da peça tem que ser um número inteiro" + codigoPeca, "ATENÇÃO");
+                txCodigoPeca.Clear();
                 return;
             }
 
-           
-            
-            if (nomePeca.Length <2 || nomePeca.Length > 20)
+
+
+            if (nomePeca.Length < 2 || nomePeca.Length > 20)
             {
                 MessageBox.Show("Nome da peça deve conter entre 2 e 20 caracteres", "ATENÇÃO");
                 txNomePeca.Clear();
@@ -116,7 +116,7 @@ namespace ProjetoSenac
 
             char[] nomeEspecial = nomePeca.ToCharArray();
 
-            if(nomeEspecial.Any(char.IsSymbol) || nomeEspecial.Any(char.IsPunctuation))
+            if (nomeEspecial.Any(char.IsSymbol) || nomeEspecial.Any(char.IsPunctuation))
             {
                 MessageBox.Show("O nome da peça não pode conter caracteres especiais", "ATENÇÃO");
                 txNomePeca.Clear();
@@ -131,7 +131,7 @@ namespace ProjetoSenac
             }
 
             char[] fabricanteEspecial = fabricante.ToCharArray();
-            if(fabricanteEspecial.Any(char.IsSymbol) || fabricanteEspecial.Any(char.IsPunctuation))
+            if (fabricanteEspecial.Any(char.IsSymbol) || fabricanteEspecial.Any(char.IsPunctuation))
             {
                 MessageBox.Show("O nome do fabricante não pode conter caracteres especiais", "ATENÇÃO");
                 txFabricantePeca.Clear();
@@ -144,71 +144,80 @@ namespace ProjetoSenac
                 return;
             }
 
-            else
+
+            if( listaEstoque.Any(c => c.NUMERONF == numeroNf && c.CODIGOPECA == codigoPeca && c.QUANTIDADEPECA == quantidaPeca))
             {
-               
+               MessageBox.Show("Já existe uma peça com esse código e número de nota fiscal", "ATENÇÃO");
+                return;
             }
 
-            string DADOS_CONEXAO = "server=localhost; user=root; password=; database=bdprojetosenac;";
 
-            using (MySqlConnection conn = new MySqlConnection(DADOS_CONEXAO))
+            else
             {
-                
 
 
 
+                string DADOS_CONEXAO = "server=localhost; user=root; password=; database=bdprojetosenac;";
 
-                conn.Open();
-                string scriptInsert = "INSERT INTO tbentradaestoque" +
-                    " (dataEntradaPeca,codigoPeca,nomePeca,fabricantePeca,pesoPeca,alturaPeca,comprimenetoPeca,quantidadePeca,nfPeca)" +
-                    " VALUES(@dataEntradaPeca,@codigoPeca,@nomePeca,@fabricantePeca,@pesoPeca,@alturaPeca,@comprimenetoPeca,@quantidadePeca,@nfPeca)";
-
-                using (MySqlCommand comando = new MySqlCommand(scriptInsert, conn))
+                using (MySqlConnection conn = new MySqlConnection(DADOS_CONEXAO))
                 {
-                    comando.Parameters.AddWithValue("@dataEntradaPeca", dataEntradaPeca);
-                    comando.Parameters.AddWithValue("@codigoPeca", codigoPeca);
-                    comando.Parameters.AddWithValue("@nomePeca", nomePeca);
-                    comando.Parameters.AddWithValue("@fabricantePeca", fabricante);
-                    comando.Parameters.AddWithValue("@pesoPeca", pesoPeca);
-                    comando.Parameters.AddWithValue("@alturaPeca", alturaPeca);
-                    comando.Parameters.AddWithValue("@comprimenetoPeca", comprimentoPeca);
-                    comando.Parameters.AddWithValue("@quantidadePeca", quantidaPeca);
-                    comando.Parameters.AddWithValue("@nfPeca", numeroNf);
 
 
 
 
-                    comando.ExecuteNonQuery();
+
+                    conn.Open();
+                    string scriptInsert = "INSERT INTO tbentradaestoque" +
+                        " (dataEntradaPeca,codigoPeca,nomePeca,fabricantePeca,pesoPeca,alturaPeca,comprimentoPeca,quantidadePeca,nfPeca)" +
+                        " VALUES(@dataEntradaPeca,@codigoPeca,@nomePeca,@fabricantePeca,@pesoPeca,@alturaPeca,@comprimentoPeca,@quantidadePeca,@nfPeca)";
+
+                    using (MySqlCommand comando = new MySqlCommand(scriptInsert, conn))
+                    {
+                        comando.Parameters.AddWithValue("@dataEntradaPeca", dataEntradaPeca);
+                        comando.Parameters.AddWithValue("@codigoPeca", codigoPeca);
+                        comando.Parameters.AddWithValue("@nomePeca", nomePeca);
+                        comando.Parameters.AddWithValue("@fabricantePeca", fabricante);
+                        comando.Parameters.AddWithValue("@pesoPeca", pesoPeca);
+                        comando.Parameters.AddWithValue("@alturaPeca", alturaPeca);
+                        comando.Parameters.AddWithValue("@comprimentoPeca", comprimentoPeca);
+                        comando.Parameters.AddWithValue("@quantidadePeca", quantidaPeca);
+                        comando.Parameters.AddWithValue("@nfPeca", numeroNf);
+
+
+
+
+                        comando.ExecuteNonQuery();
+                    }
+                    EstoqueEntrada estoqueEntrada = new EstoqueEntrada();
+                    estoqueEntrada.DATAENTRADA = dataEntradaPeca;
+                    estoqueEntrada.CODIGOPECA = codigoPeca;
+                    estoqueEntrada.NOMEPECA = nomePeca;
+                    estoqueEntrada.FABRICANTE = fabricante;
+                    estoqueEntrada.PESOPECA = pesoPeca;
+                    estoqueEntrada.ALTURAPECA = alturaPeca;
+                    estoqueEntrada.COMPRIMENTOPECA = comprimentoPeca;
+                    estoqueEntrada.QUANTIDADEPECA = quantidaPeca;
+                    estoqueEntrada.NUMERONF = numeroNf;
+
+                    listaEstoque.Add(estoqueEntrada);
+
+
+                    MessageBox.Show("ok");
+
+                    txCodigoPeca.Clear();
+                    txPesoPeca.Clear();
+                    txAlturaPeca.Clear();
+                    txNomePeca.Clear();
+                    txFabricantePeca.Clear();
+                    txComprimentoPeca.Clear();
+                    txQuantidadePeca.Clear();
+                    txNfPeca.Clear();
+                    monthCalendar1.SelectionEnd = DateTime.Today;
+
+
+
+                    conn.Clone();
                 }
-                EstoqueEntrada estoqueEntrada = new EstoqueEntrada();
-                estoqueEntrada.DATAENTRADA = dataEntradaPeca;
-                estoqueEntrada.CODIGOPECA = codigoPeca;
-                estoqueEntrada.NOMEPECA = nomePeca;
-                estoqueEntrada.FABRICANTE = fabricante;
-                estoqueEntrada.PESOPECA = pesoPeca;
-                estoqueEntrada.ALTURAPECA = alturaPeca;
-                estoqueEntrada.COMPRIMENTOPECA = comprimentoPeca;
-                estoqueEntrada.QUANTIDADEPECA = quantidaPeca;
-                estoqueEntrada.NUMERONF = numeroNf;
-
-                listaEstoque.Add(estoqueEntrada);
-
-
-                MessageBox.Show("ok");
-
-                txCodigoPeca.Clear();
-                txPesoPeca.Clear();
-                txAlturaPeca.Clear();
-                txNomePeca.Clear();
-                txFabricantePeca.Clear();
-                txComprimentoPeca.Clear();
-                txQuantidadePeca.Clear();
-                txNfPeca.Clear();
-                monthCalendar1.SelectionEnd = DateTime.Today;
-
-
-
-                conn.Clone();
             }
         }
     }
