@@ -42,13 +42,81 @@ namespace ProjetoSenac
             DateTime dataSaida = monthCalendar1.SelectionStart;
             string nomePeca = txNomePecaS.Text;
             string situacaoPeca = txSituacaoPeca.Text;
-            
+
+            if(string.IsNullOrWhiteSpace(nomePeca))
+            {
+                MessageBox.Show("O nome da peça não pode estar vazio", "ATENÇÃO");
+                txNomePecaS.Clear();
+                return;
+            };
+
+            if(string.IsNullOrWhiteSpace(situacaoPeca))
+            {
+                MessageBox.Show("A situação da peça não pode estar vazia", "ATENÇÃO");
+                txSituacaoPeca.Clear();
+                return;
+            }
+            ;
+
+
+            char[] nomePecaespecial = nomePeca.ToCharArray();
+
+            if (nomePecaespecial.Any(char.IsSymbol) || nomePecaespecial.Any(char.IsPunctuation))
+            {
+                MessageBox.Show("O nome da peça não pode conter caracteres especiais", "ATENÇÃO");
+                txNomePecaS.Clear();
+                return;
+            }
+
+
             if (!int.TryParse(txCodigoPecaS.Text, out int codigoPeca))
             {
                 MessageBox.Show("Código da peça inválido. Por favor, insira um número inteiro.",
                     "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+
+
+
+
+            if (!int.TryParse(txQuatidadePeca.Text, out int quantidadePeca))
+            {
+                MessageBox.Show("Quantidade da peça inválida. Por favor, insira um número inteiro.",
+                    "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txQuatidadePeca.Clear();
+                return;
+            }
+
+            if(!int.TryParse(txNF.Text, out int numeroNF) || numeroNF < 0)
+            {
+                MessageBox.Show("Número da nota fiscal inválido. Por favor, insira um número inteiro.",
+                    "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txNF.Clear();
+                return;
+            }
+
+            if(!int.TryParse(txCpfPeca.Text, out int cpfNf) || cpfNf < 0)
+            {
+                MessageBox.Show("CPF inválido. Por favor, insira um número inteiro.",
+                    "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txCpfPeca.Clear();
+                return;
+            }
+
+
+            if (!int.TryParse(txNumeroOS.Text, out int numeroOs) || numeroOs < 0)
+            {
+                MessageBox.Show("Número da ordem de serviço inválido. Por favor, insira um número positivo.",
+                    "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txNumeroOS.Clear();
+                return;
+            }
+
+            
+            
+           
+            
+
 
             int codigoPeca1 = int.Parse(txCodigoPecaS.Text);
 
@@ -60,74 +128,72 @@ namespace ProjetoSenac
                 return;
             }
 
-
-            if(!int.TryParse(txQuatidadePeca.Text, out int quantidadePeca))
-            {
-                MessageBox.Show("Quantidade da peça inválida. Por favor, insira um número inteiro.",
-                    "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
             int quantidadePeca1 = int.Parse(txQuatidadePeca.Text);
 
-            if(quantidadePeca1 < 0)
+            if (quantidadePeca1 < 0)
             {
                 MessageBox.Show("Quantidade da peça inválida. Por favor, insira um número positivo.",
-                    "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning   );
+                    "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txQuatidadePeca.Clear();
                 return;
-             }
-
-
-            int numeroNf = txNF.Text != "" ? int.Parse(txNF.Text) : 0;
-            int cpfNf = txNF.Text != "" ? int.Parse(txNF.Text) : 0;
-            int numeroOs = txNumeroOS.Text != "" ? int.Parse(txNumeroOS.Text) : 0;
-            
-
-
-            if (dataSaida == null || codigoPeca == 0 || nomePeca == null
-                || quantidadePeca == 0 || numeroNf == 0 || cpfNf == 0
-                || numeroOs == 0 || situacaoPeca == null) ;
-
-
-
-            string DADOS_CONEXAO = "server=localhost; user=root; password=; database=bdprojetosenac;";
-
-            using (MySqlConnection conn = new MySqlConnection(DADOS_CONEXAO))
-            {
-
-                conn.Open();
-                string scriptInsert = "INSERT INTO tbsaidaestoque" +
-                    " (dataSaida,codigoPeca,nomePeca,quantidaPeca,numeroNf,cpfPeca,numeroOs,situacaoPeca)" +
-                    " VALUES(@dataSaida,@codigoPeca,@nomePeca,@quantidadePeca,@nfPeca,@cpfPeca,@mumeroOS,@situacaoPeca)";
-
-                using (MySqlCommand comando = new MySqlCommand(scriptInsert, conn))
-                {
-                    comando.Parameters.AddWithValue("@dataSaida", dataSaida);
-                    comando.Parameters.AddWithValue("@codigoPeca", codigoPeca);
-                    comando.Parameters.AddWithValue("@nomePeca", nomePeca);
-                    comando.Parameters.AddWithValue("@quantidadePeca", quantidadePeca);
-                    comando.Parameters.AddWithValue("@nfPeca", numeroNf);
-                    comando.Parameters.AddWithValue("@cpfPeca", cpfNf);
-                    comando.Parameters.AddWithValue("@mumeroOS", numeroOs);
-                    comando.Parameters.AddWithValue("@situacaoPeca", situacaoPeca);
-                    comando.ExecuteNonQuery();
-                }
-                SaidaEstoqueSaida saidaEstoque = new SaidaEstoqueSaida();
-                saidaEstoque.DATA_SAIDA = dataSaida;
-                saidaEstoque.CODIGOPECA = codigoPeca;
-                saidaEstoque.NOMEPECA = nomePeca;
-                saidaEstoque.QUANTIDADEPECA = quantidadePeca;
-                saidaEstoque.NUMERONF = numeroNf;
-                saidaEstoque.CPFPECA = cpfNf;
-                saidaEstoque.NUMEROOS = numeroOs;
-                saidaEstoque.SITUACAO = situacaoPeca;
-
-
-                listasaida.Add(saidaEstoque);
-
-                conn.Clone();
             }
-        }
+
+            else
+            { 
+
+
+
+             string DADOS_CONEXAO = "server=localhost; user=root; password=; database=bdprojetosenac;";
+
+                using (MySqlConnection conn = new MySqlConnection(DADOS_CONEXAO))
+                {
+
+                    conn.Open();
+                    string scriptInsert = "INSERT INTO tbsaidaestoque" +
+                        " (dataSaida,codigoPeca,nomePeca,quantidaPeca,numeroNf,cpfPeca,numeroOs,situacaoPeca)" +
+                        " VALUES(@dataSaida,@codigoPeca,@nomePeca,@quantidadePeca,@nfPeca,@cpfPeca,@mumeroOS,@situacaoPeca)";
+
+                    using (MySqlCommand comando = new MySqlCommand(scriptInsert, conn))
+                    {
+                        comando.Parameters.AddWithValue("@dataSaida", dataSaida);
+                        comando.Parameters.AddWithValue("@codigoPeca", codigoPeca);
+                        comando.Parameters.AddWithValue("@nomePeca", nomePeca);
+                        comando.Parameters.AddWithValue("@quantidadePeca", quantidadePeca);
+                        comando.Parameters.AddWithValue("@nfPeca", numeroNF);
+                        comando.Parameters.AddWithValue("@cpfPeca", cpfNf);
+                        comando.Parameters.AddWithValue("@mumeroOS", numeroOs);
+                        comando.Parameters.AddWithValue("@situacaoPeca", situacaoPeca);
+                        comando.ExecuteNonQuery();
+                    }
+                    SaidaEstoqueSaida saidaEstoque = new SaidaEstoqueSaida();
+                    saidaEstoque.DATA_SAIDA = dataSaida;
+                    saidaEstoque.CODIGOPECA = codigoPeca;
+                    saidaEstoque.NOMEPECA = nomePeca;
+                    saidaEstoque.QUANTIDADEPECA = quantidadePeca;
+                    saidaEstoque.NUMERONF = numeroNF;
+                    saidaEstoque.CPFPECA = cpfNf;
+                    saidaEstoque.NUMEROOS = numeroOs;
+                    saidaEstoque.SITUACAO = situacaoPeca;
+
+
+                    listasaida.Add(saidaEstoque);
+
+                    MessageBox.Show("Saída da peça registrada com sucesso!", "SUCESSO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+                    monthCalendar1.SetDate(DateTime.Today);
+                    txCodigoPecaS.Clear();
+                    txNomePecaS.Clear();
+                    txQuatidadePeca.Clear();
+                    txNF.Clear();
+                    txSituacaoPeca.Clear();
+                    txCpfPeca.Clear();
+                    txNumeroOS.Clear();
+
+
+                    conn.Clone();
+                }
+            }
+        } 
     }
 }
