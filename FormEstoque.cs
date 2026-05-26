@@ -85,10 +85,14 @@ namespace ProjetoSenac
                 return;
             }
 
-            if (!int.TryParse(txNfPeca.Text, out int numeroNf))
+            
+
+            int quanitadePeca = int.Parse(txQuantidadePeca.Text);
+
+            if(quanitadePeca < 0)
             {
-                MessageBox.Show("O número da nota fiscal deve ser um número válido", "ATENÇÃO");
-                txNfPeca.Clear();
+                MessageBox.Show("A quantidade da peça deve ser um número inteiro positivo", "ATENÇÃO");
+                txQuantidadePeca.Clear();
                 return;
             }
 
@@ -99,6 +103,25 @@ namespace ProjetoSenac
                 return;
             }
 
+
+
+            if (!int.TryParse(txNfPeca.Text, out int numeroNf))
+            {
+                MessageBox.Show("O número da nota fiscal deve ser um número válido", "ATENÇÃO");
+                txNfPeca.Clear();
+                return;
+            }
+
+
+            int numeroNfPeca = int.Parse(txNfPeca.Text);
+            {
+                if (numeroNfPeca < 0)
+                {
+                    MessageBox.Show("O número da nota fiscal deve ser um número inteiro positivo", "ATENÇÃO");
+                    txNfPeca.Clear();
+                    return;
+                }
+            }
 
 
             if (nomePeca.Length < 2 || nomePeca.Length > 20)
@@ -148,7 +171,7 @@ namespace ProjetoSenac
             if( listaEstoque.Any(c => c.NUMERONF == numeroNf && c.CODIGOPECA == codigoPeca && c.QUANTIDADEPECA == quantidaPeca))
             {
                MessageBox.Show("Já existe uma peça com esse código e número de nota fiscal", "ATENÇÃO");
-                return;
+               return;
             }
 
 

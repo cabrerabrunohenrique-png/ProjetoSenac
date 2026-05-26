@@ -40,13 +40,49 @@ namespace ProjetoSenac
         private void btFinalizarSaidaPeca_Click(object sender, EventArgs e)
         {
             DateTime dataSaida = monthCalendar1.SelectionStart;
-            int codigoPeca = txCodigoPecaS.Text != "" ? int.Parse(txCodigoPecaS.Text) : 0;
             string nomePeca = txNomePecaS.Text;
-            int quantidadePeca = txQuatidadePeca.Text != "" ? int.Parse(txQuatidadePeca.Text) : 0;
+            string situacaoPeca = txSituacaoPeca.Text;
+            
+            if (!int.TryParse(txCodigoPecaS.Text, out int codigoPeca))
+            {
+                MessageBox.Show("Código da peça inválido. Por favor, insira um número inteiro.",
+                    "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            int codigoPeca1 = int.Parse(txCodigoPecaS.Text);
+
+            if (codigoPeca1 < 0)
+            {
+                MessageBox.Show("Código da peça inválido. Por favor, insira um número positivo.",
+                    "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txCodigoPecaS.Clear();
+                return;
+            }
+
+
+            if(!int.TryParse(txQuatidadePeca.Text, out int quantidadePeca))
+            {
+                MessageBox.Show("Quantidade da peça inválida. Por favor, insira um número inteiro.",
+                    "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            int quantidadePeca1 = int.Parse(txQuatidadePeca.Text);
+
+            if(quantidadePeca1 < 0)
+            {
+                MessageBox.Show("Quantidade da peça inválida. Por favor, insira um número positivo.",
+                    "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning   );
+                txQuatidadePeca.Clear();
+                return;
+             }
+
+
             int numeroNf = txNF.Text != "" ? int.Parse(txNF.Text) : 0;
             int cpfNf = txNF.Text != "" ? int.Parse(txNF.Text) : 0;
             int numeroOs = txNumeroOS.Text != "" ? int.Parse(txNumeroOS.Text) : 0;
-            string situacaoPeca = txSituacaoPeca.Text;
+            
 
 
             if (dataSaida == null || codigoPeca == 0 || nomePeca == null
@@ -62,12 +98,12 @@ namespace ProjetoSenac
 
                 conn.Open();
                 string scriptInsert = "INSERT INTO tbsaidaestoque" +
-                    " (dataSaisaPeca,codigoPeca,nomePeca,quantidadePeca,nfPeca,cpfPeca,mumeroOS,situacaoPeca)" +
-                    " VALUES(@dataSaisaPeca,@codigoPeca,@nomePeca,@quantidadePeca,@nfPeca,@cpfPeca,@mumeroOS,@situacaoPeca)";
+                    " (dataSaida,codigoPeca,nomePeca,quantidaPeca,numeroNf,cpfPeca,numeroOs,situacaoPeca)" +
+                    " VALUES(@dataSaida,@codigoPeca,@nomePeca,@quantidadePeca,@nfPeca,@cpfPeca,@mumeroOS,@situacaoPeca)";
 
                 using (MySqlCommand comando = new MySqlCommand(scriptInsert, conn))
                 {
-                    comando.Parameters.AddWithValue("@dataSaisaPeca", dataSaida);
+                    comando.Parameters.AddWithValue("@dataSaida", dataSaida);
                     comando.Parameters.AddWithValue("@codigoPeca", codigoPeca);
                     comando.Parameters.AddWithValue("@nomePeca", nomePeca);
                     comando.Parameters.AddWithValue("@quantidadePeca", quantidadePeca);

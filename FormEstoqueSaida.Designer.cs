@@ -51,7 +51,7 @@
             // lSituacaoPeca
             // 
             this.lSituacaoPeca.AutoSize = true;
-            this.lSituacaoPeca.Location = new System.Drawing.Point(312, 336);
+            this.lSituacaoPeca.Location = new System.Drawing.Point(384, 311);
             this.lSituacaoPeca.Name = "lSituacaoPeca";
             this.lSituacaoPeca.Size = new System.Drawing.Size(114, 16);
             this.lSituacaoPeca.TabIndex = 65;
@@ -59,16 +59,16 @@
             // 
             // txSituacaoPeca
             // 
-            this.txSituacaoPeca.Location = new System.Drawing.Point(506, 329);
+            this.txSituacaoPeca.Location = new System.Drawing.Point(578, 304);
             this.txSituacaoPeca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txSituacaoPeca.Name = "txSituacaoPeca";
-            this.txSituacaoPeca.Size = new System.Drawing.Size(191, 22);
+            this.txSituacaoPeca.Size = new System.Drawing.Size(261, 22);
             this.txSituacaoPeca.TabIndex = 64;
             // 
             // lNumeroOS
             // 
             this.lNumeroOS.AutoSize = true;
-            this.lNumeroOS.Location = new System.Drawing.Point(312, 295);
+            this.lNumeroOS.Location = new System.Drawing.Point(384, 270);
             this.lNumeroOS.Name = "lNumeroOS";
             this.lNumeroOS.Size = new System.Drawing.Size(96, 16);
             this.lNumeroOS.TabIndex = 63;
@@ -76,10 +76,10 @@
             // 
             // txNumeroOS
             // 
-            this.txNumeroOS.Location = new System.Drawing.Point(506, 289);
+            this.txNumeroOS.Location = new System.Drawing.Point(578, 264);
             this.txNumeroOS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txNumeroOS.Name = "txNumeroOS";
-            this.txNumeroOS.Size = new System.Drawing.Size(191, 22);
+            this.txNumeroOS.Size = new System.Drawing.Size(261, 22);
             this.txNumeroOS.TabIndex = 62;
             // 
             // monthCalendar1
@@ -91,7 +91,7 @@
             // lCpfPeca
             // 
             this.lCpfPeca.AutoSize = true;
-            this.lCpfPeca.Location = new System.Drawing.Point(312, 255);
+            this.lCpfPeca.Location = new System.Drawing.Point(384, 230);
             this.lCpfPeca.Name = "lCpfPeca";
             this.lCpfPeca.Size = new System.Drawing.Size(87, 16);
             this.lCpfPeca.TabIndex = 60;
@@ -99,16 +99,16 @@
             // 
             // txCpfPeca
             // 
-            this.txCpfPeca.Location = new System.Drawing.Point(506, 248);
+            this.txCpfPeca.Location = new System.Drawing.Point(578, 223);
             this.txCpfPeca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txCpfPeca.Name = "txCpfPeca";
-            this.txCpfPeca.Size = new System.Drawing.Size(191, 22);
+            this.txCpfPeca.Size = new System.Drawing.Size(261, 22);
             this.txCpfPeca.TabIndex = 59;
             // 
             // lNfPeca
             // 
             this.lNfPeca.AutoSize = true;
-            this.lNfPeca.Location = new System.Drawing.Point(312, 214);
+            this.lNfPeca.Location = new System.Drawing.Point(384, 189);
             this.lNfPeca.Name = "lNfPeca";
             this.lNfPeca.Size = new System.Drawing.Size(79, 16);
             this.lNfPeca.TabIndex = 58;
@@ -116,16 +116,16 @@
             // 
             // txNF
             // 
-            this.txNF.Location = new System.Drawing.Point(506, 208);
+            this.txNF.Location = new System.Drawing.Point(578, 183);
             this.txNF.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txNF.Name = "txNF";
-            this.txNF.Size = new System.Drawing.Size(191, 22);
+            this.txNF.Size = new System.Drawing.Size(261, 22);
             this.txNF.TabIndex = 57;
             // 
             // lFQuantidadePeca
             // 
             this.lFQuantidadePeca.AutoSize = true;
-            this.lFQuantidadePeca.Location = new System.Drawing.Point(312, 177);
+            this.lFQuantidadePeca.Location = new System.Drawing.Point(384, 152);
             this.lFQuantidadePeca.Name = "lFQuantidadePeca";
             this.lFQuantidadePeca.Size = new System.Drawing.Size(112, 16);
             this.lFQuantidadePeca.TabIndex = 56;
@@ -133,10 +133,10 @@
             // 
             // txQuatidadePeca
             // 
-            this.txQuatidadePeca.Location = new System.Drawing.Point(506, 171);
+            this.txQuatidadePeca.Location = new System.Drawing.Point(578, 146);
             this.txQuatidadePeca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txQuatidadePeca.Name = "txQuatidadePeca";
-            this.txQuatidadePeca.Size = new System.Drawing.Size(191, 22);
+            this.txQuatidadePeca.Size = new System.Drawing.Size(261, 22);
             this.txQuatidadePeca.TabIndex = 55;
             // 
             // btFinalizarSaidaPeca
@@ -154,7 +154,7 @@
             // lNomePecaS
             // 
             this.lNomePecaS.AutoSize = true;
-            this.lNomePecaS.Location = new System.Drawing.Point(312, 129);
+            this.lNomePecaS.Location = new System.Drawing.Point(384, 104);
             this.lNomePecaS.Name = "lNomePecaS";
             this.lNomePecaS.Size = new System.Drawing.Size(98, 16);
             this.lNomePecaS.TabIndex = 53;
@@ -162,16 +162,16 @@
             // 
             // txNomePecaS
             // 
-            this.txNomePecaS.Location = new System.Drawing.Point(506, 122);
+            this.txNomePecaS.Location = new System.Drawing.Point(578, 97);
             this.txNomePecaS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txNomePecaS.Name = "txNomePecaS";
-            this.txNomePecaS.Size = new System.Drawing.Size(191, 22);
+            this.txNomePecaS.Size = new System.Drawing.Size(261, 22);
             this.txNomePecaS.TabIndex = 52;
             // 
             // lCodigoPecaS
             // 
             this.lCodigoPecaS.AutoSize = true;
-            this.lCodigoPecaS.Location = new System.Drawing.Point(312, 88);
+            this.lCodigoPecaS.Location = new System.Drawing.Point(384, 63);
             this.lCodigoPecaS.Name = "lCodigoPecaS";
             this.lCodigoPecaS.Size = new System.Drawing.Size(105, 16);
             this.lCodigoPecaS.TabIndex = 51;
@@ -179,10 +179,10 @@
             // 
             // txCodigoPecaS
             // 
-            this.txCodigoPecaS.Location = new System.Drawing.Point(506, 82);
+            this.txCodigoPecaS.Location = new System.Drawing.Point(578, 57);
             this.txCodigoPecaS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txCodigoPecaS.Name = "txCodigoPecaS";
-            this.txCodigoPecaS.Size = new System.Drawing.Size(191, 22);
+            this.txCodigoPecaS.Size = new System.Drawing.Size(261, 22);
             this.txCodigoPecaS.TabIndex = 50;
             // 
             // lDataSaidaPeca
