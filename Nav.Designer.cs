@@ -114,6 +114,7 @@
             this.Controls.Add(this.btOrdemServico);
             this.Name = "Nav";
             this.Text = "Nav";
+            this.Load += new System.EventHandler(this.Nav_Load);
             this.ResumeLayout(false);
 
         }

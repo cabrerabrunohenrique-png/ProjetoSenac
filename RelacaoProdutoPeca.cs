@@ -9,15 +9,15 @@ namespace ProjetoSenac
 {
     public class RelacaoProdutoPeca
     {
-        public string CODIGOPRODUTO { get; set; }
+        public int CODIGOPRODUTO { get; set; }
 
         public string NOMEPRODUTO { get; set; }
 
-        public string CODIGOPECA { get; set; }
+        public int CODIGOPECA { get; set; }
 
         public string NOMEPECA { get; set; }
 
-        public string QUANTIDADE { get; set; }
+        public int QUANTIDADE { get; set; }
 
 
     }

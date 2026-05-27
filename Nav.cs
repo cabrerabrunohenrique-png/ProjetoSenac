@@ -100,5 +100,10 @@ namespace ProjetoSenac
             formsaida.ShowDialog();
             
         }
+
+        private void Nav_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
