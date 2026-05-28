@@ -72,11 +72,12 @@
             this.btCadastrarEntrada.TabIndex = 30;
             this.btCadastrarEntrada.Text = "Finalizar Entrada Estoque";
             this.btCadastrarEntrada.UseVisualStyleBackColor = false;
+            this.btCadastrarEntrada.Click += new System.EventHandler(this.btCadastrarEntrada_Click);
             // 
             // lNomePeca
             // 
             this.lNomePeca.AutoSize = true;
-            this.lNomePeca.Location = new System.Drawing.Point(312, 114);
+            this.lNomePeca.Location = new System.Drawing.Point(363, 114);
             this.lNomePeca.Name = "lNomePeca";
             this.lNomePeca.Size = new System.Drawing.Size(98, 16);
             this.lNomePeca.TabIndex = 29;
@@ -87,13 +88,13 @@
             this.txNomePeca.Location = new System.Drawing.Point(506, 107);
             this.txNomePeca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txNomePeca.Name = "txNomePeca";
-            this.txNomePeca.Size = new System.Drawing.Size(191, 22);
+            this.txNomePeca.Size = new System.Drawing.Size(332, 22);
             this.txNomePeca.TabIndex = 28;
             // 
             // lCodigoPeca
             // 
             this.lCodigoPeca.AutoSize = true;
-            this.lCodigoPeca.Location = new System.Drawing.Point(312, 73);
+            this.lCodigoPeca.Location = new System.Drawing.Point(363, 73);
             this.lCodigoPeca.Name = "lCodigoPeca";
             this.lCodigoPeca.Size = new System.Drawing.Size(105, 16);
             this.lCodigoPeca.TabIndex = 27;
@@ -104,7 +105,7 @@
             this.txCodigoPeca.Location = new System.Drawing.Point(506, 67);
             this.txCodigoPeca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txCodigoPeca.Name = "txCodigoPeca";
-            this.txCodigoPeca.Size = new System.Drawing.Size(191, 22);
+            this.txCodigoPeca.Size = new System.Drawing.Size(332, 22);
             this.txCodigoPeca.TabIndex = 26;
             // 
             // lDataEntradaPeca
@@ -119,7 +120,7 @@
             // lAlturaPeca
             // 
             this.lAlturaPeca.AutoSize = true;
-            this.lAlturaPeca.Location = new System.Drawing.Point(312, 240);
+            this.lAlturaPeca.Location = new System.Drawing.Point(363, 240);
             this.lAlturaPeca.Name = "lAlturaPeca";
             this.lAlturaPeca.Size = new System.Drawing.Size(68, 16);
             this.lAlturaPeca.TabIndex = 36;
@@ -130,13 +131,13 @@
             this.txAlturaPeca.Location = new System.Drawing.Point(506, 233);
             this.txAlturaPeca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txAlturaPeca.Name = "txAlturaPeca";
-            this.txAlturaPeca.Size = new System.Drawing.Size(191, 22);
+            this.txAlturaPeca.Size = new System.Drawing.Size(332, 22);
             this.txAlturaPeca.TabIndex = 35;
             // 
             // lPesoPeca
             // 
             this.lPesoPeca.AutoSize = true;
-            this.lPesoPeca.Location = new System.Drawing.Point(312, 199);
+            this.lPesoPeca.Location = new System.Drawing.Point(363, 199);
             this.lPesoPeca.Name = "lPesoPeca";
             this.lPesoPeca.Size = new System.Drawing.Size(74, 16);
             this.lPesoPeca.TabIndex = 34;
@@ -147,13 +148,13 @@
             this.txPesoPeca.Location = new System.Drawing.Point(506, 193);
             this.txPesoPeca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txPesoPeca.Name = "txPesoPeca";
-            this.txPesoPeca.Size = new System.Drawing.Size(191, 22);
+            this.txPesoPeca.Size = new System.Drawing.Size(332, 22);
             this.txPesoPeca.TabIndex = 33;
             // 
             // lFabricantePeca
             // 
             this.lFabricantePeca.AutoSize = true;
-            this.lFabricantePeca.Location = new System.Drawing.Point(312, 162);
+            this.lFabricantePeca.Location = new System.Drawing.Point(363, 162);
             this.lFabricantePeca.Name = "lFabricantePeca";
             this.lFabricantePeca.Size = new System.Drawing.Size(125, 16);
             this.lFabricantePeca.TabIndex = 32;
@@ -164,7 +165,7 @@
             this.txFabricantePeca.Location = new System.Drawing.Point(506, 156);
             this.txFabricantePeca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txFabricantePeca.Name = "txFabricantePeca";
-            this.txFabricantePeca.Size = new System.Drawing.Size(191, 22);
+            this.txFabricantePeca.Size = new System.Drawing.Size(332, 22);
             this.txFabricantePeca.TabIndex = 31;
             // 
             // monthCalendar1
@@ -176,7 +177,7 @@
             // lQuantidadePeca
             // 
             this.lQuantidadePeca.AutoSize = true;
-            this.lQuantidadePeca.Location = new System.Drawing.Point(312, 321);
+            this.lQuantidadePeca.Location = new System.Drawing.Point(363, 321);
             this.lQuantidadePeca.Name = "lQuantidadePeca";
             this.lQuantidadePeca.Size = new System.Drawing.Size(112, 16);
             this.lQuantidadePeca.TabIndex = 41;
@@ -187,13 +188,13 @@
             this.txQuantidadePeca.Location = new System.Drawing.Point(506, 314);
             this.txQuantidadePeca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txQuantidadePeca.Name = "txQuantidadePeca";
-            this.txQuantidadePeca.Size = new System.Drawing.Size(191, 22);
+            this.txQuantidadePeca.Size = new System.Drawing.Size(332, 22);
             this.txQuantidadePeca.TabIndex = 40;
             // 
             // lComprimentoPeca
             // 
             this.lComprimentoPeca.AutoSize = true;
-            this.lComprimentoPeca.Location = new System.Drawing.Point(312, 280);
+            this.lComprimentoPeca.Location = new System.Drawing.Point(363, 280);
             this.lComprimentoPeca.Name = "lComprimentoPeca";
             this.lComprimentoPeca.Size = new System.Drawing.Size(122, 16);
             this.lComprimentoPeca.TabIndex = 39;
@@ -204,13 +205,13 @@
             this.txComprimentoPeca.Location = new System.Drawing.Point(506, 274);
             this.txComprimentoPeca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txComprimentoPeca.Name = "txComprimentoPeca";
-            this.txComprimentoPeca.Size = new System.Drawing.Size(191, 22);
+            this.txComprimentoPeca.Size = new System.Drawing.Size(332, 22);
             this.txComprimentoPeca.TabIndex = 38;
             // 
             // lNfPeca
             // 
             this.lNfPeca.AutoSize = true;
-            this.lNfPeca.Location = new System.Drawing.Point(312, 361);
+            this.lNfPeca.Location = new System.Drawing.Point(363, 361);
             this.lNfPeca.Name = "lNfPeca";
             this.lNfPeca.Size = new System.Drawing.Size(79, 16);
             this.lNfPeca.TabIndex = 43;
@@ -221,7 +222,7 @@
             this.txNfPeca.Location = new System.Drawing.Point(506, 354);
             this.txNfPeca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txNfPeca.Name = "txNfPeca";
-            this.txNfPeca.Size = new System.Drawing.Size(191, 22);
+            this.txNfPeca.Size = new System.Drawing.Size(332, 22);
             this.txNfPeca.TabIndex = 42;
             // 
             // FormEstoque
@@ -251,6 +252,7 @@
             this.Controls.Add(this.btVoltarE);
             this.Name = "FormEstoque";
             this.Text = "FormEstoque";
+            this.Load += new System.EventHandler(this.FormEstoque_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

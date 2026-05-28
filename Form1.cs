@@ -49,7 +49,7 @@ namespace ProjetoSenac
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Nav formNav = new Nav();
+                Nav formNav = new Nav();
             formNav.Owner = this;
         }
     }

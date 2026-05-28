@@ -1,17 +1,4 @@
-C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\ProjetoSenac.exe.config
 C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\ProjetoSenac.exe
-C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\ProjetoSenac.pdb
-C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.csproj.AssemblyReference.cache
-C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.CadastroNovoUsuario.resources
-C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.Form1.resources
-C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.Nav.resources
-C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.Properties.Resources.resources
-C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.csproj.GenerateResource.cache
-C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.csproj.CoreCompileInputs.cache
-C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.exe
-C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.pdb
-C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.FormEstoque.resources
-C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.FormOrdemServico.resources
 C:\Users\bruno.hcabrera\source\repos\ProjetoSenac\cabrerabrunohenrique-png\ProjetoSenac\bin\Debug\ProjetoSenac.exe.config
 C:\Users\bruno.hcabrera\source\repos\ProjetoSenac\cabrerabrunohenrique-png\ProjetoSenac\bin\Debug\ProjetoSenac.exe
 C:\Users\bruno.hcabrera\source\repos\ProjetoSenac\cabrerabrunohenrique-png\ProjetoSenac\bin\Debug\ProjetoSenac.pdb
@@ -97,11 +84,11 @@ C:\Users\bruno.hcabrera\OneDrive - SENAC - SP\source\repos\ProjetoSenac\obj\Debu
 C:\Users\bruno.hcabrera\OneDrive - SENAC - SP\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.exe
 C:\Users\bruno.hcabrera\OneDrive - SENAC - SP\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.pdb
 C:\Users\bruno.hcabrera\OneDrive - SENAC - SP\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.FormRelatorio.resources
-C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.FormRelatorio.resources
+C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\MySqlConnector.dll
+C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\ProjetoSenac.exe.config
 C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\MySqlConnector.dll
 C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\System.Buffers.dll
 C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\System.Diagnostics.DiagnosticSource.dll
 C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\System.Memory.dll
@@ -118,9 +105,14 @@ C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\System.Memory.xml
 C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\System.Threading.Tasks.Extensions.xml
-C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoS.D2AE8F58.Up2Date
+C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.csproj.AssemblyReference.cache
+C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.CadastroNovoUsuario.resources
+C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.Form1.resources
+C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.FormEstoque.resources
 C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.FormEstoqueSaida.resources
+C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.FormOrdemServico.resources
 C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.FormRelacaoProdutoPeca.resources
+<<<<<<< HEAD
 C:\Users\bruno.hcabrera\Documents\GitHub\ProjetoSenac\bin\Debug\ProjetoSenac.exe.config
 C:\Users\bruno.hcabrera\Documents\GitHub\ProjetoSenac\bin\Debug\ProjetoSenac.exe
 C:\Users\bruno.hcabrera\Documents\GitHub\ProjetoSenac\bin\Debug\ProjetoSenac.pdb
@@ -159,3 +151,14 @@ C:\Users\bruno.hcabrera\Documents\GitHub\ProjetoSenac\obj\Debug\ProjetoSenac.csp
 C:\Users\bruno.hcabrera\Documents\GitHub\ProjetoSenac\obj\Debug\ProjetoS.D2AE8F58.Up2Date
 C:\Users\bruno.hcabrera\Documents\GitHub\ProjetoSenac\obj\Debug\ProjetoSenac.exe
 C:\Users\bruno.hcabrera\Documents\GitHub\ProjetoSenac\obj\Debug\ProjetoSenac.pdb
+=======
+C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.FormRelatorio.resources
+C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.Nav.resources
+C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.Properties.Resources.resources
+C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.csproj.GenerateResource.cache
+C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.csproj.CoreCompileInputs.cache
+C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoS.D2AE8F58.Up2Date
+C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.exe
+C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.pdb
+C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\ProjetoSenac.pdb
+>>>>>>> aa111ba3c4d1d5fb4d470c0a99b3df1f400a1590

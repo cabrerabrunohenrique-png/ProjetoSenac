@@ -71,8 +71,16 @@ namespace ProjetoSenac
 
         private void btVoltarR_Click(object sender, EventArgs e)
         {
-            this.Owner.Show();
-            this.Close();
+
+            DialogResult resposta = MessageBox.Show("Deseja realmente voltar para a tela de login?", "ATENÇÃO", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (resposta == DialogResult.Yes)
+            {
+                this.Owner.Show();
+                this.Close();
+            }
+
+            //this.Owner.Show();
+            //this.Close();
         }
     }
 
