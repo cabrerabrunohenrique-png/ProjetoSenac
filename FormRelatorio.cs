@@ -20,33 +20,61 @@ namespace ProjetoSenac
 
         private void FormRelatorio_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btConsultar_Click(object sender, EventArgs e)
         {
-           /* using (MySqlConnection conn = new MySqlConnection(DADOS_CONEXAOO))
+
+            
+
+
+
+
+            if (!int.TryParse(txProduto.Text.Trim(), out int codigoProduto) || codigoProduto < 0) 
             {
+                MessageBox.Show("O código do produto tem que ser um numero real positivo","ATENCAO");
+                txProduto.Clear();
+                return;
+            }
 
-                {
-                    conn.Open();
-                    string scriptConsulta = "SELECT * FROM tb_cadastronovousuario";
-                    using (MySqlCommand comando = new MySqlCommand(scriptConsulta, conn))
-                    {
-                        comando.Parameters.AddWithValue("@nome", tbNome.Text);
-
+            string nomeProduto = txnomeProduto.Text.Trim();
 
 
-                        var dadosResultado = comando.ExecuteNonQuery();
-                        MessageBox.Show("Consulta realizada com sucesso!");
-                    }
-                }
-                conn.Close();
-            }*/
+
+            if (string.IsNullOrEmpty(nomeProduto))
+            {
+                MessageBox.Show("O nome do produto não pode ser vazio", "ATENCAO");
+                 return;
+            }
+
+
+
+
+
+            /* using (MySqlConnection conn = new MySqlConnection(DADOS_CONEXAOO))
+             {
+
+                 {
+                     conn.Open();
+                     string scriptConsulta = "SELECT * FROM tb_cadastronovousuario";
+                     using (MySqlCommand comando = new MySqlCommand(scriptConsulta, conn))
+                     {
+                         comando.Parameters.AddWithValue("@nome", tbNome.Text);
+
+
+
+                         var dadosResultado = comando.ExecuteNonQuery();
+                         MessageBox.Show("Consulta realizada com sucesso!");
+                     }
+                 }
+                 conn.Close();
+             }*/
         }
 
         private void btPaginaLoginR_Click(object sender, EventArgs e)
         {
+                                   
             /*using (MySqlConnection conn = new MySqlConnection(DADOS_CONEXAO))
             {
                 conn.Open();

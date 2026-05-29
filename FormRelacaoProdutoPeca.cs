@@ -1,15 +1,15 @@
-﻿using System;
+﻿//
+using MySqlConnector;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Common;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
-//
-using MySqlConnector;
 
 namespace ProjetoSenac
 {
@@ -168,8 +168,12 @@ namespace ProjetoSenac
                 relacaoProdutoPeca.NOMEPECA = nomePeca;
                 relacaoProdutoPeca.QUANTIDADE = quantidade;
                 listaRelacaoProdutoPeca.Add(relacaoProdutoPeca);
+                dGVRelacaoProduto.DataSource = listaRelacaoProdutoPeca;
+
 
                 MessageBox.Show("Relação Produto-Peça cadastrada com sucesso!", "Cadastro Realizado");
+
+
 
                 txProduto.Clear();
                 txNomeProduto.Clear();
