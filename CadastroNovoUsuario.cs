@@ -17,6 +17,11 @@ namespace ProjetoSenac
     public partial class CadastroNovoUsuario : Form
 
     {
+        
+
+
+
+
         //Comando para criar uma lista
         //No caso eu estou criando uma lista do tipo CadastroUsuario, que é a CLASSE que
         //eu criei para receber os dados do banco de dados
@@ -30,6 +35,11 @@ namespace ProjetoSenac
             cbNivelPermisao.Items.Add("Administrador");
             cbNivelPermisao.Items.Add("Usuário Comum");
             cbNivelPermisao.Items.Add("Usuário Restrito");
+
+            
+
+         
+
 
         }
 
@@ -49,13 +59,10 @@ namespace ProjetoSenac
 
         private void btCadastrar_Click(object sender, EventArgs e)
         {
-            string nomeCompletoSem = txNomeCompleto.Text;
-            string nomeCompleto = nomeCompletoSem.Trim();
+            string nomeCompleto = txNomeCompleto.Text.Trim(); 
             string numeroRegistro = txNumeroRegistro.Text;
             string nivelPermissao = cbNivelPermisao.Text;
-            
-            string nomeUsuarioSem = txNomeUsuario.Text;
-            string nomeUsuario = nomeUsuarioSem.Trim();
+            string nomeUsuario = txNomeUsuario.Text.Trim();
             string senhaAcesso = txSenhaAcesso.Text;
 
             //DateTime dateTime = DateTime.Now;
@@ -68,7 +75,7 @@ namespace ProjetoSenac
                        
             if (nomeCompleto.Length < 5 || nomeCompleto.Length > 50)
             {
-                MessageBox.Show("Digite o nome completo. Minimo de 5 caracteres e máximo de 50", "NOME COMPLETO");
+                MessageBox.Show("O nome completo deve ter entre 5 e 50 caracteres.", "NOME COMPLETO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txNomeCompleto.Clear();
 
                 return;
@@ -79,7 +86,7 @@ namespace ProjetoSenac
             if (nomeCompleto.Split(' ').Length <2)
             {
 
-                MessageBox.Show("O nome completo deve conter pelo menos um sobrenome", "ATENÇÃO");
+                MessageBox.Show("O nome completo deve conter pelo menos um sobrenome.", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txNomeCompleto.Clear();
                 return;
             }
@@ -91,7 +98,7 @@ namespace ProjetoSenac
             if (nomeComletoLetra.Any(c => char.IsDigit(c)))
 
             {
-                MessageBox.Show("Você não pode usar números no nome completo", "ATENÇÃO");
+                MessageBox.Show("Você não pode usar números no nome completo.", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
                 return;
             
@@ -101,7 +108,7 @@ namespace ProjetoSenac
 
             if (nomeComEspecial.Any(c => char.IsPunctuation(c) || char.IsSymbol(c)))
             {
-                MessageBox.Show("Seu nome tem caracteres inválidos", "ATENÇÃO");
+                MessageBox.Show("Seu nome tem caracteres inválidos.", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -109,14 +116,14 @@ namespace ProjetoSenac
 
             if (numeroValidado.Any(c => char.IsPunctuation(c) || char.IsSymbol(c) || char.IsLetter(c)))
             {
-                MessageBox.Show("Só PODE NUMERO", "ATENÇÃO");
+                MessageBox.Show("Só PODE NUMERO", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txNumeroRegistro.Clear();
                 return;
             }
 
             if (numeroRegistro.Length >10 )
             {
-                MessageBox.Show(" Numero nao pode ter mais que 10 casas ", "ATENÇÃO");
+                MessageBox.Show(" Numero nao pode ter mais que 10 casas ", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txNumeroRegistro.Clear();
                 return;
             }
@@ -125,33 +132,35 @@ namespace ProjetoSenac
             
             if (nomeUsuario.Length >10)
             {
-                MessageBox.Show("Nome de usuário nao pode ser maior que 10 caracteres", "ATENÇÃO");
+                MessageBox.Show("Nome de usuário nao pode ser maior que 10 caracteres", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txNomeUsuario.Clear();
                 return;
             }
 
 
             if (string.IsNullOrEmpty(nomeCompleto) || string.IsNullOrEmpty(numeroRegistro) || string.IsNullOrEmpty(nivelPermissao) || string.IsNullOrEmpty(nomeUsuario)
-            || string.IsNullOrEmpty(senhaAcesso))
+            || string.IsNullOrEmpty(senhaAcesso) || string.IsNullOrEmpty(txConfirmacaoSenha.Text))
             {
                              
-                MessageBox.Show("Todos tem que estar preenchidos", "ATENÇÃO");
+                MessageBox.Show("Todos os campos devem ser preenchidos", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
 
             }
 
+
             if (listaCadastroUsuario.Any(c => c.NOMECOMPLETO == nomeCompleto))
             {
-                MessageBox.Show("O NOME COMPLETO" + nomeCompleto + " já existe. Por favor, escolha outro.", "ATENÇÃO");
-                
+                MessageBox.Show("O NOME COMPLETO" + nomeCompleto + " já existe. Por favor, escolha outro.", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
 
                 txNomeCompleto.Clear();
                 return;
             }
 
+
             if (listaCadastroUsuario.Any(c => c.NUMEROREGISTRO == numeroRegistro))
             {
-                MessageBox.Show("o NUMERO DE REGISTRO"+ numeroRegistro + " já existe. Por favor, escolha outro.", "ATENÇÃO");
+                MessageBox.Show("o NUMERO DE REGISTRO"+ numeroRegistro + " já existe. Por favor, escolha outro.", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
 
                 txNumeroRegistro.Clear();
@@ -161,7 +170,7 @@ namespace ProjetoSenac
 
             if (listaCadastroUsuario.Any(c => c.NOMEUSUARIO == nomeUsuario))
             {
-                MessageBox.Show("O NOME DE USUARIO" + nomeUsuario + " já existe. Por favor, escolha outro.", "ATENÇÃO");
+                MessageBox.Show("O NOME DE USUARIO" + nomeUsuario + " já existe. Por favor, escolha outro.", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     
 
                 txNomeUsuario.Clear();
@@ -169,6 +178,13 @@ namespace ProjetoSenac
 
             }
             
+            if(senhaAcesso != txConfirmacaoSenha.Text)
+            {
+                MessageBox.Show("As senhas não coincidem.", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txSenhaAcesso.Clear();
+                txConfirmacaoSenha.Clear();
+                return;
+            }
 
 
                 else
@@ -204,7 +220,7 @@ namespace ProjetoSenac
                     listaCadastroUsuario.Add(cadastroUsuario);
 
 
-                    MessageBox.Show("Usuário cadastrado com sucesso!", "Cadastro Realizado");
+                    MessageBox.Show("Usuário cadastrado com sucesso!", "Cadastro Realizado", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     txNomeCompleto.Clear();
                     txNumeroRegistro.Clear();

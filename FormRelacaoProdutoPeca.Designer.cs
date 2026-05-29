@@ -49,10 +49,10 @@
             // 
             this.btVoltarOS.BackColor = System.Drawing.Color.OrangeRed;
             this.btVoltarOS.ForeColor = System.Drawing.Color.White;
-            this.btVoltarOS.Location = new System.Drawing.Point(472, 10);
-            this.btVoltarOS.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btVoltarOS.Location = new System.Drawing.Point(629, 12);
+            this.btVoltarOS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btVoltarOS.Name = "btVoltarOS";
-            this.btVoltarOS.Size = new System.Drawing.Size(122, 54);
+            this.btVoltarOS.Size = new System.Drawing.Size(163, 66);
             this.btVoltarOS.TabIndex = 28;
             this.btVoltarOS.Text = "Tela Inicial";
             this.btVoltarOS.UseVisualStyleBackColor = false;
@@ -62,31 +62,30 @@
             // 
             this.lRelacaoPecasProduto.AutoSize = true;
             this.lRelacaoPecasProduto.BackColor = System.Drawing.Color.Red;
-            this.lRelacaoPecasProduto.Location = new System.Drawing.Point(14, 242);
-            this.lRelacaoPecasProduto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lRelacaoPecasProduto.Location = new System.Drawing.Point(19, 298);
             this.lRelacaoPecasProduto.Name = "lRelacaoPecasProduto";
-            this.lRelacaoPecasProduto.Size = new System.Drawing.Size(211, 13);
+            this.lRelacaoPecasProduto.Size = new System.Drawing.Size(264, 16);
             this.lRelacaoPecasProduto.TabIndex = 27;
             this.lRelacaoPecasProduto.Text = "Relação_LISTA de PEÇAS por PRODUTO";
             // 
             // dGVRelacaoProduto
             // 
             this.dGVRelacaoProduto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dGVRelacaoProduto.Location = new System.Drawing.Point(16, 258);
-            this.dGVRelacaoProduto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dGVRelacaoProduto.Location = new System.Drawing.Point(21, 318);
+            this.dGVRelacaoProduto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dGVRelacaoProduto.Name = "dGVRelacaoProduto";
             this.dGVRelacaoProduto.RowHeadersWidth = 51;
             this.dGVRelacaoProduto.RowTemplate.Height = 24;
-            this.dGVRelacaoProduto.Size = new System.Drawing.Size(268, 124);
+            this.dGVRelacaoProduto.Size = new System.Drawing.Size(916, 153);
             this.dGVRelacaoProduto.TabIndex = 26;
             // 
             // btCadastrar
             // 
             this.btCadastrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btCadastrar.Location = new System.Drawing.Point(154, 200);
-            this.btCadastrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btCadastrar.Location = new System.Drawing.Point(205, 246);
+            this.btCadastrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btCadastrar.Name = "btCadastrar";
-            this.btCadastrar.Size = new System.Drawing.Size(143, 30);
+            this.btCadastrar.Size = new System.Drawing.Size(191, 37);
             this.btCadastrar.TabIndex = 25;
             this.btCadastrar.Text = "Cadastrar";
             this.btCadastrar.UseVisualStyleBackColor = false;
@@ -95,98 +94,93 @@
             // lNomeProduto
             // 
             this.lNomeProduto.AutoSize = true;
-            this.lNomeProduto.Location = new System.Drawing.Point(9, 55);
-            this.lNomeProduto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lNomeProduto.Location = new System.Drawing.Point(12, 68);
             this.lNomeProduto.Name = "lNomeProduto";
-            this.lNomeProduto.Size = new System.Drawing.Size(90, 13);
+            this.lNomeProduto.Size = new System.Drawing.Size(113, 16);
             this.lNomeProduto.TabIndex = 24;
             this.lNomeProduto.Text = "Nome do Produto";
             // 
             // txNomeProduto
             // 
-            this.txNomeProduto.Location = new System.Drawing.Point(154, 50);
-            this.txNomeProduto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txNomeProduto.Location = new System.Drawing.Point(205, 62);
+            this.txNomeProduto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txNomeProduto.Name = "txNomeProduto";
-            this.txNomeProduto.Size = new System.Drawing.Size(144, 20);
+            this.txNomeProduto.Size = new System.Drawing.Size(191, 22);
             this.txNomeProduto.TabIndex = 23;
             // 
             // lCodigoProduto
             // 
             this.lCodigoProduto.AutoSize = true;
-            this.lCodigoProduto.Location = new System.Drawing.Point(9, 22);
-            this.lCodigoProduto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lCodigoProduto.Location = new System.Drawing.Point(12, 27);
             this.lCodigoProduto.Name = "lCodigoProduto";
-            this.lCodigoProduto.Size = new System.Drawing.Size(95, 13);
+            this.lCodigoProduto.Size = new System.Drawing.Size(120, 16);
             this.lCodigoProduto.TabIndex = 22;
             this.lCodigoProduto.Text = "Codigo do Produto";
             // 
             // txProduto
             // 
-            this.txProduto.Location = new System.Drawing.Point(154, 17);
-            this.txProduto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txProduto.Location = new System.Drawing.Point(205, 21);
+            this.txProduto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txProduto.Name = "txProduto";
-            this.txProduto.Size = new System.Drawing.Size(144, 20);
+            this.txProduto.Size = new System.Drawing.Size(191, 22);
             this.txProduto.TabIndex = 21;
             // 
             // txCodigoPeca
             // 
-            this.txCodigoPeca.Location = new System.Drawing.Point(154, 85);
-            this.txCodigoPeca.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txCodigoPeca.Location = new System.Drawing.Point(205, 105);
+            this.txCodigoPeca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txCodigoPeca.Name = "txCodigoPeca";
-            this.txCodigoPeca.Size = new System.Drawing.Size(144, 20);
+            this.txCodigoPeca.Size = new System.Drawing.Size(191, 22);
             this.txCodigoPeca.TabIndex = 33;
             // 
             // lCodigoPeca
             // 
             this.lCodigoPeca.AutoSize = true;
-            this.lCodigoPeca.Location = new System.Drawing.Point(9, 91);
-            this.lCodigoPeca.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lCodigoPeca.Location = new System.Drawing.Point(12, 112);
             this.lCodigoPeca.Name = "lCodigoPeca";
-            this.lCodigoPeca.Size = new System.Drawing.Size(83, 13);
+            this.lCodigoPeca.Size = new System.Drawing.Size(105, 16);
             this.lCodigoPeca.TabIndex = 34;
             this.lCodigoPeca.Text = "Codigo da Peça";
             // 
             // lNomePeca
             // 
             this.lNomePeca.AutoSize = true;
-            this.lNomePeca.Location = new System.Drawing.Point(9, 128);
-            this.lNomePeca.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lNomePeca.Location = new System.Drawing.Point(12, 158);
             this.lNomePeca.Name = "lNomePeca";
-            this.lNomePeca.Size = new System.Drawing.Size(78, 13);
+            this.lNomePeca.Size = new System.Drawing.Size(98, 16);
             this.lNomePeca.TabIndex = 36;
             this.lNomePeca.Text = "Nome da Peça";
             // 
             // txNomePeca
             // 
-            this.txNomePeca.Location = new System.Drawing.Point(154, 123);
-            this.txNomePeca.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txNomePeca.Location = new System.Drawing.Point(205, 151);
+            this.txNomePeca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txNomePeca.Name = "txNomePeca";
-            this.txNomePeca.Size = new System.Drawing.Size(144, 20);
+            this.txNomePeca.Size = new System.Drawing.Size(191, 22);
             this.txNomePeca.TabIndex = 35;
             // 
             // lQuantidade
             // 
             this.lQuantidade.AutoSize = true;
-            this.lQuantidade.Location = new System.Drawing.Point(9, 167);
-            this.lQuantidade.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lQuantidade.Location = new System.Drawing.Point(12, 206);
             this.lQuantidade.Name = "lQuantidade";
-            this.lQuantidade.Size = new System.Drawing.Size(62, 13);
+            this.lQuantidade.Size = new System.Drawing.Size(77, 16);
             this.lQuantidade.TabIndex = 38;
             this.lQuantidade.Text = "Quantidade";
             // 
             // txQuantidade
             // 
-            this.txQuantidade.Location = new System.Drawing.Point(154, 162);
-            this.txQuantidade.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txQuantidade.Location = new System.Drawing.Point(205, 199);
+            this.txQuantidade.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txQuantidade.Name = "txQuantidade";
-            this.txQuantidade.Size = new System.Drawing.Size(144, 20);
+            this.txQuantidade.Size = new System.Drawing.Size(191, 22);
             this.txQuantidade.TabIndex = 37;
             // 
             // FormRelacaoProdutoPeca
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(705, 391);
+            this.ClientSize = new System.Drawing.Size(940, 481);
             this.Controls.Add(this.lQuantidade);
             this.Controls.Add(this.txQuantidade);
             this.Controls.Add(this.lNomePeca);
@@ -201,7 +195,7 @@
             this.Controls.Add(this.txNomeProduto);
             this.Controls.Add(this.lCodigoProduto);
             this.Controls.Add(this.txProduto);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormRelacaoProdutoPeca";
             this.Text = "FormRelacaoProdutoPeca";
             this.Load += new System.EventHandler(this.FormRelacaoProdutoPeca_Load);

@@ -1,62 +1,54 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\bruno.hcabrera\\Documents\\GitHub\\ProjetoSenac\\",
+  "WorkspaceRootPath": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|c:\\users\\bruno.hcabrera\\documents\\github\\projetosenac\\formrelacaoprodutopeca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|c:\\users\\bhcab\\source\\repos\\projetosenac\\formrelacaoprodutopeca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:formrelacaoprodutopeca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|c:\\users\\bruno.hcabrera\\documents\\github\\projetosenac\\formrelacaoprodutopeca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\formrelacaoprodutopeca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:formrelacaoprodutopeca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|c:\\users\\bruno.hcabrera\\documents\\github\\projetosenac\\formordemservico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|c:\\users\\bhcab\\source\\repos\\projetosenac\\formordemservico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:formordemservico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bruno.hcabrera\\Documents\\GitHub\\ProjetoSenac\\formordemservico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\formordemservico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:formordemservico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bruno.hcabrera\\Documents\\GitHub\\ProjetoSenac\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bruno.hcabrera\\Documents\\GitHub\\ProjetoSenac\\nav.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:nav.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bruno.hcabrera\\Documents\\GitHub\\ProjetoSenac\\formestoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:formestoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bruno.hcabrera\\Documents\\GitHub\\ProjetoSenac\\formestoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\formestoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:formestoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bruno.hcabrera\\Documents\\GitHub\\ProjetoSenac\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\nav.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:nav.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bruno.hcabrera\\Documents\\GitHub\\ProjetoSenac\\relatorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:relatorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|c:\\users\\bhcab\\source\\repos\\projetosenac\\cadastronovousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:cadastronovousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bruno.hcabrera\\Documents\\GitHub\\ProjetoSenac\\nav.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:nav.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bruno.hcabrera\\Documents\\GitHub\\ProjetoSenac\\formestoquesaida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:formestoquesaida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bruno.hcabrera\\Documents\\GitHub\\ProjetoSenac\\cadastronovousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|c:\\users\\bhcab\\source\\repos\\projetosenac\\cadastronovousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:cadastronovousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bruno.hcabrera\\Documents\\GitHub\\ProjetoSenac\\formestoquesaida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|c:\\users\\bhcab\\source\\repos\\projetosenac\\formestoquesaida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:formestoquesaida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\formestoquesaida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:formestoquesaida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|c:\\users\\bhcab\\source\\repos\\projetosenac\\formestoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:formestoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,31 +58,85 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\Documents\\GitHub\\ProjetoSenac\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\bruno.hcabrera\\Documents\\GitHub\\ProjetoSenac\\Form1.cs [Design]",
+              "ToolTip": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\Form1.cs [Design]",
               "RelativeToolTip": "Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-03T21:56:26.735Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CadastroNovoUsuario.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\CadastroNovoUsuario.cs",
+              "RelativeDocumentMoniker": "CadastroNovoUsuario.cs",
+              "ToolTip": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\CadastroNovoUsuario.cs [Design]",
+              "RelativeToolTip": "CadastroNovoUsuario.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T18:03:30.22Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "Nav.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\Documents\\GitHub\\ProjetoSenac\\Nav.cs",
+              "DocumentMoniker": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\Nav.cs",
               "RelativeDocumentMoniker": "Nav.cs",
-              "ToolTip": "C:\\Users\\bruno.hcabrera\\Documents\\GitHub\\ProjetoSenac\\Nav.cs [Design]",
+              "ToolTip": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\Nav.cs [Design]",
               "RelativeToolTip": "Nav.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-10T20:55:44.037Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormEstoque.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\FormEstoque.cs",
+              "RelativeDocumentMoniker": "FormEstoque.cs",
+              "ToolTip": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\FormEstoque.cs [Design]",
+              "RelativeToolTip": "FormEstoque.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T22:39:12.211Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormOrdemServico.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\FormOrdemServico.cs",
+              "RelativeDocumentMoniker": "FormOrdemServico.cs",
+              "ToolTip": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\FormOrdemServico.cs [Design]",
+              "RelativeToolTip": "FormOrdemServico.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T00:30:26.994Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormRelacaoProdutoPeca.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\FormRelacaoProdutoPeca.cs",
+              "RelativeDocumentMoniker": "FormRelacaoProdutoPeca.cs",
+              "ToolTip": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\FormRelacaoProdutoPeca.cs [Design]",
+              "RelativeToolTip": "FormRelacaoProdutoPeca.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T00:59:27.682Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Bookmark",
@@ -116,144 +162,78 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "FormRelacaoProdutoPeca.cs",
-              "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\Documents\\GitHub\\ProjetoSenac\\FormRelacaoProdutoPeca.cs",
+              "DocumentMoniker": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\FormRelacaoProdutoPeca.cs",
               "RelativeDocumentMoniker": "FormRelacaoProdutoPeca.cs",
-              "ToolTip": "C:\\Users\\bruno.hcabrera\\Documents\\GitHub\\ProjetoSenac\\FormRelacaoProdutoPeca.cs",
+              "ToolTip": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\FormRelacaoProdutoPeca.cs",
               "RelativeToolTip": "FormRelacaoProdutoPeca.cs",
-              "ViewState": "AgIAAIoAAAAAAAAAAAAAAI4AAAA+AAAAAAAAAA==",
+              "ViewState": "AgIAAJMAAAAAAAAAAAAWwDkAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-29T00:59:30.28Z",
+              "WhenOpened": "2026-05-29T18:42:04.298Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FormRelacaoProdutoPeca.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\Documents\\GitHub\\ProjetoSenac\\FormRelacaoProdutoPeca.cs",
-              "RelativeDocumentMoniker": "FormRelacaoProdutoPeca.cs",
-              "ToolTip": "C:\\Users\\bruno.hcabrera\\Documents\\GitHub\\ProjetoSenac\\FormRelacaoProdutoPeca.cs [Design]",
-              "RelativeToolTip": "FormRelacaoProdutoPeca.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-29T00:59:27.682Z",
-              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "FormOrdemServico.cs",
-              "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\Documents\\GitHub\\ProjetoSenac\\FormOrdemServico.cs",
+              "DocumentMoniker": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\FormOrdemServico.cs",
               "RelativeDocumentMoniker": "FormOrdemServico.cs",
-              "ToolTip": "C:\\Users\\bruno.hcabrera\\Documents\\GitHub\\ProjetoSenac\\FormOrdemServico.cs",
+              "ToolTip": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\FormOrdemServico.cs",
               "RelativeToolTip": "FormOrdemServico.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAcwDsAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAWwIIAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-29T00:30:28.58Z",
+              "WhenOpened": "2026-05-29T18:31:55.634Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FormOrdemServico.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\Documents\\GitHub\\ProjetoSenac\\FormOrdemServico.cs",
-              "RelativeDocumentMoniker": "FormOrdemServico.cs",
-              "ToolTip": "C:\\Users\\bruno.hcabrera\\Documents\\GitHub\\ProjetoSenac\\FormOrdemServico.cs [Design]",
-              "RelativeToolTip": "FormOrdemServico.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-29T00:30:26.994Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FormEstoque.cs",
-              "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\Documents\\GitHub\\ProjetoSenac\\FormEstoque.cs",
-              "RelativeDocumentMoniker": "FormEstoque.cs",
-              "ToolTip": "C:\\Users\\bruno.hcabrera\\Documents\\GitHub\\ProjetoSenac\\FormEstoque.cs",
-              "RelativeToolTip": "FormEstoque.cs",
-              "ViewState": "AgIAAKoAAAAAAAAAAAAQwDMAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-28T22:39:16.054Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "FormEstoque.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\Documents\\GitHub\\ProjetoSenac\\FormEstoque.cs",
-              "RelativeDocumentMoniker": "FormEstoque.cs",
-              "ToolTip": "C:\\Users\\bruno.hcabrera\\Documents\\GitHub\\ProjetoSenac\\FormEstoque.cs [Design]",
-              "RelativeToolTip": "FormEstoque.cs [Design]",
+              "Title": "CadastroNovoUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\CadastroNovoUsuario.cs",
+              "RelativeDocumentMoniker": "CadastroNovoUsuario.cs",
+              "ToolTip": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\CadastroNovoUsuario.cs",
+              "RelativeToolTip": "CadastroNovoUsuario.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAmwI0AAABhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-28T22:39:12.211Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\Documents\\GitHub\\ProjetoSenac\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\bruno.hcabrera\\Documents\\GitHub\\ProjetoSenac\\Form1.cs",
-              "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAwwCEAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-28T22:34:40.4Z"
+              "WhenOpened": "2026-05-29T18:05:50.09Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "Relatorio.cs",
-              "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\Documents\\GitHub\\ProjetoSenac\\Relatorio.cs",
-              "RelativeDocumentMoniker": "Relatorio.cs",
-              "ToolTip": "C:\\Users\\bruno.hcabrera\\Documents\\GitHub\\ProjetoSenac\\Relatorio.cs",
-              "RelativeToolTip": "Relatorio.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Title": "FormEstoqueSaida.cs",
+              "DocumentMoniker": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\FormEstoqueSaida.cs",
+              "RelativeDocumentMoniker": "FormEstoqueSaida.cs",
+              "ToolTip": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\FormEstoqueSaida.cs",
+              "RelativeToolTip": "FormEstoqueSaida.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAjwH0AAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-28T23:34:44.706Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Nav.cs",
-              "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\Documents\\GitHub\\ProjetoSenac\\Nav.cs",
-              "RelativeDocumentMoniker": "Nav.cs",
-              "ToolTip": "C:\\Users\\bruno.hcabrera\\Documents\\GitHub\\ProjetoSenac\\Nav.cs",
-              "RelativeToolTip": "Nav.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-29T00:10:05.371Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "CadastroNovoUsuario.cs",
-              "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\Documents\\GitHub\\ProjetoSenac\\CadastroNovoUsuario.cs",
-              "RelativeDocumentMoniker": "CadastroNovoUsuario.cs",
-              "ToolTip": "C:\\Users\\bruno.hcabrera\\Documents\\GitHub\\ProjetoSenac\\CadastroNovoUsuario.cs",
-              "RelativeToolTip": "CadastroNovoUsuario.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAqwDMAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-28T23:21:07.783Z"
+              "WhenOpened": "2026-05-29T18:32:31.324Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "FormEstoqueSaida.cs",
-              "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\Documents\\GitHub\\ProjetoSenac\\FormEstoqueSaida.cs",
-              "RelativeDocumentMoniker": "FormEstoqueSaida.cs",
-              "ToolTip": "C:\\Users\\bruno.hcabrera\\Documents\\GitHub\\ProjetoSenac\\FormEstoqueSaida.cs",
-              "RelativeToolTip": "FormEstoqueSaida.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAwwD8AAAA4AAAAAAAAAA==",
+              "Title": "FormEstoque.cs",
+              "DocumentMoniker": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\FormEstoque.cs",
+              "RelativeDocumentMoniker": "FormEstoque.cs",
+              "ToolTip": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\FormEstoque.cs",
+              "RelativeToolTip": "FormEstoque.cs",
+              "ViewState": "AgIAAKgAAAAAAAAAAAAjwCwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-28T22:44:37.863Z"
+              "WhenOpened": "2026-05-29T18:31:40.152Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 10,
               "Title": "FormEstoqueSaida.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\bruno.hcabrera\\Documents\\GitHub\\ProjetoSenac\\FormEstoqueSaida.cs",
+              "DocumentMoniker": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\FormEstoqueSaida.cs",
               "RelativeDocumentMoniker": "FormEstoqueSaida.cs",
-              "ToolTip": "C:\\Users\\bruno.hcabrera\\Documents\\GitHub\\ProjetoSenac\\FormEstoqueSaida.cs [Design]",
+              "ToolTip": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\FormEstoqueSaida.cs [Design]",
               "RelativeToolTip": "FormEstoqueSaida.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-28T22:44:36.499Z"
+              "WhenOpened": "2026-05-28T22:44:36.499Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

@@ -128,6 +128,8 @@ namespace ProjetoSenac
                     //novaOS.CODIGOPRODUTO = codigoProduto;
                     novaOS.NOMEPRODUTO = nomeProduto;   
                     listaOS.Add(novaOS);
+                    dGVOS.DataSource = listaOS;
+
 
                     MessageBox.Show("Ordem de serviço validada com sucesso!", "Sucesso");
                     txOS.Clear() ;
