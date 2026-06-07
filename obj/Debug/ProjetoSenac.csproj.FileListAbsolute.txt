@@ -111,7 +111,6 @@ C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.Form1.resources
 C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.FormEstoque.resources
 C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.FormEstoqueSaida.resources
 C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.FormOrdemServico.resources
-C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.FormRelacaoProdutoPeca.resources
 <<<<<<< HEAD
 C:\Users\bruno.hcabrera\Documents\GitHub\ProjetoSenac\bin\Debug\ProjetoSenac.exe.config
 C:\Users\bruno.hcabrera\Documents\GitHub\ProjetoSenac\bin\Debug\ProjetoSenac.exe
@@ -162,3 +161,4 @@ C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.exe
 C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.pdb
 C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\ProjetoSenac.pdb
 >>>>>>> aa111ba3c4d1d5fb4d470c0a99b3df1f400a1590
+C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.FormCadastroProduto.resources

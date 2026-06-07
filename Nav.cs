@@ -71,7 +71,7 @@ namespace ProjetoSenac
         private void btProdutoXPeca_Click(object sender, EventArgs e)
         {
             
-            FormRelacaoProdutoPeca formRelacaoProdutoPeca = new FormRelacaoProdutoPeca();
+            FormCadastroProduto formRelacaoProdutoPeca = new FormCadastroProduto();
             formRelacaoProdutoPeca.Owner = this;
             //formRelacaoProdutoPeca.FormClosed += (s, args) => this.Show();
             this.Hide();
