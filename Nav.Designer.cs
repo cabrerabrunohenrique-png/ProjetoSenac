@@ -65,7 +65,7 @@
             this.btProdutoXPeca.Name = "btProdutoXPeca";
             this.btProdutoXPeca.Size = new System.Drawing.Size(154, 171);
             this.btProdutoXPeca.TabIndex = 2;
-            this.btProdutoXPeca.Text = "Relação Produtos á Produzir X Peças";
+            this.btProdutoXPeca.Text = "Cadastro de Produtos";
             this.btProdutoXPeca.UseVisualStyleBackColor = false;
             this.btProdutoXPeca.Click += new System.EventHandler(this.btProdutoXPeca_Click);
             // 

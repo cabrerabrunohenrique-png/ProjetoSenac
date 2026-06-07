@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.btVoltarOS = new System.Windows.Forms.Button();
-            this.lRelacaoPecasProduto = new System.Windows.Forms.Label();
             this.dGVRelacaoProduto = new System.Windows.Forms.DataGridView();
             this.btCadastrar = new System.Windows.Forms.Button();
             this.lNomeProduto = new System.Windows.Forms.Label();
@@ -60,31 +59,21 @@
             this.btVoltarOS.UseVisualStyleBackColor = false;
             this.btVoltarOS.Click += new System.EventHandler(this.btVoltarOS_Click);
             // 
-            // lRelacaoPecasProduto
-            // 
-            this.lRelacaoPecasProduto.AutoSize = true;
-            this.lRelacaoPecasProduto.BackColor = System.Drawing.Color.Red;
-            this.lRelacaoPecasProduto.Location = new System.Drawing.Point(19, 383);
-            this.lRelacaoPecasProduto.Name = "lRelacaoPecasProduto";
-            this.lRelacaoPecasProduto.Size = new System.Drawing.Size(264, 16);
-            this.lRelacaoPecasProduto.TabIndex = 27;
-            this.lRelacaoPecasProduto.Text = "Relação_LISTA de PEÇAS por PRODUTO";
-            // 
             // dGVRelacaoProduto
             // 
             this.dGVRelacaoProduto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dGVRelacaoProduto.Location = new System.Drawing.Point(21, 403);
+            this.dGVRelacaoProduto.Location = new System.Drawing.Point(21, 372);
             this.dGVRelacaoProduto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dGVRelacaoProduto.Name = "dGVRelacaoProduto";
             this.dGVRelacaoProduto.RowHeadersWidth = 51;
             this.dGVRelacaoProduto.RowTemplate.Height = 24;
-            this.dGVRelacaoProduto.Size = new System.Drawing.Size(916, 153);
+            this.dGVRelacaoProduto.Size = new System.Drawing.Size(1058, 250);
             this.dGVRelacaoProduto.TabIndex = 26;
             // 
             // btCadastrar
             // 
             this.btCadastrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btCadastrar.Location = new System.Drawing.Point(205, 331);
+            this.btCadastrar.Location = new System.Drawing.Point(205, 312);
             this.btCadastrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btCadastrar.Name = "btCadastrar";
             this.btCadastrar.Size = new System.Drawing.Size(191, 37);
@@ -199,7 +188,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(940, 633);
+            this.ClientSize = new System.Drawing.Size(1131, 633);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TXComprimentoProduto);
             this.Controls.Add(this.lQuantidade);
@@ -209,7 +198,6 @@
             this.Controls.Add(this.lCodigoPeca);
             this.Controls.Add(this.TXFabricanteProduto);
             this.Controls.Add(this.btVoltarOS);
-            this.Controls.Add(this.lRelacaoPecasProduto);
             this.Controls.Add(this.dGVRelacaoProduto);
             this.Controls.Add(this.btCadastrar);
             this.Controls.Add(this.lNomeProduto);
@@ -228,7 +216,6 @@
 
         #endregion
         private System.Windows.Forms.Button btVoltarOS;
-        private System.Windows.Forms.Label lRelacaoPecasProduto;
         private System.Windows.Forms.DataGridView dGVRelacaoProduto;
         private System.Windows.Forms.Button btCadastrar;
         private System.Windows.Forms.Label lNomeProduto;

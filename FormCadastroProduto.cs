@@ -23,7 +23,6 @@ namespace ProjetoSenac
         }
 
 
-
             private void btVoltarOS_Click(object sender, EventArgs e)
             {
 
@@ -58,6 +57,11 @@ namespace ProjetoSenac
             
             string nomeProduto = TXNomeProduto.Text.Trim();
             string nomeFabricante = TXFabricanteProduto.Text.Trim();
+            
+
+
+
+
 
             if (string.IsNullOrWhiteSpace(nomeProduto))
             {
@@ -88,10 +92,20 @@ namespace ProjetoSenac
             }
 
 
+            
 
             if (!int.TryParse(TXCodigoProduto.Text, out int codigoProduto) || codigoProduto < 0)
             {
                 MessageBox.Show("O campo código do produto deve conter um valor numérico válido", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                TXCodigoProduto.Clear();
+                return;
+            }
+
+            CadastroProduto validador = new CadastroProduto();
+
+            if (validador.validarCodigo(codigoProduto))
+            { 
+                MessageBox.Show("Esse código: " + codigoProduto + " já existe. Cadastrar outro número", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 TXCodigoProduto.Clear();
                 return;
             }
@@ -101,14 +115,14 @@ namespace ProjetoSenac
                         
             if (listaRelacaoProdutoPeca.Any(c => c.CODIGOPRODUTO == codigoProduto))
             {
-                MessageBox.Show("Esse codigo: " + codigoProduto + "Ja exite. Cadastrar outro numero", "Atenção");
+                MessageBox.Show("Esse codigo: " + codigoProduto + "Ja exite. Cadastrar outro numero", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 TXCodigoProduto.Clear();
                 return;
             }
 
             if (listaRelacaoProdutoPeca.Any(c => c.NOMEPRODUTO == nomeProduto))
             {
-                MessageBox.Show("Esse codigo: " + nomeProduto + "Ja exite. Cadastrar outro numero", "Atenção");
+                MessageBox.Show("Esse codigo: " + nomeProduto + "Ja exite. Cadastrar outro numero", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning );
                 TXNomeProduto.Clear();
                 return;
             }
@@ -134,8 +148,21 @@ namespace ProjetoSenac
                 return;
             }
 
+            if(listaRelacaoProdutoPeca.Any(c => c.CODIGOPRODUTO == codigoProduto))
+            {
+                MessageBox.Show("Esse código: " + codigoProduto + " já existe. Cadastrar outro número", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                TXCodigoProduto.Clear();
+                return;
+            }
 
+            if (listaRelacaoProdutoPeca.Any(c => c.NOMEPRODUTO == nomeProduto))
+            {
+                MessageBox.Show("Esse nome: " + nomeProduto + " já existe. Cadastrar outro nome", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                TXNomeProduto.Clear();
+                return;
+            }
 
+            
 
             else {
                 string DADOS_CONEXAO = "server=localhost; user=root; password=; database=bdprojetosenac;";
@@ -148,7 +175,7 @@ namespace ProjetoSenac
                         " (codigoproduto,nomeProduto,fabricanteProduto,pesoProduto,alturaProduto,comprimentoProduto)" +
                         " VALUES (@codigoProduto,@nomeProduto,@fabricanteProduto,@pesoProduto,@alturaProduto,@comprimentoProduto)";
 
-
+                  
                     using (MySqlCommand comando = new MySqlCommand(scriptInsert, conn))
                     {
                         comando.Parameters.AddWithValue("@codigoProduto", codigoProduto);
@@ -166,12 +193,14 @@ namespace ProjetoSenac
                     relacaoProdutoPeca.FABRICANTEPRODUTO = nomeFabricante;
                     relacaoProdutoPeca.PESOPRODUTO = pesoPeca;
                     relacaoProdutoPeca.ALTURAPRODUTO = alturaPeca;
-                    relacaoProdutoPeca.cOMPRIMENTOPRODUTO = comprimentoProduto;
+                    relacaoProdutoPeca.COMPRIMENTOPRODUTO = comprimentoProduto;
                     listaRelacaoProdutoPeca.Add(relacaoProdutoPeca);
                     dGVRelacaoProduto.DataSource = listaRelacaoProdutoPeca;
 
 
-                    MessageBox.Show("Relação Produto-Peça cadastrada com sucesso!", "Cadastro Realizado");
+
+
+                    MessageBox.Show("Relação Produto-Peça cadastrada com sucesso!", "Cadastro Realizado", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
 
 
@@ -180,6 +209,7 @@ namespace ProjetoSenac
                     TXFabricanteProduto.Clear();
                     TXPesoPeca.Clear();
                     TXAlturaPeca.Clear();
+                    TXComprimentoProduto.Clear();
 
 
                     conn.Clone();
