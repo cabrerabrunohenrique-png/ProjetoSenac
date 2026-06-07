@@ -43,65 +43,32 @@ namespace ProjetoSenac
         private void btCadastrarEntrada_Click(object sender, EventArgs e)
         {
 
-            int codigoPeca = int.TryParse(txCodigoPeca.Text, out int codigo) ? codigo : 0;
-
-            //double pesoPeca = txPesoPeca.Text != "" ? double.Parse(txPesoPeca.Text) : 0.0;
-
-            //double alturaPeca = txAlturaPeca.Text != "" ? double.Parse(txAlturaPeca.Text) : 0.0;
+            
+            
             DateTime dataEntradaPeca = monthCalendar1.SelectionStart;
             string nomePecaSem = txNomePeca.Text;
             string nomePeca = nomePecaSem.Trim();
-            string fabricanteSem = txFabricantePeca.Text;
-            string fabricante = fabricanteSem.Trim();
-            //double comprimentoPeca = txComprimentoPeca.Text != "" ? double.Parse(txComprimentoPeca.Text) : 0.0;
-            //int quantidaPeca = txQuantidadePeca.Text != "" ? int.Parse(txQuantidadePeca.Text) : 0;
-            //int numeroNf = txNfPeca.Text != "" ? int.Parse(txNfPeca.Text) : 0;
+           
+            
 
-            if (!double.TryParse(txPesoPeca.Text, out double pesoPeca))
-            {
-                MessageBox.Show("O peso da peça deve ser um número válido", "ATENÇÃO");
-                txPesoPeca.Clear();
-                return;
-            }
 
-            if (!double.TryParse(txAlturaPeca.Text, out double alturaPeca))
-            {
-                MessageBox.Show("A altura da peça deve ser um número válido", "ATENÇÃO");
-                txAlturaPeca.Clear();
-                return;
-            }
-
-            if (!double.TryParse(txComprimentoPeca.Text, out double comprimentoPeca))
-            {
-                MessageBox.Show("O comprimento da peça deve ser um número válido", "ATENÇÃO");
-                txComprimentoPeca.Clear();
-                return;
-            }
-
-            if (!int.TryParse(txQuantidadePeca.Text, out int quantidaPeca))
+            if (!int.TryParse(txQuantidadePeca.Text, out int quantidaPeca) || quantidaPeca <0)
             {
                 MessageBox.Show("A quantidade da peça deve ser um número válido", "ATENÇÃO");
                 txQuantidadePeca.Clear();
                 return;
             }
 
-            
+            if(!int.TryParse(txCodigoPeca.Text, out int codigoPeca) || codigoPeca <= 0)
 
-            int quanitadePeca = int.Parse(txQuantidadePeca.Text);
-
-            if(quanitadePeca < 0)
             {
-                MessageBox.Show("A quantidade da peça deve ser um número inteiro positivo", "ATENÇÃO");
-                txQuantidadePeca.Clear();
-                return;
-            }
-
-            if (codigoPeca == 0 || codigoPeca < 0)
-            {
-                MessageBox.Show("O código da peça tem que ser um número inteiro" + codigoPeca, "ATENÇÃO");
+                MessageBox.Show("O código da peça deve ser um número válido", "ATENÇÃO");
                 txCodigoPeca.Clear();
                 return;
             }
+
+            
+            
 
 
 
@@ -122,6 +89,20 @@ namespace ProjetoSenac
                     return;
                 }
             }
+
+
+            EstoqueEntrada estoqueEntradaValidacao = new EstoqueEntrada();
+            
+            if (estoqueEntradaValidacao.validarEntradas(codigoPeca, numeroNf, quantidaPeca))
+
+            {
+                MessageBox.Show("Possivel duplicidade de informãção Já foi inserido esse numero de codigo" + codigoPeca + "nf" + numeroNf + "quantidade"+ quantidaPeca);
+                txCodigoPeca.Clear();
+                txNfPeca.Clear();
+                txQuantidadePeca.Clear();
+                return;
+            }
+
 
 
             if (nomePeca.Length < 2 || nomePeca.Length > 20)
@@ -146,22 +127,9 @@ namespace ProjetoSenac
                 return;
             }
 
-            if (fabricante.Length < 2 || fabricante.Length > 20)
-            {
-                MessageBox.Show("O nome do fabricante deve conter entre 2 e 20 caracteres", "ATENÇÃO");
-                txFabricantePeca.Clear();
-                return;
-            }
+           
 
-            char[] fabricanteEspecial = fabricante.ToCharArray();
-            if (fabricanteEspecial.Any(char.IsSymbol) || fabricanteEspecial.Any(char.IsPunctuation))
-            {
-                MessageBox.Show("O nome do fabricante não pode conter caracteres especiais", "ATENÇÃO");
-                txFabricantePeca.Clear();
-                return;
-            }
-
-            if (codigoPeca == 0 || pesoPeca == 0 || alturaPeca == 0 || comprimentoPeca == 0 || quantidaPeca == 0 || numeroNf == 0)
+            if (codigoPeca == 0 || quantidaPeca == 0 || numeroNf == 0)
             {
                 MessageBox.Show("Todos os campos tem que estar preenchidos", "Atenção");
                 return;
@@ -174,6 +142,7 @@ namespace ProjetoSenac
                return;
             }
 
+            
 
             else
             {
@@ -191,20 +160,17 @@ namespace ProjetoSenac
 
                     conn.Open();
                     string scriptInsert = "INSERT INTO tbentradaestoque" +
-                        " (dataEntradaPeca,codigoPeca,nomePeca,fabricantePeca,pesoPeca,alturaPeca,comprimentoPeca,quantidadePeca,nfPeca)" +
-                        " VALUES(@dataEntradaPeca,@codigoPeca,@nomePeca,@fabricantePeca,@pesoPeca,@alturaPeca,@comprimentoPeca,@quantidadePeca,@nfPeca)";
+                        " (dataEntradaProduto,codigoProduto,nomeProduto,quantidadeProduto,nFProduto)" +
+                        " VALUES(@dataEntradaProduto,@codigoProduto,@nomeProduto,@quantidadeProduto,@nFProduto)";
 
                     using (MySqlCommand comando = new MySqlCommand(scriptInsert, conn))
                     {
-                        comando.Parameters.AddWithValue("@dataEntradaPeca", dataEntradaPeca);
-                        comando.Parameters.AddWithValue("@codigoPeca", codigoPeca);
-                        comando.Parameters.AddWithValue("@nomePeca", nomePeca);
-                        comando.Parameters.AddWithValue("@fabricantePeca", fabricante);
-                        comando.Parameters.AddWithValue("@pesoPeca", pesoPeca);
-                        comando.Parameters.AddWithValue("@alturaPeca", alturaPeca);
-                        comando.Parameters.AddWithValue("@comprimentoPeca", comprimentoPeca);
-                        comando.Parameters.AddWithValue("@quantidadePeca", quantidaPeca);
-                        comando.Parameters.AddWithValue("@nfPeca", numeroNf);
+                        comando.Parameters.AddWithValue("@dataEntradaProduto", dataEntradaPeca);
+                        comando.Parameters.AddWithValue("@codigoProduto", codigoPeca);
+                        comando.Parameters.AddWithValue("@nomeProduto", nomePeca);
+                   
+                        comando.Parameters.AddWithValue("@quantidadeProduto", quantidaPeca);
+                        comando.Parameters.AddWithValue("@nFProduto", numeroNf);
 
 
 
@@ -215,24 +181,20 @@ namespace ProjetoSenac
                     estoqueEntrada.DATAENTRADA = dataEntradaPeca;
                     estoqueEntrada.CODIGOPECA = codigoPeca;
                     estoqueEntrada.NOMEPECA = nomePeca;
-                    estoqueEntrada.FABRICANTE = fabricante;
-                    estoqueEntrada.PESOPECA = pesoPeca;
-                    estoqueEntrada.ALTURAPECA = alturaPeca;
-                    estoqueEntrada.COMPRIMENTOPECA = comprimentoPeca;
+                 
                     estoqueEntrada.QUANTIDADEPECA = quantidaPeca;
                     estoqueEntrada.NUMERONF = numeroNf;
 
                     listaEstoque.Add(estoqueEntrada);
+                    dataGridView1.DataSource = listaEstoque;
 
 
                     MessageBox.Show("ok");
 
                     txCodigoPeca.Clear();
-                    txPesoPeca.Clear();
-                    txAlturaPeca.Clear();
+                   
                     txNomePeca.Clear();
-                    txFabricantePeca.Clear();
-                    txComprimentoPeca.Clear();
+                  
                     txQuantidadePeca.Clear();
                     txNfPeca.Clear();
                     monthCalendar1.SelectionEnd = DateTime.Today;
@@ -242,6 +204,11 @@ namespace ProjetoSenac
                     conn.Clone();
                 }
             }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
