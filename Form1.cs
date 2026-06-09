@@ -23,10 +23,31 @@ namespace ProjetoSenac
 
         private void btEntrar_Click(object sender, EventArgs e)
         {
-            Nav formNav = new Nav();
-            formNav.Owner = this;
-            this.Hide();
-            formNav.Show();
+            
+
+            string nomeUsuario = tbNomeUsuario.Text;
+            string senha = tbSenhaAcesso.Text;
+
+            CadastroUsuario validarsenha = new CadastroUsuario();
+
+            if(validarsenha.validarSenha(senha, nomeUsuario))
+            {
+               
+                MessageBox.Show("Login bem-sucedido!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                tbNomeUsuario.Clear();
+                tbSenhaAcesso.Clear();
+
+                Nav formNav = new Nav();
+                formNav.Owner = this;
+                this.Hide();
+                formNav.Show();
+            }
+            else
+            {
+                MessageBox.Show("Nome de usuário ou senha incorretos. Tente novamente.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+
         }
 
         private void btCadastrarNovoUsuario_Click(object sender, EventArgs e)

@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using MySql.Data.MySqlClient;
+
 namespace ProjetoSenac
 {
     public class CadastroUsuario
@@ -18,5 +20,48 @@ namespace ProjetoSenac
         public string SENHAACESSO { get; set; }
 
         public string CONFIRMARSENHA { get; set; }
+
+
+        public bool validarSenha(string senha, string nomeUsuario)
+
+        {
+            bool existeNoBanco = false;
+            string DADOS_CONEXAO = "server=localhost; user=root; password=; database=bdprojetosenac;";
+            string scriptSelect = "SELECT COUNT(*) FROM tbcadastronovousuario " +
+                "WHERE nomeUsuario = @nomeUsuario AND senhaAcesso = @senha";
+
+            using (MySqlConnection conn = new MySqlConnection(DADOS_CONEXAO))
+            {
+                using (MySqlCommand comando = new MySqlCommand(scriptSelect, conn))
+                {
+                    comando.Parameters.AddWithValue("@nomeUsuario", nomeUsuario);
+                    comando.Parameters.AddWithValue("@senha", senha);
+
+                    try
+                    {
+                        conn.Open();
+                        int quantidade = Convert.ToInt32(comando.ExecuteScalar());
+
+                        if (quantidade > 0)
+                        {
+                            existeNoBanco = true; // Achou o código gravado no MySQL!
+                        }
+                    }
+                    // Se QUALQUER coisa der errado lá no 'try'
+                    catch (Exception)
+                    {
+                        // Caso dê algum erro de conexão, tratamos aqui para não travar o sistema
+                        existeNoBanco = false;
+                    }
+                }
+            }
+
+            return existeNoBanco; // Devolve True (se achou) ou False (se não achou)
+
+        }
+
     }
+
+
 }
+
