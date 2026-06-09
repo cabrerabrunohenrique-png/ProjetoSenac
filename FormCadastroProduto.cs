@@ -67,6 +67,7 @@ namespace ProjetoSenac
             {
                 MessageBox.Show("O campo nome do produto não pode estar vazio", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Question);
                 TXNomeProduto.Clear();
+                TXNomeProduto.Focus();
                 return;
 
             }
@@ -77,6 +78,7 @@ namespace ProjetoSenac
             {
                 MessageBox.Show("O nome nao pode conter caracteres especias e numeros","ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 TXNomeProduto.Clear();
+                TXNomeProduto.Focus();      
                 return;
 
             }
@@ -88,6 +90,7 @@ namespace ProjetoSenac
             {
                 MessageBox.Show("O campo nome do fabricante não pode estar vazio", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 TXFabricanteProduto.Clear();
+                TXFabricanteProduto.Focus();
                 return;
             }
 
@@ -98,6 +101,7 @@ namespace ProjetoSenac
             {
                 MessageBox.Show("O campo código do produto deve conter um valor numérico válido", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 TXCodigoProduto.Clear();
+                TXCodigoProduto.Focus();
                 return;
             }
 
@@ -107,6 +111,7 @@ namespace ProjetoSenac
             { 
                 MessageBox.Show("Esse código: " + codigoProduto + " já existe. Cadastrar outro número", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 TXCodigoProduto.Clear();
+                TXCodigoProduto.Focus();
                 return;
             }
 
@@ -117,6 +122,7 @@ namespace ProjetoSenac
             {
                 MessageBox.Show("Esse codigo: " + codigoProduto + "Ja exite. Cadastrar outro numero", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 TXCodigoProduto.Clear();
+                TXCodigoProduto.Focus();
                 return;
             }
 
@@ -124,6 +130,7 @@ namespace ProjetoSenac
             {
                 MessageBox.Show("Esse codigo: " + nomeProduto + "Ja exite. Cadastrar outro numero", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning );
                 TXNomeProduto.Clear();
+                TXNomeProduto.Focus();
                 return;
             }
 
@@ -131,6 +138,7 @@ namespace ProjetoSenac
             {
                 MessageBox.Show("O campo peso da peça deve conter um valor numérico válido e positivo", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 TXPesoPeca.Clear();
+                TXPesoPeca.Focus();
                 return;
             }
 
@@ -138,13 +146,15 @@ namespace ProjetoSenac
             {
                 MessageBox.Show("O campo altura da peça deve conter um valor numérico válido e positivo", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 TXAlturaPeca.Clear();
+                TXAlturaPeca.Focus();
                 return;
             }
 
             if (!double.TryParse(TXComprimentoProduto.Text, out double comprimentoProduto) || comprimentoProduto <= 0)
             { 
                 MessageBox.Show("O campo comprimento da peça deve conter um valor numérico válido e positivo", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                TXComprimentoProduto.Clear(); 
+                TXComprimentoProduto.Clear();
+                TXComprimentoProduto.Focus();
                 return;
             }
 
@@ -152,6 +162,7 @@ namespace ProjetoSenac
             {
                 MessageBox.Show("Esse código: " + codigoProduto + " já existe. Cadastrar outro número", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 TXCodigoProduto.Clear();
+                TXCodigoProduto.Focus();
                 return;
             }
 
@@ -159,6 +170,7 @@ namespace ProjetoSenac
             {
                 MessageBox.Show("Esse nome: " + nomeProduto + " já existe. Cadastrar outro nome", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 TXNomeProduto.Clear();
+                TXNomeProduto.Focus();
                 return;
             }
 
