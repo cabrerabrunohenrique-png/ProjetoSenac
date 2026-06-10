@@ -43,23 +43,23 @@ namespace ProjetoSenac
         private void btCadastrarEntrada_Click(object sender, EventArgs e)
         {
 
-            
-            
+
+
             DateTime dataEntradaPeca = monthCalendar1.SelectionStart;
             string nomePecaSem = txNomePeca.Text;
             string nomePeca = nomePecaSem.Trim();
-           
-            
 
 
-            if (!int.TryParse(txQuantidadePeca.Text, out int quantidaPeca) || quantidaPeca <0)
+
+
+            if (!int.TryParse(txQuantidadePeca.Text, out int quantidaPeca) || quantidaPeca < 0)
             {
                 MessageBox.Show("A quantidade da peça deve ser um número válido", "ATENÇÃO");
                 txQuantidadePeca.Clear();
                 return;
             }
 
-            if(!int.TryParse(txCodigoPeca.Text, out int codigoPeca) || codigoPeca <= 0)
+            if (!int.TryParse(txCodigoPeca.Text, out int codigoPeca) || codigoPeca <= 0)
 
             {
                 MessageBox.Show("O código da peça deve ser um número válido", "ATENÇÃO");
@@ -67,8 +67,8 @@ namespace ProjetoSenac
                 return;
             }
 
-            
-            
+
+
 
 
 
@@ -92,18 +92,18 @@ namespace ProjetoSenac
 
 
             EstoqueEntrada estoqueEntradaValidacao = new EstoqueEntrada();
-            
+
             if (estoqueEntradaValidacao.validarEntradas(codigoPeca, numeroNf, quantidaPeca))
 
             {
-                MessageBox.Show("Possivel duplicidade de informãção Já foi inserido esse numero de codigo" + codigoPeca + "nf" + numeroNf + "quantidade"+ quantidaPeca);
+                MessageBox.Show("Possivel duplicidade de informãção Já foi inserido esse numero de codigo" + codigoPeca + "nf" + numeroNf + "quantidade" + quantidaPeca);
                 txCodigoPeca.Clear();
                 txNfPeca.Clear();
                 txQuantidadePeca.Clear();
                 return;
             }
 
-
+           
 
             if (nomePeca.Length < 2 || nomePeca.Length > 20)
             {

@@ -22,6 +22,11 @@ namespace ProjetoSenac
 
         public double COMPRIMENTOPRODUTO { get; set; }
 
+       
+
+        
+
+
         public bool validarCodigo(int codigoProduto)
         {
                 bool existeNoBanco = false;

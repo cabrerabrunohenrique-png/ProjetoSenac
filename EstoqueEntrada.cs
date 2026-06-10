@@ -20,6 +20,8 @@ namespace ProjetoSenac
         
         public DateTime DATAENTRADA { get; set; }
 
+        
+
         public bool validarEntradas(int codigoPeca, int numeroNf, int quanitadePeca)
         {
             bool existeNoBanco = false;

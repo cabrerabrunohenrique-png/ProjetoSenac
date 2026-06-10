@@ -77,6 +77,7 @@ namespace ProjetoSenac
             {
                 MessageBox.Show("O nome completo deve ter entre 5 e 50 caracteres.", "NOME COMPLETO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txNomeCompleto.Clear();
+                
 
                 return;
             }
