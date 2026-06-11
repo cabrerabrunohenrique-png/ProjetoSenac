@@ -16,9 +16,19 @@ namespace ProjetoSenac
     {
         
         BindingList <EstoqueEntrada> listaEstoque = new BindingList<EstoqueEntrada>();
+       
         public FormEstoque()    
         {
             InitializeComponent();
+            
+
+
+            comboBox_CodigoProduto.Items.Add("Peça");
+            this.Controls.Add(comboBox_CodigoProduto);
+
+            DateTime dataEntradaPeca = monthCalendar1.SelectionStart;
+            string nomePecaSem = txNomePeca.Text;
+            string nomePeca = nomePecaSem.Trim();
         }
 
         
@@ -42,8 +52,7 @@ namespace ProjetoSenac
 
         private void btCadastrarEntrada_Click(object sender, EventArgs e)
         {
-
-
+            
 
             DateTime dataEntradaPeca = monthCalendar1.SelectionStart;
             string nomePecaSem = txNomePeca.Text;

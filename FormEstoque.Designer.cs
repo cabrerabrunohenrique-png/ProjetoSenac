@@ -41,6 +41,7 @@
             this.lNfPeca = new System.Windows.Forms.Label();
             this.txNfPeca = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.comboBox_CodigoProduto = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -113,7 +114,7 @@
             // 
             // monthCalendar1
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(18, 37);
+            this.monthCalendar1.Location = new System.Drawing.Point(18, 95);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 1;
             // 
@@ -162,11 +163,20 @@
             this.dataGridView1.TabIndex = 44;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
+            // comboBox_CodigoProduto
+            // 
+            this.comboBox_CodigoProduto.FormattingEnabled = true;
+            this.comboBox_CodigoProduto.Location = new System.Drawing.Point(464, 7);
+            this.comboBox_CodigoProduto.Name = "comboBox_CodigoProduto";
+            this.comboBox_CodigoProduto.Size = new System.Drawing.Size(332, 24);
+            this.comboBox_CodigoProduto.TabIndex = 45;
+            // 
             // FormEstoque
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1058, 568);
+            this.Controls.Add(this.comboBox_CodigoProduto);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.lNfPeca);
             this.Controls.Add(this.txNfPeca);
@@ -203,5 +213,6 @@
         private System.Windows.Forms.Label lNfPeca;
         private System.Windows.Forms.TextBox txNfPeca;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.ComboBox comboBox_CodigoProduto;
     }
 }

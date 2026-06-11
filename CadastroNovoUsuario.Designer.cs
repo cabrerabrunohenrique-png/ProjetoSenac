@@ -42,6 +42,7 @@
             this.btCadastrar = new System.Windows.Forms.Button();
             this.btVoltarCNU = new System.Windows.Forms.Button();
             this.cbNivelPermisao = new System.Windows.Forms.ComboBox();
+            this.mySqlCommand1 = new MySql.Data.MySqlClient.MySqlCommand();
             this.SuspendLayout();
             // 
             // txNomeCompleto
@@ -175,6 +176,13 @@
             this.cbNivelPermisao.Size = new System.Drawing.Size(324, 24);
             this.cbNivelPermisao.TabIndex = 14;
             // 
+            // mySqlCommand1
+            // 
+            this.mySqlCommand1.CacheAge = 0;
+            this.mySqlCommand1.Connection = null;
+            this.mySqlCommand1.EnableCaching = false;
+            this.mySqlCommand1.Transaction = null;
+            // 
             // CadastroNovoUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -219,5 +227,6 @@
         private System.Windows.Forms.Button btCadastrar;
         private System.Windows.Forms.Button btVoltarCNU;
         private System.Windows.Forms.ComboBox cbNivelPermisao;
+        private MySql.Data.MySqlClient.MySqlCommand mySqlCommand1;
     }
 }
