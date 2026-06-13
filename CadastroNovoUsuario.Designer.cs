@@ -156,7 +156,7 @@
             // 
             // btVoltarCNU
             // 
-            this.btVoltarCNU.BackColor = System.Drawing.Color.Blue;
+            this.btVoltarCNU.BackColor = System.Drawing.Color.RoyalBlue;
             this.btVoltarCNU.ForeColor = System.Drawing.Color.White;
             this.btVoltarCNU.Location = new System.Drawing.Point(635, 25);
             this.btVoltarCNU.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

@@ -41,12 +41,12 @@
             // 
             // btVoltarR
             // 
-            this.btVoltarR.BackColor = System.Drawing.Color.OrangeRed;
+            this.btVoltarR.BackColor = System.Drawing.Color.RoyalBlue;
             this.btVoltarR.ForeColor = System.Drawing.Color.White;
-            this.btVoltarR.Location = new System.Drawing.Point(650, 45);
-            this.btVoltarR.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btVoltarR.Location = new System.Drawing.Point(867, 55);
+            this.btVoltarR.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btVoltarR.Name = "btVoltarR";
-            this.btVoltarR.Size = new System.Drawing.Size(122, 54);
+            this.btVoltarR.Size = new System.Drawing.Size(163, 66);
             this.btVoltarR.TabIndex = 19;
             this.btVoltarR.Text = "Tela Inicial";
             this.btVoltarR.UseVisualStyleBackColor = false;
@@ -56,31 +56,30 @@
             // 
             this.lRelacaoPecasProduto.AutoSize = true;
             this.lRelacaoPecasProduto.BackColor = System.Drawing.Color.Red;
-            this.lRelacaoPecasProduto.Location = new System.Drawing.Point(105, 205);
-            this.lRelacaoPecasProduto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lRelacaoPecasProduto.Location = new System.Drawing.Point(140, 252);
             this.lRelacaoPecasProduto.Name = "lRelacaoPecasProduto";
-            this.lRelacaoPecasProduto.Size = new System.Drawing.Size(211, 13);
+            this.lRelacaoPecasProduto.Size = new System.Drawing.Size(264, 16);
             this.lRelacaoPecasProduto.TabIndex = 32;
             this.lRelacaoPecasProduto.Text = "Relação_LISTA de PEÇAS por PRODUTO";
             // 
             // dgvRelatorio
             // 
             this.dgvRelatorio.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvRelatorio.Location = new System.Drawing.Point(108, 236);
-            this.dgvRelatorio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvRelatorio.Location = new System.Drawing.Point(144, 290);
+            this.dgvRelatorio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvRelatorio.Name = "dgvRelatorio";
             this.dgvRelatorio.RowHeadersWidth = 51;
             this.dgvRelatorio.RowTemplate.Height = 24;
-            this.dgvRelatorio.Size = new System.Drawing.Size(448, 163);
+            this.dgvRelatorio.Size = new System.Drawing.Size(597, 201);
             this.dgvRelatorio.TabIndex = 31;
             // 
             // btConsultar
             // 
             this.btConsultar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btConsultar.Location = new System.Drawing.Point(253, 158);
-            this.btConsultar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btConsultar.Location = new System.Drawing.Point(337, 194);
+            this.btConsultar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btConsultar.Name = "btConsultar";
-            this.btConsultar.Size = new System.Drawing.Size(112, 30);
+            this.btConsultar.Size = new System.Drawing.Size(149, 37);
             this.btConsultar.TabIndex = 30;
             this.btConsultar.Text = "Consultar Produto";
             this.btConsultar.UseVisualStyleBackColor = false;
@@ -89,44 +88,42 @@
             // lNomeProduto
             // 
             this.lNomeProduto.AutoSize = true;
-            this.lNomeProduto.Location = new System.Drawing.Point(87, 129);
-            this.lNomeProduto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lNomeProduto.Location = new System.Drawing.Point(116, 159);
             this.lNomeProduto.Name = "lNomeProduto";
-            this.lNomeProduto.Size = new System.Drawing.Size(90, 13);
+            this.lNomeProduto.Size = new System.Drawing.Size(113, 16);
             this.lNomeProduto.TabIndex = 29;
             this.lNomeProduto.Text = "Nome do Produto";
             // 
             // txnomeProduto
             // 
-            this.txnomeProduto.Location = new System.Drawing.Point(233, 124);
-            this.txnomeProduto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txnomeProduto.Location = new System.Drawing.Point(311, 153);
+            this.txnomeProduto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txnomeProduto.Name = "txnomeProduto";
-            this.txnomeProduto.Size = new System.Drawing.Size(144, 20);
+            this.txnomeProduto.Size = new System.Drawing.Size(191, 22);
             this.txnomeProduto.TabIndex = 28;
             // 
             // lCodigoProduto
             // 
             this.lCodigoProduto.AutoSize = true;
-            this.lCodigoProduto.Location = new System.Drawing.Point(87, 96);
-            this.lCodigoProduto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lCodigoProduto.Location = new System.Drawing.Point(116, 118);
             this.lCodigoProduto.Name = "lCodigoProduto";
-            this.lCodigoProduto.Size = new System.Drawing.Size(95, 13);
+            this.lCodigoProduto.Size = new System.Drawing.Size(120, 16);
             this.lCodigoProduto.TabIndex = 27;
             this.lCodigoProduto.Text = "Codigo do Produto";
             // 
             // txProduto
             // 
-            this.txProduto.Location = new System.Drawing.Point(233, 91);
-            this.txProduto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txProduto.Location = new System.Drawing.Point(311, 112);
+            this.txProduto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txProduto.Name = "txProduto";
-            this.txProduto.Size = new System.Drawing.Size(144, 20);
+            this.txProduto.Size = new System.Drawing.Size(191, 22);
             this.txProduto.TabIndex = 26;
             // 
             // FormRelatorio
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.lRelacaoPecasProduto);
             this.Controls.Add(this.dgvRelatorio);
             this.Controls.Add(this.btConsultar);
@@ -135,6 +132,7 @@
             this.Controls.Add(this.lCodigoProduto);
             this.Controls.Add(this.txProduto);
             this.Controls.Add(this.btVoltarR);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormRelatorio";
             this.Text = "FormRelatorio";
             this.Load += new System.EventHandler(this.FormRelatorio_Load);

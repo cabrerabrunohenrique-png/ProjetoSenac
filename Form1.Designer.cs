@@ -81,7 +81,7 @@
             // 
             // btCadastrarNovoUsuario
             // 
-            this.btCadastrarNovoUsuario.BackColor = System.Drawing.Color.Red;
+            this.btCadastrarNovoUsuario.BackColor = System.Drawing.Color.RoyalBlue;
             this.btCadastrarNovoUsuario.Location = new System.Drawing.Point(170, 21);
             this.btCadastrarNovoUsuario.Name = "btCadastrarNovoUsuario";
             this.btCadastrarNovoUsuario.Size = new System.Drawing.Size(157, 57);

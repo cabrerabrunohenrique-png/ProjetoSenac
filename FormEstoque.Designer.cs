@@ -47,7 +47,7 @@
             // 
             // btVoltarE
             // 
-            this.btVoltarE.BackColor = System.Drawing.Color.OrangeRed;
+            this.btVoltarE.BackColor = System.Drawing.Color.RoyalBlue;
             this.btVoltarE.ForeColor = System.Drawing.Color.White;
             this.btVoltarE.Location = new System.Drawing.Point(871, 12);
             this.btVoltarE.Name = "btVoltarE";

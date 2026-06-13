@@ -45,6 +45,8 @@ namespace ProjetoSenac
             else
             {
                 MessageBox.Show("Nome de usuário ou senha incorretos. Tente novamente.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                tbNomeUsuario.Clear();
+                tbSenhaAcesso.Clear();
             }
 
 

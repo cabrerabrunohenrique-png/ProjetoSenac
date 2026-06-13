@@ -129,7 +129,7 @@
             // 
             // btVoltarOS
             // 
-            this.btVoltarOS.BackColor = System.Drawing.Color.OrangeRed;
+            this.btVoltarOS.BackColor = System.Drawing.Color.RoyalBlue;
             this.btVoltarOS.ForeColor = System.Drawing.Color.White;
             this.btVoltarOS.Location = new System.Drawing.Point(625, 12);
             this.btVoltarOS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
