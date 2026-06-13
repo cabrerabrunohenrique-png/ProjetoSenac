@@ -1,0 +1,86 @@
+-- MySQL dump 10.13  Distrib 8.0.19, for Win64 (x86_64)
+--
+-- Host: localhost    Database: bdprojetosenac
+-- ------------------------------------------------------
+-- Server version	5.5.5-10.4.32-MariaDB
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8mb4 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Dumping data for table `tbcadastronovousuario`
+--
+
+LOCK TABLES `tbcadastronovousuario` WRITE;
+/*!40000 ALTER TABLE `tbcadastronovousuario` DISABLE KEYS */;
+INSERT INTO `tbcadastronovousuario` VALUES (22,'bruno hernqieu',123,'Administrador','123','123'),(23,'Jorge Gabriel Suxo Ramos',1234567890,'Usuário Comum','Reidelas','coringaorebaixado'),(24,'bruni hhh',7,'Usuário Comum','77','77'),(25,'bruno henrique',123,'Administrador','cabrera','123');
+/*!40000 ALTER TABLE `tbcadastronovousuario` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `tbcadastropeca`
+--
+
+LOCK TABLES `tbcadastropeca` WRITE;
+/*!40000 ALTER TABLE `tbcadastropeca` DISABLE KEYS */;
+INSERT INTO `tbcadastropeca` VALUES (9,123,'teste','teste',1,1,1),(10,124,'testea','teste',1,1,11),(11,125,'teste','teste',1,1,1),(12,126,'papel','suzano',1,1,1),(13,127,'teste','teste',1,1,1),(14,1258,'aaa','123',123,123,123),(15,1,'bruno','1',1,1,1);
+/*!40000 ALTER TABLE `tbcadastropeca` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `tbentradaestoque`
+--
+
+LOCK TABLES `tbentradaestoque` WRITE;
+/*!40000 ALTER TABLE `tbentradaestoque` DISABLE KEYS */;
+INSERT INTO `tbentradaestoque` VALUES (1,'2026-06-01',123,'123',123,123),(2,'2026-06-01',123,'123',123,123),(3,'2026-06-07',122,'123',123,123),(4,'2026-06-07',123,'123',123,123),(5,'2026-06-01',123,'123',123,123),(6,'2026-06-01',123,'123',123,123),(7,'2026-06-07',123,'123',123,123),(8,'2026-06-07',123,'123',123,123),(9,'2026-06-07',122,'123',123,123),(10,'2026-06-07',123,'123',123,123),(11,'2026-06-07',123,'123',123,123),(12,'2026-06-07',123,'123',123,123),(13,'2026-06-07',123,'123',123,123),(14,'2026-06-07',123,'123',123,123),(15,'2026-06-07',123,'123',123,123),(16,'2026-06-07',1224,'1224',1224,124),(17,'2026-06-09',124,'123',124,124),(18,'2026-06-09',124,'aaa',1,1),(19,'2026-06-09',1,'rere',1,1),(20,'2026-06-09',2,'aaaaa',2,3);
+/*!40000 ALTER TABLE `tbentradaestoque` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `tbordemservico`
+--
+
+LOCK TABLES `tbordemservico` WRITE;
+/*!40000 ALTER TABLE `tbordemservico` DISABLE KEYS */;
+INSERT INTO `tbordemservico` VALUES (1,123,123,'teste',NULL,NULL),(2,123,123,'aaaaa',NULL,NULL),(3,123,123,'AAAA',NULL,NULL);
+/*!40000 ALTER TABLE `tbordemservico` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `tbordeservi`
+--
+
+LOCK TABLES `tbordeservi` WRITE;
+/*!40000 ALTER TABLE `tbordeservi` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tbordeservi` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `tbsaidaestoque`
+--
+
+LOCK TABLES `tbsaidaestoque` WRITE;
+/*!40000 ALTER TABLE `tbsaidaestoque` DISABLE KEYS */;
+INSERT INTO `tbsaidaestoque` VALUES (1,'2026-05-26',123,'123',123,0,0,0,''),(2,'2026-05-26',123,'123',123,0,0,0,''),(3,'2026-05-26',123,'123',123,0,0,0,''),(4,'2026-05-26',123,'123',123,0,0,0,''),(5,'2026-05-26',123,'123',123,0,0,0,''),(6,'2026-05-26',123,'123',123,123,123,123,'123'),(7,'2026-05-26',123,'123',123,123,123,123,'123'),(8,'2026-05-26',123,'123',123,123,123,123,'123'),(9,'2026-05-26',123,'123',123,123,123,123,'123'),(10,'2026-05-26',123,'123',123,123,123,123,'123'),(11,'2026-05-26',123,'123',123,123,123,123,'123'),(12,'2026-05-26',123,'123',123,123,123,123,'123'),(13,'2026-05-02',122,'123',123,123,123,123,'123'),(14,'2026-05-02',122,'123',123,123,123,123,'123'),(15,'2026-05-02',122,'123',123,123,123,123,'123'),(16,'2026-05-02',122,'123',123,123,123,123,'123'),(17,'2026-05-26',123,'123',123,123,123,123,'123'),(18,'2026-05-26',123,'123',123,123,123,123,'123'),(19,'2026-05-26',123,'123',123,123,123,123,'123'),(20,'2026-05-26',123,'123',123,123,123,123,'123'),(21,'2026-05-26',123,'',123,123,123,123,'123'),(22,'2026-05-26',123,'',123,123,123,123,'123'),(23,'2026-05-26',123,'',123,123,123,123,'123'),(24,'2026-05-26',123,'',123,123,123,123,'123'),(25,'2026-05-26',111,'a',11,1,1,111,'1111'),(26,'2026-05-26',123,'123',123,123,123,123,'123'),(27,'2026-05-26',123,'123',123,123,123,123,'123'),(28,'2026-05-26',123,'123',123,123,123,123,'123'),(29,'2026-05-26',123,'123',123,123,123,123,''),(30,'2026-05-26',11,'bruno',1,100,11,15,'@@'),(31,'2026-06-09',1,'11',1,1,1,1,'1');
+/*!40000 ALTER TABLE `tbsaidaestoque` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2026-06-12 21:39:48
