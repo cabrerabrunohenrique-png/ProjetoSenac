@@ -20,11 +20,13 @@ namespace ProjetoSenac
         public FormEstoque()    
         {
             InitializeComponent();
-            
 
+            EstoqueEntrada estoqueEntrada = new EstoqueEntrada();
 
-            comboBox_CodigoProduto.Items.Add("Peça");
-            this.Controls.Add(comboBox_CodigoProduto);
+            List<string> codigosDoBanco = estoqueEntrada.listaSuspensa();
+
+            // 2. Alimenta o ComboBox com a lista completa de uma vez só
+            comboBox_CodigoProduto.DataSource = codigosDoBanco;
 
             DateTime dataEntradaPeca = monthCalendar1.SelectionStart;
             string nomePecaSem = txNomePeca.Text;
