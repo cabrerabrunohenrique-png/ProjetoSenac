@@ -42,10 +42,8 @@ namespace ProjetoSenac
                         conn.Open();
                         int quantidade = Convert.ToInt32(comando.ExecuteScalar());
 
-                        if (quantidade > 0)
-                        {
-                            existeNoBanco = true; // Achou o código gravado no MySQL!
-                        }
+                        existeNoBanco =(quantidade > 0);
+                        
                     }
                     // Se QUALQUER coisa der errado lá no 'try'
                     catch (Exception)

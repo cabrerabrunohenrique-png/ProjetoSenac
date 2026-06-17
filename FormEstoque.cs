@@ -70,11 +70,11 @@ namespace ProjetoSenac
                 return;
             }
 
-            if (!int.TryParse(txCodigoPeca.Text, out int codigoPeca) || codigoPeca <= 0)
+            if (!int.TryParse(comboBox_CodigoProduto.Text, out int codigoPeca) || codigoPeca <= 0)
 
             {
                 MessageBox.Show("O código da peça deve ser um número válido", "ATENÇÃO");
-                txCodigoPeca.Clear();
+                comboBox_CodigoProduto.Text = "";
                 return;
             }
 
@@ -108,9 +108,17 @@ namespace ProjetoSenac
 
             {
                 MessageBox.Show("Possivel duplicidade de informãção Já foi inserido esse numero de codigo" + codigoPeca + "nf" + numeroNf + "quantidade" + quantidaPeca);
-                txCodigoPeca.Clear();
+                comboBox_CodigoProduto.Text = "";
                 txNfPeca.Clear();
                 txQuantidadePeca.Clear();
+                return;
+            }
+
+            
+
+            if (!estoqueEntradaValidacao.FcValidarCodigoProduto(codigoPeca, nomePeca))
+            {
+                MessageBox.Show("O codigo e o nome da peça não correspondem, verifique os dados e tente novamente", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning );
                 return;
             }
 

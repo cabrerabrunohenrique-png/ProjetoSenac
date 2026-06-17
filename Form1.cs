@@ -34,8 +34,7 @@ namespace ProjetoSenac
             {
                
                 MessageBox.Show("Login bem-sucedido!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                tbNomeUsuario.Clear();
-                tbSenhaAcesso.Clear();
+                
 
                 Nav formNav = new Nav();
                 formNav.Owner = this;
@@ -45,9 +44,12 @@ namespace ProjetoSenac
             else
             {
                 MessageBox.Show("Nome de usuário ou senha incorretos. Tente novamente.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                tbNomeUsuario.Clear();
-                tbSenhaAcesso.Clear();
+                
             }
+
+
+            tbNomeUsuario.Clear();
+            tbSenhaAcesso.Clear();
 
 
         }

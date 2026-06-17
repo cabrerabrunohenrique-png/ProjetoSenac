@@ -12,12 +12,12 @@ namespace ProjetoSenac
 
         public int CODIGOPECA { get; set; }
         public string NOMEPECA { get; set; }
-       
+
 
         public int QUANTIDADEPECA { get; set; }
 
         public int NUMERONF { get; set; }
-        
+
         public DateTime DATAENTRADA { get; set; }
 
 
@@ -25,14 +25,14 @@ namespace ProjetoSenac
         {
             List<string> listaPecas = new List<string>();
             string DADOS_CONEXAO = "server=localhost; user=root; password=; database=bdprojetosenac;";
-            string scriptSelect = "SELECT codigoProduto FROM tbcadastropeca" ;
+            string scriptSelect = "SELECT codigoProduto FROM tbcadastropeca";
 
             using (MySqlConnection conn = new MySqlConnection(DADOS_CONEXAO))
             {
                 using (MySqlCommand comando = new MySqlCommand(scriptSelect, conn))
                 {
-                    
-                    
+
+
 
                     try
                     {
@@ -45,9 +45,9 @@ namespace ProjetoSenac
                                 listaPecas.Add(codigo); // Adiciona o código na lista
                             }
 
-                           
+
                         }
-                       
+
 
 
                     }
@@ -60,12 +60,54 @@ namespace ProjetoSenac
                 }
             }
 
-            return listaPecas; 
+            return listaPecas;
 
         }
-        
 
 
+
+
+        public bool FcValidarCodigoProduto(int comboBox_CodigoProduto, string nomepeca)
+        {
+            bool errado = false;
+            string DADOS_CONEXAO = "server=localhost; user=root; password=; database=bdprojetosenac;";
+            string scriptSelect = "select * from tbentradaestoque where codigoProduto =@codigoProduto and nomeproduto =@nomeProduto";
+
+            using (MySqlConnection conn = new MySqlConnection(DADOS_CONEXAO))
+            
+            using (MySqlCommand comando = new MySqlCommand(scriptSelect, conn))
+            {
+                comando.Parameters.AddWithValue("@codigoProduto", comboBox_CodigoProduto);
+                comando.Parameters.AddWithValue("@nomeProduto", nomepeca);
+
+
+                try
+                {
+                    conn.Open();
+                    int quantidade = Convert.ToInt32(comando.ExecuteScalar());
+
+                    errado = (quantidade > 0);
+
+                }
+                // Se QUALQUER coisa der errado lá no 'try'
+                catch (Exception)
+                {
+                    // Caso dê algum erro de conexão, tratamos aqui para não travar o sistema
+                    errado = false;
+                }
+
+                return errado;
+
+
+            }
+
+
+
+
+
+
+
+        } 
 
         public bool validarEntradas(int codigoPeca, int numeroNf, int quanitadePeca)
         {
