@@ -68,7 +68,7 @@
             this.txNomeUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txNomeUsuario.Name = "txNomeUsuario";
             this.txNomeUsuario.Size = new System.Drawing.Size(324, 22);
-            this.txNomeUsuario.TabIndex = 3;
+            this.txNomeUsuario.TabIndex = 4;
             // 
             // txSenhaAcesso
             // 
@@ -76,7 +76,7 @@
             this.txSenhaAcesso.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txSenhaAcesso.Name = "txSenhaAcesso";
             this.txSenhaAcesso.Size = new System.Drawing.Size(324, 22);
-            this.txSenhaAcesso.TabIndex = 4;
+            this.txSenhaAcesso.TabIndex = 5;
             this.txSenhaAcesso.TextChanged += new System.EventHandler(this.txSenhaAcesso_TextChanged);
             // 
             // lNomeCompleto
@@ -140,7 +140,7 @@
             this.txConfirmacaoSenha.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txConfirmacaoSenha.Name = "txConfirmacaoSenha";
             this.txConfirmacaoSenha.Size = new System.Drawing.Size(324, 22);
-            this.txConfirmacaoSenha.TabIndex = 5;
+            this.txConfirmacaoSenha.TabIndex = 6;
             // 
             // btCadastrar
             // 
@@ -149,7 +149,7 @@
             this.btCadastrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btCadastrar.Name = "btCadastrar";
             this.btCadastrar.Size = new System.Drawing.Size(199, 39);
-            this.btCadastrar.TabIndex = 6;
+            this.btCadastrar.TabIndex = 7;
             this.btCadastrar.Text = "Cadastrar";
             this.btCadastrar.UseVisualStyleBackColor = false;
             this.btCadastrar.Click += new System.EventHandler(this.btCadastrar_Click);
@@ -162,7 +162,7 @@
             this.btVoltarCNU.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btVoltarCNU.Name = "btVoltarCNU";
             this.btVoltarCNU.Size = new System.Drawing.Size(137, 66);
-            this.btVoltarCNU.TabIndex = 13;
+            this.btVoltarCNU.TabIndex = 8;
             this.btVoltarCNU.Text = "Tela Inicial";
             this.btVoltarCNU.UseVisualStyleBackColor = false;
             this.btVoltarCNU.Click += new System.EventHandler(this.btVoltarCNU_Click);
@@ -174,7 +174,7 @@
             this.cbNivelPermisao.MaxDropDownItems = 2;
             this.cbNivelPermisao.Name = "cbNivelPermisao";
             this.cbNivelPermisao.Size = new System.Drawing.Size(324, 24);
-            this.cbNivelPermisao.TabIndex = 14;
+            this.cbNivelPermisao.TabIndex = 3;
             // 
             // mySqlCommand1
             // 

@@ -57,6 +57,24 @@
     <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=8.0.0.2, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\lib\net462\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack, Version=8.0.15.2, Culture=neutral, PublicKeyToken=8afb38e9204fc0a9, processorArchitecture=MSIL">
+      <HintPath>packages\WindowsAPICodePack.8.0.15.2\lib\net472\Microsoft.WindowsAPICodePack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.Core, Version=8.0.15.2, Culture=neutral, PublicKeyToken=8afb38e9204fc0a9, processorArchitecture=MSIL">
+      <HintPath>packages\WindowsAPICodePack.8.0.15.2\lib\net472\Microsoft.WindowsAPICodePack.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.ExtendedLinguisticServices, Version=8.0.15.2, Culture=neutral, PublicKeyToken=8afb38e9204fc0a9, processorArchitecture=MSIL">
+      <HintPath>packages\WindowsAPICodePack.8.0.15.2\lib\net472\Microsoft.WindowsAPICodePack.ExtendedLinguisticServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.Sensors, Version=8.0.15.2, Culture=neutral, PublicKeyToken=8afb38e9204fc0a9, processorArchitecture=MSIL">
+      <HintPath>packages\WindowsAPICodePack.8.0.15.2\lib\net472\Microsoft.WindowsAPICodePack.Sensors.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell, Version=8.0.15.2, Culture=neutral, PublicKeyToken=8afb38e9204fc0a9, processorArchitecture=MSIL">
+      <HintPath>packages\WindowsAPICodePack.8.0.15.2\lib\net472\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.ShellExtensions, Version=8.0.15.2, Culture=neutral, PublicKeyToken=8afb38e9204fc0a9, processorArchitecture=MSIL">
+      <HintPath>packages\WindowsAPICodePack.8.0.15.2\lib\net472\Microsoft.WindowsAPICodePack.ShellExtensions.dll</HintPath>
+    </Reference>
     <Reference Include="MySql.Data, Version=9.7.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>packages\MySql.Data.9.7.0\lib\net462\MySql.Data.dll</HintPath>
     </Reference>

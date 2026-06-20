@@ -1,4 +1,8 @@
-﻿using System;
+﻿using Microsoft.WindowsAPICodePack.Dialogs;
+using Microsoft.WindowsAPICodePack.Dialogs;
+// tem que instalar o MySqlConnector
+using MySqlConnector;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,16 +12,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
-// tem que instalar o MySqlConnector
-using MySqlConnector;
 
 namespace ProjetoSenac
 {
     public partial class CadastroNovoUsuario : Form
 
     {
-        
+
+        ErrorProvider errorProvider = new ErrorProvider();
+        TaskDialog taskDialog = new TaskDialog();
 
 
 
@@ -59,12 +64,14 @@ namespace ProjetoSenac
 
         private void btCadastrar_Click(object sender, EventArgs e)
         {
+
+            errorProvider.SetError(txNomeCompleto, "");
             string nomeCompleto = txNomeCompleto.Text.Trim(); 
             string numeroRegistro = txNumeroRegistro.Text;
             string nivelPermissao = cbNivelPermisao.Text;
             string nomeUsuario = txNomeUsuario.Text.Trim();
             string senhaAcesso = txSenhaAcesso.Text;
-
+            
             //DateTime dateTime = DateTime.Now;
 
 
@@ -72,54 +79,120 @@ namespace ProjetoSenac
 
             string DADOS_CONEXAO = "server=localhost; user=root; password=; database=bdprojetosenac;";
 
-                       
+
+
+            errorProvider.SetError(txNomeCompleto, "");
+
             if (nomeCompleto.Length < 5 || nomeCompleto.Length > 50)
             {
-                MessageBox.Show("O nome completo deve ter entre 5 e 50 caracteres.", "NOME COMPLETO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                errorProvider.SetError(txNomeCompleto, "O nome completo deve ter entre 5 e 50 caracteres.");
+                taskDialog.Caption = "Validação Cadastro Novo Usuário";
+                taskDialog.InstructionText = "Nome Completo Inválido";
+                taskDialog.Text = "O nome inserido deve conter entre 5 e 50 caracteres.";
+                taskDialog.Icon = TaskDialogStandardIcon.Warning;
+                taskDialog.Show();
+
+                //MessageBox.Show("O nome completo deve ter entre 5 e 50 caracteres.", "NOME COMPLETO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txNomeCompleto.Clear();
+                txNomeCompleto.Focus();
                 
+
 
                 return;
             }
 
             
+            
 
-            if (nomeCompleto.Split(' ').Length <2)
+            else if (nomeCompleto.Split(' ').Length <2)
             {
 
-                MessageBox.Show("O nome completo deve conter pelo menos um sobrenome.", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                errorProvider.SetError(txNomeCompleto, "Nome completo inválido.");
+                taskDialog.Caption = "Validação Cadastro Novo Usuário";
+                taskDialog.InstructionText = "Nome Completo Inválido";
+                taskDialog.Text = "O nome completo deve conter pelo menos um sobrenome.";
+                taskDialog.Icon = TaskDialogStandardIcon.Warning;
+                taskDialog.Show();
+                //MessageBox.Show("O nome completo deve conter pelo menos um sobrenome.", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txNomeCompleto.Clear();
+                txNomeCompleto.Focus();
                 return;
             }
 
            
 
-            char[] nomeComletoLetra = nomeCompleto.ToCharArray();
+            
+            
+            else if (nomeCompleto.Any(c => char.IsDigit(c)))
 
-            if (nomeComletoLetra.Any(c => char.IsDigit(c)))
-
-            {
-                MessageBox.Show("Você não pode usar números no nome completo.", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
+             {
+                errorProvider.SetError(txNomeCompleto, "Nome completo inválido.");
+                taskDialog.Caption = "Validação Cadastro Novo Usuário";
+                taskDialog.InstructionText = "Nome Completo Inválido";
+                taskDialog.Text = "O campo nome completo não pode conter números.";
+                taskDialog.Icon = TaskDialogStandardIcon.Warning;
+                taskDialog.Show();
+                txNomeCompleto.Clear();
+                txNomeCompleto.Focus();
                 return;
             
             }
 
-            char[] nomeComEspecial = nomeCompleto.ToCharArray();
+            
 
-            if (nomeComEspecial.Any(c => char.IsPunctuation(c) || char.IsSymbol(c)))
+             else if (nomeCompleto.Any(c => char.IsPunctuation(c) || char.IsSymbol(c)))
             {
-                MessageBox.Show("Seu nome tem caracteres inválidos.", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                errorProvider.SetError(txNomeCompleto, "Nome completo inválido.");
+                taskDialog.Caption = "Validação Cadastro Novo Usuário";
+                taskDialog.InstructionText = "Nome Completo Inválido";
+                taskDialog.Text = "O campo nome completo não pode conter caracteres especiais.";
+                taskDialog.Icon = TaskDialogStandardIcon.Warning;
+                taskDialog.Show();
+                txNomeCompleto.Clear();
+                txNomeCompleto .Focus();
+                return;
+            }
+
+            else
+            {
+                
+                    errorProvider.SetError(txNomeCompleto, string.Empty);
+                    errorProvider.Clear();
+                
+
+            }
+
+            if(string.IsNullOrWhiteSpace(numeroRegistro))
+            {
+                errorProvider.SetError(txNumeroRegistro, "Numero de Registro Invalido.");
+                taskDialog.Caption = "Validação Cadastro Novo Usuário";
+                taskDialog.InstructionText = "Registro incompleto";
+                taskDialog.Text = "Todos os campos devem ser preenchidos.";
+                taskDialog.Icon = TaskDialogStandardIcon.Warning;
+                taskDialog.Show();
+                txNumeroRegistro.Focus();
+                txNumeroRegistro.Clear();
+
+                //MessageBox.Show("Todos os campos devem ser preenchidos", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
             char[] numeroValidado = numeroRegistro.ToCharArray();
 
-            if (numeroValidado.Any(c => char.IsPunctuation(c) || char.IsSymbol(c) || char.IsLetter(c)))
+              if (numeroRegistro.Any(c => char.IsPunctuation(c) || char.IsSymbol(c) || char.IsLetter(c)))
             {
-                MessageBox.Show("Só PODE NUMERO", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                errorProvider.SetError(txNumeroRegistro, "Numero de Registro Invalido.");
+                taskDialog.Caption = "Validação Cadastro Novo Usuário";
+                taskDialog.InstructionText = "Numero ja Cadastrado";
+                taskDialog.Text = "Só pode NUMERO INTEIRO POSITIVO.";
+                taskDialog.Icon = TaskDialogStandardIcon.Warning;
+                taskDialog.Show();
                 txNumeroRegistro.Clear();
+                txNumeroRegistro.Focus();
                 return;
+
+
+                
             }
 
             if (numeroRegistro.Length >10 )
@@ -139,11 +212,17 @@ namespace ProjetoSenac
             }
 
 
-            if (string.IsNullOrEmpty(nomeCompleto) || string.IsNullOrEmpty(numeroRegistro) || string.IsNullOrEmpty(nivelPermissao) || string.IsNullOrEmpty(nomeUsuario)
+           if (string.IsNullOrEmpty(numeroRegistro) || string.IsNullOrEmpty(nivelPermissao) || string.IsNullOrEmpty(nomeUsuario)
             || string.IsNullOrEmpty(senhaAcesso) || string.IsNullOrEmpty(txConfirmacaoSenha.Text))
             {
-                             
-                MessageBox.Show("Todos os campos devem ser preenchidos", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                
+                taskDialog.Caption = "Validação Cadastro Novo Usuário";
+                taskDialog.InstructionText = "Registro incompleto";
+                taskDialog.Text = "Todos os campos devem ser preenchidos.";
+                taskDialog.Icon = TaskDialogStandardIcon.Warning;
+                taskDialog.Show();
+
+                //MessageBox.Show("Todos os campos devem ser preenchidos", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
 
             }
@@ -151,22 +230,31 @@ namespace ProjetoSenac
 
             if (listaCadastroUsuario.Any(c => c.NOMECOMPLETO == nomeCompleto))
             {
-                MessageBox.Show("O NOME COMPLETO" + nomeCompleto + " já existe. Por favor, escolha outro.", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
-
+                errorProvider.SetError(txNomeCompleto, "Nome completo inválido.");
+                taskDialog.Caption = "Validação Cadastro Novo Usuário";
+                taskDialog.InstructionText = "Nome ja cadastrado";
+                taskDialog.Text = "O NOME COMPLETO" + nomeCompleto+ " já possui registro. Nao é permitido duplicidade de NOME COMPLETO.";
+                taskDialog.Icon = TaskDialogStandardIcon.Warning;
+                taskDialog.Show();
                 txNomeCompleto.Clear();
+                txNomeCompleto.Focus();
                 return;
             }
 
 
             if (listaCadastroUsuario.Any(c => c.NUMEROREGISTRO == numeroRegistro))
             {
-                MessageBox.Show("o NUMERO DE REGISTRO"+ numeroRegistro + " já existe. Por favor, escolha outro.", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
-
-                txNumeroRegistro.Clear();
+                errorProvider.SetError(txNumeroRegistro, "Numero de Registro Invalido.");
+                taskDialog.Caption = "Validação Cadastro Novo Usuário";
+                taskDialog.InstructionText = "Numero ja Cadastrado";
+                taskDialog.Text = "O NUMERO DE REGISTRO" + numeroRegistro + " já possui registro. Nao é permitido duplicidade de NUMERO DE REGISTRO.";
+                taskDialog.Icon = TaskDialogStandardIcon.Warning;
+                taskDialog.Show();
+                txNomeCompleto.Clear();
+                txNomeCompleto.Focus();
                 return;
-
+                
             }
 
             if (listaCadastroUsuario.Any(c => c.NOMEUSUARIO == nomeUsuario))

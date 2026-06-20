@@ -180,3 +180,14 @@ C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\K4os.Hash.xxHash.xml
 C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\MySql.Data.xml
 C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\System.Configuration.ConfigurationManager.xml
 C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\System.IO.Pipelines.xml
+C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\Microsoft.WindowsAPICodePack.Core.dll
+C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\Microsoft.WindowsAPICodePack.dll
+C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\Microsoft.WindowsAPICodePack.ExtendedLinguisticServices.dll
+C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\Microsoft.WindowsAPICodePack.Sensors.dll
+C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll
+C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\Microsoft.WindowsAPICodePack.ShellExtensions.dll
+C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\Microsoft.WindowsAPICodePack.Core.xml
+C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\Microsoft.WindowsAPICodePack.ExtendedLinguisticServices.xml
+C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\Microsoft.WindowsAPICodePack.Sensors.xml
+C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\Microsoft.WindowsAPICodePack.Shell.xml
+C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\Microsoft.WindowsAPICodePack.ShellExtensions.xml

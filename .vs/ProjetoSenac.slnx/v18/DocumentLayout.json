@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|c:\\users\\bhcab\\source\\repos\\projetosenac\\formestoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:formestoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|c:\\users\\bhcab\\source\\repos\\projetosenac\\cadastronovousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:cadastronovousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|c:\\users\\bhcab\\source\\repos\\projetosenac\\estoqueentrada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:estoqueentrada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|c:\\users\\bhcab\\source\\repos\\projetosenac\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|c:\\users\\bhcab\\source\\repos\\projetosenac\\formestoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:formestoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|c:\\users\\bhcab\\source\\repos\\projetosenac\\cadastronovousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:cadastronovousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -47,68 +39,43 @@
           ]
         },
         {
-          "DockedWidth": 223,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FormEstoque.cs",
-              "DocumentMoniker": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\FormEstoque.cs",
-              "RelativeDocumentMoniker": "FormEstoque.cs",
-              "ToolTip": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\FormEstoque.cs",
-              "RelativeToolTip": "FormEstoque.cs",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAuwHsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-17T02:41:42.544Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-17T02:47:59.332Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FormEstoque.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\FormEstoque.cs",
-              "RelativeDocumentMoniker": "FormEstoque.cs",
-              "ToolTip": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\FormEstoque.cs [Design]",
-              "RelativeToolTip": "FormEstoque.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-17T02:42:13.654Z",
-              "EditorCaption": " [Design]"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 375,
+          "DockedWidth": 242,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "EstoqueEntrada.cs",
-              "DocumentMoniker": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\EstoqueEntrada.cs",
-              "RelativeDocumentMoniker": "EstoqueEntrada.cs",
-              "ToolTip": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\EstoqueEntrada.cs",
-              "RelativeToolTip": "EstoqueEntrada.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAswE0AAABPAAAAAAAAAA==",
+              "Title": "CadastroNovoUsuario.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\CadastroNovoUsuario.cs",
+              "RelativeDocumentMoniker": "CadastroNovoUsuario.cs",
+              "ToolTip": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\CadastroNovoUsuario.cs [Design]",
+              "RelativeToolTip": "CadastroNovoUsuario.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-17T02:32:41.066Z",
+              "WhenOpened": "2026-06-20T11:21:03.645Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 288,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CadastroNovoUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\CadastroNovoUsuario.cs",
+              "RelativeDocumentMoniker": "CadastroNovoUsuario.cs",
+              "ToolTip": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\CadastroNovoUsuario.cs",
+              "RelativeToolTip": "CadastroNovoUsuario.cs",
+              "ViewState": "AgIAAKQAAAAAAAAAAAAAAK0AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-20T11:25:38.006Z",
               "EditorCaption": ""
             }
           ]
