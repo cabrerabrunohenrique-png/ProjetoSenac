@@ -1,5 +1,5 @@
 ﻿using Microsoft.WindowsAPICodePack.Dialogs;
-using Microsoft.WindowsAPICodePack.Dialogs;
+///using Microsoft.WindowsAPICodePack.Dialogs;
 // tem que instalar o MySqlConnector
 using MySqlConnector;
 using System;
@@ -37,6 +37,7 @@ namespace ProjetoSenac
         {
             InitializeComponent();
 
+            cbNivelPermisao.Items.Add("");
             cbNivelPermisao.Items.Add("Administrador");
             cbNivelPermisao.Items.Add("Usuário Comum");
             cbNivelPermisao.Items.Add("Usuário Restrito");
@@ -195,36 +196,98 @@ namespace ProjetoSenac
                 
             }
 
-            if (numeroRegistro.Length >10 )
+            if (numeroRegistro.Length > 10)
             {
-                MessageBox.Show(" Numero nao pode ter mais que 10 casas ", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txNumeroRegistro.Clear();
-                return;
-            }
-
-            
-            
-            if (nomeUsuario.Length >10)
-            {
-                MessageBox.Show("Nome de usuário nao pode ser maior que 10 caracteres", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txNomeUsuario.Clear();
-                return;
-            }
 
 
-           if (string.IsNullOrEmpty(numeroRegistro) || string.IsNullOrEmpty(nivelPermissao) || string.IsNullOrEmpty(nomeUsuario)
-            || string.IsNullOrEmpty(senhaAcesso) || string.IsNullOrEmpty(txConfirmacaoSenha.Text))
-            {
-                
+                errorProvider.SetError(txNumeroRegistro, "Numero de Registro Invalido.");
                 taskDialog.Caption = "Validação Cadastro Novo Usuário";
-                taskDialog.InstructionText = "Registro incompleto";
-                taskDialog.Text = "Todos os campos devem ser preenchidos.";
+                taskDialog.InstructionText = "Numero ja Cadastrado";
+                taskDialog.Text = "O numero não pode ter mais que 10 caracteres.";
                 taskDialog.Icon = TaskDialogStandardIcon.Warning;
                 taskDialog.Show();
+                txNumeroRegistro.Clear();
+                txNumeroRegistro.Focus();
+                return;
+                //MessageBox.Show(" Numero nao pode ter mais que 10 casas ", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                
+            }
 
-                //MessageBox.Show("Todos os campos devem ser preenchidos", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+            
+
+            if (string.IsNullOrEmpty(nivelPermissao) || nivelPermissao.Any(c => char.IsPunctuation(c) || char.IsSymbol(c) || char.IsNumber(c)  ))
+            {
+                errorProvider.SetError(cbNivelPermisao, "Nível de Permissão inválido.");
+                taskDialog.Caption = "Validação Cadastro Novo Usuário";
+                taskDialog.InstructionText = "Nível de Permissão não selecionado";
+                taskDialog.Text = "Selecione um nível de permissão válido.";
+                taskDialog.Icon = TaskDialogStandardIcon.Warning;
+                taskDialog.Show();
+                cbNivelPermisao.SelectedIndex = 0;
+                cbNivelPermisao.Focus();
+                return;
+            }
+            
+            
+                //|| string.IsNullOrEmpty(nivelPermissao)
+
+
+            if(string.IsNullOrWhiteSpace(nomeUsuario))
+            {
+                errorProvider.SetError(txNomeUsuario, "Nome de usuário inválido.");
+                taskDialog.Caption = "Validação Cadastro Novo Usuário";
+                taskDialog.InstructionText = "Nome de usuário não informado";
+                taskDialog.Text = "Informe um nome de usuário válido.";
+                taskDialog.Icon = TaskDialogStandardIcon.Warning;
+                taskDialog.Show();
+                txNomeUsuario.Clear();
+                txNomeUsuario.Focus();
+                return;
+            }
+                
+            else if ( nomeUsuario.Length >15)
+            {
+                    errorProvider.SetError(txNomeUsuario, "Nome de usuário inválido.");
+                    taskDialog.Caption = "Validação Cadastro Novo Usuário";
+                    taskDialog.InstructionText = "Nome de usuario maior que 15 caracteres";
+                    taskDialog.Text = "Nome de usuário nao pode ser maior que 15 caracteres.";
+                    taskDialog.Icon = TaskDialogStandardIcon.Warning;
+                    taskDialog.Show();
+                    txNomeUsuario.Clear();
+                    txNomeUsuario.Focus();
+                    return;
+                                                
+            }
+
+            if(string.IsNullOrWhiteSpace(senhaAcesso))
+            {
+                errorProvider.SetError(txSenhaAcesso, "Senha de acesso inválida.");
+                taskDialog.Caption = "Validação Cadastro Novo Usuário";
+                taskDialog.InstructionText = "Senha de acesso não informada";
+                taskDialog.Text = "Informe uma senha de acesso válida.";
+                taskDialog.Icon = TaskDialogStandardIcon.Warning;
+                taskDialog.Show();
+                txSenhaAcesso.Clear();
+                txSenhaAcesso.Focus();
+                return;
+                
+            }
+
+
+           if ( string.IsNullOrWhiteSpace(txConfirmacaoSenha.Text.Trim()))
+            {
+                errorProvider.SetError(txConfirmacaoSenha, "Confirmação de senha inválida.");
+                taskDialog.Caption = "Validação Cadastro Novo Usuário";
+                taskDialog.InstructionText = "Confirmação de senha não informada";
+                taskDialog.Text = "Informe a confirmação de senha válida.";
+                taskDialog.Icon = TaskDialogStandardIcon.Warning;
+                taskDialog.Show();
+                txConfirmacaoSenha.Clear();
+                txConfirmacaoSenha.Focus();
                 return;
 
+               
             }
 
 
@@ -269,10 +332,21 @@ namespace ProjetoSenac
             
             if(senhaAcesso != txConfirmacaoSenha.Text)
             {
-                MessageBox.Show("As senhas não coincidem.", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                errorProvider.SetError(txSenhaAcesso, "Numero de Registro Invalido.");
+                errorProvider.SetError(txConfirmacaoSenha, "Numero de Registro Invalido.");
+
+                taskDialog.Caption = "Validação Cadastro Novo Usuário";
+                taskDialog.InstructionText = "Senhas";
+                taskDialog.Text = "As senhas não coincidem.";
+                taskDialog.Icon = TaskDialogStandardIcon.Warning;
+                taskDialog.Show();
                 txSenhaAcesso.Clear();
+                txSenhaAcesso.Focus();
                 txConfirmacaoSenha.Clear();
+
                 return;
+
+                
             }
 
 

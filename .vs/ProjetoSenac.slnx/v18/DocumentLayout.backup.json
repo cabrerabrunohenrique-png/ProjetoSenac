@@ -39,7 +39,7 @@
           ]
         },
         {
-          "DockedWidth": 242,
+          "DockedWidth": 126,
           "SelectedChildIndex": 0,
           "Children": [
             {
@@ -48,8 +48,8 @@
               "Title": "CadastroNovoUsuario.cs [Design]",
               "DocumentMoniker": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\CadastroNovoUsuario.cs",
               "RelativeDocumentMoniker": "CadastroNovoUsuario.cs",
-              "ToolTip": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\CadastroNovoUsuario.cs [Design]*",
-              "RelativeToolTip": "CadastroNovoUsuario.cs [Design]*",
+              "ToolTip": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\CadastroNovoUsuario.cs [Design]",
+              "RelativeToolTip": "CadastroNovoUsuario.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-20T11:21:03.645Z",
               "IsPinned": true,
@@ -62,7 +62,7 @@
           ]
         },
         {
-          "DockedWidth": 288,
+          "DockedWidth": 404,
           "SelectedChildIndex": 0,
           "Children": [
             {
@@ -71,9 +71,9 @@
               "Title": "CadastroNovoUsuario.cs",
               "DocumentMoniker": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\CadastroNovoUsuario.cs",
               "RelativeDocumentMoniker": "CadastroNovoUsuario.cs",
-              "ToolTip": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\CadastroNovoUsuario.cs*",
-              "RelativeToolTip": "CadastroNovoUsuario.cs*",
-              "ViewState": "AgIAAKQAAAAAAAAAAAAAAK0AAAApAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\CadastroNovoUsuario.cs",
+              "RelativeToolTip": "CadastroNovoUsuario.cs",
+              "ViewState": "AgIAAPoAAAAAAAAAAAAAwFwBAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-20T11:25:38.006Z",
               "EditorCaption": ""

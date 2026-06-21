@@ -169,6 +169,7 @@
             // 
             // cbNivelPermisao
             // 
+            this.cbNivelPermisao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbNivelPermisao.FormattingEnabled = true;
             this.cbNivelPermisao.Location = new System.Drawing.Point(271, 191);
             this.cbNivelPermisao.MaxDropDownItems = 2;
@@ -202,6 +203,8 @@
             this.Controls.Add(this.txSenhaAcesso);
             this.Controls.Add(this.txNomeUsuario);
             this.Controls.Add(this.txNumeroRegistro);
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "CadastroNovoUsuario";
             this.Text = "CadastroNovoUsuario";
