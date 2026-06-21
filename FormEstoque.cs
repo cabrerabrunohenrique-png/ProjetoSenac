@@ -1,5 +1,6 @@
 ﻿using Microsoft.WindowsAPICodePack.Dialogs;
 using MySqlConnector;
+using Org.BouncyCastle.Asn1.Cmp;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -34,7 +35,7 @@ namespace ProjetoSenac
             comboBox_CodigoProduto.DataSource = codigosDoBanco;
 
             DateTime dataEntradaPeca = monthCalendar1.SelectionStart;
-            string nomePeca = txNomePeca.Text.Trim();
+            string nomePeca = txNomePeca.Text.Trim().ToLower();
             
         }
 
@@ -261,10 +262,10 @@ namespace ProjetoSenac
                     dataGridView1.DataSource = listaEstoque;
 
 
-                    MessageBox.Show("ok");
+                    MessageBox.Show("Nota Fiscal validada e processada com sucesso!","Sucesso",MessageBoxButtons.OK,MessageBoxIcon.Information);
 
-                    
-                   
+
+
                     txNomePeca.Clear();
                   
                     txQuantidadePeca.Clear();
