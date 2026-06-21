@@ -67,17 +67,17 @@ namespace ProjetoSenac
 
 
 
-        public bool FcValidarCodigoProduto(int comboBox_CodigoProduto, string nomepeca)
+        public bool FcValidarCodigoProduto(int codigoPeca, string nomepeca)
         {
             bool errado = false;
             string DADOS_CONEXAO = "server=localhost; user=root; password=; database=bdprojetosenac;";
-            string scriptSelect = "select * from tbentradaestoque where codigoProduto =@codigoProduto and nomeproduto =@nomeProduto";
+            string scriptSelect = "select * from tbcadastropeca where codigoProduto =@codigoProduto and nomeproduto =@nomeProduto";
 
             using (MySqlConnection conn = new MySqlConnection(DADOS_CONEXAO))
             
             using (MySqlCommand comando = new MySqlCommand(scriptSelect, conn))
             {
-                comando.Parameters.AddWithValue("@codigoProduto", comboBox_CodigoProduto);
+                comando.Parameters.AddWithValue("@codigoProduto", codigoPeca);
                 comando.Parameters.AddWithValue("@nomeProduto", nomepeca);
 
 

@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btVoltarE = new System.Windows.Forms.Button();
             this.btCadastrarEntrada = new System.Windows.Forms.Button();
             this.lNomePeca = new System.Windows.Forms.Label();
             this.txNomePeca = new System.Windows.Forms.TextBox();
             this.lCodigoPeca = new System.Windows.Forms.Label();
-            this.txCodigoPeca = new System.Windows.Forms.TextBox();
             this.lDataEntradaPeca = new System.Windows.Forms.Label();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.lQuantidadePeca = new System.Windows.Forms.Label();
@@ -42,6 +42,14 @@
             this.txNfPeca = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.comboBox_CodigoProduto = new System.Windows.Forms.ComboBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTip3 = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTip4 = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTip5 = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTip6 = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTip7 = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTip8 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -95,14 +103,6 @@
             this.lCodigoPeca.TabIndex = 27;
             this.lCodigoPeca.Text = "Codigo da Peça";
             // 
-            // txCodigoPeca
-            // 
-            this.txCodigoPeca.Location = new System.Drawing.Point(464, 45);
-            this.txCodigoPeca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txCodigoPeca.Name = "txCodigoPeca";
-            this.txCodigoPeca.Size = new System.Drawing.Size(332, 22);
-            this.txCodigoPeca.TabIndex = 2;
-            // 
             // lDataEntradaPeca
             // 
             this.lDataEntradaPeca.AutoSize = true;
@@ -126,6 +126,7 @@
             this.lQuantidadePeca.Size = new System.Drawing.Size(112, 16);
             this.lQuantidadePeca.TabIndex = 41;
             this.lQuantidadePeca.Text = "Quantidade Peça";
+            this.toolTip1.SetToolTip(this.lQuantidadePeca, "Atenção: Insira apenas números (ex: 1, 5, 10).");
             // 
             // txQuantidadePeca
             // 
@@ -134,6 +135,7 @@
             this.txQuantidadePeca.Name = "txQuantidadePeca";
             this.txQuantidadePeca.Size = new System.Drawing.Size(332, 22);
             this.txQuantidadePeca.TabIndex = 4;
+            this.toolTip1.SetToolTip(this.txQuantidadePeca, "Este campo aceita apenas números. Letras e símbolos serão recusados.");
             // 
             // lNfPeca
             // 
@@ -143,6 +145,7 @@
             this.lNfPeca.Size = new System.Drawing.Size(79, 16);
             this.lNfPeca.TabIndex = 43;
             this.lNfPeca.Text = "Numero NF ";
+            this.toolTip1.SetToolTip(this.lNfPeca, "Atenção: Insira apenas números (ex: 1, 5, 10).");
             // 
             // txNfPeca
             // 
@@ -151,6 +154,7 @@
             this.txNfPeca.Name = "txNfPeca";
             this.txNfPeca.Size = new System.Drawing.Size(332, 22);
             this.txNfPeca.TabIndex = 5;
+            this.toolTip1.SetToolTip(this.txNfPeca, "Este campo aceita apenas números. Letras e símbolos serão recusados.");
             // 
             // dataGridView1
             // 
@@ -165,11 +169,12 @@
             // 
             // comboBox_CodigoProduto
             // 
+            this.comboBox_CodigoProduto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_CodigoProduto.FormattingEnabled = true;
-            this.comboBox_CodigoProduto.Location = new System.Drawing.Point(464, 7);
+            this.comboBox_CodigoProduto.Location = new System.Drawing.Point(464, 43);
             this.comboBox_CodigoProduto.Name = "comboBox_CodigoProduto";
             this.comboBox_CodigoProduto.Size = new System.Drawing.Size(332, 24);
-            this.comboBox_CodigoProduto.TabIndex = 45;
+            this.comboBox_CodigoProduto.TabIndex = 2;
             // 
             // FormEstoque
             // 
@@ -187,7 +192,6 @@
             this.Controls.Add(this.lNomePeca);
             this.Controls.Add(this.txNomePeca);
             this.Controls.Add(this.lCodigoPeca);
-            this.Controls.Add(this.txCodigoPeca);
             this.Controls.Add(this.lDataEntradaPeca);
             this.Controls.Add(this.btVoltarE);
             this.Name = "FormEstoque";
@@ -205,7 +209,6 @@
         private System.Windows.Forms.Label lNomePeca;
         private System.Windows.Forms.TextBox txNomePeca;
         private System.Windows.Forms.Label lCodigoPeca;
-        private System.Windows.Forms.TextBox txCodigoPeca;
         private System.Windows.Forms.Label lDataEntradaPeca;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.Label lQuantidadePeca;
@@ -214,5 +217,13 @@
         private System.Windows.Forms.TextBox txNfPeca;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.ComboBox comboBox_CodigoProduto;
+        private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.ToolTip toolTip2;
+        private System.Windows.Forms.ToolTip toolTip3;
+        private System.Windows.Forms.ToolTip toolTip4;
+        private System.Windows.Forms.ToolTip toolTip5;
+        private System.Windows.Forms.ToolTip toolTip6;
+        private System.Windows.Forms.ToolTip toolTip7;
+        private System.Windows.Forms.ToolTip toolTip8;
     }
 }

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Microsoft.WindowsAPICodePack.Dialogs;
+using MySqlConnector;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,14 +9,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
-using MySqlConnector;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
 namespace ProjetoSenac
 {
     public partial class FormEstoque : Form
+
     {
-        
+        ErrorProvider errorProvider = new ErrorProvider();
+
+        TaskDialog taskDialog = new TaskDialog();
+
         BindingList <EstoqueEntrada> listaEstoque = new BindingList<EstoqueEntrada>();
        
         public FormEstoque()    
@@ -29,8 +34,8 @@ namespace ProjetoSenac
             comboBox_CodigoProduto.DataSource = codigosDoBanco;
 
             DateTime dataEntradaPeca = monthCalendar1.SelectionStart;
-            string nomePecaSem = txNomePeca.Text;
-            string nomePeca = nomePecaSem.Trim();
+            string nomePeca = txNomePeca.Text.Trim();
+            
         }
 
         
@@ -54,27 +59,47 @@ namespace ProjetoSenac
 
         private void btCadastrarEntrada_Click(object sender, EventArgs e)
         {
-            
 
+            errorProvider.SetError(txQuantidadePeca, "");
+            errorProvider.SetError(txNfPeca, "");
             DateTime dataEntradaPeca = monthCalendar1.SelectionStart;
-            string nomePecaSem = txNomePeca.Text;
-            string nomePeca = nomePecaSem.Trim();
+            string nomePeca = txNomePeca.Text.Trim();
+            
 
 
 
 
             if (!int.TryParse(txQuantidadePeca.Text, out int quantidaPeca) || quantidaPeca < 0)
             {
-                MessageBox.Show("A quantidade da peça deve ser um número válido", "ATENÇÃO");
+                errorProvider.SetError(txQuantidadePeca, "Quantidade inválida.");
+
+                taskDialog.Caption = "Validação de Itens / Peças";
+                taskDialog.InstructionText = "Quantidade incorreta";
+                taskDialog.Text = "A quantidade da peça deve ser um número inteiro válido (ex: 1, 5, 10).";
+                taskDialog.Icon = TaskDialogStandardIcon.Warning;
+                taskDialog.Show();
+
                 txQuantidadePeca.Clear();
+                txQuantidadePeca.Focus();
                 return;
+
+               
             }
 
             if (!int.TryParse(comboBox_CodigoProduto.Text, out int codigoPeca) || codigoPeca <= 0)
 
             {
-                MessageBox.Show("O código da peça deve ser um número válido", "ATENÇÃO");
-                comboBox_CodigoProduto.Text = "";
+                errorProvider.SetError(comboBox_CodigoProduto, "Código do produto inválido.");
+
+                taskDialog.Caption = "Validação de Itens / Peças";
+                taskDialog.InstructionText = "Código da peça incorreto";
+                taskDialog.Text = "Selecione ou insira um código numérico válido para a peça.";
+                taskDialog.Icon = TaskDialogStandardIcon.Warning;
+                taskDialog.Show();
+
+                // Reseta a lista suspensa para a opção inicial (em branco ou padrão)
+                comboBox_CodigoProduto.SelectedIndex = 0;
+                comboBox_CodigoProduto.Focus();
                 return;
             }
 
@@ -83,23 +108,23 @@ namespace ProjetoSenac
 
 
 
-            if (!int.TryParse(txNfPeca.Text, out int numeroNf))
+            if (!int.TryParse(txNfPeca.Text, out int numeroNf) || numeroNf <=0)
             {
-                MessageBox.Show("O número da nota fiscal deve ser um número válido", "ATENÇÃO");
+                errorProvider.SetError(txNfPeca, "Nota Fiscal inválida.");
+
+                taskDialog.Caption = "Validação de Documento Fiscal";
+                taskDialog.InstructionText = "Número de Nota Fiscal incorreto";
+                taskDialog.Text = "O número da Nota Fiscal deve ser um valor numérico maior que zero.";
+                taskDialog.Icon = TaskDialogStandardIcon.Warning;
+                taskDialog.Show();
+
                 txNfPeca.Clear();
+                txNfPeca.Focus();
                 return;
             }
 
 
-            int numeroNfPeca = int.Parse(txNfPeca.Text);
-            {
-                if (numeroNfPeca < 0)
-                {
-                    MessageBox.Show("O número da nota fiscal deve ser um número inteiro positivo", "ATENÇÃO");
-                    txNfPeca.Clear();
-                    return;
-                }
-            }
+           
 
 
             EstoqueEntrada estoqueEntradaValidacao = new EstoqueEntrada();
@@ -107,20 +132,56 @@ namespace ProjetoSenac
             if (estoqueEntradaValidacao.validarEntradas(codigoPeca, numeroNf, quantidaPeca))
 
             {
-                MessageBox.Show("Possivel duplicidade de informãção Já foi inserido esse numero de codigo" + codigoPeca + "nf" + numeroNf + "quantidade" + quantidaPeca);
-                comboBox_CodigoProduto.Text = "";
-                txNfPeca.Clear();
-                txQuantidadePeca.Clear();
-                return;
-            }
+                    // Mensagem formatada com interpolação de string ($) e quebras de linha (\n) para leitura clara
+                    string mensagemDuplicidade = $"Possível duplicidade de informação!\n\n" +
+                                                 $"Já existe um registro com estes dados:\n" +
+                                                 $"• Código da Peça: {codigoPeca}\n" +
+                                                 $"• Nota Fiscal: {numeroNf}\n" +
+                                                 $"• Quantidade: {quantidaPeca}";
 
+                    MessageBox.Show(mensagemDuplicidade, "Aviso de Duplicidade", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                    // Limpeza dos campos de forma padronizada
+                    //comboBox_CodigoProduto.SelectedIndex = -1; // Remove a seleção do ComboBox de forma segura
+                    txNfPeca.Clear();
+                    txQuantidadePeca.Clear();
+
+                // Foca o cursor de volta no primeiro campo para o usuário digitar novamente
+                    txQuantidadePeca.Focus();
+
+                    return;
+                }
+
+
+
+           
             
 
             if (!estoqueEntradaValidacao.FcValidarCodigoProduto(codigoPeca, nomePeca))
             {
-                MessageBox.Show("O codigo e o nome da peça não correspondem, verifique os dados e tente novamente", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning );
-                return;
-            }
+
+                    // Mensagem formatada e clara para o usuário identificar o erro rapidamente
+                    string mensagemIncompatibilidade = $"Incompatibilidade de dados!\n\n" +
+                                                       $"O Código e o Nome do produto informado não correspondem.\n\n" +
+                                                       $"• Código digitado: {codigoPeca}\n" +
+                                                       $"• Nome digitado: {nomePeca}\n\n" +
+                                                       $"Por favor, verifique as informações e tente novamente.";
+
+                    MessageBox.Show(mensagemIncompatibilidade, "Aviso de Inconsistência", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                    // Limpeza segura dos campos em conflito
+                    //comboBox_CodigoProduto.SelectedIndex = -1;
+                    //comboBox_CodigoProduto.Text = string.Empty;
+                    txNomePeca.Clear();
+
+                    // Retorna o cursor para o código do produto para reiniciar a busca correta
+                    txNomePeca.Focus();
+
+                    return;
+                }
+
+
+            
 
            
 
@@ -148,18 +209,10 @@ namespace ProjetoSenac
 
            
 
-            if (codigoPeca == 0 || quantidaPeca == 0 || numeroNf == 0)
-            {
-                MessageBox.Show("Todos os campos tem que estar preenchidos", "Atenção");
-                return;
-            }
+           
 
 
-            if( listaEstoque.Any(c => c.NUMERONF == numeroNf && c.CODIGOPECA == codigoPeca && c.QUANTIDADEPECA == quantidaPeca))
-            {
-               MessageBox.Show("Já existe uma peça com esse código e número de nota fiscal", "ATENÇÃO");
-               return;
-            }
+           
 
             
 
@@ -210,7 +263,7 @@ namespace ProjetoSenac
 
                     MessageBox.Show("ok");
 
-                    txCodigoPeca.Clear();
+                    
                    
                     txNomePeca.Clear();
                   
@@ -226,6 +279,11 @@ namespace ProjetoSenac
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void txCodigoPeca_TextChanged(object sender, EventArgs e)
         {
 
         }
