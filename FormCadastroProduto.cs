@@ -55,8 +55,8 @@ namespace ProjetoSenac
         private void btCadastrar_Click(object sender, EventArgs e)
         {
             
-            string nomeProduto = TXNomeProduto.Text.Trim();
-            string nomeFabricante = TXFabricanteProduto.Text.Trim();
+            string nomeProduto = TXNomeProduto.Text.Trim().ToLower();
+            string nomeFabricante = TXFabricanteProduto.Text.Trim().ToLower();
             
 
 
@@ -107,7 +107,7 @@ namespace ProjetoSenac
 
             CadastroProduto validador = new CadastroProduto();
 
-            if (validador.validarCodigo(codigoProduto))
+            if (validador.ValidarCodigo(codigoProduto))
             { 
                 MessageBox.Show("Esse código: " + codigoProduto + " já existe. Cadastrar outro número", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 TXCodigoProduto.Clear();
@@ -115,8 +115,16 @@ namespace ProjetoSenac
                 return;
             }
 
-            
+            if(validador.FcValidarNome(nomeProduto))
+            {
+                MessageBox.Show("Esse nome: " + nomeProduto + " já existe. Cadastrar outro nome", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                TXNomeProduto.Clear();
+                TXNomeProduto.Focus();
+                return;
+            }
 
+            
+            /*
                         
             if (listaRelacaoProdutoPeca.Any(c => c.CODIGOPRODUTO == codigoProduto))
             {
@@ -124,11 +132,11 @@ namespace ProjetoSenac
                 TXCodigoProduto.Clear();
                 TXCodigoProduto.Focus();
                 return;
-            }
+            }*/
 
             if (listaRelacaoProdutoPeca.Any(c => c.NOMEPRODUTO == nomeProduto))
             {
-                MessageBox.Show("Esse codigo: " + nomeProduto + "Ja exite. Cadastrar outro numero", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning );
+                MessageBox.Show("Esse nome: " + nomeProduto + "Ja exite. Cadastrar outro numero", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning );
                 TXNomeProduto.Clear();
                 TXNomeProduto.Focus();
                 return;

@@ -23,11 +23,41 @@ namespace ProjetoSenac
         public double COMPRIMENTOPRODUTO { get; set; }
 
        
+        public bool FcValidarNome(string nomeProduto)
+        {
+            bool result = false;
 
+            string DADOS_CONEXAO = "server=localhost; user=root; password=; database=bdprojetosenac;";
+            string scriptSelect = "SELECT COUNT(*) FROM tbcadastropeca WHERE nomeproduto = @nomeProduto";
+
+            using (MySqlConnection conn = new MySqlConnection(DADOS_CONEXAO))
+            {
+                using (MySqlCommand comando = new MySqlCommand(scriptSelect, conn))
+                {
+                    comando.Parameters.AddWithValue("@nomeProduto", nomeProduto);
+                    try
+                    {
+                        conn.Open();
+                        int quantidade = Convert.ToInt32(comando.ExecuteScalar());
+                        if (quantidade > 0)
+                        {
+                            result = true; // Achou o nome gravado no MySQL!
+                        }
+                    }
+                    catch (Exception)
+                    {
+                        result = false;
+                    }
+
+                    return result;
+                }
+            }
+
+        }
         
 
 
-        public bool validarCodigo(int codigoProduto)
+        public bool ValidarCodigo(int codigoProduto)
         {
                 bool existeNoBanco = false;
 

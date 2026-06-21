@@ -30,7 +30,7 @@
         {
             this.btVoltarOS = new System.Windows.Forms.Button();
             this.dGVRelacaoProduto = new System.Windows.Forms.DataGridView();
-            this.btCadastrar = new System.Windows.Forms.Button();
+            this.BtCadastrar = new System.Windows.Forms.Button();
             this.lNomeProduto = new System.Windows.Forms.Label();
             this.TXNomeProduto = new System.Windows.Forms.TextBox();
             this.lCodigoProduto = new System.Windows.Forms.Label();
@@ -70,17 +70,17 @@
             this.dGVRelacaoProduto.Size = new System.Drawing.Size(1058, 250);
             this.dGVRelacaoProduto.TabIndex = 26;
             // 
-            // btCadastrar
+            // BtCadastrar
             // 
-            this.btCadastrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btCadastrar.Location = new System.Drawing.Point(205, 312);
-            this.btCadastrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btCadastrar.Name = "btCadastrar";
-            this.btCadastrar.Size = new System.Drawing.Size(191, 37);
-            this.btCadastrar.TabIndex = 7;
-            this.btCadastrar.Text = "Cadastrar";
-            this.btCadastrar.UseVisualStyleBackColor = false;
-            this.btCadastrar.Click += new System.EventHandler(this.btCadastrar_Click);
+            this.BtCadastrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.BtCadastrar.Location = new System.Drawing.Point(205, 312);
+            this.BtCadastrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtCadastrar.Name = "BtCadastrar";
+            this.BtCadastrar.Size = new System.Drawing.Size(191, 37);
+            this.BtCadastrar.TabIndex = 7;
+            this.BtCadastrar.Text = "Cadastrar";
+            this.BtCadastrar.UseVisualStyleBackColor = false;
+            this.BtCadastrar.Click += new System.EventHandler(this.btCadastrar_Click);
             // 
             // lNomeProduto
             // 
@@ -199,7 +199,7 @@
             this.Controls.Add(this.TXFabricanteProduto);
             this.Controls.Add(this.btVoltarOS);
             this.Controls.Add(this.dGVRelacaoProduto);
-            this.Controls.Add(this.btCadastrar);
+            this.Controls.Add(this.BtCadastrar);
             this.Controls.Add(this.lNomeProduto);
             this.Controls.Add(this.TXNomeProduto);
             this.Controls.Add(this.lCodigoProduto);
@@ -217,7 +217,7 @@
         #endregion
         private System.Windows.Forms.Button btVoltarOS;
         private System.Windows.Forms.DataGridView dGVRelacaoProduto;
-        private System.Windows.Forms.Button btCadastrar;
+        private System.Windows.Forms.Button BtCadastrar;
         private System.Windows.Forms.Label lNomeProduto;
         private System.Windows.Forms.TextBox TXNomeProduto;
         private System.Windows.Forms.Label lCodigoProduto;
