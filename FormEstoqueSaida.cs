@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Microsoft.WindowsAPICodePack.Dialogs;
+using MySqlConnector;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,14 +11,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
-using MySqlConnector;
-
-
 namespace ProjetoSenac
 {
     public partial class FormEstoqueSaida : Form
     {
-
+        ErrorProvider errorProvider = new ErrorProvider();
+        TaskDialog taskDialog = new TaskDialog();
         BindingList<SaidaEstoqueSaida> listasaida = new BindingList<SaidaEstoqueSaida>();
 
         public FormEstoqueSaida()
@@ -42,34 +42,17 @@ namespace ProjetoSenac
             DateTime dataSaida = monthCalendar1.SelectionStart;
             string nomePeca = txNomePecaS.Text;
             string situacaoPeca = txSituacaoPeca.Text;
-
-            if(string.IsNullOrWhiteSpace(nomePeca))
-            {
-                MessageBox.Show("O nome da peça não pode estar vazio", "ATENÇÃO");
-                txNomePecaS.Clear();
-                return;
-            };
-
-            if(string.IsNullOrWhiteSpace(situacaoPeca))
-            {
-                MessageBox.Show("A situação da peça não pode estar vazia", "ATENÇÃO");
-                txSituacaoPeca.Clear();
-                return;
-            }
-            ;
+            DateTime dataEntradaPeca = monthCalendar1.SelectionStart;
+            errorProvider.SetError(txNomePecaS, "");
+            errorProvider.SetError(txQuatidadePeca, "");
+            errorProvider.SetError(txNF, "");
+            errorProvider.SetError(txCpfPeca, "");
+            errorProvider.SetError(txNumeroOS, "");
+            errorProvider.SetError(txSituacaoPeca, "");
 
 
-            char[] nomePecaespecial = nomePeca.ToCharArray();
 
-            if (nomePecaespecial.Any(char.IsSymbol) || nomePecaespecial.Any(char.IsPunctuation))
-            {
-                MessageBox.Show("O nome da peça não pode conter caracteres especiais", "ATENÇÃO");
-                txNomePecaS.Clear();
-                return;
-            }
-
-
-            if (!int.TryParse(txCodigoPecaS.Text, out int codigoPeca))
+            if (int.TryParse(tbCodigoPecaS.Text, out int codigoPeca))
             {
                 MessageBox.Show("Código da peça inválido. Por favor, insira um número inteiro.",
                     "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -79,52 +62,118 @@ namespace ProjetoSenac
 
 
 
+            if (string.IsNullOrWhiteSpace(nomePeca) || txNomePecaS.Text.Length < 5 || nomePeca.Length > 50 || nomePeca.Any(c=> char.IsNumber(c))
+                || nomePeca.Any(c=> char.IsSymbol(c)) || nomePeca.Any(c=> char.IsPunctuation(c)))
+            {
+                            
+                errorProvider.SetError(txNomePecaS, "O nome nao pode estar vazio, conter numeros, simbolos ou pontuacoes.");
+                taskDialog.Caption = "Validação Saída de Produto";
+                taskDialog.InstructionText = "Nome do Produto Inválido";
+                taskDialog.Text = "O nome nao pode conter numeros, simbolos ou pontuacoes.\n O nome inserido deve conter entre 5 e 50 caracteres.";
+                taskDialog.Icon = TaskDialogStandardIcon.Warning;
+                taskDialog.Show();
+
+                //MessageBox.Show("O nome completo deve ter entre 5 e 50 caracteres.", "NOME COMPLETO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txNomePecaS.Clear();
+                txNomePecaS.Focus();
+
+                return;
+            }
+
+
+
             if (!int.TryParse(txQuatidadePeca.Text, out int quantidadePeca))
             {
-                MessageBox.Show("Quantidade da peça inválida. Por favor, insira um número inteiro.",
-                    "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                errorProvider.SetError(txQuatidadePeca, "A quantidade deve ser um número inteiro maior que zero.");
+                taskDialog.Caption = "Validação Saída de Produto";
+                taskDialog.InstructionText = "Quantidade Inválida";
+                taskDialog.Text = "Por favor, insira um número inteiro válido e positivo no campo de quantidade.";
+                taskDialog.Icon = TaskDialogStandardIcon.Warning;
+                taskDialog.Show();
                 txQuatidadePeca.Clear();
+                txQuatidadePeca.Focus();
                 return;
             }
 
-            if(!int.TryParse(txNF.Text, out int numeroNF) || numeroNF < 0)
+            if (!int.TryParse(txNF.Text, out int numeroNF) || numeroNF < 0)
             {
-                MessageBox.Show("Número da nota fiscal inválido. Por favor, insira um número inteiro.",
-                    "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                errorProvider.SetError(txNF, "O numero da NF tem que ser maior que 0.");
+                taskDialog.Caption = "Validação Saída de Produto";
+                taskDialog.InstructionText = "Numero da NF invaladio";
+                taskDialog.Text = "Por favor, insira um número inteiro sem virgula e ponto.\n Exemplo:123458 e NAO 123.458";
+                taskDialog.Icon = TaskDialogStandardIcon.Warning;
+                taskDialog.Show();
                 txNF.Clear();
+                txNF.Focus();
                 return;
             }
 
-            if(!int.TryParse(txCpfPeca.Text, out int cpfNf) || cpfNf < 0)
+            if (!int.TryParse(txCpfPeca.Text, out int cpfNf) || cpfNf < 0)
             {
-                MessageBox.Show("CPF inválido. Por favor, insira um número inteiro.",
-                    "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                errorProvider.SetError(txCpfPeca, "O numero do CPF tem que ser inteiro positivo. \nExemplo: 123458.\nNÃO 123.458");
+                taskDialog.Caption = "Validação Saída de Produto";
+                taskDialog.InstructionText = "Numero do CPF Invalido";
+                taskDialog.Text = "Por favor, insira um número inteiro sem virgula e ponto.\n Exemplo:123458 e NAO 123.458";
+                taskDialog.Icon = TaskDialogStandardIcon.Warning;
+                taskDialog.Show();
                 txCpfPeca.Clear();
+                txCpfPeca.Focus();
                 return;
             }
+
 
 
             if (!int.TryParse(txNumeroOS.Text, out int numeroOs) || numeroOs < 0)
             {
-                MessageBox.Show("Número da ordem de serviço inválido. Por favor, insira um número positivo.",
-                    "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                errorProvider.SetError(txNumeroOS, "O numero da OS tem que ser inteiro positivo. \nExemplo: 123458.\nNÃO 123.458");
+                taskDialog.Caption = "Validação Saída de Produto";
+                taskDialog.InstructionText = "Numero da OS Invalido";
+                taskDialog.Text = "Por favor, insira um número inteiro sem virgula e ponto.\n Exemplo:123458 e NAO 123.458";
+                taskDialog.Icon = TaskDialogStandardIcon.Warning;
+                taskDialog.Show();
                 txNumeroOS.Clear();
+                txNumeroOS.Focus();
                 return;
             }
 
-            
-            
-           
-            
 
 
-            int codigoPeca1 = int.Parse(txCodigoPecaS.Text);
+          
+            if (string.IsNullOrWhiteSpace(situacaoPeca) || txSituacaoPeca.Text.Length < 5 || situacaoPeca.Length > 50 || situacaoPeca.Any(c => char.IsNumber(c))
+                || situacaoPeca.Any(c => char.IsSymbol(c)) || situacaoPeca.Any(c => char.IsPunctuation(c)))
+            {
+
+                errorProvider.SetError(txSituacaoPeca, "A Situacao da peça NAO PODE  estar vazio.");
+                taskDialog.Caption = "Validação Saída de Produto";
+                taskDialog.InstructionText = "Situação da Peça";
+                taskDialog.Text = "Descreva a situação da peça. Nao pode conter numeros, simbolos ou pontuacoes.\n Minimio de  5 e maximo de 50 caracteres.";
+                taskDialog.Icon = TaskDialogStandardIcon.Warning;
+                taskDialog.Show();
+
+                //MessageBox.Show("O nome completo deve ter entre 5 e 50 caracteres.", "NOME COMPLETO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txSituacaoPeca.Clear();
+                txSituacaoPeca.Focus();
+
+                return;
+            }
+
+
+
+
+
+
+
+
+
+
+            /*int codigoPeca1 = int.Parse(tbCodigoPecaS.Text);
 
             if (codigoPeca1 < 0)
             {
                 MessageBox.Show("Código da peça inválido. Por favor, insira um número positivo.",
                     "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txCodigoPecaS.Clear();
+                tbCodigoPecaS.SelectedIndex = -1;
                 return;
             }
 
@@ -136,7 +185,7 @@ namespace ProjetoSenac
                     "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txQuatidadePeca.Clear();
                 return;
-            }
+            }*/
 
             else
             { 
@@ -182,7 +231,7 @@ namespace ProjetoSenac
 
 
                     monthCalendar1.SetDate(DateTime.Today);
-                    txCodigoPecaS.Clear();
+                    tbCodigoPecaS.SelectedIndex = -1;
                     txNomePecaS.Clear();
                     txQuatidadePeca.Clear();
                     txNF.Clear();

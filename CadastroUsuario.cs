@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
 namespace ProjetoSenac
@@ -46,10 +46,13 @@ namespace ProjetoSenac
                         
                     }
                     // Se QUALQUER coisa der errado lá no 'try'
-                    catch (Exception)
+                    catch (Exception ex)
                     {
                         // Caso dê algum erro de conexão, tratamos aqui para não travar o sistema
                         existeNoBanco = false;
+                        Console.WriteLine($"Erro inesperado: {ex.Message}");
+                        MessageBox.Show("Ocorreu um erro interno no sistema. Se o problema persistir, contate o suporte.",
+                                        "Erro Interno", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }

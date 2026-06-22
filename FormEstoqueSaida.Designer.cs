@@ -43,9 +43,9 @@
             this.lNomePecaS = new System.Windows.Forms.Label();
             this.txNomePecaS = new System.Windows.Forms.TextBox();
             this.lCodigoPecaS = new System.Windows.Forms.Label();
-            this.txCodigoPecaS = new System.Windows.Forms.TextBox();
             this.lDataSaidaPeca = new System.Windows.Forms.Label();
             this.btVoltarE = new System.Windows.Forms.Button();
+            this.tbCodigoPecaS = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // lSituacaoPeca
@@ -63,7 +63,7 @@
             this.txSituacaoPeca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txSituacaoPeca.Name = "txSituacaoPeca";
             this.txSituacaoPeca.Size = new System.Drawing.Size(261, 22);
-            this.txSituacaoPeca.TabIndex = 64;
+            this.txSituacaoPeca.TabIndex = 8;
             // 
             // lNumeroOS
             // 
@@ -80,13 +80,13 @@
             this.txNumeroOS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txNumeroOS.Name = "txNumeroOS";
             this.txNumeroOS.Size = new System.Drawing.Size(261, 22);
-            this.txNumeroOS.TabIndex = 62;
+            this.txNumeroOS.TabIndex = 7;
             // 
             // monthCalendar1
             // 
             this.monthCalendar1.Location = new System.Drawing.Point(18, 82);
             this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 61;
+            this.monthCalendar1.TabIndex = 1;
             // 
             // lCpfPeca
             // 
@@ -103,7 +103,7 @@
             this.txCpfPeca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txCpfPeca.Name = "txCpfPeca";
             this.txCpfPeca.Size = new System.Drawing.Size(261, 22);
-            this.txCpfPeca.TabIndex = 59;
+            this.txCpfPeca.TabIndex = 6;
             // 
             // lNfPeca
             // 
@@ -120,7 +120,7 @@
             this.txNF.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txNF.Name = "txNF";
             this.txNF.Size = new System.Drawing.Size(261, 22);
-            this.txNF.TabIndex = 57;
+            this.txNF.TabIndex = 5;
             // 
             // lFQuantidadePeca
             // 
@@ -137,16 +137,16 @@
             this.txQuatidadePeca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txQuatidadePeca.Name = "txQuatidadePeca";
             this.txQuatidadePeca.Size = new System.Drawing.Size(261, 22);
-            this.txQuatidadePeca.TabIndex = 55;
+            this.txQuatidadePeca.TabIndex = 4;
             // 
             // btFinalizarSaidaPeca
             // 
             this.btFinalizarSaidaPeca.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btFinalizarSaidaPeca.Location = new System.Drawing.Point(476, 398);
+            this.btFinalizarSaidaPeca.Location = new System.Drawing.Point(477, 402);
             this.btFinalizarSaidaPeca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btFinalizarSaidaPeca.Name = "btFinalizarSaidaPeca";
             this.btFinalizarSaidaPeca.Size = new System.Drawing.Size(221, 71);
-            this.btFinalizarSaidaPeca.TabIndex = 54;
+            this.btFinalizarSaidaPeca.TabIndex = 9;
             this.btFinalizarSaidaPeca.Text = "Finalizar Lançamento Saida Peça";
             this.btFinalizarSaidaPeca.UseVisualStyleBackColor = false;
             this.btFinalizarSaidaPeca.Click += new System.EventHandler(this.btFinalizarSaidaPeca_Click);
@@ -166,7 +166,7 @@
             this.txNomePecaS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txNomePecaS.Name = "txNomePecaS";
             this.txNomePecaS.Size = new System.Drawing.Size(261, 22);
-            this.txNomePecaS.TabIndex = 52;
+            this.txNomePecaS.TabIndex = 3;
             // 
             // lCodigoPecaS
             // 
@@ -176,14 +176,6 @@
             this.lCodigoPecaS.Size = new System.Drawing.Size(105, 16);
             this.lCodigoPecaS.TabIndex = 51;
             this.lCodigoPecaS.Text = "Codigo da Peça";
-            // 
-            // txCodigoPecaS
-            // 
-            this.txCodigoPecaS.Location = new System.Drawing.Point(578, 57);
-            this.txCodigoPecaS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txCodigoPecaS.Name = "txCodigoPecaS";
-            this.txCodigoPecaS.Size = new System.Drawing.Size(261, 22);
-            this.txCodigoPecaS.TabIndex = 50;
             // 
             // lDataSaidaPeca
             // 
@@ -201,16 +193,26 @@
             this.btVoltarE.Location = new System.Drawing.Point(871, 27);
             this.btVoltarE.Name = "btVoltarE";
             this.btVoltarE.Size = new System.Drawing.Size(163, 67);
-            this.btVoltarE.TabIndex = 44;
+            this.btVoltarE.TabIndex = 10;
             this.btVoltarE.Text = "Tela Inicial";
             this.btVoltarE.UseVisualStyleBackColor = false;
             this.btVoltarE.Click += new System.EventHandler(this.btVoltarE_Click);
+            // 
+            // tbCodigoPecaS
+            // 
+            this.tbCodigoPecaS.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.tbCodigoPecaS.FormattingEnabled = true;
+            this.tbCodigoPecaS.Location = new System.Drawing.Point(578, 60);
+            this.tbCodigoPecaS.Name = "tbCodigoPecaS";
+            this.tbCodigoPecaS.Size = new System.Drawing.Size(261, 24);
+            this.tbCodigoPecaS.TabIndex = 2;
             // 
             // FormEstoqueSaida
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1156, 554);
+            this.Controls.Add(this.tbCodigoPecaS);
             this.Controls.Add(this.lSituacaoPeca);
             this.Controls.Add(this.txSituacaoPeca);
             this.Controls.Add(this.lNumeroOS);
@@ -226,7 +228,6 @@
             this.Controls.Add(this.lNomePecaS);
             this.Controls.Add(this.txNomePecaS);
             this.Controls.Add(this.lCodigoPecaS);
-            this.Controls.Add(this.txCodigoPecaS);
             this.Controls.Add(this.lDataSaidaPeca);
             this.Controls.Add(this.btVoltarE);
             this.Name = "FormEstoqueSaida";
@@ -252,8 +253,8 @@
         private System.Windows.Forms.Label lNomePecaS;
         private System.Windows.Forms.TextBox txNomePecaS;
         private System.Windows.Forms.Label lCodigoPecaS;
-        private System.Windows.Forms.TextBox txCodigoPecaS;
         private System.Windows.Forms.Label lDataSaidaPeca;
         private System.Windows.Forms.Button btVoltarE;
+        private System.Windows.Forms.ComboBox tbCodigoPecaS;
     }
 }
