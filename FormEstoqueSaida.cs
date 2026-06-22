@@ -22,6 +22,13 @@ namespace ProjetoSenac
         public FormEstoqueSaida()
         {
             InitializeComponent();
+            
+            SaidaEstoqueSaida saidaEstoqueSaida = new SaidaEstoqueSaida();
+
+            List<string> codigo = saidaEstoqueSaida.FclistaSuspensa();
+            tbCodigoPecaS.DataSource= codigo;
+
+
         }
 
         private void btVoltarE_Click(object sender, EventArgs e)
@@ -52,14 +59,53 @@ namespace ProjetoSenac
 
 
 
-            if (int.TryParse(tbCodigoPecaS.Text, out int codigoPeca))
+            if (!int.TryParse(tbCodigoPecaS.Text, out int codigoPeca))
             {
                 MessageBox.Show("Código da peça inválido. Por favor, insira um número inteiro.",
                     "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
+            EstoqueEntrada estoqueEntradaValidacao = new EstoqueEntrada();
 
+            if (!estoqueEntradaValidacao.FcValidarCodigoProduto(codigoPeca, nomePeca))
+            {
+
+                // Mensagem formatada e clara para o usuário identificar o erro rapidamente
+                string mensagemIncompatibilidade = $"Incompatibilidade de dados!\n\n" +
+                                                   $"O Código e o Nome do produto informado não correspondem.\n\n" +
+                                                   $"• Código digitado: {codigoPeca}\n" +
+                                                   $"• Nome digitado: {nomePeca}\n\n" +
+                                                   $"Por favor, verifique as informações e tente novamente.";
+                errorProvider.SetError(txNomePecaS, "O nome nao pode estar vazio, conter numeros, simbolos ou pontuacoes.");
+                
+
+                MessageBox.Show(mensagemIncompatibilidade, "Aviso de Inconsistência", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                // Limpeza segura dos campos em conflito
+                //comboBox_CodigoProduto.SelectedIndex = -1;
+                //comboBox_CodigoProduto.Text = string.Empty;
+                txNomePecaS.Clear();
+
+                // Retorna o cursor para o código do produto para reiniciar a busca correta
+                txNomePecaS.Focus();
+
+                return;
+            }
+
+            /*SaidaEstoqueSaida saidaEstoqueSaida = new SaidaEstoqueSaida();
+
+
+            if (saidaEstoqueSaida.FcValidarNome(codigoPeca, nomePeca))
+            {
+                string mensagemDuplicidade = $"Possível duplicidade de informação!\n\n" +
+                                                $"Já existe um registro com estes dados:\n" +
+                                                $"• Código da Peça: {codigoPeca}\n" +
+                                                $"• Nota Fiscal: {nomePeca})";
+
+                MessageBox.Show(mensagemDuplicidade, "Aviso de Duplicidade", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }*/
 
 
             if (string.IsNullOrWhiteSpace(nomePeca) || txNomePecaS.Text.Length < 5 || nomePeca.Length > 50 || nomePeca.Any(c=> char.IsNumber(c))
@@ -150,22 +196,11 @@ namespace ProjetoSenac
                 taskDialog.Text = "Descreva a situação da peça. Nao pode conter numeros, simbolos ou pontuacoes.\n Minimio de  5 e maximo de 50 caracteres.";
                 taskDialog.Icon = TaskDialogStandardIcon.Warning;
                 taskDialog.Show();
-
-                //MessageBox.Show("O nome completo deve ter entre 5 e 50 caracteres.", "NOME COMPLETO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txSituacaoPeca.Clear();
                 txSituacaoPeca.Focus();
 
                 return;
             }
-
-
-
-
-
-
-
-
-
 
             /*int codigoPeca1 = int.Parse(tbCodigoPecaS.Text);
 

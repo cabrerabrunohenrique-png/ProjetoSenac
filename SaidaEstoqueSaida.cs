@@ -1,13 +1,12 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using MySqlX.XDevAPI.Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
-
-
-using MySql.Data.MySqlClient;
+using static Mysqlx.Datatypes.Scalar.Types;
 
 
 namespace ProjetoSenac
@@ -31,12 +30,47 @@ namespace ProjetoSenac
 
 
 
+        public bool FcValidarNome(int codigoPeca, string nomePeca)
+        {
+            bool result = false;
 
-        public List<string> listaSuspensa()
+            string DADOS_CONEXAO = "server=localhost; user=root; password=; database=bdprojetosenac;";
+            string scriptSelect = "SELECT COUNT(*) FROM tbcadastropeca WHERE codigoproduto = @codigoProduto AND nomeproduto = @nomeProduto";
+
+            using (MySqlConnection conn = new MySqlConnection(DADOS_CONEXAO))
+            {
+                using (MySqlCommand comando = new MySqlCommand(scriptSelect, conn))
+                {
+                    comando.Parameters.AddWithValue("@codigoProduto", codigoPeca);
+                    comando.Parameters.AddWithValue("@nomeProduto", nomePeca);
+                    try
+                    {
+                        conn.Open();
+                        int quantidade = Convert.ToInt32(comando.ExecuteScalar());
+                        if (quantidade > 0)
+                        {
+                            result = true; // Achou o nome gravado no MySQL!
+                        }
+                    }
+                    catch (Exception)
+                    {
+                         result = false;
+                    }
+
+                    return result;
+                }
+            }
+
+        }
+
+
+
+
+        public List<string> FclistaSuspensa()
         {
             List<string> listaPecas = new List<string>();
             string DADOS_CONEXAO = "server=localhost; user=root; password=; database=bdprojetosenac;";
-            string scriptSelect = "SELECT codigopeca FROM tbsaidaestoque";
+            string scriptSelect = "SELECT codigoproduto FROM tbcadastropeca";
 
             using (MySqlConnection conn = new MySqlConnection(DADOS_CONEXAO))
             {
