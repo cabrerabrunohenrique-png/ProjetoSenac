@@ -16,7 +16,7 @@ namespace ProjetoSenac
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormEstoqueSaida());
+            Application.Run(new Form1());
         }
     }
 }
