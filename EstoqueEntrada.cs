@@ -20,6 +20,13 @@ namespace ProjetoSenac
 
         public DateTime DATAENTRADA { get; set; }
 
+        
+
+        public double fncalculartotal()
+        {
+            return QUANTIDADEPECA;
+        }
+
 
         public List<string> listaSuspensa()
         {

@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
 namespace ProjetoSenac
@@ -22,7 +23,10 @@ namespace ProjetoSenac
         TaskDialog taskDialog = new TaskDialog();
 
         BindingList <EstoqueEntrada> listaEstoque = new BindingList<EstoqueEntrada>();
-       
+        BindingList<EstoqueEntrada> listaEstoqueSoma = new BindingList<EstoqueEntrada>();
+
+
+
         public FormEstoque()    
         {
             InitializeComponent();
@@ -208,14 +212,8 @@ namespace ProjetoSenac
                 return;
             }
 
-           
-
-           
-
-
-           
-
             
+          
 
             else
             {
@@ -241,7 +239,7 @@ namespace ProjetoSenac
                         comando.Parameters.AddWithValue("@dataEntradaProduto", dataEntradaPeca);
                         comando.Parameters.AddWithValue("@codigoProduto", codigoPeca);
                         comando.Parameters.AddWithValue("@nomeProduto", nomePeca);
-                   
+
                         comando.Parameters.AddWithValue("@quantidadeProduto", quantidaPeca);
                         comando.Parameters.AddWithValue("@nFProduto", numeroNf);
 
@@ -250,31 +248,60 @@ namespace ProjetoSenac
 
                         comando.ExecuteNonQuery();
                     }
+
                     EstoqueEntrada estoqueEntrada = new EstoqueEntrada();
                     estoqueEntrada.DATAENTRADA = dataEntradaPeca;
                     estoqueEntrada.CODIGOPECA = codigoPeca;
                     estoqueEntrada.NOMEPECA = nomePeca;
-                 
+
                     estoqueEntrada.QUANTIDADEPECA = quantidaPeca;
                     estoqueEntrada.NUMERONF = numeroNf;
 
                     listaEstoque.Add(estoqueEntrada);
                     dataGridView1.DataSource = listaEstoque;
+                    
 
 
-                    MessageBox.Show("Nota Fiscal validada e processada com sucesso!","Sucesso",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    MessageBox.Show("Nota Fiscal validada e processada com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
 
 
                     txNomePeca.Clear();
-                  
                     txQuantidadePeca.Clear();
                     txNfPeca.Clear();
                     monthCalendar1.SelectionEnd = DateTime.Today;
 
+                    if (quantidaPeca != 0 && nomePeca != "" && numeroNf != 0)
+                    {
+                        EstoqueEntrada selacao = new EstoqueEntrada();
+                        selacao.CODIGOPECA = codigoPeca;
+                        selacao.QUANTIDADEPECA = quantidaPeca;
+                        selacao.NOMEPECA = nomePeca;
+                        listaEstoqueSoma.Add(selacao);
 
 
-                    conn.Clone();
+                        // 1. Limpa os dados antigos
+                        dataGridView_Quantidade.DataSource = null;
+
+                        // 2. DESATIVA a criação automática de colunas (ISSO IMPEDE FICAR IGUAL À OUTRA)
+                        dataGridView_Quantidade.AutoGenerateColumns = false;
+
+                        // 3. APAGA as colunas antigas geradas automaticamente
+                        dataGridView_Quantidade.Columns.Clear();
+
+                        dataGridView_Quantidade.DataSource = null; // Limpa para atualizar
+                                                         // Adiciona APENAS as 3 colunas desejadas na segunda tela
+                        dataGridView_Quantidade.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "CODIGOPECA", HeaderText = "Código" });
+                        dataGridView_Quantidade.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "NOMEPECA", HeaderText = "Nome da Peça" });
+                        dataGridView_Quantidade.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "QUANTIDADEPECA", HeaderText = "Quantidade" });
+                        dataGridView_Quantidade.DataSource = listaEstoqueSoma;
+
+
+
+
+                    }
+
+                    conn.Close();
                 }
             }
         }

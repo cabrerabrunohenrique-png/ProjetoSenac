@@ -50,14 +50,16 @@
             this.toolTip6 = new System.Windows.Forms.ToolTip(this.components);
             this.toolTip7 = new System.Windows.Forms.ToolTip(this.components);
             this.toolTip8 = new System.Windows.Forms.ToolTip(this.components);
+            this.dataGridView_Quantidade = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Quantidade)).BeginInit();
             this.SuspendLayout();
             // 
             // btVoltarE
             // 
             this.btVoltarE.BackColor = System.Drawing.Color.RoyalBlue;
             this.btVoltarE.ForeColor = System.Drawing.Color.White;
-            this.btVoltarE.Location = new System.Drawing.Point(871, 12);
+            this.btVoltarE.Location = new System.Drawing.Point(1542, 7);
             this.btVoltarE.Name = "btVoltarE";
             this.btVoltarE.Size = new System.Drawing.Size(163, 67);
             this.btVoltarE.TabIndex = 19;
@@ -114,7 +116,7 @@
             // 
             // monthCalendar1
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(18, 95);
+            this.monthCalendar1.Location = new System.Drawing.Point(18, 32);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 1;
             // 
@@ -176,11 +178,22 @@
             this.comboBox_CodigoProduto.Size = new System.Drawing.Size(332, 24);
             this.comboBox_CodigoProduto.TabIndex = 2;
             // 
+            // dataGridView_Quantidade
+            // 
+            this.dataGridView_Quantidade.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_Quantidade.Location = new System.Drawing.Point(1113, 314);
+            this.dataGridView_Quantidade.Name = "dataGridView_Quantidade";
+            this.dataGridView_Quantidade.RowHeadersWidth = 51;
+            this.dataGridView_Quantidade.RowTemplate.Height = 24;
+            this.dataGridView_Quantidade.Size = new System.Drawing.Size(592, 211);
+            this.dataGridView_Quantidade.TabIndex = 45;
+            // 
             // FormEstoque
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1058, 568);
+            this.ClientSize = new System.Drawing.Size(1732, 639);
+            this.Controls.Add(this.dataGridView_Quantidade);
             this.Controls.Add(this.comboBox_CodigoProduto);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.lNfPeca);
@@ -198,6 +211,7 @@
             this.Text = "FormEstoque";
             this.Load += new System.EventHandler(this.FormEstoque_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Quantidade)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -225,5 +239,6 @@
         private System.Windows.Forms.ToolTip toolTip6;
         private System.Windows.Forms.ToolTip toolTip7;
         private System.Windows.Forms.ToolTip toolTip8;
+        private System.Windows.Forms.DataGridView dataGridView_Quantidade;
     }
 }
