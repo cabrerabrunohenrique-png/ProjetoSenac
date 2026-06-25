@@ -24,6 +24,9 @@ namespace ProjetoSenac
 
         BindingList <EstoqueEntrada> listaEstoque = new BindingList<EstoqueEntrada>();
         BindingList<EstoqueEntrada> listaEstoqueSoma = new BindingList<EstoqueEntrada>();
+        double contator = 0;
+
+
 
 
 
@@ -212,6 +215,8 @@ namespace ProjetoSenac
                 return;
             }
 
+
+
             
           
 
@@ -295,6 +300,19 @@ namespace ProjetoSenac
                         dataGridView_Quantidade.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "NOMEPECA", HeaderText = "Nome da Peça" });
                         dataGridView_Quantidade.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "QUANTIDADEPECA", HeaderText = "Quantidade" });
                         dataGridView_Quantidade.DataSource = listaEstoqueSoma;
+
+                        EstoqueEntrada cg = new EstoqueEntrada();
+                        cg.QUANTIDADEPECA = quantidaPeca;
+                        cg.fcalcularTotal();
+                        
+
+                        if (codigoPeca == 123)
+                        {
+                            contator += cg.totalgeral;
+                            //camagato += quantidadeSelecionada;
+                           
+                            MessageBox.Show($"• Código digitado: {nomePeca}\n• Total: {contator:F2}", "Informação");
+                        }
 
 
 

@@ -27,6 +27,13 @@ namespace ProjetoSenac
             return QUANTIDADEPECA;
         }
 
+        public double totalgeral;
+
+        public void fcalcularTotal()
+        {
+            totalgeral = QUANTIDADEPECA; 
+        }
+
 
         public List<string> listaSuspensa()
         {
