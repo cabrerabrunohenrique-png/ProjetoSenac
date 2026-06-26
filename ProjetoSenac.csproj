@@ -140,6 +140,12 @@
       <DependentUpon>CadastroNovoUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="CadastroUsuario.cs" />
+    <Compile Include="DeletarCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeletarCadastro.Designer.cs">
+      <DependentUpon>DeletarCadastro.cs</DependentUpon>
+    </Compile>
     <Compile Include="EstoqueEntrada.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -194,6 +200,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CadastroNovoUsuario.resx">
       <DependentUpon>CadastroNovoUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeletarCadastro.resx">
+      <DependentUpon>DeletarCadastro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

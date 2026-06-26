@@ -42,6 +42,7 @@
             this.txSenhaAcesso = new System.Windows.Forms.TextBox();
             this.txNomeUsuario = new System.Windows.Forms.TextBox();
             this.txNumeroRegistro = new System.Windows.Forms.TextBox();
+            this.button_deletar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button_atualizar
@@ -51,7 +52,7 @@
             this.button_atualizar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_atualizar.Name = "button_atualizar";
             this.button_atualizar.Size = new System.Drawing.Size(199, 39);
-            this.button_atualizar.TabIndex = 31;
+            this.button_atualizar.TabIndex = 7;
             this.button_atualizar.Text = "Atualizar";
             this.button_atualizar.UseVisualStyleBackColor = false;
             this.button_atualizar.Click += new System.EventHandler(this.button_pesquisar_Click);
@@ -82,7 +83,7 @@
             this.button_voltar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_voltar.Name = "button_voltar";
             this.button_voltar.Size = new System.Drawing.Size(137, 66);
-            this.button_voltar.TabIndex = 24;
+            this.button_voltar.TabIndex = 8;
             this.button_voltar.Text = "Voltar";
             this.button_voltar.UseVisualStyleBackColor = false;
             this.button_voltar.Click += new System.EventHandler(this.btVoltarCNU_Click);
@@ -173,11 +174,24 @@
             this.txNumeroRegistro.Size = new System.Drawing.Size(324, 22);
             this.txNumeroRegistro.TabIndex = 2;
             // 
+            // button_deletar
+            // 
+            this.button_deletar.BackColor = System.Drawing.Color.Red;
+            this.button_deletar.Location = new System.Drawing.Point(757, 420);
+            this.button_deletar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button_deletar.Name = "button_deletar";
+            this.button_deletar.Size = new System.Drawing.Size(199, 39);
+            this.button_deletar.TabIndex = 31;
+            this.button_deletar.Text = "Deletar";
+            this.button_deletar.UseVisualStyleBackColor = false;
+            this.button_deletar.Click += new System.EventHandler(this.button_deletar_Click);
+            // 
             // AtualizarCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1079, 496);
+            this.Controls.Add(this.button_deletar);
             this.Controls.Add(this.button_atualizar);
             this.Controls.Add(this.cbNivelPermisao);
             this.Controls.Add(this.txNomeCompleto);
@@ -215,5 +229,6 @@
         private System.Windows.Forms.TextBox txSenhaAcesso;
         private System.Windows.Forms.TextBox txNomeUsuario;
         private System.Windows.Forms.TextBox txNumeroRegistro;
+        private System.Windows.Forms.Button button_deletar;
     }
 }

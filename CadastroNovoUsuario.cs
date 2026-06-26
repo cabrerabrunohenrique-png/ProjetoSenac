@@ -55,8 +55,7 @@ namespace ProjetoSenac
         {
             Form1 formLogin = new Form1();
 
-            DialogResult resposta = MessageBox.Show("Deseja realmente voltar para a tela de login?\nQualquer alteração não salva será perdida.",
-                "Atenção", MessageBoxButtons.YesNo, MessageBoxIcon.Warning); if (resposta == DialogResult.Yes)
+            DialogResult resposta = MessageBox.Show("Deseja realmente voltar para a tela de login?\nQualquer alteração não salva será perdida.", "Atenção", MessageBoxButtons.YesNo, MessageBoxIcon.Warning); if (resposta == DialogResult.Yes)
             {
                 this.Owner.Show();
                 this.Close();
@@ -430,9 +429,6 @@ namespace ProjetoSenac
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
-            
-
             AtualizarCadastro tela = new AtualizarCadastro();
 
             DialogResult resposta = MessageBox.Show("As alterações foram salvas?\nCertifique-se de salvar antes de sair para não perder os dados.", "ATENÇÃO", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);

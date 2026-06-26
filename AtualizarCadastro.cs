@@ -355,6 +355,19 @@ namespace ProjetoSenac
                 }
             }
         }
+
+        private void button_deletar_Click(object sender, EventArgs e)
+        {
+            DeletarCadastro formDeletarCadastro = new DeletarCadastro();
+
+            DialogResult resposta = MessageBox.Show("As alterações foram salvas?\nCertifique-se de salvar antes de sair para não perder os dados.", "ATENÇÃO", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if(resposta == DialogResult.Yes)
+            {
+               formDeletarCadastro.Owner = this;
+               this.Hide();
+               formDeletarCadastro.ShowDialog();
+            }
+        }
         /*if (controleLinhasAftadas > 0){MessageBox.Show("Cadastro realizado com sucesso!");}*/
 
 

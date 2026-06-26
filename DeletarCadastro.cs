@@ -16,5 +16,20 @@ namespace ProjetoSenac
         {
             InitializeComponent();
         }
+
+        private void button_deletar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_voltar_Click(object sender, EventArgs e)
+        {
+            DialogResult resposta = MessageBox.Show("Deseja realmente voltar para a tela de login?\nQualquer alteração não salva será perdida.",
+                "Atenção", MessageBoxButtons.YesNo, MessageBoxIcon.Warning); if (resposta == DialogResult.Yes)
+            {
+                this.Owner.Show();
+                this.Close();
+            }
+        }
     }
 }
