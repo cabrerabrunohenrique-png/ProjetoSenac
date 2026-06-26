@@ -177,12 +177,12 @@
             // button_deletar
             // 
             this.button_deletar.BackColor = System.Drawing.Color.Red;
-            this.button_deletar.Location = new System.Drawing.Point(757, 420);
+            this.button_deletar.Location = new System.Drawing.Point(757, 346);
             this.button_deletar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_deletar.Name = "button_deletar";
-            this.button_deletar.Size = new System.Drawing.Size(199, 39);
+            this.button_deletar.Size = new System.Drawing.Size(199, 113);
             this.button_deletar.TabIndex = 31;
-            this.button_deletar.Text = "Deletar";
+            this.button_deletar.Text = "Acessar Pagina para Deletar Usuario";
             this.button_deletar.UseVisualStyleBackColor = false;
             this.button_deletar.Click += new System.EventHandler(this.button_deletar_Click);
             // 

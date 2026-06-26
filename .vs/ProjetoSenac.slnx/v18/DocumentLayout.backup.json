@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|c:\\users\\bhcab\\source\\repos\\projetosenac\\atualizarcadastro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:atualizarcadastro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|c:\\users\\bhcab\\source\\repos\\projetosenac\\atualizarcadastro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:atualizarcadastro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|c:\\users\\bhcab\\source\\repos\\projetosenac\\cadastronovousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:cadastronovousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|c:\\users\\bhcab\\source\\repos\\projetosenac\\cadastronovousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:cadastronovousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|c:\\users\\bhcab\\source\\repos\\projetosenac\\deletarcadastro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:deletarcadastro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|c:\\users\\bhcab\\source\\repos\\projetosenac\\atualizarcadastro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:atualizarcadastro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|c:\\users\\bhcab\\source\\repos\\projetosenac\\deletarcadastro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:deletarcadastro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|c:\\users\\bhcab\\source\\repos\\projetosenac\\cadastronovousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF8555DD-CE41-40AA-99E0-0440118DF9E3}|ProjetoSenac.csproj|solutionrelative:cadastronovousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,11 +30,11 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "DeletarCadastro.cs [Design]",
               "DocumentMoniker": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\DeletarCadastro.cs",
               "RelativeDocumentMoniker": "DeletarCadastro.cs",
@@ -47,15 +47,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "CadastroNovoUsuario.cs [Design]",
               "DocumentMoniker": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\CadastroNovoUsuario.cs",
               "RelativeDocumentMoniker": "CadastroNovoUsuario.cs",
-              "ToolTip": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\CadastroNovoUsuario.cs [Design]",
-              "RelativeToolTip": "CadastroNovoUsuario.cs [Design]",
+              "ToolTip": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\CadastroNovoUsuario.cs [Design]*",
+              "RelativeToolTip": "CadastroNovoUsuario.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-26T17:17:29.043Z",
               "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AtualizarCadastro.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\AtualizarCadastro.cs",
+              "RelativeDocumentMoniker": "AtualizarCadastro.cs",
+              "ToolTip": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\AtualizarCadastro.cs [Design]*",
+              "RelativeToolTip": "AtualizarCadastro.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-26T17:26:40.428Z",
               "EditorCaption": " [Design]"
             },
             {
@@ -80,13 +92,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "DeletarCadastro.cs",
+              "DocumentMoniker": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\DeletarCadastro.cs",
+              "RelativeDocumentMoniker": "DeletarCadastro.cs",
+              "ToolTip": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\DeletarCadastro.cs",
+              "RelativeToolTip": "DeletarCadastro.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAgwCIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-26T17:20:42.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "CadastroNovoUsuario.cs",
               "DocumentMoniker": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\CadastroNovoUsuario.cs",
               "RelativeDocumentMoniker": "CadastroNovoUsuario.cs",
-              "ToolTip": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\CadastroNovoUsuario.cs",
-              "RelativeToolTip": "CadastroNovoUsuario.cs",
-              "ViewState": "AgIAAJ8BAAAAAAAAAAAAwLMBAAANAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\CadastroNovoUsuario.cs*",
+              "RelativeToolTip": "CadastroNovoUsuario.cs*",
+              "ViewState": "AgIAAJEBAAAAAAAAAAAuwLMBAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-26T17:17:33.833Z",
               "EditorCaption": ""
@@ -100,52 +125,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "e4ca21a2-f35c-4be0-98cc-4284e3525048",
-        "Display": 0,
-        "X": 180,
-        "Y": 159,
-        "Width": 1225,
-        "Height": 705,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 1,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AtualizarCadastro.cs",
-              "DocumentMoniker": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\AtualizarCadastro.cs",
-              "RelativeDocumentMoniker": "AtualizarCadastro.cs",
-              "ToolTip": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\AtualizarCadastro.cs*",
-              "RelativeToolTip": "AtualizarCadastro.cs*",
-              "ViewState": "AgIAAFUBAAAAAAAAAAAgwG8BAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-26T17:18:14.812Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AtualizarCadastro.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\AtualizarCadastro.cs",
-              "RelativeDocumentMoniker": "AtualizarCadastro.cs",
-              "ToolTip": "C:\\Users\\bhcab\\source\\repos\\ProjetoSenac\\AtualizarCadastro.cs [Design]*",
-              "RelativeToolTip": "AtualizarCadastro.cs [Design]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-26T17:17:12.092Z",
-              "EditorCaption": " [Design]"
             }
           ]
         }

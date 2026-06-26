@@ -188,12 +188,12 @@
             // button_atualizar
             // 
             this.button_atualizar.BackColor = System.Drawing.Color.Yellow;
-            this.button_atualizar.Location = new System.Drawing.Point(772, 384);
+            this.button_atualizar.Location = new System.Drawing.Point(772, 289);
             this.button_atualizar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_atualizar.Name = "button_atualizar";
-            this.button_atualizar.Size = new System.Drawing.Size(199, 39);
+            this.button_atualizar.Size = new System.Drawing.Size(199, 150);
             this.button_atualizar.TabIndex = 16;
-            this.button_atualizar.Text = "Atualizar Cadastro";
+            this.button_atualizar.Text = "Acessar Pagina para Atulizar Usuario";
             this.button_atualizar.UseVisualStyleBackColor = false;
             this.button_atualizar.Click += new System.EventHandler(this.button1_Click);
             // 
