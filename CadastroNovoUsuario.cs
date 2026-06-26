@@ -54,9 +54,9 @@ namespace ProjetoSenac
         private void btVoltarCNU_Click(object sender, EventArgs e)
         {
             Form1 formLogin = new Form1();
-            //DialogResult = DialogResult.OK;
-            DialogResult resposta = MessageBox.Show("Deseja realmente voltar para a tela de login?", "ATENÇÃO", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (resposta == DialogResult.Yes)
+
+            DialogResult resposta = MessageBox.Show("Deseja realmente voltar para a tela de login?\nQualquer alteração não salva será perdida.",
+                "Atenção", MessageBoxButtons.YesNo, MessageBoxIcon.Warning); if (resposta == DialogResult.Yes)
             {
                 this.Owner.Show();
                 this.Close();
@@ -430,13 +430,18 @@ namespace ProjetoSenac
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            
+            
 
             AtualizarCadastro tela = new AtualizarCadastro();
-            tela.Owner = this;
-            this.Hide();
-            tela.ShowDialog();
 
+            DialogResult resposta = MessageBox.Show("As alterações foram salvas?\nCertifique-se de salvar antes de sair para não perder os dados.", "ATENÇÃO", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (resposta == DialogResult.Yes)
+            {
+                tela.Owner = this;
+                this.Hide();
+                tela.ShowDialog();
+            }
 
 
         }

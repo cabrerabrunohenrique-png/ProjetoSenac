@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button_pesquisar = new System.Windows.Forms.Button();
+            this.button_atualizar = new System.Windows.Forms.Button();
             this.cbNivelPermisao = new System.Windows.Forms.ComboBox();
             this.txNomeCompleto = new System.Windows.Forms.TextBox();
-            this.btVoltarCNU = new System.Windows.Forms.Button();
+            this.button_voltar = new System.Windows.Forms.Button();
             this.lConfirmacaoSenha = new System.Windows.Forms.Label();
             this.txConfirmacaoSenha = new System.Windows.Forms.TextBox();
             this.lSenhaAcesso = new System.Windows.Forms.Label();
@@ -44,16 +44,17 @@
             this.txNumeroRegistro = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // button_pesquisar
+            // button_atualizar
             // 
-            this.button_pesquisar.BackColor = System.Drawing.Color.Yellow;
-            this.button_pesquisar.Location = new System.Drawing.Point(292, 420);
-            this.button_pesquisar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button_pesquisar.Name = "button_pesquisar";
-            this.button_pesquisar.Size = new System.Drawing.Size(199, 39);
-            this.button_pesquisar.TabIndex = 31;
-            this.button_pesquisar.Text = "Pesquisar";
-            this.button_pesquisar.UseVisualStyleBackColor = false;
+            this.button_atualizar.BackColor = System.Drawing.Color.Yellow;
+            this.button_atualizar.Location = new System.Drawing.Point(292, 420);
+            this.button_atualizar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button_atualizar.Name = "button_atualizar";
+            this.button_atualizar.Size = new System.Drawing.Size(199, 39);
+            this.button_atualizar.TabIndex = 31;
+            this.button_atualizar.Text = "Atualizar";
+            this.button_atualizar.UseVisualStyleBackColor = false;
+            this.button_atualizar.Click += new System.EventHandler(this.button_pesquisar_Click);
             // 
             // cbNivelPermisao
             // 
@@ -63,7 +64,7 @@
             this.cbNivelPermisao.MaxDropDownItems = 2;
             this.cbNivelPermisao.Name = "cbNivelPermisao";
             this.cbNivelPermisao.Size = new System.Drawing.Size(324, 24);
-            this.cbNivelPermisao.TabIndex = 19;
+            this.cbNivelPermisao.TabIndex = 3;
             // 
             // txNomeCompleto
             // 
@@ -71,19 +72,20 @@
             this.txNomeCompleto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txNomeCompleto.Name = "txNomeCompleto";
             this.txNomeCompleto.Size = new System.Drawing.Size(324, 22);
-            this.txNomeCompleto.TabIndex = 17;
+            this.txNomeCompleto.TabIndex = 1;
             // 
-            // btVoltarCNU
+            // button_voltar
             // 
-            this.btVoltarCNU.BackColor = System.Drawing.Color.RoyalBlue;
-            this.btVoltarCNU.ForeColor = System.Drawing.Color.White;
-            this.btVoltarCNU.Location = new System.Drawing.Point(797, 11);
-            this.btVoltarCNU.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btVoltarCNU.Name = "btVoltarCNU";
-            this.btVoltarCNU.Size = new System.Drawing.Size(137, 66);
-            this.btVoltarCNU.TabIndex = 24;
-            this.btVoltarCNU.Text = "Tela Inicial";
-            this.btVoltarCNU.UseVisualStyleBackColor = false;
+            this.button_voltar.BackColor = System.Drawing.Color.RoyalBlue;
+            this.button_voltar.ForeColor = System.Drawing.Color.White;
+            this.button_voltar.Location = new System.Drawing.Point(797, 11);
+            this.button_voltar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button_voltar.Name = "button_voltar";
+            this.button_voltar.Size = new System.Drawing.Size(137, 66);
+            this.button_voltar.TabIndex = 24;
+            this.button_voltar.Text = "Voltar";
+            this.button_voltar.UseVisualStyleBackColor = false;
+            this.button_voltar.Click += new System.EventHandler(this.btVoltarCNU_Click);
             // 
             // lConfirmacaoSenha
             // 
@@ -100,7 +102,7 @@
             this.txConfirmacaoSenha.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txConfirmacaoSenha.Name = "txConfirmacaoSenha";
             this.txConfirmacaoSenha.Size = new System.Drawing.Size(324, 22);
-            this.txConfirmacaoSenha.TabIndex = 22;
+            this.txConfirmacaoSenha.TabIndex = 6;
             // 
             // lSenhaAcesso
             // 
@@ -153,7 +155,7 @@
             this.txSenhaAcesso.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txSenhaAcesso.Name = "txSenhaAcesso";
             this.txSenhaAcesso.Size = new System.Drawing.Size(324, 22);
-            this.txSenhaAcesso.TabIndex = 21;
+            this.txSenhaAcesso.TabIndex = 5;
             // 
             // txNomeUsuario
             // 
@@ -161,7 +163,7 @@
             this.txNomeUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txNomeUsuario.Name = "txNomeUsuario";
             this.txNomeUsuario.Size = new System.Drawing.Size(324, 22);
-            this.txNomeUsuario.TabIndex = 20;
+            this.txNomeUsuario.TabIndex = 4;
             // 
             // txNumeroRegistro
             // 
@@ -169,17 +171,17 @@
             this.txNumeroRegistro.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txNumeroRegistro.Name = "txNumeroRegistro";
             this.txNumeroRegistro.Size = new System.Drawing.Size(324, 22);
-            this.txNumeroRegistro.TabIndex = 18;
+            this.txNumeroRegistro.TabIndex = 2;
             // 
             // AtualizarCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1079, 496);
-            this.Controls.Add(this.button_pesquisar);
+            this.Controls.Add(this.button_atualizar);
             this.Controls.Add(this.cbNivelPermisao);
             this.Controls.Add(this.txNomeCompleto);
-            this.Controls.Add(this.btVoltarCNU);
+            this.Controls.Add(this.button_voltar);
             this.Controls.Add(this.lConfirmacaoSenha);
             this.Controls.Add(this.txConfirmacaoSenha);
             this.Controls.Add(this.lSenhaAcesso);
@@ -199,10 +201,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button_pesquisar;
+        private System.Windows.Forms.Button button_atualizar;
         private System.Windows.Forms.ComboBox cbNivelPermisao;
         private System.Windows.Forms.TextBox txNomeCompleto;
-        private System.Windows.Forms.Button btVoltarCNU;
+        private System.Windows.Forms.Button button_voltar;
         private System.Windows.Forms.Label lConfirmacaoSenha;
         private System.Windows.Forms.TextBox txConfirmacaoSenha;
         private System.Windows.Forms.Label lSenhaAcesso;
