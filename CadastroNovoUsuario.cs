@@ -180,7 +180,9 @@ namespace ProjetoSenac
 
             char[] numeroValidado = numeroRegistro.ToCharArray();
 
-              if (numeroRegistro.Any(c => char.IsPunctuation(c) || char.IsSymbol(c) || char.IsLetter(c)))
+            
+
+            if (numeroRegistro.Any(c => char.IsPunctuation(c) || char.IsSymbol(c) || char.IsLetter(c)))
             {
                 errorProvider.SetError(txNumeroRegistro, "Numero de Registro Invalido.");
                 taskDialog.Caption = "Validação Cadastro Novo Usuário";
@@ -290,8 +292,11 @@ namespace ProjetoSenac
                
             }
 
+            CadastroUsuario cadastronome = new CadastroUsuario();
 
-            if (listaCadastroUsuario.Any(c => c.NOMECOMPLETO == nomeCompleto))
+            if(cadastronome.FcvalidarNomeUsuario(nomeCompleto))
+
+            //if (listaCadastroUsuario.Any(c => c.NOMECOMPLETO == nomeCompleto))
             {
                 errorProvider.SetError(txNomeCompleto, "Nome completo inválido.");
                 taskDialog.Caption = "Validação Cadastro Novo Usuário";
@@ -304,8 +309,12 @@ namespace ProjetoSenac
                 return;
             }
 
+            CadastroUsuario cadastroRegistro = new CadastroUsuario();
 
-            if (listaCadastroUsuario.Any(c => c.NUMEROREGISTRO == numeroRegistro))
+            if(cadastroRegistro.fcvalidarnumeroRegistro(numeroRegistro))
+
+
+           // if (listaCadastroUsuario.Any(c => c.NUMEROREGISTRO == numeroRegistro))
             {
 
                 errorProvider.SetError(txNumeroRegistro, "Numero de Registro Invalido.");
@@ -314,16 +323,16 @@ namespace ProjetoSenac
                 taskDialog.Text = "O NUMERO DE REGISTRO" + numeroRegistro + " já possui registro. Nao é permitido duplicidade de NUMERO DE REGISTRO.";
                 taskDialog.Icon = TaskDialogStandardIcon.Warning;
                 taskDialog.Show();
-                txNomeCompleto.Clear();
-                txNomeCompleto.Focus();
+                txNumeroRegistro.Clear();
+                txNumeroRegistro.Focus();
                 return;
                 
             }
 
-            if (listaCadastroUsuario.Any(c => c.NOMEUSUARIO == nomeUsuario))
+            else if (listaCadastroUsuario.Any(c => c.NOMEUSUARIO == nomeUsuario))
             {
                 MessageBox.Show("O NOME DE USUARIO" + nomeUsuario + " já existe. Por favor, escolha outro.", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    
+
 
                 txNomeUsuario.Clear();
                 return;
@@ -418,5 +427,19 @@ namespace ProjetoSenac
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+
+            AtualizarCadastro tela = new AtualizarCadastro();
+            tela.Owner = this;
+            this.Hide();
+            tela.ShowDialog();
+
+
+
+        }
     }
+    
 }

@@ -127,6 +127,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AtualizarCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AtualizarCadastro.Designer.cs">
+      <DependentUpon>AtualizarCadastro.cs</DependentUpon>
+    </Compile>
     <Compile Include="CadastroNovoUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,6 +189,9 @@
     <Compile Include="CadastroProduto.cs" />
     <Compile Include="Relatorio.cs" />
     <Compile Include="SaidaEstoqueSaida.cs" />
+    <EmbeddedResource Include="AtualizarCadastro.resx">
+      <DependentUpon>AtualizarCadastro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CadastroNovoUsuario.resx">
       <DependentUpon>CadastroNovoUsuario.cs</DependentUpon>
     </EmbeddedResource>

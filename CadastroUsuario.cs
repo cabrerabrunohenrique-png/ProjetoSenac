@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Permissions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -22,7 +23,91 @@ namespace ProjetoSenac
         public string CONFIRMARSENHA { get; set; }
 
 
-        public bool validarSenha(string senha, string nomeUsuario)
+        
+        
+        public bool fcvalidarnumeroRegistro(string NUMEROREGISTRO)
+        {
+            bool existeNoBanco = false;
+            string DADOS_CONEXAO = "server=localhost; user=root; password=; database=bdprojetosenac;";
+            string scriptSelect = "SELECT COUNT(*) FROM tbcadastronovousuario " +
+                "WHERE numeroRegistro = @numeroRegistro ";
+
+            using (MySqlConnection conn = new MySqlConnection(DADOS_CONEXAO))
+            {
+                using (MySqlCommand comando = new MySqlCommand(scriptSelect, conn))
+                {
+                    comando.Parameters.AddWithValue("@numeroRegistro", NUMEROREGISTRO);
+
+
+                    try
+                    {
+                        conn.Open();
+                        int quantidade = Convert.ToInt32(comando.ExecuteScalar());
+
+                        existeNoBanco = (quantidade > 0);
+
+                    }
+                    // Se QUALQUER coisa der errado lá no 'try'
+                    catch (Exception ex)
+                    {
+                        // Caso dê algum erro de conexão, tratamos aqui para não travar o sistema
+                        existeNoBanco = false;
+                        Console.WriteLine($"Erro inesperado: {ex.Message}");
+                        MessageBox.Show("Ocorreu um erro interno no sistema. Se o problema persistir, contate o suporte.",
+                                        "Erro Interno", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+
+            return existeNoBanco; // Devolve True (se achou) ou False (se não achou)
+
+        }
+
+
+
+
+
+        public bool FcvalidarNomeUsuario(string NOMECOMPLETO)
+        {
+            bool existeNoBanco = false;
+            string DADOS_CONEXAO = "server=localhost; user=root; password=; database=bdprojetosenac;";
+            string scriptSelect = "SELECT COUNT(*) FROM tbcadastronovousuario " +
+                "WHERE nomeCompleto = @nomeCompleto ";
+
+            using (MySqlConnection conn = new MySqlConnection(DADOS_CONEXAO))
+            {
+                using (MySqlCommand comando = new MySqlCommand(scriptSelect, conn))
+                {
+                    comando.Parameters.AddWithValue("@nomeCompleto", NOMECOMPLETO);
+                   
+
+                    try
+                    {
+                        conn.Open();
+                        int quantidade = Convert.ToInt32(comando.ExecuteScalar());
+
+                        existeNoBanco = (quantidade > 0);
+
+                    }
+                    // Se QUALQUER coisa der errado lá no 'try'
+                    catch (Exception ex)
+                    {
+                        // Caso dê algum erro de conexão, tratamos aqui para não travar o sistema
+                        existeNoBanco = false;
+                        Console.WriteLine($"Erro inesperado: {ex.Message}");
+                        MessageBox.Show("Ocorreu um erro interno no sistema. Se o problema persistir, contate o suporte.",
+                                        "Erro Interno", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+
+            return existeNoBanco; // Devolve True (se achou) ou False (se não achou)
+
+        }
+        
+
+
+        public bool FcvalidarSenha(string senha, string nomeUsuario)
 
         {
             bool existeNoBanco = false;

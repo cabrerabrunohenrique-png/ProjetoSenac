@@ -30,7 +30,7 @@ namespace ProjetoSenac
 
             CadastroUsuario validarsenha = new CadastroUsuario();
 
-            if(validarsenha.validarSenha(senha, nomeUsuario))
+            if(validarsenha.FcvalidarSenha(senha, nomeUsuario))
             {
                
                 MessageBox.Show("Login bem-sucedido!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Warning);

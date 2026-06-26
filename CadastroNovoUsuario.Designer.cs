@@ -43,6 +43,7 @@
             this.btVoltarCNU = new System.Windows.Forms.Button();
             this.cbNivelPermisao = new System.Windows.Forms.ComboBox();
             this.mySqlCommand1 = new MySql.Data.MySqlClient.MySqlCommand();
+            this.button_atualizar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txNomeCompleto
@@ -184,11 +185,24 @@
             this.mySqlCommand1.EnableCaching = false;
             this.mySqlCommand1.Transaction = null;
             // 
+            // button_atualizar
+            // 
+            this.button_atualizar.BackColor = System.Drawing.Color.Yellow;
+            this.button_atualizar.Location = new System.Drawing.Point(772, 384);
+            this.button_atualizar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button_atualizar.Name = "button_atualizar";
+            this.button_atualizar.Size = new System.Drawing.Size(199, 39);
+            this.button_atualizar.TabIndex = 16;
+            this.button_atualizar.Text = "Atualizar Cadastro";
+            this.button_atualizar.UseVisualStyleBackColor = false;
+            this.button_atualizar.Click += new System.EventHandler(this.button1_Click);
+            // 
             // CadastroNovoUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1126, 450);
+            this.Controls.Add(this.button_atualizar);
             this.Controls.Add(this.cbNivelPermisao);
             this.Controls.Add(this.txNomeCompleto);
             this.Controls.Add(this.btVoltarCNU);
@@ -231,5 +245,6 @@
         private System.Windows.Forms.Button btVoltarCNU;
         private System.Windows.Forms.ComboBox cbNivelPermisao;
         private MySql.Data.MySqlClient.MySqlCommand mySqlCommand1;
+        private System.Windows.Forms.Button button_atualizar;
     }
 }
