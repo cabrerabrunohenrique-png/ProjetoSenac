@@ -37,11 +37,9 @@
             this.lSenhaAcesso = new System.Windows.Forms.Label();
             this.lNomeUsuario = new System.Windows.Forms.Label();
             this.lNivelPermissao = new System.Windows.Forms.Label();
-            this.lNumeroRegistro = new System.Windows.Forms.Label();
             this.lNomeCompleto = new System.Windows.Forms.Label();
             this.txSenhaAcesso = new System.Windows.Forms.TextBox();
             this.txNomeUsuario = new System.Windows.Forms.TextBox();
-            this.txNumeroRegistro = new System.Windows.Forms.TextBox();
             this.button_deletar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -61,7 +59,7 @@
             // 
             this.cbNivelPermisao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbNivelPermisao.FormattingEnabled = true;
-            this.cbNivelPermisao.Location = new System.Drawing.Point(243, 194);
+            this.cbNivelPermisao.Location = new System.Drawing.Point(243, 143);
             this.cbNivelPermisao.MaxDropDownItems = 2;
             this.cbNivelPermisao.Name = "cbNivelPermisao";
             this.cbNivelPermisao.Size = new System.Drawing.Size(324, 24);
@@ -91,7 +89,7 @@
             // lConfirmacaoSenha
             // 
             this.lConfirmacaoSenha.AutoSize = true;
-            this.lConfirmacaoSenha.Location = new System.Drawing.Point(35, 346);
+            this.lConfirmacaoSenha.Location = new System.Drawing.Point(35, 295);
             this.lConfirmacaoSenha.Name = "lConfirmacaoSenha";
             this.lConfirmacaoSenha.Size = new System.Drawing.Size(193, 16);
             this.lConfirmacaoSenha.TabIndex = 30;
@@ -99,7 +97,7 @@
             // 
             // txConfirmacaoSenha
             // 
-            this.txConfirmacaoSenha.Location = new System.Drawing.Point(243, 340);
+            this.txConfirmacaoSenha.Location = new System.Drawing.Point(243, 289);
             this.txConfirmacaoSenha.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txConfirmacaoSenha.Name = "txConfirmacaoSenha";
             this.txConfirmacaoSenha.Size = new System.Drawing.Size(324, 22);
@@ -108,7 +106,7 @@
             // lSenhaAcesso
             // 
             this.lSenhaAcesso.AutoSize = true;
-            this.lSenhaAcesso.Location = new System.Drawing.Point(35, 298);
+            this.lSenhaAcesso.Location = new System.Drawing.Point(35, 247);
             this.lSenhaAcesso.Name = "lSenhaAcesso";
             this.lSenhaAcesso.Size = new System.Drawing.Size(114, 16);
             this.lSenhaAcesso.TabIndex = 29;
@@ -117,7 +115,7 @@
             // lNomeUsuario
             // 
             this.lNomeUsuario.AutoSize = true;
-            this.lNomeUsuario.Location = new System.Drawing.Point(35, 250);
+            this.lNomeUsuario.Location = new System.Drawing.Point(35, 199);
             this.lNomeUsuario.Name = "lNomeUsuario";
             this.lNomeUsuario.Size = new System.Drawing.Size(110, 16);
             this.lNomeUsuario.TabIndex = 28;
@@ -126,20 +124,11 @@
             // lNivelPermissao
             // 
             this.lNivelPermissao.AutoSize = true;
-            this.lNivelPermissao.Location = new System.Drawing.Point(35, 197);
+            this.lNivelPermissao.Location = new System.Drawing.Point(35, 146);
             this.lNivelPermissao.Name = "lNivelPermissao";
             this.lNivelPermissao.Size = new System.Drawing.Size(125, 16);
             this.lNivelPermissao.TabIndex = 27;
             this.lNivelPermissao.Text = "Nivel de Permissão";
-            // 
-            // lNumeroRegistro
-            // 
-            this.lNumeroRegistro.AutoSize = true;
-            this.lNumeroRegistro.Location = new System.Drawing.Point(35, 146);
-            this.lNumeroRegistro.Name = "lNumeroRegistro";
-            this.lNumeroRegistro.Size = new System.Drawing.Size(128, 16);
-            this.lNumeroRegistro.TabIndex = 26;
-            this.lNumeroRegistro.Text = "Numero de Registro";
             // 
             // lNomeCompleto
             // 
@@ -152,7 +141,7 @@
             // 
             // txSenhaAcesso
             // 
-            this.txSenhaAcesso.Location = new System.Drawing.Point(243, 292);
+            this.txSenhaAcesso.Location = new System.Drawing.Point(243, 241);
             this.txSenhaAcesso.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txSenhaAcesso.Name = "txSenhaAcesso";
             this.txSenhaAcesso.Size = new System.Drawing.Size(324, 22);
@@ -160,19 +149,11 @@
             // 
             // txNomeUsuario
             // 
-            this.txNomeUsuario.Location = new System.Drawing.Point(243, 244);
+            this.txNomeUsuario.Location = new System.Drawing.Point(243, 193);
             this.txNomeUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txNomeUsuario.Name = "txNomeUsuario";
             this.txNomeUsuario.Size = new System.Drawing.Size(324, 22);
             this.txNomeUsuario.TabIndex = 4;
-            // 
-            // txNumeroRegistro
-            // 
-            this.txNumeroRegistro.Location = new System.Drawing.Point(243, 146);
-            this.txNumeroRegistro.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txNumeroRegistro.Name = "txNumeroRegistro";
-            this.txNumeroRegistro.Size = new System.Drawing.Size(324, 22);
-            this.txNumeroRegistro.TabIndex = 2;
             // 
             // button_deletar
             // 
@@ -201,11 +182,9 @@
             this.Controls.Add(this.lSenhaAcesso);
             this.Controls.Add(this.lNomeUsuario);
             this.Controls.Add(this.lNivelPermissao);
-            this.Controls.Add(this.lNumeroRegistro);
             this.Controls.Add(this.lNomeCompleto);
             this.Controls.Add(this.txSenhaAcesso);
             this.Controls.Add(this.txNomeUsuario);
-            this.Controls.Add(this.txNumeroRegistro);
             this.Name = "AtualizarCadastro";
             this.Text = "AtualizarCadastro";
             this.ResumeLayout(false);
@@ -224,11 +203,9 @@
         private System.Windows.Forms.Label lSenhaAcesso;
         private System.Windows.Forms.Label lNomeUsuario;
         private System.Windows.Forms.Label lNivelPermissao;
-        private System.Windows.Forms.Label lNumeroRegistro;
         private System.Windows.Forms.Label lNomeCompleto;
         private System.Windows.Forms.TextBox txSenhaAcesso;
         private System.Windows.Forms.TextBox txNomeUsuario;
-        private System.Windows.Forms.TextBox txNumeroRegistro;
         private System.Windows.Forms.Button button_deletar;
     }
 }

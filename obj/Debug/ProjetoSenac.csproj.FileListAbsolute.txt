@@ -193,3 +193,7 @@ C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\Microsoft.WindowsAPICodePack.
 C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\Microsoft.WindowsAPICodePack.ShellExtensions.xml
 C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.AtualizarCadastro.resources
 C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.DeletarCadastro.resources
+C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\ProjetoSenac.exe.manifest
+C:\Users\bhcab\source\repos\ProjetoSenac\bin\Debug\ProjetoSenac.application
+C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.exe.manifest
+C:\Users\bhcab\source\repos\ProjetoSenac\obj\Debug\ProjetoSenac.application

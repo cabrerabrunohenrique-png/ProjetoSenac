@@ -34,6 +34,7 @@
             this.tbNomeUsuario = new System.Windows.Forms.TextBox();
             this.tbSenhaAcesso = new System.Windows.Forms.TextBox();
             this.btCadastrarNovoUsuario = new System.Windows.Forms.Button();
+            this.button_fechar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lNomeUsuario
@@ -60,7 +61,7 @@
             this.btEntrar.Location = new System.Drawing.Point(170, 241);
             this.btEntrar.Name = "btEntrar";
             this.btEntrar.Size = new System.Drawing.Size(157, 59);
-            this.btEntrar.TabIndex = 5;
+            this.btEntrar.TabIndex = 4;
             this.btEntrar.Text = "Entrar";
             this.btEntrar.UseVisualStyleBackColor = false;
             this.btEntrar.Click += new System.EventHandler(this.btEntrar_Click);
@@ -70,14 +71,14 @@
             this.tbNomeUsuario.Location = new System.Drawing.Point(140, 157);
             this.tbNomeUsuario.Name = "tbNomeUsuario";
             this.tbNomeUsuario.Size = new System.Drawing.Size(228, 22);
-            this.tbNomeUsuario.TabIndex = 6;
+            this.tbNomeUsuario.TabIndex = 2;
             // 
             // tbSenhaAcesso
             // 
             this.tbSenhaAcesso.Location = new System.Drawing.Point(140, 197);
             this.tbSenhaAcesso.Name = "tbSenhaAcesso";
             this.tbSenhaAcesso.Size = new System.Drawing.Size(228, 22);
-            this.tbSenhaAcesso.TabIndex = 7;
+            this.tbSenhaAcesso.TabIndex = 3;
             // 
             // btCadastrarNovoUsuario
             // 
@@ -85,16 +86,28 @@
             this.btCadastrarNovoUsuario.Location = new System.Drawing.Point(170, 21);
             this.btCadastrarNovoUsuario.Name = "btCadastrarNovoUsuario";
             this.btCadastrarNovoUsuario.Size = new System.Drawing.Size(157, 57);
-            this.btCadastrarNovoUsuario.TabIndex = 8;
+            this.btCadastrarNovoUsuario.TabIndex = 1;
             this.btCadastrarNovoUsuario.Text = "Cadastrar Novo Usuário";
             this.btCadastrarNovoUsuario.UseVisualStyleBackColor = false;
             this.btCadastrarNovoUsuario.Click += new System.EventHandler(this.btCadastrarNovoUsuario_Click);
+            // 
+            // button_fechar
+            // 
+            this.button_fechar.BackColor = System.Drawing.Color.Red;
+            this.button_fechar.Location = new System.Drawing.Point(170, 408);
+            this.button_fechar.Name = "button_fechar";
+            this.button_fechar.Size = new System.Drawing.Size(157, 59);
+            this.button_fechar.TabIndex = 5;
+            this.button_fechar.Text = "Fechar";
+            this.button_fechar.UseVisualStyleBackColor = false;
+            this.button_fechar.Click += new System.EventHandler(this.button_fechar_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(481, 459);
+            this.ClientSize = new System.Drawing.Size(471, 498);
+            this.Controls.Add(this.button_fechar);
             this.Controls.Add(this.btCadastrarNovoUsuario);
             this.Controls.Add(this.tbSenhaAcesso);
             this.Controls.Add(this.tbNomeUsuario);
@@ -117,6 +130,7 @@
         private System.Windows.Forms.TextBox tbNomeUsuario;
         private System.Windows.Forms.TextBox tbSenhaAcesso;
         private System.Windows.Forms.Button btCadastrarNovoUsuario;
+        private System.Windows.Forms.Button button_fechar;
     }
 }
 

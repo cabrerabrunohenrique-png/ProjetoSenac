@@ -75,7 +75,12 @@ namespace ProjetoSenac
         private void Form1_Load(object sender, EventArgs e)
         {
                 Nav formNav = new Nav();
-            formNav.Owner = this;
+                formNav.Owner = this;
+        }
+
+        private void button_fechar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

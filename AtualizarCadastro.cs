@@ -50,7 +50,7 @@ namespace ProjetoSenac
         private void button_pesquisar_Click(object sender, EventArgs e)
         {
             string nomeCompleto = txNomeCompleto.Text.Trim();
-            string numeroRegistro = txNumeroRegistro.Text;
+           
             string nivelPermissao = cbNivelPermisao.Text;
             string nomeUsuario = txNomeUsuario.Text.Trim();
             string senhaAcesso = txSenhaAcesso.Text;
@@ -132,7 +132,7 @@ namespace ProjetoSenac
 
             }
 
-            if (string.IsNullOrWhiteSpace(numeroRegistro))
+            /*if (string.IsNullOrWhiteSpace(numeroRegistro))
             {
                 errorProvider.SetError(txNumeroRegistro, "Numero de Registro Invalido.");
                 taskDialog.Caption = "Validação Cadastro Novo Usuário";
@@ -181,7 +181,7 @@ namespace ProjetoSenac
                 return;
                 
 
-            }
+            }*/
 
 
 
@@ -262,9 +262,11 @@ namespace ProjetoSenac
 
             CadastroUsuario cadastronome = new CadastroUsuario();
 
+            //Caso queira validar duplicidade de numero de registro, descomente o código abaixo e comente a linha acima.
+            /*
             if (cadastronome.FcvalidarNomeUsuario(nomeCompleto))
 
-            //if (listaCadastroUsuario.Any(c => c.NOMECOMPLETO == nomeCompleto))
+            if (listaCadastroUsuario.Any(c => c.NOMECOMPLETO == nomeCompleto))
             {
                 errorProvider.SetError(txNomeCompleto, "Nome completo inválido.");
                 taskDialog.Caption = "Validação Cadastro Novo Usuário";
@@ -276,8 +278,9 @@ namespace ProjetoSenac
                 txNomeCompleto.Focus();
                 return;
             }
-
+            */
             CadastroUsuario cadastroRegistro = new CadastroUsuario();
+
             if (listaCadastroUsuario.Any(c => c.NOMEUSUARIO == nomeUsuario))
             {
                 MessageBox.Show("O NOME DE USUARIO" + nomeUsuario + " já existe. Por favor, escolha outro.", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -324,7 +327,7 @@ namespace ProjetoSenac
                     using (MySqlCommand comando = new MySqlCommand(scriptInsert, conn))
                     {
                         comando.Parameters.AddWithValue("@nomeCompleto", nomeCompleto);
-                        comando.Parameters.AddWithValue("@numeroRegistro", numeroRegistro);
+                       
                         comando.Parameters.AddWithValue("@nivelPermisao", nivelPermissao);
                         comando.Parameters.AddWithValue("@nomeUsuario", nomeUsuario);
                         comando.Parameters.AddWithValue("@senhaAcesso", senhaAcesso);
@@ -335,7 +338,7 @@ namespace ProjetoSenac
 
                     CadastroUsuario cadastroUsuario = new CadastroUsuario();
                     cadastroUsuario.NOMECOMPLETO = nomeCompleto;
-                    cadastroUsuario.NUMEROREGISTRO = numeroRegistro;
+                    
                     cadastroUsuario.NIVELPERMISSAO = nivelPermissao;
                     cadastroUsuario.NOMEUSUARIO = nomeUsuario;
                     cadastroUsuario.SENHAACESSO = senhaAcesso;
@@ -345,7 +348,7 @@ namespace ProjetoSenac
                     MessageBox.Show("Usuário cadastrado com sucesso!", "Cadastro Realizado", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     txNomeCompleto.Clear();
-                    txNumeroRegistro.Clear();
+                    
                     cbNivelPermisao.SelectedIndex = -1;
                     txNomeUsuario.Clear();
                     txSenhaAcesso.Clear();
@@ -372,6 +375,6 @@ namespace ProjetoSenac
 
 
 
+        }
     }
-}
 
