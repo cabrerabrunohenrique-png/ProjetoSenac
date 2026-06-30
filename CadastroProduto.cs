@@ -186,8 +186,17 @@ namespace ProjetoSenac
                 }
 
                 return existeNoBanco; // Devolve True (se achou) ou False (se não achou)
-            }
-        }
+         }
+
+
+
+       
+
+
+
+
+
     }
+}
 
 

@@ -146,6 +146,40 @@ namespace ProjetoSenac
 
         }
 
+        public bool FcExcluir(string NOMECOMPLETO, string NOMEUSUARIO)
+        {
+            bool result = false;
+            string DADOS_CONEXAO = "server=localhost; user=root; password=; database=bdprojetosenac;";
+
+            string scriptDelete = "DELETE FROM tbcadastronovousuario WHERE nomeCompleto = @nomeCompleto AND nomeUsuario = @nomeUsuario";
+
+            using (MySqlConnection conn = new MySqlConnection(DADOS_CONEXAO))
+            {
+                using (MySqlCommand comando = new MySqlCommand(scriptDelete, conn))
+                {
+                    comando.Parameters.AddWithValue("@nomeCompleto", NOMECOMPLETO);
+                    comando.Parameters.AddWithValue("@nomeUsuario", NOMEUSUARIO);
+
+                    try
+                    {
+                        conn.Open();
+                        int linhasAfetadas = comando.ExecuteNonQuery();
+
+                        if (linhasAfetadas > 0)
+                        {
+                            result = true; // Deletou com sucesso!
+                        }
+                    }
+                    catch (Exception)
+                    {
+                        result = false;
+                    }
+
+                    return result;
+                }
+            }
+        }
+
     }
 
 

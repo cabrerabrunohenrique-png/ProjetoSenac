@@ -32,10 +32,8 @@
             this.txNomeCompleto = new System.Windows.Forms.TextBox();
             this.button_voltar = new System.Windows.Forms.Button();
             this.lNomeUsuario = new System.Windows.Forms.Label();
-            this.lNumeroRegistro = new System.Windows.Forms.Label();
             this.lNomeCompleto = new System.Windows.Forms.Label();
             this.txNomeUsuario = new System.Windows.Forms.TextBox();
-            this.txNumeroRegistro = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button_deletar
@@ -80,15 +78,6 @@
             this.lNomeUsuario.TabIndex = 43;
             this.lNomeUsuario.Text = "Nome de usuário";
             // 
-            // lNumeroRegistro
-            // 
-            this.lNumeroRegistro.AutoSize = true;
-            this.lNumeroRegistro.Location = new System.Drawing.Point(2, 155);
-            this.lNumeroRegistro.Name = "lNumeroRegistro";
-            this.lNumeroRegistro.Size = new System.Drawing.Size(128, 16);
-            this.lNumeroRegistro.TabIndex = 41;
-            this.lNumeroRegistro.Text = "Numero de Registro";
-            // 
             // lNomeCompleto
             // 
             this.lNomeCompleto.AutoSize = true;
@@ -106,14 +95,6 @@
             this.txNomeUsuario.Size = new System.Drawing.Size(324, 22);
             this.txNomeUsuario.TabIndex = 35;
             // 
-            // txNumeroRegistro
-            // 
-            this.txNumeroRegistro.Location = new System.Drawing.Point(210, 155);
-            this.txNumeroRegistro.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txNumeroRegistro.Name = "txNumeroRegistro";
-            this.txNumeroRegistro.Size = new System.Drawing.Size(324, 22);
-            this.txNumeroRegistro.TabIndex = 33;
-            // 
             // DeletarCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -123,10 +104,8 @@
             this.Controls.Add(this.txNomeCompleto);
             this.Controls.Add(this.button_voltar);
             this.Controls.Add(this.lNomeUsuario);
-            this.Controls.Add(this.lNumeroRegistro);
             this.Controls.Add(this.lNomeCompleto);
             this.Controls.Add(this.txNomeUsuario);
-            this.Controls.Add(this.txNumeroRegistro);
             this.Name = "DeletarCadastro";
             this.Text = "DeletarCadastro";
             this.ResumeLayout(false);
@@ -140,9 +119,7 @@
         private System.Windows.Forms.TextBox txNomeCompleto;
         private System.Windows.Forms.Button button_voltar;
         private System.Windows.Forms.Label lNomeUsuario;
-        private System.Windows.Forms.Label lNumeroRegistro;
         private System.Windows.Forms.Label lNomeCompleto;
         private System.Windows.Forms.TextBox txNomeUsuario;
-        private System.Windows.Forms.TextBox txNumeroRegistro;
     }
 }
