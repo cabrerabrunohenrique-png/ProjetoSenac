@@ -193,6 +193,12 @@
     <Compile Include="FormEstoqueSaida.Designer.cs">
       <DependentUpon>FormEstoqueSaida.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormExcluir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormExcluir.Designer.cs">
+      <DependentUpon>FormExcluir.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormOrdemServico.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -247,6 +253,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormEstoqueSaida.resx">
       <DependentUpon>FormEstoqueSaida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormExcluir.resx">
+      <DependentUpon>FormExcluir.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormOrdemServico.resx">
       <DependentUpon>FormOrdemServico.cs</DependentUpon>

@@ -26,8 +26,7 @@ namespace ProjetoSenac
         private void btPesquisar_Click(object sender, EventArgs e)
         {
             CadastroProduto pesquisa = new CadastroProduto();
-            
-            
+                        
 
 
             string nomePesquisado = TXNomeProduto.Text.Trim();

@@ -29,7 +29,7 @@ namespace ProjetoSenac
         BindingList<CadastroUsuario> listaCadastroUsuario = new BindingList<CadastroUsuario>();
         public AtualizarCadastro()
         {
-            
+
             InitializeComponent();
             cbNivelPermisao.Items.Add("");
             cbNivelPermisao.Items.Add("Administrador");
@@ -50,7 +50,7 @@ namespace ProjetoSenac
         private void button_pesquisar_Click(object sender, EventArgs e)
         {
             string nomeCompleto = txNomeCompleto.Text.Trim();
-           
+
             string nivelPermissao = cbNivelPermisao.Text;
             string nomeUsuario = txNomeUsuario.Text.Trim();
             string senhaAcesso = txSenhaAcesso.Text;
@@ -71,7 +71,7 @@ namespace ProjetoSenac
                 taskDialog.Icon = TaskDialogStandardIcon.Warning;
                 taskDialog.Show();
 
-                
+
                 txNomeCompleto.Clear();
                 txNomeCompleto.Focus();
 
@@ -260,25 +260,7 @@ namespace ProjetoSenac
 
             }
 
-            CadastroUsuario cadastronome = new CadastroUsuario();
 
-            //Caso queira validar duplicidade de numero de registro, descomente o código abaixo e comente a linha acima.
-            /*
-            if (cadastronome.FcvalidarNomeUsuario(nomeCompleto))
-
-            if (listaCadastroUsuario.Any(c => c.NOMECOMPLETO == nomeCompleto))
-            {
-                errorProvider.SetError(txNomeCompleto, "Nome completo inválido.");
-                taskDialog.Caption = "Validação Cadastro Novo Usuário";
-                taskDialog.InstructionText = "Nome ja cadastrado";
-                taskDialog.Text = "O NOME COMPLETO" + nomeCompleto + " já possui registro. Nao é permitido duplicidade de NOME COMPLETO.";
-                taskDialog.Icon = TaskDialogStandardIcon.Warning;
-                taskDialog.Show();
-                txNomeCompleto.Clear();
-                txNomeCompleto.Focus();
-                return;
-            }
-            */
             CadastroUsuario cadastroRegistro = new CadastroUsuario();
 
             if (listaCadastroUsuario.Any(c => c.NOMEUSUARIO == nomeUsuario))
@@ -311,9 +293,7 @@ namespace ProjetoSenac
             }
 
 
-            
-
-            else
+            try
             {
                 using (MySqlConnection conn = new MySqlConnection(DADOS_CONEXAO))
                 {
@@ -327,7 +307,7 @@ namespace ProjetoSenac
                     using (MySqlCommand comando = new MySqlCommand(scriptInsert, conn))
                     {
                         comando.Parameters.AddWithValue("@nomeCompleto", nomeCompleto);
-                       
+
                         comando.Parameters.AddWithValue("@nivelPermisao", nivelPermissao);
                         comando.Parameters.AddWithValue("@nomeUsuario", nomeUsuario);
                         comando.Parameters.AddWithValue("@senhaAcesso", senhaAcesso);
@@ -336,19 +316,39 @@ namespace ProjetoSenac
                         controleLinhasAftadas = comando.ExecuteNonQuery();
                     }
 
+                    if (controleLinhasAftadas == 0)
+                    {
+                        taskDialog.Caption = "Aviso do Sistema";
+                        taskDialog.InstructionText = "Usuário não encontrado";
+                        taskDialog.Text = "Não foi possível atualizar. O nome inserido não existe no banco de dados.";
+                        taskDialog.Icon = TaskDialogStandardIcon.Warning;
+                        taskDialog.Show();
+
+                        txNomeCompleto.Clear();
+
+                        cbNivelPermisao.SelectedIndex = -1;
+                        txNomeUsuario.Clear();
+                        txSenhaAcesso.Clear();
+                        txConfirmacaoSenha.Clear();
+                        conn.Close();
+
+                        return; // O return impede que o código abaixo seja executado
+
+                    }
+
                     CadastroUsuario cadastroUsuario = new CadastroUsuario();
                     cadastroUsuario.NOMECOMPLETO = nomeCompleto;
-                    
+
                     cadastroUsuario.NIVELPERMISSAO = nivelPermissao;
                     cadastroUsuario.NOMEUSUARIO = nomeUsuario;
                     cadastroUsuario.SENHAACESSO = senhaAcesso;
                     listaCadastroUsuario.Add(cadastroUsuario);
 
 
-                    MessageBox.Show("Usuário cadastrado com sucesso!", "Cadastro Realizado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Dados alterado  com sucesso!", "Altercao Realizada", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     txNomeCompleto.Clear();
-                    
+
                     cbNivelPermisao.SelectedIndex = -1;
                     txNomeUsuario.Clear();
                     txSenhaAcesso.Clear();
@@ -357,6 +357,16 @@ namespace ProjetoSenac
 
                 }
             }
+            catch (MySqlException ex)
+            {
+                taskDialog.Caption = "Erro no Banco de Dados";
+                taskDialog.InstructionText = "Falha na conexão ou execução";
+                taskDialog.Text = "Ocorreu um erro técnico: " + ex.Message;
+                taskDialog.Icon = TaskDialogStandardIcon.Error;
+                taskDialog.Show();
+            }
+
+
         }
 
         private void button_deletar_Click(object sender, EventArgs e)
@@ -364,17 +374,17 @@ namespace ProjetoSenac
             DeletarCadastro formDeletarCadastro = new DeletarCadastro();
 
             DialogResult resposta = MessageBox.Show("As alterações foram salvas?\nCertifique-se de salvar antes de sair para não perder os dados.", "ATENÇÃO", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-            if(resposta == DialogResult.Yes)
+            if (resposta == DialogResult.Yes)
             {
-               formDeletarCadastro.Owner = this;
-               this.Hide();
-               formDeletarCadastro.ShowDialog();
+                formDeletarCadastro.Owner = this;
+                this.Hide();
+                formDeletarCadastro.ShowDialog();
             }
         }
         /*if (controleLinhasAftadas > 0){MessageBox.Show("Cadastro realizado com sucesso!");}*/
 
 
 
-        }
-    }
+
+    } }
 
