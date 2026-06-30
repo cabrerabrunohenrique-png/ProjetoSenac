@@ -43,6 +43,7 @@
             this.TXAlturaPeca = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.TXComprimentoProduto = new System.Windows.Forms.TextBox();
+            this.btProdutosCadastrado = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dGVRelacaoProduto)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,7 +51,7 @@
             // 
             this.btVoltarOS.BackColor = System.Drawing.Color.RoyalBlue;
             this.btVoltarOS.ForeColor = System.Drawing.Color.White;
-            this.btVoltarOS.Location = new System.Drawing.Point(629, 12);
+            this.btVoltarOS.Location = new System.Drawing.Point(1196, 11);
             this.btVoltarOS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btVoltarOS.Name = "btVoltarOS";
             this.btVoltarOS.Size = new System.Drawing.Size(163, 66);
@@ -68,7 +69,7 @@
             this.dGVRelacaoProduto.RowHeadersWidth = 51;
             this.dGVRelacaoProduto.RowTemplate.Height = 24;
             this.dGVRelacaoProduto.Size = new System.Drawing.Size(1058, 250);
-            this.dGVRelacaoProduto.TabIndex = 26;
+            this.dGVRelacaoProduto.TabIndex = 11;
             // 
             // BtCadastrar
             // 
@@ -184,11 +185,24 @@
             this.TXComprimentoProduto.Size = new System.Drawing.Size(191, 22);
             this.TXComprimentoProduto.TabIndex = 6;
             // 
+            // btProdutosCadastrado
+            // 
+            this.btProdutosCadastrado.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btProdutosCadastrado.ForeColor = System.Drawing.Color.White;
+            this.btProdutosCadastrado.Location = new System.Drawing.Point(1196, 199);
+            this.btProdutosCadastrado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btProdutosCadastrado.Name = "btProdutosCadastrado";
+            this.btProdutosCadastrado.Size = new System.Drawing.Size(163, 176);
+            this.btProdutosCadastrado.TabIndex = 10;
+            this.btProdutosCadastrado.Text = "Produtos Cadastrado";
+            this.btProdutosCadastrado.UseVisualStyleBackColor = false;
+            // 
             // FormCadastroProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1131, 633);
+            this.ClientSize = new System.Drawing.Size(1371, 633);
+            this.Controls.Add(this.btProdutosCadastrado);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TXComprimentoProduto);
             this.Controls.Add(this.lQuantidade);
@@ -230,5 +244,6 @@
         private System.Windows.Forms.TextBox TXAlturaPeca;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox TXComprimentoProduto;
+        private System.Windows.Forms.Button btProdutosCadastrado;
     }
 }

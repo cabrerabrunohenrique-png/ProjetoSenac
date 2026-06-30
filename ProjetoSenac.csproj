@@ -205,6 +205,12 @@
     <Compile Include="FormCadastroProduto.Designer.cs">
       <DependentUpon>FormCadastroProduto.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormProdutosCadastrado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProdutosCadastrado.Designer.cs">
+      <DependentUpon>FormProdutosCadastrado.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormRelatorio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -246,6 +252,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormCadastroProduto.resx">
       <DependentUpon>FormCadastroProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProdutosCadastrado.resx">
+      <DependentUpon>FormProdutosCadastrado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormRelatorio.resx">
       <DependentUpon>FormRelatorio.cs</DependentUpon>

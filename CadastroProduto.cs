@@ -22,6 +22,48 @@ namespace ProjetoSenac
 
         public double COMPRIMENTOPRODUTO { get; set; }
 
+
+        public List<CadastroProduto> FcPesquisaNome(string NOMEPRODUTO)
+        { 
+            List<CadastroProduto> listaResultado = new List<CadastroProduto>();
+            string DADOS_CONEXAO = "server=localhost; user=root; password=; database=bdprojetosenac;";
+            string scriptSelect = "SELECT codigoproduto, nomeProduto FROM tbcadastropeca WHERE nomeproduto = @nomeProduto";
+
+            using (MySqlConnection conn = new MySqlConnection(DADOS_CONEXAO))
+            {
+                using (MySqlCommand comando = new MySqlCommand(scriptSelect, conn))
+                {
+                    comando.Parameters.AddWithValue("@nomeProduto", NOMEPRODUTO);
+                    try
+                    {
+                        conn.Open();
+                        using (MySqlDataReader reader = comando.ExecuteReader())
+                        {
+
+                            if (reader.Read())
+                            {
+                                CadastroProduto produto = new CadastroProduto();
+                                {
+                                    produto.NOMEPRODUTO = reader["nomeProduto"].ToString();
+                                    produto.CODIGOPRODUTO = Convert.ToInt32(reader["codigoproduto"]);
+
+                                    listaResultado.Add(produto);
+                                }
+
+                            }
+                        }
+                    }
+                    catch (Exception)
+                    {
+                        
+                    }
+
+                    return listaResultado;
+                }
+            }
+
+        }
+
        
         public bool FcValidarNome(string nomeProduto)
         {
