@@ -239,5 +239,12 @@ namespace ProjetoSenac
             
 
         }
+
+        private void btProdutosCadastrado_Click(object sender, EventArgs e)
+        {
+            FormProdutosCadastrado formProdutosCadastrado = new FormProdutosCadastrado();
+            formProdutosCadastrado.Owner = this;
+            formProdutosCadastrado.Show();
+        }
     }
 }

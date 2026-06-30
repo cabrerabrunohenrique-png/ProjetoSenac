@@ -229,6 +229,7 @@
     <Compile Include="CadastroProduto.cs" />
     <Compile Include="Relatorio.cs" />
     <Compile Include="SaidaEstoqueSaida.cs" />
+    <Compile Include="TaskDialogPage.cs" />
     <EmbeddedResource Include="AtualizarCadastro.resx">
       <DependentUpon>AtualizarCadastro.cs</DependentUpon>
     </EmbeddedResource>

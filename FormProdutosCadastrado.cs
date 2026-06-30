@@ -20,11 +20,13 @@ namespace ProjetoSenac
             CadastroProduto pesquisa = new CadastroProduto();
 
             string nomePesquisado = TXNomeProduto.Text.Trim();
+            
         }
 
         private void btPesquisar_Click(object sender, EventArgs e)
         {
             CadastroProduto pesquisa = new CadastroProduto();
+            
             
 
 
@@ -47,6 +49,8 @@ namespace ProjetoSenac
                 dgvPesquisa.DataSource = resultadoBusca;
 
                 MessageBox.Show("Produto encontrado no banco de dados e exibido na tabela!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                TXNomeProduto.Clear();
+                
             }
             else
             {
@@ -56,7 +60,23 @@ namespace ProjetoSenac
                 MessageBox.Show("Produto não encontrado no banco de dados!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
+
             
+        }
+
+        private void btVoltarOS_Click(object sender, EventArgs e)
+        {
+            DialogResult resposta = MessageBox.Show("Deseja realmente voltar para a tela de login?", "ATENÇÃO", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (resposta == DialogResult.Yes)
+            {
+                this.Owner.Show();
+                this.Close();
+            }
+        }
+
+        private void button_fechar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }   

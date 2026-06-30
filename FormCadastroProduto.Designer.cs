@@ -196,6 +196,7 @@
             this.btProdutosCadastrado.TabIndex = 10;
             this.btProdutosCadastrado.Text = "Produtos Cadastrado";
             this.btProdutosCadastrado.UseVisualStyleBackColor = false;
+            this.btProdutosCadastrado.Click += new System.EventHandler(this.btProdutosCadastrado_Click);
             // 
             // FormCadastroProduto
             // 

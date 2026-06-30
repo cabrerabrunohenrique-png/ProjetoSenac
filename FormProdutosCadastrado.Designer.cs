@@ -39,8 +39,7 @@
             this.btPesquisar = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.TXNomeProduto = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.TXCodigoProduto = new System.Windows.Forms.TextBox();
+            this.fechar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPesquisa)).BeginInit();
             this.SuspendLayout();
             // 
@@ -109,6 +108,7 @@
             this.btVoltarOS.TabIndex = 4;
             this.btVoltarOS.Text = "Tela Inicial";
             this.btVoltarOS.UseVisualStyleBackColor = false;
+            this.btVoltarOS.Click += new System.EventHandler(this.btVoltarOS_Click);
             // 
             // dgvPesquisa
             // 
@@ -150,35 +150,28 @@
             this.TXNomeProduto.Size = new System.Drawing.Size(191, 22);
             this.TXNomeProduto.TabIndex = 2;
             // 
-            // label7
+            // fechar
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(82, 67);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(120, 16);
-            this.label7.TabIndex = 67;
-            this.label7.Text = "Codigo do Produto";
-            // 
-            // TXCodigoProduto
-            // 
-            this.TXCodigoProduto.Location = new System.Drawing.Point(275, 61);
-            this.TXCodigoProduto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.TXCodigoProduto.Name = "TXCodigoProduto";
-            this.TXCodigoProduto.Size = new System.Drawing.Size(191, 22);
-            this.TXCodigoProduto.TabIndex = 1;
+            this.fechar.BackColor = System.Drawing.Color.Red;
+            this.fechar.Location = new System.Drawing.Point(907, 142);
+            this.fechar.Name = "fechar";
+            this.fechar.Size = new System.Drawing.Size(157, 59);
+            this.fechar.TabIndex = 69;
+            this.fechar.Text = "Fechar";
+            this.fechar.UseVisualStyleBackColor = false;
+            this.fechar.Click += new System.EventHandler(this.button_fechar_Click);
             // 
             // FormProdutosCadastrado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1325, 575);
+            this.Controls.Add(this.fechar);
             this.Controls.Add(this.btVoltarOS);
             this.Controls.Add(this.dgvPesquisa);
             this.Controls.Add(this.btPesquisar);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.TXNomeProduto);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.TXCodigoProduto);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lQuantidade);
             this.Controls.Add(this.lNomePeca);
@@ -206,7 +199,6 @@
         private System.Windows.Forms.Button btPesquisar;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox TXNomeProduto;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox TXCodigoProduto;
+        private System.Windows.Forms.Button fechar;
     }
 }
